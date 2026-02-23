@@ -27,7 +27,15 @@
 
 
     <style>
-html,
+    body { margin: 0; font-family: system-ui; }
+    .wrap { display: grid; grid-template-columns: 1fr 1fr; height: 100vh; }
+    .pane { border-right: 1px solid #ddd; }
+    .pane:last-child { border-right: none; }
+    .header { padding: 10px; border-bottom: 1px solid #ddd; font-weight: 600; }
+    #editor { height: calc(100vh - 40px); }
+    #preview { height: calc(100vh - 40px); overflow: auto; padding: 12px; }
+  </style>
+/* html,
     body {
       height: 100%;
       margin: 0;
@@ -70,18 +78,22 @@ html,
     #firepad-container {
       flex: 1;        /* automatically grow to fill remaining width */
       overflow: hidden;
-    }
+    } */
 
     </style>
 </head>
 
 <body onload="init()">
-    <!-- Instructions Area -->
-    <div id="instructions">
-    </div>
-
-    <!-- Firepad Container -->
-    <div id="firepad-container"></div>
+    <div class="wrap">
+  <div class="pane">
+    <div class="header">Editor</div>
+    <div id="editor"></div>
+  </div>
+  <div class="pane">
+    <div class="header">Preview</div>
+    <div id="preview"></div>
+  </div>
+</div>
 
     <script>
         function init() {
