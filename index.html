@@ -136,7 +136,7 @@
     richTextToolbar: false,
     richTextShortcuts: false
   });
-
+let firepadReady = false;
   /**************************************************
    * 5. Markdown Preview
    **************************************************/
@@ -148,10 +148,13 @@
     breaks: true
   });
 
-  function renderPreview() {
-    const md = firepad.getText();   // IMPORTANT: plain text
-    previewEl.innerHTML = mdParser.render(md);
-  }
+ function renderPreview() {
+  const md = firepadReady
+    ? firepad.getText()   // safe after ready
+    : cm.getValue();      // safe before ready
+
+  previewEl.innerHTML = mdParser.render(md);
+}
 
   /**************************************************
    * 6. Load test.md ONLY if empty
