@@ -160,6 +160,7 @@ let firepadReady = false;
    * 6. Load test.md ONLY if empty
    **************************************************/
   firepad.on("ready", async function() {
+    firepadReady=true;
     const existing = firepad.getText();
 
     if (!existing || !existing.trim()) {
