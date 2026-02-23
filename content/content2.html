@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevant Content for Abstract Preparation</title>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>Metagenomics, an increasingly important domain in bioinformatics, requires the analysis of the genome sequences of various organisms of different species present in a common environment e.g., human gut, soil, or oceans.</p>
+
+    <p>Unlike traditional genomics that studies genome sequences from an individual or a small group of individuals of the same known species, metagenomics deals with genome sequences whose species are not known in advance in many cases, thereby requiring comparisons of the target sequences against large databases of many reference genomes.</p>
+    
+    <p>Given a metagenomic sample, a typical workflow consists of three key steps: i sequencing, ii basecalling, and iii metagenomic analysis.</p>
+    
+    <p>To enable fast and efficient metagenomics for many critical applications, it is essential to improve the performance and energy efficiency of metagenomic analysis due to at least three major reasons.</p>
+    
+    <p>Metagenomic analysis suffers from significant data movement overhead because it requires accessing large amounts of low-reuse data.</p>
+    
+    <p>Since we do not know the species present in a metagenomic sample, metagenomic analysis requires searching large databases e.g., to several TBs or more than a hundred TBs in emerging databases that contain information on different organisms&rsquo; genomes.</p>
+    
+    <p>While there has been effort in accelerating metagenomic analysis, to our knowledge, no prior work fundamentally addresses its storage I/O overheads.</p>
+    
+    <p>In-Storage Processing ISP, i.e., processing data directly inside the storage device where target data resides, can be a fundamentally high-performance approach to mitigating the data-movement bottleneck in metagenomic analysis, given its three major benefits.</p>
+    
+    <p>Despite the benefits of ISP, none of the existing approaches to metagenomic analysis can be effectively implemented as an ISP system due to the limited hardware resources available in current storage devices.</p>
+    
+    <p>Our goal in this work is to improve metagenomic analysis performance by reducing the large data movement overhead from the storage system in a cost-effective manner.</p>
+    
+    <p>We propose MegIS, the first ISP system designed to reduce the data movement overheads inside the end-to-end metagenomic analysis pipeline.</p>
+    
+    <p>The key idea of MegIS is to enable cooperative ISP for metagenomics, where we do not solely focus on processing inside the storage system but, instead, we capitalize on the strengths of processing both inside and outside the storage system.</p>
+    
+    <p>We design MegIS as an efficient pipeline between the SSD and the host system to i leverage and ii orchestrate the capabilities of both.</p>
+    
+    <p>We evaluate MegIS with two different SSD configurations performance-optimized and cost-optimized.</p>
+    
+    <p>We compare MegIS against three state-of-the-art software and hardware-accelerated metagenomics tools: i Kraken2, which is optimized for performance, ii Metalign, which is optimized for accuracy, and iii a state-of-the-art processing-in-memory accelerator, Sieve, integrated into Kraken2 to accelerate its k-mer matching.</p>
+    
+    <p>By analyzing end-to-end performance, we show that MegIS provides 2.7&ndash;37.2&times; and 1.5&ndash;5.1&times; speedup compared to Kraken2 and Sieve, respectively, while achieving significantly higher accuracy.</p>
+    
+    <p>MegIS provides 6.9&ndash;100.2&times; speedup compared to Metalign, while providing the same accuracy MegIS does not affect analysis accuracy compared to this accuracy-optimized baseline.</p>
+    
+    <p>MegIS provides large average energy reductions of 5.4&times; and 1.9&times; compared to Kraken2 and Sieve, respectively, and 15.2&times; compared to accuracy-optimized Metalign.</p>
+    
+    <p>MegIS&rsquo;s benefits come at a low area cost of 1.7% over the area of the three cores in an SSD controller.</p>
+
+    <h2>Originl Abstract</h2>
+    <p>Metagenomic analysis, essential for understanding diverse biological environments, faces significant performance and energy bottlenecks due to large data movement overheads when processing vast genomic databases. Existing acceleration techniques do not fundamentally address the storage I/O inefficiencies inherent in metagenomic workflows. In this work, we present MegIS, the first In-Storage Processing (ISP) system tailored to mitigate data movement overheads in metagenomic analysis pipelines. MegIS introduces a cooperative processing model that orchestrates computation between the SSD and the host system, improving both performance and energy efficiency. We evaluate MegIS using two SSD configurations and benchmark it against state-of-the-art tools: Kraken2, Metalign, and Sieve. Our results demonstrate that MegIS achieves up to 37.2× speedup over Kraken2 and up to 100.2× speedup over Metalign, while also reducing energy consumption by up to 15.2×, all without compromising analysis accuracy. Furthermore, MegIS’s integration incurs minimal hardware overhead, occupying only 1.7% additional area on the SSD controller. These findings establish MegIS as a cost-effective and scalable solution for accelerating metagenomic analysis.</p>
+</body>
+</html>

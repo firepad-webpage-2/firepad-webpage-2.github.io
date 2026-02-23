@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Recently, page-table self-replication (PTSR) has been proposed to reduce the page-table caused NUMA effect for large-memory workloads on NUMA servers. However, PTSR may improve or hurt performance of an application, depending on its characteristics and the co-located applications. This is hard for users to know, but current PTSR can only be manually enabled/disabled by users. <p>To address this issue, we propose WASP (Workload-Aware Self-Replication) to automatically enable/disable PTSR to reduce the page-table caused NUMA effect. WASP innovates two techniques. First, it identifies a set of indicators, which are generally available on most processor architectures, to indicate if PTSR should be enabled/disabled. Second, WASP devises a hierarchical as well as gradual mechanism using these indicators to enable/disable PTSR automatically for aspecific workload to reduce the page-table caused NUMA effect during its execution. </p> <p>We implement WASP in Linux and evaluate it on x86 and ARM NUMA servers. Experimental results show that WASP can automatically enable/disable PTSR successfully according to workload characteristics, achieving at least the same performance improvement as that obtained by manually enabling PTSR on both x86 and ARM NUMA servers.</p>
+</body>
+</html>

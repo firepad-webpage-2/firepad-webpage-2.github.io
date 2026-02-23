@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+
+    <p>The Internet’s architecture is typically described in terms of its layered design, whose modularity has allowed the Internet to accommodate radical changes in scale, scope, and usage over the past thirty-plus years.</p>
+
+<p>The notion of interconnection, broadly construed, turned a collection of local packet-switching networks into the Internet of today.</p>
+
+<p>By E2ES we mean a design philosophy where the Internet only provides best-effort packet delivery and leaves all additional functionality – particularly application-level functionality – to the communicating endpoints.</p>
+
+<p>The tie between the two is best captured in [39]: “One of the most basic arguments in favor of Net Neutrality is that it is needed in order to preserve what is known as the ‘end-to-end principle’.”</p>
+
+<p>This combination of clean separation vertically between the network and end-to-end applications (to keep the network simple and neutral) but interconnection horizontally (to allow global coverage to be created out of local ISPs) was crucial to the Internet’s rapid and enduring success.</p>
+
+<p>The network infrastructure now applies a variety of in-network “enhancements” that involve more than just packet forwarding, and these additional functions are typically applied at the network edge.</p>
+
+<p>Some of these edge networking services are strong violations of E2ES, in that some nodes in the network infrastructure are interposing application-level (L7) functionality between the two endpoints of a connection.</p>
+
+<p>This departure was driven by the changing role of the Internet, with the edge networking services typically addressing performance, security, and privacy issues that were not crucial in the early days of the Internet but which have become major pain points now that the Internet plays such a central role in our personal and commercial lives.</p>
+
+<p>Security has become far more important in a highly commercial Internet.</p>
+
+<p>Privacy concerns have led to the ubiquitous use of encryption to protect payloads, and to the deployment of edge networking services such as private relay and oDNS that help hide traffic patterns and metadata from the infrastructure.</p>
+
+<p>While these edge networking services are valuable – indeed, they are necessary to handle the current workloads of applications like content delivery – they are not interconnected.</p>
+
+<p>This lack of interconnection is not due to an accident or oversight but has happened because none of the necessary ingredients that led to the Internet’s interconnection – standards, routing, and peering – are present for these edge networking services.</p>
+
+<p>Summarizing the status quo, the Internet has a time-tested, if imperfect, architecture at L3 built around the tenets of interconnection and E2ES.</p>
+
+<p>The purpose of this paper is to identify a coherent architecture for edge networking services that tries to be more consistent with these two guiding tenets of the Internet.</p>
+
+<p>We call the resulting design the InterEdge.</p>
+
+<p>Our work only addresses edge deployments that are focused on network-related functionality rather than computation-related functionality, so what is commonly called “Edge Computing” is not within our purview.</p>
+
+<p>Blumenthal and Clark also express worries about “investment in closed islands of enhanced service” that may come with in-network functionality.</p>
+
+<p>Thus, as mentioned earlier, we think that the most important concern raised by the end of the E2EP/E2ES is that the neutrality of the infrastructure is no longer ensured.</p>
+
+<p>The lack of standards for the basic service semantics (e.g., different pub/sub services give different guarantees) leads to a strong form of lock-in, because an application built on one set of semantics cannot safely move to a weaker set of semantics.</p>
+
+<p>Creating standards for such services would enable support by multiple ESPs, and therefore encourage the deployment of edge networking services that require client modifications.</p>
+
+<p>The presence of an edge networking services architecture would not solve this integration problem completely but would certainly make the integration of network edge services easier for customers.</p>
+
+<p>Achieving that synergy for edge networking services is the goal of InterEdge, and it requires that the platform be extensible (allowing the easy deployment of new services) and integrated (so users can avail themselves of several services within the same platform).</p>
+
+<p>The InterEdge follows this model, with all edge service processing implemented on service nodes (SNs) that are commodity clusters placed near endpoints (i.e., at network edges, such as aggregation points, central offices, or PoPs).</p>
+
+<p>All SNs have a common execution environment that supports a few basic primitives (such as sending and receiving packets over ILP, reading and updating configuration, and checkpointing state for fault tolerance) in addition to an extensible set of libraries that service modules can use for common tasks (e.g., cryptography, regular expression matching, and video-and-audio re-encoding).</p>
+
+<p>All service modules are written to this common execution environment, creating a Write-Once-Run-Anywhere (WORA) ecosystem for InterEdge services.</p>
+
+<p>We designed ILP to meet three additional goals: generality, efficiency, and cacheability.</p>
+
+<p>ILP requires each packet’s ILP headers to be encrypted using a key shared between the ILP packet’s sender and its receiver (either a host and an SN or two SNs), and must be decrypted before it can be processed.</p>
+
+<p>We plan to use PSP, a recently proposed encryption protocol that is designed so it can be easily offloaded to NIC ASICs and can operate on individual packets, even when they arrive out of order.</p>
+
+<p>All packets at an SN are first received by the pipe-terminus, which is responsible for decrypting the ILP header using the shared key associated with the packet’s source address (carried in the Layer 3 header).</p>
+
+<p>The pipe-terminus uses the packet’s L3 header, service ID, and connection ID to query the decision cache.</p>
+
+<p>If no match is found, the pipe-terminus forwards the packet’s L3 header and decrypted ILP header to the appropriate service (determined using the service identifier in the ILP header).</p>
+
+<p>In building our initial prototype, we focused on flexibility, not performance.</p>
+
+<p>We used IPC to send and receive data from services which obviously adds overhead, but this approach makes it trivial to prototype services.</p>
+
+<p>To assess the resulting overheads on the basic datapath we used a null-service and a no-service microbenchmark.</p>
+
+<p>In the null-service case, the packet arrives on an ingress pipe to the pipe-terminus, then is sent to a service module (via IPC) which immediately returns the packet to the pipe-terminus, which then sends it to an egress pipe.</p>
+
+<p>In the no-service case, the packet is merely received by the pipe-terminus and then forwarded out the egress pipe, with no invocation of a service via IPC.</p>
+
+<p>Using an enclave reduces throughput by up to 9% and increases latency by up to 8%.</p>
+
+<p>We benchmarked Wireguard, a widely used VPN tunnel.</p>
+
+<p>A commodity (16-core) server could easily maintain 98,000 simultaneous tunnels, each doing symmetric key rotation every three minutes.</p>
+
+<h2>Original Abstract</h2>
+<p>The evolution of the Internet has been shaped by its modular, layered architecture and the end-to-end principle (E2EP), which advocates for simplicity and neutrality within the network core. However, growing demands for performance, security, and privacy have led to the proliferation of edge networking services that violate E2EP by introducing application-level functionality within the network infrastructure. Despite their necessity, these services lack standardization and interconnection, fostering vendor lock-in and fragmenting the edge ecosystem. In this paper, we propose InterEdge, an architectural framework designed to restore modularity and interoperability to edge networking services, aligning them more closely with the foundational tenets of the Internet. InterEdge leverages service nodes (SNs) deployed at network edges, providing a unified execution environment with extensible libraries and supporting a Write-Once-Run-Anywhere model. We introduce the InterEdge Lightweight Protocol (ILP) to enable general, efficient, and cacheable packet processing, incorporating secure encryption mechanisms such as PSP. Our prototype prioritizes flexibility to facilitate service development and demonstrates acceptable overheads in microbenchmarks. InterEdge aims to foster a more open and integrated edge service ecosystem, promoting neutrality and ease of deployment across diverse applications and providers.</p>
+</body>
+</html>

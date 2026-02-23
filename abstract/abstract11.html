@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Decision-making processes in domains such as hiring and admissions often rely on ranking candidates based on selection criteria and quantitative measures. However, ensuring diversity among top-k ranked candidates while maintaining fairness and legal compliance presents significant challenges. We introduce Rodeo, an interactive system designed to refine SQL queries to improve diversity within ranking outputs while preserving the integrity of the ranking algorithm and scoring function. Rodeo enables users to define top-k constraints over multiple k values and applies mixed-integer linear programming (MILP) to find minimal refinements that approximate specified diversity constraints. The system supports multiple distance metrics—predicate similarity, Jaccard distance over outputs, and a ranking-based measure—to allow flexible definitions of minimality according to user preferences. Rodeo’s refinements intervene at the query level without modifying the underlying ranking logic, enabling broad applicability across ranking algorithms. Implemented with a React front-end and a Python back-end utilizing DuckDB and IBM CPLEX, Rodeo efficiently handles real-world datasets through optimization techniques. We demonstrate Rodeo’s functionality on datasets including high school students, NASA astronauts, and law students, showing how users can navigate trade-offs between query adjustments and constraint satisfaction. Rodeo offers a novel approach to balancing diversity goals and ranking fidelity in automated decision-making processes.</p>
+</body>
+</html>

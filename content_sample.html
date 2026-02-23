@@ -1,0 +1,25 @@
+<p><strong>Relevant Content for Abstract Preparation</strong></p>
+<h3 id="community-preference-optimization-compo-">Community Preference Optimization (COMPO)</h3>
+<p>Language models often aggregate diverse and conflicting human feedback, leading to outputs optimized for a hypothetical &quot;average&quot; user. COMPO addresses this by personalizing preference optimization for language models (LMs) using contextual information about the preference provider, focusing on group-level preferences. This is inspired by recommender systems, aiming to generate outputs tailored to specific communities. To this end, the COMPRED dataset was introduced, which comprises community-level preferences extracted from Reddit, enabling personalization without individual privacy risks.</p>
+<h3 id="dataset-compred">Dataset: COMPRED</h3>
+<p>COMPRED includes over 1 million preference pairs across 187 subreddits, grouped into five domains:</p>
+<p><strong>Science</strong>: Capturing divergences arising from topic specialization (e.g., /r/science vs. /r/StringTheory).</p>
+<p><strong>Finance</strong>: Highlighting distinctions between subreddits focused on varying income brackets and investing goals.</p>
+<p><strong>History</strong>: Addressing different norms for responses (e.g., /r/AskHistorians’ academic approach vs. /r/History).</p>
+<p><strong>Politics</strong>: Divided by leanings, issues, or regional focus (e.g., /r/Conservative vs. /r/askliberal).</p>
+<p><strong>Gender/Sexuality</strong>: Exploring intersections with other demographics and topics such as parenting and fashion.</p>
+<p>The dataset uses Reddit’s post-comment structure, relying on upvotes as a proxy for community preferences. Preference pairs are created by comparing responses to identical prompts posted at different times, factoring in upvotes and post timings to avoid biases.</p>
+<h3 id="motivational-experiment">Motivational Experiment</h3>
+<p>To demonstrate the value of incorporating subreddit context, reward models were trained with and without community identifiers. Models trained with subreddit context achieved higher preference prediction accuracy, particularly in datasets like politics and gender, where community-specific preferences are pronounced. In contrast, conditioning on the wrong subreddit significantly reduced performance.</p>
+<h3 id="main-experiments-compo">Main Experiments: COMPO</h3>
+<p>Using Llama-2 7B as the base model, COMPO was evaluated against baselines to assess the impact of contextualizing LMs with community identifiers:</p>
+<p><strong>SFT-NC</strong>: Finetuning with no subreddit context.</p>
+<p><strong>DPO</strong>: Direct preference optimization without subreddit context.</p>
+<p><strong>SFT-C</strong>: Finetuning with subreddit context but no preference tuning.</p>
+<p>COMPO consistently outperformed these baselines in both automated and human evaluations, with notable improvements in politically and culturally sensitive domains. Performance degraded when random subreddit identifiers were introduced, underscoring the importance of accurate contextualization.</p>
+<h3 id="human-evaluation">Human Evaluation</h3>
+<p>Human annotators evaluated the relevance of responses from COMPO and baseline models across eight subreddits. COMPO was preferred in 46.5% of cases, significantly outperforming baselines like DPO (37.1%). Annotators noted COMPO’s ability to generate responses aligned with subreddit-specific norms and values, especially in politically diverse and gender-related contexts.</p>
+<h3 id="analysis">Analysis</h3>
+<p>Further analysis revealed that subreddit context was most beneficial when subreddit predictability (via input text) was low, indicating the added value of explicit contextualization. High predictability reduced the advantage of community-specific tuning, suggesting opportunities for efficient resource allocation by routing predictable examples to generalist models.</p>
+<h3 id="conclusions">Conclusions</h3>
+<p>COMPO demonstrates the potential of personalized preference optimization for LMs by incorporating community-level context. The approach improves the relevance of model outputs to specific communities and introduces the COMPRED dataset for future research in personalized LMs. This work also highlights directions for addressing challenges like intra-community diversity, cold-start problems, and the risks of reinforcing echo chambers.</p>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    
+    <p>We believe that ensuring heterogeneous services perform well side-by-side is essential to a stable and inclusive Internet.</p>
+
+<p>One of the Internet’s core promises is to multiplex shared resources but this promise fails if a user has to pause their YouTube video every time their roommate needs to attend an online meeting.</p>
+
+<p>Hence, in this paper, we study a simple question: Are there ‘winners’ and ‘losers’ when popular services compete for bandwidth on the Internet today?</p>
+
+<p>While many researchers are concerned with this question, existing research studies focus primarily on how a single aspect of a service’s design (typically the CCA) impacts winners and losers.</p>
+
+<p>We argue that it is necessary to evaluate Internet services as a whole, as a wide range of design choices can impact a service’s contentiousness (i.e. how much ‘pressure’ it puts on competing services) and its sensitivity (i.e., how much a service suffers under competition).</p>
+
+<p>To evaluate deployed services in the wild, we present Prudentia, an independent ‘watchdog’ for Internet fairness.</p>
+
+<p>Prudentia evaluates contending Internet services by simultaneously accessing two live, deployed services through a controlled testbed, configured to emulate different link conditions.</p>
+
+<p>We believe that it is important for a public and independent watchdog that identifies winners and losers to exist.</p>
+
+<p>Over the two years Prudentia has been running, we observed changes in service stacks which have both improved and degraded fairness outcomes.</p>
+
+<p>Using Prudentia, we evaluated the behavior of several classes of applications under competition: video on demand, file distribution, web browsing, real time video streaming, and iPerf.</p>
+
+<p>The file-distribution service Mega is substantially more contentious than any other application we tested.</p>
+
+<p>In our moderately-constrained setting, services running alongside Mega achieved on average only 63% of their Max-Min Fair (MmF) share of link bandwidth; with some services achieving less than 20% of their MmF share.</p>
+
+<p>YouTube – despite using much maligned BBR – is among the least contentious.</p>
+
+<p>In the highly-constrained setting, most applications competing against YouTube achieved more than their MmF share (117% on average).</p>
+
+<p>Typically, losing services achieved on average 72% of their fair share (84% median) when subjected to contention from other services.</p>
+
+<p>Even when each service competed against another instance of itself (e.g., one OneDrive download versus one OneDrive download), services achieved only an average of 88% of their MmF share.</p>
+
+<p>Throughput is just one of the many metrics applications care about.</p>
+
+<p>In §5, we demonstrate Prudentia’s ability to serve as a foundation for even more fairness metrics by observing the effect of contention on network metrics like loss, latency and jitter, and QoE metrics such as webpage load time.</p>
+
+<p>Observation 1: Unfair outcomes are common in bandwidth-contended environments.</p>
+
+<p>In the highly-constrained setting, the median ‘losing’ service achieved 69% of their MmF share.</p>
+
+<p>73% of losing services achieved 90% or less than their MmF share, and 22% of losing services achieved 50% or less than their MmF share.</p>
+
+<p>In the moderately-constrained setting, the skew is less but still often unfair: the median ‘losing’ service achieved 86% of its MmF share.</p>
+
+<p>Observation 2: The most and least contentious services we measured use variants of the same underlying CCA; CCA alone cannot account for the differing fairness outcomes.</p>
+
+<p>Since both Mega and YouTube use variants of BBR as their underlying CCA, one might expect them to display similar fairness behavior.</p>
+
+<p>However, we see exactly the opposite: Mega is one of the most contentious services we evaluate, while YouTube is one of the least contentious.</p>
+
+<p>Services that compete against Mega obtain less than 50% of their fair share on average, while YouTube allows most competing services to get more than 120% of their fair share.</p>
+
+<p>Observation 3: Concurrent TCP flows – known to have negative fairness consequences – are one cause of Mega’s unfairness.</p>
+
+<p>Netflix and Vimeo also use up to 4 and 2 concurrent flows respectively.</p>
+
+<p>Mega uses a custom javascript framework to open up to 5 concurrent BBR flows to download files.</p>
+
+<p>For Mega, this can result in extreme disparities between the ‘winner’ (Mega) and ‘loser’ (any other incumbent).</p>
+
+<p>In the most extreme case, a competing One Drive download is able to obtain only 16% of its fair share in the moderately-constrained setting.</p>
+
+<p>Observation 4: Application-level scheduling and request patterns can shape fairness outcomes.</p>
+
+<p>Mega downloads files in batches of five chunks, with each of its five flows downloading a separate chunk.</p>
+
+<p>If one flow finishes downloading a chunk early, Mega does not start downloading a new chunk right away; it waits for all of the flows in a batch to finish before starting another batch.</p>
+
+<p>This results in “bursty" traffic patterns.</p>
+
+<p>Dropbox (which uses BBR) is able to ramp up sufficiently in-between bursts to achieve an almost fair outcome.</p>
+
+<p>In contrast, NewReno and Cubic are unable to ramp up significantly before Mega’s next burst starts.</p>
+
+<p>Observation 5: Differing trade-offs made by applications can lead to different perceived sensitivity at the user level.</p>
+
+<p>In the highly-constrained setting, Google Meet degrades in resolution more so than Teams and correspondingly in bandwidth attained.</p>
+
+<p>However, Google Meet suffers less degradation in FPS compared to Teams.</p>
+
+<p>Observation 6: Services using loss-based CCAs can cause as much as 92% of the packets to exceed ideal RTT requirements.</p>
+
+<p>We find that when competing against loss-based CCAs (and Mega), 40% to 90% of packets can experience high delay beyond the requirements defined in ITU publications.</p>
+
+<p>Our results with Mega reveal that the deployment of low queue occupancy CCAs (or at least, the deployment of BBR) is not a panacea for cross-traffic latency inflation: application layer decisions from Mega lead it to cause just as much latency inflation as services using buffer-filling algorithms.</p>
+
+<p>Observation 8: Competing traffic can double page load times in the 50 Mbps setting, and triple it in the 8 Mbps setting, adding additional wait times of up to 4 and 14 seconds respectively in the worst case.</p>
+
+<p>Wikipedia, which is mostly text, is only minimally affected by competing traffic.</p>
+
+<p>In contrast, YouTube, which consists of mostly images, sees the greatest increase in load times.</p>
+
+<p>Observation 9: Application-level behaviors can cause both unfairness and under-utilization.</p>
+
+<p>In the moderately-constrained setting, we see this with Mega causing NewReno, Cubic and One Drive to get less than 27% of their fair share while simultaneously resulting in less than 85% total link utilization in all cases.</p>
+
+<p>Observation 10: Multi-flow services induce the most loss, while BBR-based services induce the least, resulting in no loss for single-flow BBR-based services competing with other single-flow BBR services.</p>
+<h2>Original Abstract</h2>
+<p>The Internet’s promise of fair resource sharing is often undermined when heterogeneous services compete for bandwidth, leading to user dissatisfaction and performance degradation. In this work, we investigate fairness among widely-used Internet services, asking which services emerge as 'winners' or 'losers' under bandwidth contention. Unlike prior work focused primarily on congestion control algorithms (CCAs), we argue that fairness outcomes are influenced by a broader range of service-level design decisions. To empirically evaluate this, we introduce Prudentia, an independent watchdog that assesses the contentiousness and sensitivity of services under varied link conditions. Over two years, Prudentia measured competition between services such as video streaming, file distribution, and web browsing. We find that unfair bandwidth allocation is common: for example, services competing against Mega, a file-distribution application, achieved as little as 20% of their Max-Min Fair share, while services competing with YouTube often exceeded their fair share. We further show that factors like the use of multiple concurrent TCP flows and application-layer scheduling decisions play a significant role in shaping fairness. Our findings highlight the need for evaluating Internet fairness beyond CCAs, revealing complex trade-offs between throughput, latency, and user-perceived quality of experience.</p>
+</body>
+</html>

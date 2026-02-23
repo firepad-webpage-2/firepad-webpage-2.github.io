@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Depth completion, which aims to generate dense depth maps from sparse measurements and aligned RGB images, is vital for 3D perception in applications such as autonomous driving and robotics. Existing methods either rely on 2D image-plane processing or struggle to exploit 3D geometry effectively due to sparse inputs or inaccurate initial predictions. This paper introduces DeCoTR, a novel approach that performs full 3D feature learning using transformers. DeCoTR begins by enhancing the commonly used S2D depth completion network with self-attention, resulting in S2D-TR, which provides more accurate initial depth estimates without iterative propagation. The method uplifts 2D features into a dense 3D point cloud, applies neighborhood-based and global cross-attention via transformer layers (3D-TR), and incorporates point cloud normalization to stabilize learning. The final 3D features are projected back to 2D for depth prediction. DeCoTR achieves state-of-the-art performance on NYUD-v2 and KITTI-DC benchmarks and demonstrates strong generalization to unseen datasets like ScanNet and DDAD. These results highlight the effectiveness of combining dense 3D representation with transformer-based learning for accurate and robust depth completion.</p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>Computational genomics is a rapidly growing field that enables numerous biomedical advancements, including gene therapy, personalized medicine, and virus-origin study.</p>
+
+<p>Within the genome analysis pipeline, read mapping is a critical step in assembling a digitized genome.</p>
+
+<p>It maps large amounts of digitized DNA fragments, known as query reads (Q), to a previously assembled reference genome (R).</p>
+
+<p>Since read mapping has to deal with 30-60× redundant data to compensate for upstream sequencing errors, it has long been recognized as a performance bottleneck.</p>
+
+<p>While solutions to conventional read mapping have been widely studied, recent advancements in upstream sequencing technology and downstream applications have led to a fundamental paradigm shift.</p>
+
+<p>In this paper, we focus on the paradigm shift from sequence-to-sequence (S2S) mapping to sequence-to-graph (S2G) mapping.</p>
+
+<p>Conventional read mapping typically uses the S2S mapping strategy, which maps a query read to a sequential reference.</p>
+
+<p>However, recent research has questioned the effectiveness of sequential references in capturing the complexity of genetic variations.</p>
+
+<p>In the light that genetic variations are prevalent, a single sequential reference is insufficient to represent the entire gene bank of a species.</p>
+
+<p>In contrast, S2G mapping integrates known variations into a genome graph, making it unbiased toward different genotypes.</p>
+
+<p>Moreover, genome graphs can incorporate long-range relations.</p>
+
+<p>The broad-sight nature of S2G mapping makes it effective in detecting structural variations, a special variation spanning a large range, which is nearly impossible to identify with S2S mapping.</p>
+
+<p>Despite the superiority of the S2G paradigm in terms of its variant-aware and broad-sight nature, its performance is hindered by additional graph processing workloads.</p>
+
+<p>Recent software tools have shown a throughput degradation of 2-8×, with the memory footprint increased by almost an order of magnitude.</p>
+
+<p>Hence, there is an urgent need for an effective S2G acceleration method to bridge the gap between current S2G mapping and downstream genome analysis throughput requirements.</p>
+
+<p>Hardware accelerators have attempted to mitigate irregular memory access patterns and data-dependent control flow caused by graph processing operations.</p>
+
+<p>However, some of the techniques used go against the original intention of S2G, which is to be accurate, variant-aware, and broad-sighted.</p>
+
+<p>Our insight is that genome graphs share similarities with sequences.</p>
+
+<p>Our profiling results show that more than 80% of the human genome graph consists of sequential regions where vertices are connected end-to-end.</p>
+
+<p>This aligns with the fact that genetic variations are distributed sporadically among the entire genome.</p>
+
+<p>We refer to this domain-specific characteristic as quasi-sequentiality.</p>
+
+<p>Our goal is to accelerate S2G mapping by explicitly revealing the quasi-sequential characteristic of genome graphs and therefore enabling dynamic simplifications of graph operations.</p>
+
+<p>To this end, we propose a methodology that depicts the quasi-sequential structure of genome graphs to facilitate algorithm optimizations while not violating the variant-aware and broad-sight nature of S2G mapping.</p>
+
+<p>We propose HarpTree, a novel high-level representation of genome graphs.</p>
+
+<p>HarpTree exposes the quasi-sequential structure of genome graphs and is compact enough to store on-chip for low-latency accesses.</p>
+
+<p>We propose HarpExt, a seed-extension algorithm that couples seed-level filtering and base-level alignment.</p>
+
+<p>It significantly mitigates graph processing overheads in seed-extension algorithms while maintaining the broad-sight nature of the S2G mapping.</p>
+
+<p>We propose Harp, an S2G mapping accelerator that parallelizes and is co-designed with HarpExt.</p>
+
+<p>Harp achieves an average 140× speedup over the state-of-the-art S2G mapping software.</p>
+
+<p>Compared with the state-of-the-art S2G mapping accelerator, Harp provides 23.6× higher throughput while reducing the chip area by 73% in S2G mapping of long reads.</p>
+
+<p>A genome graph represents the consensus of multiple DNA sequences.</p>
+
+<p>There are different ways to interpret a genome graph, including directly storing it as a directed acyclic graph (DAG), or as a base sequence with branches.</p>
+
+<p>In a genome graph, branches only occur when there are genetic variations.</p>
+
+<p>The rarity of genetic variations is what leads to the unique quasi-sequential structure of genome graphs.</p>
+
+<p>The genomes of two human beings are, on average, 99.6% identical and 0.4% different.</p>
+
+<p>This means that a large portion of the human genome graph is sequential.</p>
+
+<p>On the other hand, the probability of genetic variation varies across the entire genome.</p>
+
+<p>Certain regions, such as genes that control physical traits, have many different kinds of variations, while other regions, like housekeeping genes, have very little variation.</p>
+
+<p>This results in a small number of regions with complex structures, while the majority of the graph is quasi-sequential.</p>
+
+<p>The sequence-to-graph mapping problem can be defined as: given a query sequence Q and a reference genome graph R, find a path P on R that maximizes an alignment score, which measures the alphabetical similarity between P and Q.</p>
+
+<p>In practice, Qs are query reads generated from sequencing machines.</p>
+
+<p>Assembling a complete DNA sequence requires mapping billions of Qs to the same reference R.</p>
+
+<p>Read mapping is typically implemented as a seed-and-extend pipeline that consists of two stages: seeding and seed-extension.</p>
+
+<p>When dealing with long reads, the length of seeds is far shorter than Q itself due to the long read length and sequencing errors.</p>
+
+<p>As a result, most extension candidates are either repetitive or false-positive, leading to a huge waste in base-level alignment throughput.</p>
+
+<p>Existing software S2G tools often include a filtering algorithm to reduce false positives.</p>
+
+<p>Filtering is a crucial but not yet well-studied algorithm that is functionally important and could be a potential performance hotspot.</p>
+
+<p>On one hand, the filtering technique can greatly reduce the number of false-positive extension candidates by two to three orders of magnitude, resulting in a significant increase in effective end-to-end throughput.</p>
+
+<p>On the other hand, the filtering stage contributes a non-negligible proportion of the total execution time, ranging from ∼1/4 to ∼3/4 in long-read datasets for both S2S and S2G mappers.</p>
+
+<p>We argue that the filtering stage has become an important yet under-explored topic in long-read mapping with the shift from S2S to S2G.</p>
+
+<p>SeGraM, the only currently available hardware S2G accelerator, only accelerates base-level alignment and is claimed to be orthogonal to filtering.</p>
+
+<p>Based on the statistics reported in SeGraM, up to 729× speedup could be achieved if all false positive candidates could be filtered out ideally.</p>
+
+<p>However, there is currently a lack of efficient hardware-accelerated filtering due to the hardware-unfriendliness of graph processing workloads in the filtering stage.</p>
+
+<p>The quasi-sequential nature of genome graphs allows for compressed representations of their structures.</p>
+
+<p>In this work, we use HarpTree as a thumbnail to achieve this.</p>
+
+<p>While the original graph can be several GBs in size, HarpTree reduces the size to less than 1 MB by only storing the nesting hierarchy of super-structures and neglecting tiny branches.</p>
+
+<p>Super-structures are subgraphs that have only two boundary vertices (one entrance and one exit), without any edges crossing the boundary.</p>
+
+<p>The construction of HarpTree consists of four steps: (1) identify all super-structures; (2) build HarpTree based on the nesting relationship; (3) prune HarpTree by removing or merging its nodes to reduce the size and depth; and (4) augment tree nodes with metadata that facilitates online algorithms.</p>
+
+<p>Our experimental results suggest that this technique can reduce data size by over three orders of magnitude, making it possible to fit into a 1 MB on-chip SRAM.</p>
+
+<p>Harp follows a lightweight design principle, yet achieves comparable end-to-end performance with state-of-the-art mapping tools and accelerators.</p>
+
+<p>Harp outperforms GraphAligner, Minigraph, and SeGraM in terms of throughput, with an average improvement of 140.3×, 79.5×, and 23.6×
+<h2>Original Abstract</h2>
+<p>This paper addresses the challenges of accelerating sequence-to-graph (S2G) mapping in genome analysis, a critical step in computational genomics. Traditional sequence-to-sequence (S2S) mapping has been limited in its ability to capture genetic variations due to its reliance on sequential reference genomes. In contrast, S2G mapping integrates genome graphs, which provide a more comprehensive view of genetic variations. However, S2G mapping faces significant performance issues due to the increased complexity of graph processing. The authors propose Harp, a novel accelerator designed to exploit the quasi-sequential nature of genome graphs, a characteristic where over 80% of the human genome graph consists of sequential regions. To address the performance bottleneck, the authors introduce HarpTree, a compact high-level representation of genome graphs, and HarpExt, an algorithm that mitigates the overhead of graph processing during the seed-extension stage. Harp significantly accelerates S2G mapping, achieving up to 140× speedup over existing software and outperforming current hardware accelerators by 23.6× in throughput while reducing chip area by 73%. This work introduces a promising direction for improving genome mapping accuracy and efficiency, which is crucial for applications like personalized medicine and gene therapy.</p>
+    </body>
+</html>

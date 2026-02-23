@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>CHERI (Capability Hardware Enhanced RISC Instructions) is a hardware-software co-design developed to address persistent memory safety vulnerabilities in C-based systems. By extending conventional ISAs with unforgeable capabilities, CHERI enables fine-grained memory protection and scalable compartmentalization. This paper investigates the formal semantics of CHERI C, the dialect of C used to program CHERI-enabled systems. The authors identify key design tensions between supporting legacy codebases, preserving performance, and enforcing deterministic mitigation of memory safety errors. They present a rigorous, mechanised semantics for CHERI C as an extension of the Cerberus ISO C model, including a Coq-verified memory object model and an executable OCaml semantics. The semantics captures nuanced interactions involving capabilities, undefined behavior, and pointer provenance. Validation includes collaboration with CHERI implementers, experimental testing on 94 semantic scenarios across multiple CHERI C compilers, and identification of conformance gaps. The resulting semantics defines new forms of undefined behavior unique to CHERI C and clarifies guarantees offered by capability-based memory safety. This work provides a foundational tool for reasoning about, verifying, and analyzing CHERI C programs, contributing to more secure systems software.</p>
+</body>
+</html>

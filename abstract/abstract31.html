@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Self-supervised learning (SSL) has shown susceptibility to backdoor attacks, where adversarially crafted poisoned samples compromise downstream model behavior. Existing attacks often rely on out-of-distribution, highly clustered poisoned data, which can be detected via their abnormal concentration in feature space. In this work, we introduce DRUPE (DistRibUtion Preserving backdoor attack in sElf-supervised learning), a novel attack that transforms poisoned samples to appear in-distribution and reduces their pairwise similarity, making detection significantly harder. DRUPE estimates the clean data distribution using Kernel Density Estimation and minimizes the distributional gap via sliced-Wasserstein distance. It also disperses poisoned data across the feature space to mimic the target-class distribution. This design evades detection by state-of-the-art defenses such as Beatrix and DECREE, which rely on concentration or embedding similarity. Empirically, DRUPE achieves a 10× smaller distributional difference and 3× lower sample similarity than prior attacks, while maintaining high benign and attack performance across five datasets. Our results reveal that distributional blending is an effective and stealthy strategy for backdoor injection in SSL, highlighting new challenges for developing robust defenses.</p>
+</body>
+</html>

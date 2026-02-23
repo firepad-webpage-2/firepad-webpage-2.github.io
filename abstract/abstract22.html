@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Visually rich documents such as invoices, forms, and contracts pose significant challenges for existing language models due to their complex layouts and spatially dispersed content. While vision-language models address these challenges by incorporating visual encoders, they often rely on heavyweight architectures. This paper introduces DocLLM, a lightweight, multi-modal extension to standard language models that integrates spatial layout information without requiring vision encoders. By treating bounding box coordinates of OCR-extracted text as a separate modality, DocLLM disentangles spatial and textual interactions via an extended self-attention mechanism. It replaces traditional next-token prediction with a novel block infilling objective conditioned on both preceding and succeeding tokens, better capturing context in irregular layouts. Pre-trained on unlabeled documents and fine-tuned using instruction data from 16 datasets spanning four Document AI tasks (VQA, NLI, KIE, and CLS), DocLLM demonstrates strong generalization. It achieves performance gains of 15-61% on unseen datasets and outperforms larger vision-language models like mPLUG-DocOwl and UReader, particularly in layout-sensitive tasks. By preserving a causal decoder architecture with minimal overhead, DocLLM offers a scalable and effective solution for document understanding without sacrificing speed or simplicity.</p>
+</body>
+</html>

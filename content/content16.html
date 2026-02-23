@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>GUI testing is common for testing the functionality of mobile apps.</p>
+
+<p>A GUI test case is composed of some ordered test events and assertions.</p>
+
+<p>Manually constructing GUI test cases is tedious and time-consuming.</p>
+
+<p>To reduce the cost of manually writing GUI test cases, various approaches have been proposed to migrate GUI test cases that share similar functionalities from a source app to a target app.</p>
+
+<p>The key to fulfill the migration task is widget matching (i.e., mapping source widgets to their corresponding target widgets).</p>
+
+<p>The main limitation of this category is that lower classification accuracy of widget labels can cause lower matching accuracy of widgets.</p>
+
+<p>A typical matching approach uses a manually defined matching function to calculate the matching relation between a source widget and a target widget, where the representations of widgets use word embeddings.</p>
+
+<p>The existing matching approaches may fail to precisely capture the semantics of individual words, as they cannot effectively leverage contextual information.</p>
+
+<p>Matching functions developed in this way can hardly adapt to diverse matching relations in real-world apps.</p>
+
+<p>To address the limitations of the existing matching approaches, we propose TEMdroid (TEst Migration), a novel learning-based widget matching approach for test case migration.</p>
+
+<p>TEMdroid is trained with migration data for GUI test cases and uses BERT to incorporate contextual information instead of static word embeddings.</p>
+
+<p>Specifically, we use migration data for GUI test cases to train the matching model, and design three modules of this model: the context-extraction, semantic-alignment, and widget-assessment modules.</p>
+
+<p>The context-extraction module uses BERT to incorporate contextual information.</p>
+
+<p>The semantic-alignment module employs a Siamese network to align the representations of two widgets into the same semantic space.</p>
+
+<p>The widget-assessment module measures the similarity between two widgets using the cosine distance.</p>
+
+<p>We design a two-stage training strategy that incorporates the idea of mining hard samples.</p>
+
+<p>We first train a hard-negative sample miner by using all the positive samples from the migration data and an equal number of randomly selected negative samples from the migration data.</p>
+
+<p>We apply this miner to mine hard-negative samples in the migration data.</p>
+
+<p>We then train a matching model for identifying the matching relations of the widgets using all the positive samples in the migration data and all the mined hard-negative samples.</p>
+
+<p>TEMdroid extracts widget text, widget explanation, and widget identity from each widget.</p>
+
+<p>If all the three features are empty for a widget, TEMdroid uses the neighbor text to represent this widget.</p>
+
+<p>The pooling mechanism combines these embeddings into a high-dimensional vector representing the widget.</p>
+
+<p>Instead of employing the max or mean pooling mechanism, TEMdroid employs sentence embedding to better capture the widget semantics.</p>
+
+<p>The Siamese network shares parameters between the two sub-networks, thereby transforming the representations of both widgets into a common semantic space.</p>
+
+<p>Following previous matching models, TEMdroid uses the cosine distance between the generated vectors from MLPs as the similarity assessment metric.</p>
+
+<p>To enhance BERT’s comprehension of the semantics of widgets in widget matching, we fine-tune a pre-trained BERT using migration data for GUI test cases during the training process.</p>
+
+<p>The training process of TEMdroid’s matching model uses stochastic gradient descent with the Adam optimizer.</p>
+
+<p>TEMdroid uses the source action, source input value, and target widget to synthesize the target event.</p>
+
+<p>TEMdroid considers common actions of the widget type and finds the one that properly works on the widget in the target app as the action of the target event.</p>
+
+<p>TEMdroid achieves a Top1 accuracy of 76%, improving more than 17% over the baseline approaches.</p>
+
+<p>In terms of test case migration, the F1-score for TEMdroid is 89%, outperforming the baseline approach by 7%.</p>
+
+<p>TEMdroid achieves an F1-score of 87% in real-world scenarios, demonstrating its usefulness.</p>
+
+<p>We evaluate the effectiveness of TEMdroid within the same categories and compare it with baselines based on the SemFinder dataset.</p>
+
+<p>TEMdroid achieves a precision of 86%, a recall of 93%, and an F1-score of 89%, which are 12%, 2%, and 7% higher than Craftdroid, respectively.</p>
+
+<p>TEMdroid’s precision score is 12% higher than Craftdroid, indicating that TEMdroid is more likely to generate fully correct test cases without the need for human intervention.</p>
+
+<p>TEMdroid is able to migrate a test case with an average of 9 minutes, while Craftdroid has an average runtime of approximately 89 minutes for each test case migration.</p>
+
+<p>TEMdroid saves 82% of manual effort compared with writing the desired test cases from scratch.</p>
+
+<p>The inaccuracies are related to incorrect widget matching and incorrect selection of candidate widgets.</p>
+
+<p>TEMdroid is effective and substantially outperforms the baselines in event matching and test case migration.</p>
+
+
+<h2> Original Abstract</h2>
+<p>Graphical User Interface (GUI) testing is essential for validating the functionality of mobile applications, but manually constructing GUI test cases is labor-intensive. To reduce this burden, existing methods attempt to migrate test cases between apps with similar functionalities by matching widgets. However, traditional matching approaches often rely on static word embeddings and manually defined functions, which fail to effectively capture contextual semantics and adapt to diverse real-world apps. To address these limitations, we propose TEMdroid, a novel learning-based widget matching approach for test case migration. TEMdroid leverages BERT for contextual information extraction and incorporates a Siamese network for semantic alignment, followed by a widget similarity assessment using cosine distance. We design a two-stage training strategy that incorporates hard-negative sample mining to enhance the matching model’s robustness. Extensive experiments on the SemFinder dataset demonstrate that TEMdroid significantly outperforms baseline approaches, achieving an F1-score of 89% in migration tasks, a 12% higher precision than Craftdroid, and reducing migration time by 82%. TEMdroid proves effective in automating GUI test case migration, achieving accurate and efficient results in both controlled and real-world scenarios.</p>
+    </body>
+</html>

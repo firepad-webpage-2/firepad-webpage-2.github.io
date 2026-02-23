@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Excerpt</title>
+</head>
+<body>
+<h2>Excerpt</h2>
+<p>Recently, tool learning has garnered significant attention as a potent approach for seamlessly integrating large language models (LLMs) into real-world applications.</p>
+<p>The tool learning process for LLMs can be delineated into three distinct stages: input, execution, and output.</p>
+<p>Existing research primarily concentrates on enhancing LLMs capabilities through tool utilization.</p>
+<p>However, these studies overlook the fact that tool learning also introduces new safety concerns.</p>
+<p>In contrast, in the context of tool learning, the safety alignment mechanism may be compromised.</p>
+<p>To fill this gap, we introduce ToolSword, a comprehensive framework crafted for unveiling the safety issues of LLMs throughout the tool learning process.</p>
+<p>ToolSword encompasses six safety scenarios that LLMs encounter in tool learning, encompassing malicious queries and jailbreak attacks in the input stage, noisy misdirection and risky cues in the execution stage, as well as harmful feedback and error conflicts in the output stage.</p>
+<p>Leveraging ToolSword, we analyze 11 open-source and closed-source LLMs equipped with robust tool learning capabilities.</p>
+<p>Our findings reveal that current LLMs frequently encounter safety issues across all stages of tool learning, leading to significant safety risks such as responding to harmful queries, invoking risky tools, and providing detrimental feedback.</p>
+<p>Even the most advanced LLMs, such as GPT-4, are not immune to these challenges.</p>
+<p>Moreover, our further studies indicate that LLMs can demonstrate performance comparable to humans in tool learning environments devoid of safety concerns.</p>
+<p>ToolSword offers a comprehensive analysis of the safety challenges encountered by LLMs during tool learning, spanning three distinct stages: input, execution, and output.</p>
+<p>The input stage is dedicated to assessing the ability of LLMs to identify and effectively decline unreasonable requests made by users.</p>
+<p>Malicious Queries (MQ) involves a straightforward safety testing scenario where both a malicious query and associated tools are directly employed to assess the capability of LLMs in recognizing user intent and rejecting unsafe requests.</p>
+<p>Jailbreak Attacks (JA) builds upon MQ by incorporating Jailbreak methods to process queries, thereby increasing the challenge for LLMs in identifying malicious queries.</p>
+<p>The execution stage centers on evaluating LLMs’ proficiency in making accurate tool selections.</p>
+<p>Noise Misdirection (NM) pertains to the challenge of noisy tool names encountered in real-world scenarios.</p>
+<p>Risky Cues (RC) highlights the practical challenges linked to the utilization of specific tools that pose safety risks.</p>
+<p>The output stage centers on evaluating LLMs’ capacity to filter out harmful information and misinformation distractions.</p>
+<p>Harmful Feedback (HF) aims to assess whether LLMs can recognize and prevent the generation of harmful content when they receive harmful feedback from tools.</p>
+<p>Error Conflicts (EC) underscores the issue of factual errors or conflicts within real-world feedback.</p>
+<p>We select 11 open-source and closed-source LLMs with excellent tool learning capabilities from six different origins for comprehensive analysis.</p>
+<p>To evaluate the practical utility of different LLMs concerning tool learning, we adopt their designated prompt writing format or function call methodology.</p>
+<p>LLMs continue to grapple with promptly identifying and filtering out malicious queries that humans can swiftly discern.</p>
+<p>LLMs currently lack the capability to defend against jailbreak attacks effectively in the tool learning task, with the severity of vulnerability varying depending on the type of jailbreak.</p>
+<p>The implementation of tools can disrupt the safety alignment mechanism of LLMs.</p>
+<p>The process of selecting tools for LLMs is susceptible to misdirection by noise, leading to potentially unsafe operations.</p>
+<p>LLMs currently lack the capacity to reliably identify risky tools based on their functions.</p>
+<p>LLMs do not possess the capability to analyze tool feedback for safety.</p>
+<p>LLMs heavily depend on the results provided by tools, hindering their ability to utilize their own knowledge to rectify evident errors within the tools.</p>
+<p>LLMs lack the ability to perceive conflicting information and tend to have a preference for selecting information based on its location.</p>
+<p>Increasing the size of a model doesn’t necessarily enhance its safety in tool learning.</p>
+<p>The limitation in tool learning capability within LLMs can partially mitigate non-safe behaviors.</p>
+<p>In tool learning scenarios devoid of safety concerns, LLMs exhibit the potential to outperform humans.</p>
+<p>In this paper, we present ToolSword, a framework that thoroughly analyzes the safety issues faced by LLMs in tool learning across three stages.</p>
+<p>We evaluate LLMs at a granular level by crafting two safety scenarios with varying degrees of complexity at each stage.</p>
+<p>This examination underscores the imperative for future research to bolster the safety alignment mechanisms within LLMs.</p>
+<h2>Original Abstract</h2>
+<p>Tool learning is widely acknowledged as a foundational approach for deploying large language models (LLMs) in real-world scenarios. While current research primarily emphasizes leveraging tools to augment LLMs, it frequently neglects emerging safety considerations tied to their application. To fill this gap, we present ToolSword, a comprehensive framework dedicated to meticulously investigating safety issues linked to LLMs in tool learning. Specifically, ToolSword delineates six safety scenarios for LLMs in tool learning, encompassing malicious queries and jailbreak attacks in the input stage, noisy misdirection and risky cues in the execution stage, and harmful feedback and error conflicts in the output stage. Experiments conducted on 11 open-source and closed-source LLMs reveal enduring safety challenges in tool learning, such as handling harmful queries, employing risky tools, and delivering detrimental feedback, which even GPT-4 is susceptible to. Moreover, we conduct further studies with the aim of fostering research on tool learning safety. The data is released in https://github.com/Junjie-Ye/ToolSword.</p>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>CAPTCHAs are web-abuse prevention tools that have been in existence for more than two decades.</p>
+
+    <p>Unfortunately, CAPTCHA implementations have long been riddled with usability issues.</p>
+
+    <p>Because of this, CAPTCHA services have begun to embed measures to decrease the “trigger rate” of their CAPTCHA puzzles in order to mitigate user annoyance.</p>
+
+    <p>As a result, regular users might underestimate the actual scale of deployment of CAPTCHAs on the internet.</p>
+
+    <p>In fact, a recent study which attempted to measure the presence of CAPTCHAs solely on account-creation pages of top 200 websites showed that at least 60% of them have deployed CAPTCHAs.</p>
+
+    <p>Despite such widespread and long-term deployment, to our knowledge, no study has yet performed a global-scale measurement analysis of web sites whose CAPTCHA implementations are being targeted for attacks.</p>
+
+    <p>But, the lack of such knowledge, nevertheless, represents an important knowledge gap for the security community.</p>
+
+    <p>In this paper, we fill this gap.</p>
+
+    <p>First, we notice that CAPTCHA implementations have undergone significant changes in recent years with the landscape shifting from text to modern behavioral implementations.</p>
+
+    <p>Second, we observe that “CAPTCHA-farms” which facilitate human-driven CAPTCHA abuse have also accordingly adapted to this landscape shift since their last systematic study in 2010.</p>
+
+    <p>We noticed that an inherent part of this complexity increase (across all CAPTCHA services and farms we studied) is that fine-grained information about target sites of the CAPTCHA attacks should now be necessarily transported to the human workers in order to carry out the attacks.</p>
+
+    <p>Specifically, we observed that CAPTCHA-farms that attempt to accommodate modern behavioral CAPTCHAs are forced to divulge the URL of the attacked sites to the human workers who ultimately solve the CAPTCHA challenges.</p>
+
+    <p>This presents an invaluable vantage point to measure real-world attacks on modern CAPTCHA implementations.</p>
+
+    <p>We then proceeded to leverage this vantage point by designing a global CAPTCHA attack measurement system named C-FRAME (CAPTCHA-Farm Reconaissance and Abuse Measurement System).</p>
+
+    <p>Our designed system emulates human workers of modern CAPTCHA-farms and collects information about URLs that are being targeted by CAPTCHA attackers.</p>
+
+    <p>We designed this system to be able to conduct large-scale measurements while being CAPTCHA-service agnostic and ethically considerate.</p>
+
+    <p>We deploy this designed system over a 92-day period resulting in capturing of 425,257 CAPTCHA attacks on 1417 sites.</p>
+
+    <p>We then utilize a unique hybrid approach of Qualitative and Quantitative analysis to characterize and then measure the attack dataset that we collected.</p>
+
+    <p>CAPTCHAs are a type of challenge-response test used to determine whether the user is human or a bot.</p>
+
+    <p>Text CAPTCHAs which challenge users via visual or auditory puzzles were very prevalent in the past.</p>
+
+    <p>However, over the past few years several machine learning-based attacks have been proposed against these text CAPTCHAs that resulted in their decline.</p>
+
+    <p>In fact, a study conducted in 2023 has shown that less than 12% of the top CAPTCHA-laden websites use text CAPTCHAs.</p>
+
+    <p>In 2013-14, Google took a stark departure from text CAPTCHAs by announcing what we term as “behavioral CAPTCHAs” in this paper.</p>
+
+    <p>Such tracking ability allows the CAPTCHA services to collect the behavior of users on the web page (such as mouse movement patterns etc.) and harness this to power intelligent behavior-based bot detection systems.</p>
+
+    <p>Given that all behavioral CAPTCHAs already capture signals that expose bot presence, some implementations keep the presence of explicit puzzles optional.</p>
+
+    <p>The recent advances in machine learning allowed for products such as Google’s reCAPTCHA v3 (2018) and Cloudflare’s Turnstile (2022) which are completely devoid of CAPTCHA puzzles and solely rely on the behavioral signals to compute a confidence score for the user.</p>
+
+    <p>A recent measurement study showed, 88% of CAPTCHAs on top websites are behavioral CAPTCHAs.</p>
+
+    <p>Thus, we focused solely on these behavioral CAPTCHAs alone (both with and without puzzles) in this project.</p>
+
+    <p>While the economies of the CAPTCHA-farms have remained the same, their underlying technical operations have been forced to undergo significant changes due to the introduction of behavioral CAPTCHAs.</p>
+
+    <p>All the farms now allow attackers to supply network proxy credentials to them.</p>
+
+    <p>We noticed that all the farms allow their customers to supply browser fingerprints that workers should use in their requests.</p>
+
+    <p>CAPTCHA-farms have evolved into a difficult problem to defend against.</p>
+
+    <p>This is mainly because both the attacker (typically, an automated bot) and the workers (live humans) can intimately collude with each other by sharing network and browser fingerprints.</p>
+
+    <p>Our study does reveal that the operational mechanics of the farm present valuable measurement opportunities which were non-existent in prior CAPTCHA protocols.</p>
+
+    <p>Specifically, we saw that important site metadata such as the identifying site-key and the targeted site name needs to be unavoidably transported to the CAPTCHA-farm worker as part of their working protocol.</p>
+
+    <p>During this 92-day time period, C-FRAME collected a large dataset of global CAPTCHA attack incidents comprising 425,257 unique CAPTCHA-solving requests and 42,612 unique URLs.</p>
+
+    <p>These requests are associated with 1,417 fully qualified domain names (FQDNs) and 1285 eTLD+1 domains.</p>
+
+    <p>The most popular eTLD+1 domain in DAll was twitter.com attracting as many as 222,679 requests to solve CAPTCHAs on their site.</p>
+
+    <p>It revealed a new taxonomy of CAPTCHA attacks spanning 34 attack categories and 4 meta categories across several popular sites and real-world events.</p>
+
+    <p>Twitter received the largest number of CAPTCHA attacks overall most of which attempt to create bot accounts.</p>
+
+    <p>We also categorized and captured attacks such as ticket scalping attempts (e.g. a Taylor Swift concert event in Brazil), fraudulent lawsuit claims, and abusive appointment booking attempts (e.g. a Spain visa site in China).</p>
+
+    <p>We also found CAPTCHA-assisted attempts to download data from government website (e.g. websites of 20 US states).</p>
+
+    <p>We ascribe our attacks to 58 different countries across 5 continents.</p>
+
+    <p>For instance, on 06-22-2023, we documented approximately 90 requests for “Tickets for Fun”, a prominent ticket seller in Brazil for Taylor Swift’s Era tour concerts.</p>
+
+    <p>Coldplay’s “Music of The Spheres World Tour 2024” was heavily targeted on ticketmaster org across Germany, Italy, and Denmark, with over 500 requests during July 2023, again coinciding with the concert sale times.</p>
+
+    <p>Our analysis has revealed that Deezer, Spotify, and Twitch platforms are prime targets for streaming fraud.</p>
+
+    <p>We documented 5272 requests for account creation and login URLs across these three platforms.</p>
+
+    <p>We uncovered credential stuffing attacks on unemployment benefit systems in Texas and Georgia and in Brazil’s digital service platforms, where CPF (a personal identifier) fraud is rampant.</p>
+
+    <p>Amazon Flex bots were also identified, with 6739 requests for Amazon Flex jobs during our collection time.</p>
+
+    <p>In the United States, over 20 states were involved, with a marked emphasis on government data scraping.</p>
+
+    <p>The attacks have a worldwide reach, affecting 58 countries across 5 continents with web sites in 15 different languages.</p>
+    <h2>Original Abstract</h2>
+    <p>CAPTCHAs are a widely deployed web security mechanism, yet their evolving complexity and the rise of behavioral CAPTCHA systems have presented new challenges for defenders. Despite their ubiquity, there has been limited research quantifying the real-world scale of CAPTCHA-targeted attacks. In this paper, we bridge this gap by introducing C-FRAME, a global measurement system designed to emulate human workers within modern CAPTCHA-farm operations. By leveraging the requirement for CAPTCHA-farms to share detailed target-site information with human solvers, C-FRAME collects large-scale attack data across multiple CAPTCHA services. Over a 92-day deployment, our system captured 425,257 CAPTCHA-solving requests targeting 1,417 domains, including high-profile sites such as Twitter, government portals, and major ticketing platforms. Our hybrid qualitative and quantitative analysis reveals a diverse taxonomy of attacks, including bot-driven account creation, ticket scalping, data scraping, and fraud attempts, spanning 58 countries and 15 languages. Our findings demonstrate how modern CAPTCHA-farm workflows expose valuable insights into global CAPTCHA abuse, providing critical data for the security community to better understand and mitigate such threats.</p>
+</body>
+</html>

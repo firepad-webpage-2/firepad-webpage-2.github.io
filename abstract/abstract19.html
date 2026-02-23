@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Serverless computing has transformed cloud application deployment by simplifying resource utilization across various domains, including web services, machine learning, and scientific computing. However, a significant challenge in serverless environments is the cold-start problem, where the time required to initialize containers increases function response latency. This issue is exacerbated by the bursty and unpredictable nature of serverless workloads, with mispredictions often leading to frequent cold-starts and memory waste. Existing solutions, such as partial container caching and container sharing, struggle to balance cold-start mitigation with efficient memory usage. This paper introduces RainbowCake, a novel approach that synergizes partial caching and container sharing to address these issues. RainbowCake employs a layer-wise container caching and sharing strategy, leveraging historical invocation data to tailor pre-warming and keep-alive decisions. By dynamically managing container layers and maintaining idle containers for cross-function reuse, RainbowCake minimizes both cold-start latency and memory waste. Implemented in Apache OpenWhisk, experimental results demonstrate that RainbowCake reduces startup latency by 68% and container memory waste by 77%, while incurring negligible operational overhead. These findings highlight RainbowCake’s effectiveness in optimizing serverless function performance.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Bridging the gap between continuous neural representations and the inherently discrete nature of natural language remains a critical challenge in natural language processing (NLP). While embedding techniques have enabled significant advances, they introduce large vocabularies and embedding matrices, particularly in cross-lingual models, and make it difficult to model explicit token relations. To address this, we build upon recent work on contrastive hashing, which compresses continuous representations into binary codes that retain task-relevant information. We introduce structured contrastive hashing, a novel framework that integrates binary representations into output layers, enabling models to generate binary labels for syntactic trees. Specifically, we extend the CKY parsing algorithm to the bit level, define a new similarity function based on span marginal probabilities, and propose a tailored contrastive loss to stabilize training and address issues with negative instance selection. Our approach jointly learns syntactic structures and label representations in binary format. Experiments across constituency parsing and nested named entity recognition tasks demonstrate that our model achieves competitive or superior performance compared to existing graph-based and sequential labeling methods. These results highlight the effectiveness of contrastive learning in enhancing representation learning for structured prediction tasks.</p>
+</body>
+</html>

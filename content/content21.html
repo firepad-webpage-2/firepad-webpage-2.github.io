@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>Human action anticipation aims at predicting the future action before it happens based on the current observation.</p>
+    <p>It is an important research topic for intelligent systems since it is widely applied for autonomous driving, human-robot interaction, and smart homes.</p>
+    <p>The task is very challenging as the future observation is unavailable and the anticipation needs to be made timely for real-time purposes.</p>
+    <p>Under most anticipation task settings, the actions are represented as (verb, noun) pairs, which means both verbs and nouns needed to be predicted correctly.</p>
+    <p>Most existing methods for action anticipation tackle the task as an one-class action classification problem without considering the underlying dynamics and dependencies between verbs and nouns.</p>
+    <p>These models directly output the action prediction, which is later decomposed into verb and noun predictions in a post-processing.</p>
+    <p>However, this mechanism has a critical drawback.</p>
+    <p>If either the verb or noun of the action is difficult to predict due to the limited visual cues, the action can be very difficult to predict correctly since it requires both verb and noun to be correct.</p>
+    <p>On the other hand, if either verb or noun is known, the remaining part is much easier to predict.</p>
+    <p>In addition, the predictive uncertainty can be greatly reduced because the p((verb, noun)|X) is converted to p(verb|X,noun) or p(noun|X, verb), where X is the input.</p>
+    <p>The verb/noun information serves as a prior for the complementary part so the anticipation is simplified.</p>
+    <p>To address the above issue of verb-noun modeling, we introduce Uncertainty-aware Action Decoupling Transformer (UADT), which decouples the action anticipation into verb and noun anticipations.</p>
+    <p>Specifically, UADT is composed of a verb-to-noun model and a noun-to-verb model.</p>
+    <p>Each model is composed of an encoder and a decoder.</p>
+    <p>The encoder of the verb-to-noun model aims at generating verb embedding and its corresponding uncertainty.</p>
+    <p>Then the embedding and its uncertainty are taken by the decoder to help the noun anticipation.</p>
+    <p>We model the predictive uncertainty of the model because the encoder can generate bad embedding, which propagates the error to the following predictions.</p>
+    <p>By quantifying the predictive uncertainty, we can leverage it to select reliable information and to filter the redundancy and irrelevance.</p>
+    <p>In this way, the noun anticipation can be improved by benefiting from the verb information.</p>
+    <p>Inversely, the noun-to-verb model first generates noun embeddings and the corresponding uncertainty.</p>
+    <p>Then it performs the verb anticipation with assistance of noun information.</p>
+    <p>In the end, we obtain the augmented noun and verb predictions.</p>
+    <p>We dynamically combine them for the joint action anticipation based on their predictive uncertainties.</p>
+    <p>To train UADT, we adopt a two-stage training strategy.</p>
+    <p>The encoders and decoders are trained with different loss functions to guide them for their specific purposes.</p>
+    <p>We firstly train the encoders to generate the high-quality embeddings.</p>
+    <p>Then we fix the encoders and train decoders for joint action anticipation.</p>
+    <p>We evaluated UADT on both egocentric and third-person action anticipation datasets including EPIC-KITCHENS-100, EGTEA Gaze+, and 50-Salads.</p>
+    <p>Experiments results show the verb-to-noun model and noun-to-verb model effectively improve the anticipation of noun and verb respectively.</p>
+    <p>We also demonstrate the effectiveness and benefits of proposed mechanisms and components by extensive ablation studies.</p>
+    <p>Only using the RGB modality, our proposed UADT outperforms the state-of-the-art RAFTformer by a large margin with both K400 and K700 features.</p>
+    <p>We also show that the performance can be further boosted by incorporating more modalities in the ablation study.</p>
+    <p>Using the same TSN/1N1k features, our UADT significantly outperforms the RAFTformer by 4.9%.</p>
+    <p>Our UADT outperforms the Latent-goal by 3.1% using the same I3D features.</p>
+    <p>This demonstrates that UADT can generalize to third-person dataset for anticipation.</p>
+    <p>The optical flow features significantly improve the verb anticipation since they contain motion patterns.</p>
+    <p>The object features are relatively effective for noun anticipation as the detected objects are highly-related to the noun of the action.</p>
+    <p>The uncertainty-based single-stream VtN/NtV and UADT outperform their baseline version, which demonstrates the effectiveness of the encoder uncertainty modeling.</p>
+    <p>The baseline method is implemented in same architecture without uncertainty modeling.</p>
+    <p>From the results, the epistemic uncertainty is more effective than the other two types of uncertainties, which demonstrates our claim in Sec. 3.3.</p>
+    <p>From the plots, it takes around 25 sampling times to obtain the relatively stable performance.</p>
+    <p>Although the performance is still improving by increasing sampling times, we reported the performance of 25 sampling times in this paper due to the efficiency concern.</p>
+    <p>The end-to-end methods obtain better results because the encoders are further optimized for anticipation after being trained for generating embeddings.</p>
+    <p>The two-stage E2E converges faster than the one-stage E2E since the encoders are learned beforehand.</p>
+    <p>In the comparison with state-of-the-art methods, we reported the results obtained by the 2S training instead of E2E training because the latter increases the training cost.</p>
+    <p>The top-K loss effectively improve the performance.</p>
+    <p>We set K = 5 and λ = 6 since they output the best results under different settings.</p>
+    <p>The uncertainty-based fusion outperforms other methods using either K400 or K700 features, which demonstrates its effectiveness.</p>
+    <p>In this paper, we introduced UADT for action anticipation.</p>
+    <p>By combining a verb-to-noun model and a noun-to-verb model, the verb and noun predictions assist each other to improve joint action anticipation.</p>
+    <p>In the future, we plan to extend it for long-term action anticipation that aims at predicting a larger number of future actions.</p>
+    <p>And we also plan to leverage large language models to capture the verb and noun dependencies.</p>
+    <h2>Original Abstract</h2> 
+<p>This paper addresses the challenge of human action anticipation, a task critical for intelligent systems in domains like autonomous driving and human-robot interaction. Traditional methods treat action anticipation as a one-class classification problem, neglecting the dependencies between verb and noun components of actions. To overcome this, we propose the Uncertainty-aware Action Decoupling Transformer (UADT), which models verb-to-noun and noun-to-verb anticipation separately, incorporating predictive uncertainty to guide information flow between components. UADT employs a two-stage training strategy, optimizing encoders for embedding generation before training decoders for joint action prediction. Evaluated on multiple datasets including EPIC-KITCHENS-100 and 50-Salads, UADT outperforms state-of-the-art methods by significant margins using only RGB features, with further gains observed through multimodal inputs. Extensive ablation studies confirm the value of uncertainty modeling and the mutual benefit of verb-noun decoupling. This work demonstrates the effectiveness of uncertainty-aware decoupled modeling for real-time action anticipation and opens paths for extending the approach to long-term forecasting and integration with large language models.</p>
+    </body>
+</html>

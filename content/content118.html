@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+        <p>GNNs have witnessed widespread adoption for graph-level prediction tasks due to their impressive performance.</p>
+      
+        <p>Unfortunately, like other deep-learning models, GNNs are considered black boxes due to their lack of transparency and interpretability.</p>
+      
+        <p>This lack of interpretability presents a significant barrier to their adoption in critical domains such as healthcare, finance, and law enforcement.</p>
+      
+        <p>Additionally, the ability to explain predictions is crucial for understanding potential flaws in the model and generating insights for further refinement.</p>
+      
+        <p>Instance-level focus limits its ability to extract patterns utilized by GNNs at a global level across a multitude of graphs and how these patterns are combined into a single decision-making rule.</p>
+      
+        <p>The objective of our work is to develop an end-to-end global explainer that mines the subgraph concepts used by a black-box GNN model, and then uncovers the boolean logic used by the GNN over these concepts to make its predictions.</p>
+      
+        <p>XGNN and GNNInterpreter are generative-modeling based global explainers.</p>
+      
+        <p>This dependency creates a disconnect with the objective, as instance-level explainers lack a global understanding of the model.</p>
+      
+        <p>Our proposed approach develops an end-to-end pipeline that mines concepts based on global trends.</p>
+      
+        <p>In GLGEXPLAINER, each concept in the formula corresponds to a feature vector and not a subgraph.</p>
+      
+        <p>GLGEXPLAINER randomly selects a subgraph from the cluster, assuming all subgraphs in a cluster are similar.</p>
+      
+        <p>This assumption is rarely true in practice, compromising both interpretability and efficacy.</p>
+      
+        <p>Due to the reliance on instance-level explanations, even when data are drawn from the same distribution, the base concept candidates vary, and consequently so does the eventual formula.</p>
+      
+        <p>We present an end-to-end, post-hoc, global GNN explainer called GRAPHTRAIL.</p>
+      
+        <p>GRAPHTRAIL exploits the fact that a message passing GNN decomposes a graph into a set of computation trees.</p>
+      
+        <p>The global impact of computation trees is assessed using Shapley values, and then mapped to a boolean formula over concepts using symbolic regression.</p>
+      
+        <p>Extensive experiments across a diverse set of datasets, GNN architectures and pooling function, demonstrate GRAPHTRAIL to significantly surpass existing global explainers in efficacy, human-interpretability, data efficiency, and robustness.</p>
+      
+        <p>We formulate the problem of translating a message-passing GNN model for graph classification into a human-interpretable logic formula over subgraph concepts.</p>
+      
+        <p>GRAPHTRAIL enables us to limit the exploration of concepts from an exponential subgraph search space to a linear space of computation trees.</p>
+      
+        <p>Subsequently, the impact of each of the computation trees is assessed through its Shapley Value, and the top-k trees are sent to the logic formulator.</p>
+      
+        <p>The Boolean logic is revealed by the symbolic regression over these computation trees.</p>
+      
+        <p>The message passing architecture of GNNs limits the embedding computation of a node within the computation tree rooted at that node.</p>
+      
+        <p>Given a graph, we can decompose it into a multiset of computation trees, compute node embeddings, and then aggregate them into graph embedding without incurring any loss of information.</p>
+      
+        <p>This computation structure enables us to shrink the candidate space of concepts to the set of unique computation trees.</p>
+      
+        <p>The reformulation of the concept space imparts several desirable side-effects.</p>
+      
+        <p>First, the size of the candidate space of concepts reduces from exponential to a quantity linear to the graph size and the number of graphs in the dataset.</p>
+      
+        <p>Second, while graph isomorphism has a computational cost exponential to the graph size, rooted-tree isomorphism can be performed in time linear to the number of edges in the tree.</p>
+      
+        <p>Third, GNNs may map non-isomorphic node neighborhoods to isomorphic computation trees.</p>
+      
+        <p>To mine concepts from the candidate space, we assess their Shapley values.</p>
+      
+        <p>We aim to leverage Shapley values in identifying this combination.</p>
+      
+        <p>We select the top-k computation trees with the highest Shapley value as concepts.</p>
+      
+        <p>GRAPHTRAIL projects each graph into a concept vector.</p>
+      
+        <p>The concept vector of a graph is a vector where each dimension represents the number of computation trees in the graph that are isomorphic to a concept candidate.</p>
+      
+        <p>Computing the graph embedding simply involves look-ups of vectors instead of fresh rounds of message-passing.</p>
+      
+        <p>To discover logical rules over top-k computation trees, we perform symbolic regression.</p>
+      
+        <p>We restrict to the boolean operators: conjunction, disjunction, negation, and XOR.</p>
+      
+        <p>We aim to learn a symbolic function for each class label predicted by the GNN.</p>
+      
+        <p>Symbolic regression poses a combinatorial optimization challenge, as the number of potential functions increases exponentially with the number of symbols.</p>
+      
+        <p>We use an algorithm which leverages a multi-population evolutionary strategy to efficiently optimize and identify symbolic expressions.</p>
+      
+        <p>GRAPHTRAIL achieves higher fidelity than GLGEXPLAINER across all scenarios.</p>
+      
+        <p>GRAPHTRAIL’s inferred concepts and their logical combination exhibit greater similarity to the ground truth compared to GLGEXPLAINER’s results.</p>
+      
+        <p>We have designed an end-to-end, post-hoc, global graph neural network explainer called GRAPHTRAIL.</p>
+      
+        <p>GRAPHTRAIL evaluates the impact of these computation trees using Shapley values and then creates a boolean formula via symbolic regression only with the important ones.</p>
+      
+        <p>We believe attempting to interpret GNNs with subgraph level concepts creates a dilemma between interpretability and faithfulness to the computational mechanism of GNNs.</p>
+      
+        <p>It is worth exploring how the best balance between human interpretability and staying faithful to GNN computation structure can be obtained.</p>
+      
+<h2>Original Abstract</h2> 
+<p>Instance-level explanation of graph neural networks (GNNs) is a well-studied area. These explainers, however, only explain an instance (e.g., a graph) and fail to uncover the combinatorial reasoning learned by a GNN from the training data towards making its predictions. In this work, we introduce GRAPHTRAIL, the first end-to-end, post-hoc, global GNN explainer that translates the functioning of a black-box GNN model to a boolean formula over the (sub)graph-level concepts without relying on local explainers. GRAPHTRAIL is unique in automatically mining the discriminative subgraph-level concepts using Shapley values. Subsequently, the GNN predictions are mapped to a human-interpretable boolean formula over these concepts through symbolic regression. Extensive experiments across diverse datasets and GNN architectures demonstrate significant improvement over existing global explainers in mapping GNN predictions to faithful logical formulae. The robust and accurate performance of GRAPHTRAIL makes it invaluable for improving GNNs and facilitates adoption in domains with strict transparency requirements.</p>
+    </body>
+</html>

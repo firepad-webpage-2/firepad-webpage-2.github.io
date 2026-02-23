@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Autonomous Vehicles (AVs) rely on complex Autonomous Driving Systems (ADSs), whose failures can lead to critical safety issues. While high-fidelity simulation platforms like SVL and CARLA enable scalable testing, they often lack insight into the AV’s decision-making process during accidents. Existing causality analysis tools are ill-suited for AVs due to the modular, message-passing architecture of ADSs and the vast analysis space of simulation recordings. This paper introduces ACAV, an automated framework for causality analysis of AV accident recordings. ACAV first vectorizes simulation data through schemas that encode perception, prediction, planning, and map modules. It then segments the recordings using similarity metrics and labels safety-critical frames using specifications derived from driver handbooks and traffic laws. A second-stage analysis tool, CAT, identifies causal factors by examining speed planning, trajectory deviation, and module-level errors. Applied to Apollo 7.0 and Autoware.universe in the SVL simulator, ACAV achieved a 62.23% reduction in recording size without losing critical frames and identified causal events in 93.64% of accident scenarios. The system successfully pinpointed causes in 1064 recordings across various fault types. ACAV presents a generalizable approach to streamline post-accident analysis, reducing manual effort and aiding AV engineers in enhancing ADS safety.</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+
+    <p>Emerging data-driven analysis highlight the need to utilize various data science models effectively.</p>
+
+<p>Unlike large models with abundant training data, data science models are typically derived from small-scale, domain-specific datasets (e.g., material science, biology, physics), and often take considerable manual effort to tune and validate due to large parameter space (e.g., variables from experiments, processing methods, and device control).</p>
+
+<p>One often prefers to reuse and fine-tune from existing high-quality models without repeatedly rebuilding or testing from scratch.</p>
+
+<p>Nevertheless, searching for models that are expected to perform well for a sample dataset remains to be a desired yet missing function for such data platforms.</p>
+
+<p>We demonstrate ModsNet, a data engine to search for high-quality, underutilized pre-trained models for data-driven analysis.</p>
+
+<p>ModsNet does not require users to write complex queries, but only needs a sample dataset (as a “query”) to search for models.</p>
+
+<p>It jointly exploits “meta-features” extracted from datasets, models, and task description, and perform query-time performance estimation with a light-weighted graph neural network (“estimator”) in support of online top-k search.</p>
+
+<p>Unlike existing data platforms that search models/scripts based on (exact) tag matching, ModsNet selects models with best expected performances over datasets and metrics of users’ preferences.</p>
+
+<p>It is equipped with a knowledge graph that constantly synchronizes and accumulates factual knowledge about (estimated or validated) performances between models and datasets.</p>
+
+<p>ModsNet tackles strict “cold-start”, a known challenge in top-k selection, at query time.</p>
+
+<p>ModsNet exploits a cost-bounded “probe-and-select” strategy that only explore models with promising performances over similar data, without retraining.</p>
+
+<p>ModsNet provides user-friendly interfaces to support fast access, search, and exploration of datasets and models.</p>
+
+<p>Users only need a “one-click” upload of exemplar dataset, and (optional) configuration to specify a number k and a task.</p>
+
+<p>ModsNet provides interactive panels for visual “card views”, graph views, and on-demand performance test, to allow users to browse, explore, and evaluate the selected models.</p>
+
+<p>ModsNet works with a model-data interaction graph G = (M,D,I, F ), which is an attributed bipartite graph.</p>
+
+<p>Each node v ∈ M ∪ D (resp. edge (m,d) ∈ I) in G is assigned a tuple F (v) (resp. F (m,d)) that encodes its attributes and values.</p>
+
+<p>ModsNet-KG is a knowledge graph K = (V,R) that curates factual knowledge of models, datasets and their interactions (test results and performances).</p>
+
+<p>ModsNet consists of three major modular: (1) Maintainer KM tracks changes of repositories to synchronize a built-in knowledge graph K; (2) Extractor EX maintains an interaction graph G with meta-features and updates a GNN-based estimator model E and (3) Probe-Selector PS selects models from M for query dataset by consulting the estimator E in limited times.</p>
+
+<p>ModsNet “cold-starts” with a default knowledge graph K.</p>
+
+<p>The extractor EX constructs an interaction graph G.</p>
+
+<p>An estimator E is then trained as a link regression model over G, to be consulted as a pre-trained model.</p>
+
+<p>Upon receiving an exemplar dataset dq (a query), ModsNet selects models for dq with two cases.</p>
+
+<p>If dq is a new dataset without any existing interactions in G, ModsNet will invoke Probe-Selector PS to identify limited models M′ in M expected to perform well on dq, then add probe edges by linking models in M′ and dq and make selections by consulting estimator E based on the probed graph.</p>
+
+<p>Once dq is processed, the Maintainer KM logs dq, along with the probed tests, if any, as new interactions and enriches the knowledge graph K and interaction graph G accordingly to keep K “fresh”.</p>
+
+<p>The Extraction module extracts and optimizes the bipartite Interaction graph G from the underlying knowledge graph K.</p>
+
+<p>EX exploits a performance closeness measure by joining dataset similarity, model similarity, and the test results (e.g., accuracy).</p>
+
+<p>ModsNet trains a GNN-based Regression Model E to estimate the performance of a model m over a dataset dp.</p>
+
+<p>This allows ModsNet to quickly respond to unseen datasets without retraining.</p>
+
+<p>The Probe-Selector module PS selects top-k models for a query dataset dq by consulting Extractor EX with a bounded number of times.</p>
+
+<p>It performs two steps: (1) Probe: for a new top-k query dq, it first samples a set of models Mprob with are likely to have high expected performance, and insert “probing” (virtual) edges to be verified; (2) Select: for each model m involved in the probing phase, it invokes the estimator E to predict model performance on dq, which solves a link prediction task.</p>
+
+<p>Top-k models are then returned for dq.</p>
+
+<p>ModsNet optimizes a light-weighted GCN variant that only incurs a once-for-all training of E in O (L |I| |F|) time, and a query-time inference in O (|Is| · |F|) time.</p>
+
+<p>ModsNet is built upon a 4-layered design.</p>
+
+<p>The Query Layer consists of (a) an interactive Web GUI with portals to collect crowdsourced datasets, models and their metadata, implemented with JQuery framework; (b) a query parser (supported by Flask APIs) to transform and deliver configuration and datasets to the extractor and maintainer modulars.</p>
+
+<p>The Estimation Layer hosts a container that maintains the GNN-based estimator (trained with PyTorch).</p>
+
+<p>The Knowledge Management Layer contains the core modulars: Extractor, Maintainer, and Probe-Selector.</p>
+
+<p>In the Storage Layer, ModsNet stores (a) the raw datasets D, the model repository M, and relevant metadata documents (in Google Cloud), (b) their JSON objects in the native MongoDB storage, and (c) indexed nodes and relations as triple stores of K in Neo4j.</p>
+
+<p>We built a prototype system ModsNet in JavaScript and Python.</p>
+
+<p>We demonstrate ModsNet with a client/server protocol, with ModsNet hosted on a cluster of Linux cloud servers, each having an Intel Core i7 processor with 2.6 GHz and 16G memory.</p>
+
+<p>We shall invite users to compare the results and response time between ModsNet and several alternative selection algorithms.</p>
+
+<p>We observed that ModsNet outperforms the other methods by 1.3 times on average in ranking quality (NDCG@10), with an average query response time at most 0.12 seconds.</p>
+
+<p>We showcase how ModsNet can help domain scientists accelerate the data analysis pipeline.</p>
+
+<p>ModsNet suggested top-3 models with the highest estimated accuracy in 0.1 seconds.</p>
+<h2>Original Abstract</h2>
+<p>Selecting effective models for data-driven analysis in domains with limited datasets, such as material science and biology, remains a challenging task. Existing platforms often lack the capability to recommend models without extensive manual tuning or prior knowledge. To address this, we introduce ModsNet, a novel data engine designed to search for high-quality, underutilized pre-trained models based solely on a sample dataset. ModsNet leverages a graph neural network (GNN)-based estimator, combined with a knowledge graph that stores model-dataset interactions and performance metrics, to enable query-time performance estimation. Through a cost-bounded “probe-and-select” strategy, ModsNet identifies promising models for unseen datasets without retraining. Users interact with the system via a simple web interface, requiring only a dataset upload and optional task configuration. Our prototype, implemented in JavaScript and Python, demonstrates significant performance improvements, outperforming alternative methods by 1.3 times in ranking quality (NDCG@10) with an average response time of 0.12 seconds. ModsNet streamlines the model selection process, enabling domain scientists to accelerate data analysis workflows and obtain top-performing model recommendations within seconds.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>As modern servers scale their memory capacity, TLB misses have become increasingly frequent, especially in large-memory workloads and under thread migration across NUMA nodes. These misses incur high overhead due to remote page-table accesses—a phenomenon we term the page-table caused NUMA effect. While Page-Table Self-Replication (PTSR) mitigates this issue by replicating page-tables across nodes, existing solutions like Mitosis and vMitosis require manual configuration and can degrade performance when misapplied. To address this, we propose WASP, a lightweight, automatic mechanism that uses three hardware-accessible indicators—memory access rate (MAR), DTLB miss rate, and page-table access latency (PTL)—to dynamically enable or disable PTSR per application. WASP applies a hierarchical and gradual decision strategy to select the optimal replica (local or remote) based on latency, ensuring performance improvements even under memory controller contention. We evaluate WASP on x86 and ARM64 servers using 11 large-memory workloads and show that it achieves the same or better performance than manual PTSR, with up to 6.69× improvement and less than 1% overhead. WASP guarantees non-degradation, improves AutoNUMA behavior, and adapts effectively to complex co-location scenarios. Our results demonstrate that WASP is a practical, architecture-independent solution for managing page-table locality in NUMA systems.</p>
+</body>
+</html>

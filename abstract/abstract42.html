@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Sparse matrix-matrix multiplication (SpMM) is a fundamental operation in scientific computing and machine learning but remains a significant performance bottleneck due to the irregular sparsity patterns and poor cache utilization of sparse matrices. Existing accelerators rely on fixed execution flows, which are inefficient across varying sparsity structures and limit hardware utilization. This paper introduces ACES, a novel SpMM accelerator designed to dynamically adapt execution flows, optimize parallelism, and co-optimize data locality and concurrency for on-chip caches. ACES features an adaptive execution engine that intelligently selects execution strategies based on condensing degrees without modifying matrix formats. It incorporates PureFiber, a concurrency-aware cache replacement policy, and a non-blocking (NB) cache buffer to minimize access stalls. The architecture includes MPE-APE pairings, specialized schedulers, and Huffman tree-based merging to optimize throughput and synchronization. ACES consistently achieves superior performance, with average speedups of 25.5×, 8.9×, and 2.1× over SIGMA, SpArch, and SPADA, respectively, while maintaining over 90% processing element utilization in most workloads and reducing memory traffic and area overhead. These results demonstrate ACES as a high-performance, low-overhead, and adaptable solution to the longstanding inefficiencies of SpMM, offering substantial improvements in scalability and execution efficiency across diverse sparse workloads.</p>
+</body>
+</html>

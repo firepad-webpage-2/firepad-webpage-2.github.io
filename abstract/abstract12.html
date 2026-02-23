@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Directed fuzzing is a widely used technique for detecting software vulnerabilities by guiding test inputs toward specific program locations. However, existing directed fuzzers struggle to scale when addressing multiple targets simultaneously, primarily due to their inability to leverage correlations among targets—what we term the "synergy ignorance problem." To address this, we introduce Titan, a synergy-aware directed greybox fuzzer that exploits inter-target correlations to optimize seed selection and input mutation. Titan employs a novel static analysis to infer the relationships between targets' path conditions, facilitating more effective multi-target fuzzing. Our approach integrates a synergy-aware scheduling strategy and a multi-target-oriented mutation mechanism, enabling efficient coverage of multiple targets with fewer redundant executions. Empirical evaluations on real-world programs and the Magma benchmark demonstrate that Titan outperforms state-of-the-art fuzzers such as AFLGo, AFL, and Beacon, achieving up to 25x speed improvements and uncovering significantly more vulnerabilities, including previously unreported bugs with assigned CVE IDs. Titan also detects incomplete bug fixes that other fuzzers miss, proving its effectiveness and scalability for multi-target vulnerability detection in large, evolving software systems.    </p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>This paper introduces GRACE, a novel generative cross-modal retrieval framework that enables multimodal large language models (MLLMs) to retrieve images directly from their parameters in response to textual queries. Unlike existing discriminative retrieval approaches that rely on negative samples and visual input at inference, GRACE formulates retrieval as a generation task. It assigns unique identifier strings to images and trains MLLMs in two stages: memorization of image-identifier associations and retrieval via identifier generation. Using Flamingo as the base MLLM, GRACE employs constrained beam search to ensure identifier validity and supports retrieval without access to the original image corpus. Experiments show that GRACE achieves performance comparable to one-tower baselines while offering improved inference efficiency at scale. Among identifier types, atomic identifiers yield the highest accuracy, even outperforming CLIP. Furthermore, GRACE enables MLLMs to describe and answer questions about memorized images, suggesting a path toward integrating personalized visual experiences into language models. This generative paradigm transforms cross-modal retrieval by embedding visual memory into the model’s parameters, eliminating reliance on external image databases during inference and opening new avenues for vision-language integration and user-specific visual grounding.</p>
+</body>
+</html>

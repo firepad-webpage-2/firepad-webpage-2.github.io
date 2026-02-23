@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevant Content for Abstract Preparation</title>
+    <style>
+        body {
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+        }
+      </style>
+    <!-- <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+    </script>
+        <script type="text/javascript" async
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+</head>
+<body>
+
+    <h2>Excerpt</h2>
+    <p>Availability is a network operator&rsquo;s highest priority and yet, despite significant effort and investment, modern WANs remain vulnerable to failure.</p>
+
+<p>Given this situation, we ask: Is there more we can do to avoid complex failures?</p>
+
+<p>The approach we explore in this paper is to address complexity directly and focus on simplifying the network.</p>
+
+<p>In this paper, we will argue that SDN control infrastructure in the WAN introduces significant complexity and propose a new control architecture that allows us to remove the vast majority of this infrastructure without losing the benefits of SDN.</p>
+
+<p>The dSDN architecture represents a significant simplification to current WANs: it leverages two common techniques (basic control plane flooding and a TE algorithm) but otherwise eliminates any dependency on components external to the data plane and on legacy protocols.</p>
+
+<p>Despite these simplifications, dSDN retains the benefits of traditional centralized SDN (cSDN) while restoring the fate-sharing of traditional protocols that provides resiliency.</p>
+
+<p>Our evaluation shows that this trade-off is easily accommodated by modern routers.</p>
+
+<p>Specifically, we show that: (1) our dSDN implementation on an Arista 7808 consumes under 50% of the router&rsquo;s CPU resources under realistic network scenarios, (2) dSDN achieves up to 100x lower convergence times and 10-100x lower SLO impact than our current cSDN WAN, (3) the above gains hold over a range of topology, traffic, and failure scenarios.</p>
+
+<p>dSDN is motivated by our experiences running two WANs.</p>
+
+<p>The dSDN architecture we develop in this paper can serve as a simpler yet equally efficient alternative to B4&rsquo;s cSDN architecture and as a simpler and more efficient alternative to B2&rsquo;s RSVP-based architecture.</p>
+
+<p>A separate Control Plane Network (CPN) connects controllers to the routers they control, thus avoiding a recursive dependency on network connectivity being already established.</p>
+
+<p>Finally, to avoid a complete loss of connectivity in case of failure in the cSDN control stack, every SDN WAN that we are aware of continues to run IS-IS and BGP.</p>
+
+<p>In summary, as shown in Figure 2, modern WAN control planes span many non-trivial components, both external (shown in green) and on the box (shown in blue).</p>
+
+<p>The complexity of our cSDN control plane in B4 is a dominant contributor to our most challenging outages: Figure 3 shows that 52% of our 41 largest outages have a control-related root cause.</p>
+
+<p>The past decade has brought two key developments which, taken together, enable an alternative routing architecture.</p>
+
+<p>In combination, these developments mean a network operator can now deploy custom code directly on routers rather than external infrastructure.</p>
+
+<p>We design dSDN to meet the following goals: (1) on-box operation with no dependence on external infrastructure, (2) support for operator-defined control code, (3) network efficiency, matching that achieved by state-of-the-art TE solutions, and (4) simple consensus-free path computations.</p>
+
+<p>In dSDN, every router R runs TE to compute the placement of all flows in the network, from which it then selects the subset of paths that start at R for programming.</p>
+
+<p>We encode source routes as stacks of labels enumerating each link to be traversed using its unique link ID learned from NSUs.</p>
+
+<p>Our dSDN controller uses gRPC for all external communication; gRPC entirely abstracts the data layer (e.g., packet size management, data chunking) and ensures reliable transfer.</p>
+
+<p>dSDN combines well-known techniques (flooding, source routing, TE, etc.) into a novel synthesis.</p>
+
+<p>The key question is thus, how do we achieve consensus-free forwarding in a decentralized control plane? The answer is via source routing.</p>
+
+
+
+    <h2>Original Abstract</h2>
+    <p>Wide Area Networks (WANs) remain susceptible to outages due to the complexity of their control infrastructures, particularly in centralized Software-Defined Networking (cSDN) systems. This paper proposes dSDN, a decentralized SDN control architecture designed to significantly reduce WAN control plane complexity without compromising performance or resiliency. dSDN eliminates reliance on external components by enabling on-box operations, leveraging source routing and traffic engineering (TE) algorithms to decentralize path computations. Through empirical evaluation on an Arista 7808 router, dSDN is shown to operate under 50% CPU utilization, while achieving up to 100x faster convergence times and 10-100x lower service-level objective (SLO) impacts compared to cSDN across diverse network topologies and failure scenarios. Furthermore, dSDN restores fate-sharing principles traditionally seen in legacy protocols, enhancing network robustness. This work presents dSDN as a practical, scalable alternative to current WAN control architectures, offering a path toward simpler and more resilient network operations.</p>
+</body>
+</html>

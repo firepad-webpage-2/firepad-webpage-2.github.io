@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Excerpt</title>
+</head>
+<body>
+<h2>Excerpt</h2>
+<p>Decision-making based on ranking is commonly used in important domains, such as hiring and school admission.</p>
+<p>It usually includes choosing qualifying candidates based on specific criteria (e.g., for a job) and ranking them using a quantitative measure to identify the top candidates among those who qualify (e.g., for a job interview).</p>
+<p>This process can be automated and represented using SQL queries, with the WHERE clause used to select candidates who fulfill specific criteria and the ORDER BY clause used to rank them.</p>
+<p>Further, it is often required to impose cardinality constraints, over both the number of candidates to return (e.g., k = 10 job applicants to interview) and the presence of some demographic groups among the top-k candidates.</p>
+<p>In general, modifying the selection conditions may be desirable as they could themselves be the source of bias in the results.</p>
+<p>Furthermore, this approach is usually legally permissible, essentially because it applies the same evaluation process to all individuals.</p>
+<p>To facilitate such a process, we present Rodeo (Refinements fOr DivErse tOp-k queries), a system for refining queries to improve the diversity of the ranking they produce.</p>
+<p>Rodeo is an interactive system, allowing users to define queries and constraints over the top-k tuples for different values of k in their output using a dedicated interface.</p>
+<p>Rodeo complements a recently published paper by implementing the methods proposed in that paper in an interactive system.</p>
+<p>To the best of our knowledge, our work is the first to intervene on the ranking process by modifying which items are being considered by the ranking algorithm.</p>
+<p>This admits a large class of ranking algorithms while keeping the relative order of tuples consistent.</p>
+<p>This—of course—does not come for free; the coarseness of refinements means that there may be no refinement that produces a satisfactorily diverse ranking.</p>
+<p>Therefore, Rodeo focuses on finding a refined query that is within a specified maximum distance from satisfying all of the constraints, if one exists.</p>
+<p>The system implements a solution based on a reduction to mixed-integer linear programming (MILP).</p>
+<p>The notion of refining queries to satisfy a set of diversity constraints was recently presented in other works, however, this work focuses on constraints over the entire output, does not consider the order of tuples, and cannot be easily extend to ranking queries.</p>
+<p>The problem of ensuring diverse outputs in ranking queries has received much recent attention from the research community.</p>
+<p>These works can be categorized as post-processing methods that directly modify the output, or in-processing methods that adjust the ranking algorithm or modify items to produce a different score.</p>
+<p>Our solution can be considered as an in-processing method, however, unlike existing solutions, we assume that the ranking algorithm and the scoring function are well-designed, and do not modify them.</p>
+<p>We support the class of conjunctive Select-Project-Join (SPJ) queries which have an ORDER BY clause where the function maps a single tuple to a real-valued score.</p>
+<p>A query may have numerical or categorical predicates which filter its input to tuples matching these predicates.</p>
+<p>For a numerical predicate, refinements are changes to the value of the constant; for categorical predicates, a refinement is done by adding or removing values from the original constant list.</p>
+<p>We say that a query is a refinement of query Q if it is obtained from Q by refining some predicates of Q.</p>
+<p>Imposing constraints on the cardinality of tuples belonging to certain groups may be used to improve the diversity of the outputs of queries.</p>
+<p>In the ranking setting, instead of specifying these constraints over the entire output, we may specify these constraints over the top-k tuples for multiple different values of k.</p>
+<p>Our goal is to find minimal refinements to the original query that fulfill a specified set of constraints, however, we note that the notion of minimality may be defined in different ways, depending on the user’s preferences.</p>
+<p>To accommodate alternative query refinement objectives, Rodeo supports three distance measures to determine the minimality of a refinement query.</p>
+<p>The first distance measure considers the difference between the predicates of the query and a refinement, thus preserving the essence of the original query.</p>
+<p>An alternative distance measure Rodeo supports considers the output of the query and a refinement over the dataset using Jaccard distance over the top-k tuples.</p>
+<p>Finally, Rodeo can take into account the order of tuples in top-k item in the output to measure the distance between queries using a variant of Kendall’s tau.</p>
+<p>Given a query over a dataset, along with a set of cardinality constraints and a distance measure, the goal is to find a refinement with minimal distance from the original query while satisfying the constraints.</p>
+<p>However, a refinement satisfying the constraints exactly may not always exist.</p>
+<p>We therefore relax the requirement for strict constraint satisfaction and instead focus on finding a refinement that comes close to satisfying the constraints, i.e., within an acceptable distance.</p>
+<p>This allows us to provide results that are more useful to the user than simply stating its infeasibility.</p>
+<p>Rodeo implements a mixed-integer linear program (MILP) solution to generate refinements.</p>
+<p>Mixed-integer linear programming is a model for optimizing a linear objective function subject to a set of expressions limiting the space of feasible assignments.</p>
+<p>Rodeo utilizes data annotations to depict potential refinements.</p>
+<p>These annotations serve as variables in the MILP instance and enable the system to quantify the deviation from the constraint set without having to reevaluate refinements across the DBMS.</p>
+<p>A MILP instance solution is an assignment to the variables in the expressions that corresponds to a minimal refinement.</p>
+<p>While solving MILP instances can be expensive, we introduce a number of optimizations to make solving instances created from datasets of real-life scale efficient in practice.</p>
+<p>Users interact with Rodeo using a dedicated web-based user interface implemented with React.</p>
+<p>Rodeo’s back-end is implemented in Python. It uses DuckDB and the IBM CPLEX MILP solver.</p>
+<p>The input generation is done in three steps.</p>
+<p>The first step includes the data selection and query definition.</p>
+<p>The next step includes the definition of cardinality constraints.</p>
+<p>In the final step, the user configures the maximum average deviation from the set of cardinality constraints and sets the desired distance metric.</p>
+<p>Upon submitting a request for refinement, the system communicates with the DBMS for query evaluation and the data annotation generation for the MILP instance.</p>
+<p>Rodeo constructs the MILP instance and utilizes the MILP solver to find a minimal assignment and returns the corresponding refinement.</p>
+<p>We will demonstrate the functionality of Rodeo using three real-life datasets: High-School Students, consisting of 649 students from two Portuguese high schools with demographic information, grades, and social life data; Astronauts, a dataset with background and careers information of 357 NASA astronauts; and Law Students, containing demographic information and performance of 21,790 law students.</p>
+<p>The query derived from our original requirements does not satisfy the constraints and so we use Rodeo to refine it.</p>
+<p>We first consider the most-similar-query distance measure and try to refine the query.</p>
+<p>The system indicates that no refinement can perfectly satisfy the constraints.</p>
+<p>We may compromise on the constraint satisfaction by increasing the maximum average deviation to obtain refinements that are close to satisfying them.</p>
+<p>By doing so, Rodeo is able to produce a refinement which reduces the study time to at least 2 hours of weekly study time.</p>
+<p>We can ask Rodeo for a refinement whose output is most similar to the original, and obtain one that differs by only one student compared with the original query.</p>
+<p>Interacting with Rodeo helps the user find a refinement that best aligns with their preferences and evaluate the trade-off between query refinement and constraint satisfaction.</p>
+<h2>Original Abstract</h2>
+<p>Database queries are commonly used to select and rank items. With the increasing awareness of diversity, ensuring a diverse output (i.e., the representation of different groups in the top-𝑘 positions) becomes essential. To address this challenge, we present Rodeo, a system that generates minimal modifications to queries to enhance the diversity of the ranking they produce based on constraints over groups’ representation in the top-𝑘 for various 𝑘 values.</p>
+</body>
+</html>

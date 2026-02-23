@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpt</title>
+</head>
+<body>
+    <h2>Excerpt</h2>
+    <p>Open Source Software (OSS) has now been widely accepted and integrated into various commercial software, forming the so-called OSS supply chain.</p>
+<p>OSS poisoning refers to the act of intentionally implanting malicious code into OSS software, which has the characteristics of unexpected, imperceptible, and huge impact in a short period of time.</p>
+<p>PR is a typical collaborative development model commonly adopted by the OSS community.</p>
+<p>The goal of this work is to study such widely used and critically important safeguard for OSS poisoning, specifically investigating the normal patterns of the PR process and analyzing anomalies in the PR process.</p>
+<p>We propose a process-mining-based approach to analyze the event logs of PR and identify both the control-flow (global) anomalies and semantic (local) anomalies.</p>
+<p>Specifically, we constructed the process models of the normal patterns for four scenarios.</p>
+<p>We identify four types of semantic anomalies and their 19 root causes, as well as four types of control-flow anomalies and their 26 root causes.</p>
+<p>We model and analyze the normal patterns for four different collaboration scenarios.</p>
+<p>Anomaly in this paper can be defined as the process pattern with low frequency and deviation from the normal patterns.</p>
+<p>The control-flow anomaly indicates that an event flow has lower overall consistency with the normal pattern.</p>
+<p>The semantic anomaly indicates that the local event transition of the event stream does not conform to the process specification.</p>
+<p>We eliminated the PR logs for which the process is not yet complete, i.e. PRs that are currently open.</p>
+<p>Within the 46 types of PR activities on GitHub, we only included the activities related to code commit, code review, and decisions on the PR.</p>
+<p>The definition of control-flow anomalies is based on the assumption that the pattern of anomalies is of low-frequency.</p>
+<p>We applied Inductive Miner-infrequency (IMi) to discover the quasi-normal process model.</p>
+<p>We used Alignments as it can provide more detailed and easy to understand diagnostic information.</p>
+<p>We referred to the five types of control-flow anomalies defined by Nolle et al.</p>
+<p>We analyzed all transitions of activities in the form of “Activity A → Activity B” to identify the anomalous transitions based on the semantic understanding of the PR process.</p>
+<p>We used a rule-based method to detect anomalous cases.</p>
+<p>We excluded all the anomalous cases with control-flow anomalies or semantic anomalies from the complete case set.</p>
+<p>We conducted a multi-case study to evaluate our approach.</p>
+<p>The review phase of the process presents diversity and inclusiveness, whilst overall there is significant certainty from OpenPR to review related activities to MergePR.</p>
+<p>We found that these two types of anomalies mainly occur in conjunction with each other in “netbeans”.</p>
+<p>From an intra-project perspective, it seems like a reasonable process pattern.</p>
+<p>However, from a cross-project perspective, this is an anomalous process because it only happens in “netbeans”.</p>
+<p>The contributor uses force push commands, which can result in some commits submitted by others being overwritten.</p>
+<p>The reviewer agreed to merge the PR without carefully reviewing it.</p>
+<p>The reviewer misunderstood the PR and discussed it with the contributor.</p>
+<p>The contributor did not respond to the requested changes.</p>
+<p>The reviewer did not respond to the review request.</p>
+<p>The maintainer or the bot assigned inappropriate reviewers, causing every review request to be rejected.</p>
+<p>Main findings for RQ1: there are various reasons for control-flow anomalies in different PR collaboration scenarios.</p>
+<p>Semantic anomalies are mainly caused by the maintainers’ irregular merging or closing of PRs.</p>
+<p>The main reason why the PR was closed abnormally was that the maintainer merged into the PR through other means.</p>
+<p>The survey feedback suggests that maintainers may skip the review process and directly merge the PR when encountering urgent issues.</p>
+<p>Additionally, maintainers and reviewers sometimes communicate PRs through other channels.</p>
+<p>PRs with timely reviews have a higher probability of being merged, while PRs with repeated revisions have a lower probability of being merged.</p>
+<p>A notable difference between non-fork model and fork model is that the former tends to bypass the review process more often.</p>
+<p>There are 84.2% of the semantic anomalous PRs with a fitness greater than 0.8.</p>
+<p>Overall, there is no obvious correlation between control-flow anomalous PRs and semantic anomalous PRs.</p>
+<p>Among the 1137 cases with the pattern of OpenPR → MergePR, 219 contained comments.</p>
+<p>The maintainer of the PR netbeans#3649 clearly pointed out that it is unwise to merge directly without a proper review.</p>
+<p>Anomalies are the opposite of normal, but they do not necessarily imply risk.</p>
+<p>Some anomalies may be normal within a certain project, but they are indeed anomalous from the perspective of cross-projects.</p>
+<p>The normal patterns identified in this study can help establish the standardized process.</p>
+<p>The proportion of their anomalies in the total number of PRs is higher (0.22) than the average of the 18 un-poisoned projects (0.06).</p>
+<p>Process anomaly detection can alarm the risk of being poisoned.</p>
+<p>This study proposes a process-mining-based approach to identify and analyze anomalous PRs.</p>
+<p>Our approach can not only help practitioners and researchers to understand the PR process patterns, but also support to identify and assess the normality and risks in the OSS development processes.</p>
+<p>The further identified normal patterns in this study may encourage future studies to progressively establish best practices for PR so as to standardize the PR process.</p>
+
+    <h2>Original Abstract</h2> 
+<p>Open Source Software (OSS) has become a critical component in modern software development, yet it remains vulnerable to OSS poisoning—malicious code injections that are subtle but potentially severe. This study investigates the pull request (PR) process, a core mechanism in OSS collaboration, to identify patterns that deviate from the norm and may signal poisoning risks. Using a process-mining-based approach, we analyze GitHub PR event logs, constructing normal process models across four collaboration scenarios and detecting both control-flow and semantic anomalies. We identified four types of control-flow anomalies with 26 root causes and four types of semantic anomalies with 19 root causes. Our evaluation, based on a multi-case study, reveals that anomalous PR behaviors—such as bypassing reviews, miscommunications, or improper reviewer assignments—occur more frequently in projects with known poisoning incidents. Notably, semantic anomalies are often linked to irregular PR merging practices. While some anomalies are project-specific and benign, cross-project comparisons help surface patterns that deviate significantly from established norms. The findings demonstrate that anomaly detection in the PR process can serve as an early warning mechanism for OSS poisoning and provide a foundation for standardizing secure OSS collaboration practices.</p>
+    </body>
+</html>

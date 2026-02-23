@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Designing numerical software that balances energy efficiency and computational accuracy remains a major challenge due to the trade-offs inherent in floating-point (FP) precision. While mixed-precision programming offers a viable solution, existing automated precision tuning techniques—particularly dynamic search-based approaches—struggle with scalability due to the vast search space. To address this, we introduce FPLearner, a machine learning-based system that predicts the performance and accuracy of mixed-precision programs, significantly reducing the number of program executions needed. FPLearner uses a novel graph representation called the Precision Interaction Graph (PIG) to model the interactions among FP variables. This representation incorporates features derived from the abstract syntax tree and augments them with multiple edge types capturing type casting, data dependencies, control flow, and program structure. A Gated Graph Neural Network is trained on a dataset of 1,228 mixed-precision programs across five high-performance computing (HPC) applications. FPLearner achieves high predictive performance (96.34% F1 for execution speed, 97.03% F1 for accuracy) and reduces search time by an average of 25.54%, reaching up to 61.07%, while preserving or improving final program quality. This work represents the first deep learning-based framework capable of accurately and jointly predicting the performance and correctness of mixed-precision numerical programs.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>Advanced Persistent Threats (APTs) pose a major challenge to enterprise security due to their stealthy, long-running nature, making forensic log analysis crucial for impact assessment. Existing audit log collection systems, such as Linux auditd, operate at system-call granularity but suffer from severe limitations, including high performance overhead, data loss under moderate workloads, and vulnerability to log tampering. This paper presents eAudit, a lightweight, deployable audit log collection system built on the eBPF framework in modern Linux kernels. eAudit introduces several key innovations: a compact data encoding scheme producing logs up to 13× smaller than existing systems, a two-level buffering design that eliminates event loss even under peak loads, an analytical model for balancing latency and throughput, and a tunable event prioritization scheme to minimize opportunities for tampering. Evaluation across benchmarks shows that eAudit reduces overhead by an average of 18.4×, achieving only 4–5% runtime cost, while shrinking the log tampering window by two orders of magnitude compared to prior systems. These results demonstrate that eAudit enables efficient, lossless, and tamper-resistant provenance collection, substantially improving the viability of system-wide logging for APT detection and forensic analysis.</p>
+</body>
+</html>

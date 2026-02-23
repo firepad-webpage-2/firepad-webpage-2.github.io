@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Excerpt</title>
+</head>
+<body>
+<h2>Excerpt</h2>
+<p>A substantial body of work has shown that deep networks can be highly susceptible to adversarial attacks, in which minor changes to the input lead to incorrect, even bizarre classifications.</p>
+<p>One key reason for this vulnerability to attacks is the non-Lipschitzness of typical neural networks: small but adversarial movements in the input space can produce large perturbations in the feature space.</p>
+<p>In this work, we propose and analyze an abstract attack model designed to focus on this question of the intrinsic vulnerability of non-Lipschitz networks, and what might help to make such networks robust.</p>
+<p>We show an interesting dichotomy: if the classifier must output a classification on any input it is given, then indeed the adversary will still win, no matter how well-separated the natural data points from different classes are in feature space and no matter what decision surface the classifier uses.</p>
+<p>However, if we provide the classifier the ability to abstain, then we show it can defeat such an adversary while maintaining a low abstention rate on natural data with a nearest-neighbor style approach under fairly reasonable conditions on the distribution of natural data in feature space.</p>
+<p>More broadly, our results provide a theoretical explanation for the importance of allowing abstaining, or selective classification, in the presence of adversarial attacks that exploit network non-Lipschitzness.</p>
+<p>Our results also provide new understanding of the robustness of nearest-neighbor algorithms.</p>
+<p>A second motivation of our work comes from the area of strategic classification, where the concern is that entities being classified may try to manipulate their observable features to achieve a preferred outcome.</p>
+<p>Our negative results imply that for any non-abstaining classifier, there must be at least one class such that for most examples from that class, manipulation in a random direction has a significant chance of being successful.</p>
+<p>Whereas our positive results imply that by using the ability to abstain, we can be secure against manipulation in most low-dimensional subspaces.</p>
+<p>In addition to providing a formal separation between algorithms that can abstain and those that cannot, our work also yields an interesting trade-off between robustness and accuracy for nearest-neighbor algorithms.</p>
+<p>By controlling a distance threshold determining the rate at which the nearest-neighbor algorithm abstains, we are able to trade off robust precision against recall, and we provide results for how to provably optimize for such a trade-off using a data-driven approach.</p>
+<p>Our main contributions are the following. Conceptually, we introduce a new random feature subspace threat model to abstract the effect of non-Lipschitzness in deep networks.</p>
+<p>Technically, we show the power of abstention and data-driven algorithm design in this setting, proving that classifiers with the ability to abstain are provably more powerful than those that cannot in this model, and giving provable guarantees for nearest-neighbor style algorithms and data-driven hyperparameter learning.</p>
+<p>Experimentally, we show that our algorithms perform well in this model on representations learned by supervised and self-supervised contrastive learning.</p>
+<p>We show for this threat model that all classifiers that partition the feature space into two or more classes—without an ability to abstain—are provably vulnerable to adversarial attacks.</p>
+<p>We show that in contrast, a classifier with the ability to abstain can overcome this vulnerability.</p>
+<p>We leverage and extend dispersion techniques from data-driven algorithm design, and present a novel data-driven method for learning data-specific hyperparameters in our defense algorithms to simultaneously obtain high robust accuracy and low abstention rates.</p>
+<p>Our framework can be thought of as a kind of smoothed analysis in its combination of random and adversarial components.</p>
+<p>However, a key distinction is that in smoothed analysis, the adversary moves first, and randomness is added to its decision afterwards.</p>
+<p>In our model, in contrast, first a random restriction is applied to the space of perturbations the adversary may choose from, and then the adversary may move arbitrarily in that random subspace.</p>
+<p>Thus, the adversary in our setting has more power, because it can make its decision after the randomness has been applied.</p>
+<p>Our negative results for non-abstaining classifiers apply even if the adversary can perturb in just a single random direction, whereas our positive results for classifiers that can abstain apply even if the adversary can perturb in many directions as long as the subspace is lower dimensional than the feature space.</p>
+<p>If the true decision boundary is, for example, a simple threshold on one feature, the adversary will not change the true label of any data point but will be able to defeat any non-abstaining classifier in the feature space.</p>
+<p>Our framework is aimed to consider this setting, and our results provide a practical suggestion: modify the final level to allow it to abstain if a test point is too different from the training data.</p>
+<p>The justification is that if the adversary can move large distances but not in every possible direction, and indeed only do so in random lower-dimensional subspaces, then we can provide theoretical guarantees for this approach.</p>
+<p>Our lower bounds show that abstention is necessary no matter how nicely distributed the data may be.</p>
+<p>It is necessary even if the adversary can move points arbitrarily large distances in feature space even in just a single random direction.</p>
+<p>For any classifier that partitions the feature space into two or more classes, any data distribution, and any feature embedding, there must exist at least one class such that for at least a significant portion of examples from that class, for a random direction, the adversary can cause a misclassification.</p>
+<p>We remark that our lower bound applies to any classifier and exploits the fact that a classifier without abstention must label the entire feature space.</p>
+<p>For a simple linear decision boundary, a perturbation in any direction (except parallel to the boundary) can cross the boundary with an appropriate magnitude.</p>
+<p>Our argument formalizes and generalizes this intuition, and shows that there must be at least one vulnerable class irrespective of how you may try to shape the class boundaries, where the adversary succeeds in a large fraction of directions.</p>
+<p>We also provide positive results for a nearest-neighbor style classifier that has the power to abstain.</p>
+<h2>Original Abstract</h2>
+<p>Despite significant advances, deep networks remain highly susceptible to adversarial attack. One fundamental challenge is that small input perturbations can often produce large movements in the network’s final layer feature space. In this paper, we define an attack model that abstracts this challenge, to help understand its intrinsic properties. In our model, the adversary may move data an arbitrary distance in feature space but only in random low-dimensional subspaces. We prove such adversaries can be quite powerful: defeating any algorithm that must classify any input it is given. However, by allowing the algorithm to abstain on unusual inputs, we show such adversaries can be overcome when classes are reasonably well-separated in feature space. We further provide strong theoretical guarantees for setting algorithm parameters to optimize over accuracy-abstention trade-offs using data-driven methods. Our results provide new robustness guarantees for nearest-neighbor style algorithms, and also have application to contrastive learning, where we empirically demonstrate the ability of such algorithms to obtain high robust accuracy with low abstention rates. Our model is also motivated by strategic classification, where entities being classified aim to manipulate their observable features to produce a preferred classification, and we provide new insights into that area as well.</p>
+</body>
+</html>

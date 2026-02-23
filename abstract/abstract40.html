@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>RDMA NICs demand a rate limiter that is simultaneously accurate, scalable, and capable of high-speed operation to enforce traffic policies such as congestion control and isolation across thousands of flows. Existing solutions like SENIC and PIEO provide accuracy and scalability but fall short in performance due to their monolithic design and inefficient flow sorting. This work introduces Tassel, a hierarchical rate limiter that separates flow-level and packet-level rate limiting to enable high packet throughput without compromising accuracy. Tassel employs adaptive batching to hide PCIe and sorting latency, and packet filtering to reduce the number of packets requiring sorting. Implemented on an Intel Agilex FPGA, Tassel supports 16K flows and achieves a 125Mpps packet rate—outperforming prior solutions by up to 3.6×—while consuming minimal computing and memory resources. It precisely enforces rate limits from 100Kbps to 100Gbps and supports proportional bandwidth sharing when links are oversubscribed. By maintaining accuracy at scale and integrating efficiently into RNIC architecture, Tassel meets the stringent performance and functionality demands of modern data center networks. This hierarchical approach enables programmable congestion control and traffic isolation without degrading RNIC throughput, setting a new standard for RDMA-compatible rate limiting.</p>
+</body>
+</html>

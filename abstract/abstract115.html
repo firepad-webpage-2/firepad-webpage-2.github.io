@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>We demonstrate ModsNet, a search tool for pre-trained data science MODels recommendatioN using Examplar daTaset. Given a set of pre-trained data science models, an “example” input dataset, and a user-specified performance metric, ModsNet answers the following query: “what are top-k models that have the best expected performance for the input data?” The need for searching high-quality pre-trained models is evident in data-driven analysis. Inspired by “query by example” paradigm, ModsNet does not require users to write complex queries, but only provide an “examplar” dataset, a task description, and a performance measure as input, and can automatically suggest top-k matching models that are expected to have desirable performance to perform the task over the provided sample dataset. ModsNet utilizes a knowledge graph to integrate model performances over datasets and synchronizes it with a bipartite graph neural network to estimate model performance, reduce inference cost, and promptly respond to top-k model search queries. To cope with strict cold-start (upon receiving a new dataset when no historical performance of registered models are observed), it performs a dynamic, cost-bounded “probe-and-select” strategy to incrementally identify promising models. We demonstrate the application of ModsNet in enabling efficient scientific data analysis.</p>
+</body>
+</html>

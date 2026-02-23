@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Excerpt</title>
+</head>
+<body>
+<h2>Excerpt</h2>
+<p>Directed fuzzing is a highly effective method for improving the diagnostics efficiency of program behaviors by focusing on testing specific program locations.</p>
+<p>However, software systems are becoming increasingly large and evolving at a high speed.</p>
+<p>As a result, each run of fuzzing tests often needs to address a large number of targets simultaneously.</p>
+<p>Unfortunately, the state-of-the-art directed fuzzers cannot scale well in front of such a large number of targets.</p>
+<p>Most directed fuzzers do not support reproducing multiple targets simultaneously.</p>
+<p>Thus, the challenge of efficiently fuzzing multiple targets remains.</p>
+<p>We observe that one of the root causes of this challenge is that existing approaches are unaware of the correlations between the targets and, as a result, could degenerate to undirected fuzzing as the number of targets grows.</p>
+<p>Eventually, the fuzzers cannot effectively select the seeds and generate the inputs for multiple targets efficiently, which we refer to as the synergy ignorance problem.</p>
+<p>On one hand, ignoring the correlations could result in the ineffective selection of seeds to reach specific targets.</p>
+<p>On the other hand, being unaware of the correlations among different targets can result in massive redundant executions due to ineffective mutation.</p>
+<p>To tackle the synergy ignorance problem, our key insight is that the fuzzer can leverage the correlations between multiple targets’ feasible conditions, i.e., independence and contradiction, to synergize input generation towards those targets.</p>
+<p>Based on these observations, we present a synergy-aware directed greybox fuzzing approach for efficiently reaching multiple targets only with one fuzzer instance.</p>
+<p>Using the new fine-grained feedback, we introduce two optimized input generation techniques: 1) A synergy-aware scheduling strategy that finds the seed potentially reaching the most targets with a fine-grained ranking of the seeds. 2) A multi-target-oriented mutation that generates inputs for approaching multiple targets with fewer executions needed.</p>
+<p>We implement our approach as Titan, and compare it with a state-of-the-art directed fuzzer, AFLGo, as well as widely-used fuzzers AFL, AFLFast, and FairFuzz, on both real-world programs and the state-of-the-art fuzzing benchmark, Magma.</p>
+<p>On average, Titan achieves a 21.4x speed improvement while using 95% fewer number of execution and triggers 2.31x more bugs than other fuzzers.</p>
+<p>Additionally, Titan outperforms other fuzzers by detecting nine incomplete fixes on the newest version of the benchmark programs, two of which have been assigned CVE IDs.</p>
+<p>Moreover, our inferred correlations can be integrated with other directed fuzzers, such as Beacon, to speed up fuzzing multiple targets, accelerating vulnerability reproduction by an average of 1.5x.</p>
+<p>We design a cheap and precise static analysis for inferring the synergy to reach multiple testing targets, enabling us to mitigate the synergy ignorance issue by distinguishing the correlations among the targets.</p>
+<p>We propose a new feedback mechanism for multi-targets-directed fuzzing based on the path condition rather than the control-flow distance to schedule the seed with better precision.</p>
+<p>We design a multi-target-oriented mutation strategy to efficiently reach multiple targets in parallel.</p>
+<p>We provide empirical evidence that our approach is more efficient and effective than the state-of-the-art (directed) fuzzers and has the potential to improve the performance of other directed fuzzers.</p>
+<p>Existing directed greybox fuzzing aims to test a target of interest in a program efficiently.</p>
+<p>While existing efforts have improved the precision of feedback for directed fuzzing towards a specific target, this feedback is uniquely designed for each target and cannot assist the fuzzer in efficiently reaching multiple targets.</p>
+<p>While existing efforts improve directed fuzzing to reach one target faster, the synergy ignorance problem could still hinder the performance from efficiently reproducing multiple vulnerabilities.</p>
+<p>The main problem preventing existing directed fuzzers from efficiently covering multiple targets is that they do not distinguish the correlations between different targets, primarily in the form of path condition overlapping, conflicting, and independence.</p>
+<p>Overlapping and conflicting conditions for multiple targets guide the seed schedule.</p>
+<p>Independent conditions for multiple targets facilitate efficient mutation.</p>
+<p>From the above observation, we conclude that the relations of the conditions indicate the potential of detecting multiple targets.</p>
+<p>However, to efficiently tackle multiple targets, there are two major challenges in utilizing the correlations between different targets to guide the fuzzer.</p>
+<p>Based on the observation, we present Titan, a directed fuzzer to reach multiple targets efficiently.</p>
+<p>At a high level, our approach consists of two stages.</p>
+<p>First, we use a static analyzer to infer the correlations among multiple targets based on their path conditions.</p>
+<p>Second, we design a synergy-aware fuzzer that effectively generates inputs for multiple targets.</p>
+<p>The correlations inferred by the static analysis provide fine-grained feedback for both seed scheduling and mutation.</p>
+<p>With the inferred correlations, the fuzzer can have fine-grained feedback as guidance for both seed scheduling and mutation.</p>
+<p>Specifically, we aim to fuzz multiple targets simultaneously by tackling the two challenges mentioned above respectively.</p>
+<p>We utilize the correlations to (1) identify which targets should be focused on by a given seed and (2) measure the difficulties of reaching them.</p>
+<p>We then mutate the seed for approaching multiple targets at each run to reduce redundant executions.</p>
+<p>We implemented Titan, a greybox fuzzer with a correlation analyzer and an instrumentation component, based on LLVM.</p>
+<p>On average, Titan outperforms the state-of-the-art directed fuzzers with 13.7x improvement while detecting ten more targets than the compared fuzzers.</p>
+<p>Titan exhibits better accumulative performance with 11.5x improvement on average compared with AFLGo-Multi, AFLGo-Single, and Beacon, highlighting the effectiveness of Titan as a multi-target directed fuzzing.</p>
+<p>Compared with the non-directed fuzzers, Titan detects 12 more bugs with 25x speed improvement on average, showing the effectiveness of Titan as a multi-target directed fuzzer.</p>
+<p>Moreover, we also evaluate the effectiveness of Titan in detecting incomplete fixes of the previously reported bugs in the newest version of the programs.</p>
+<p>Titan detects nine incomplete fixes and one new bug that existing efforts cannot detect, two of which have been assigned CVE IDs.</p>
+<p>Titan achieves 1.8% less overhead than AFLGo on average.</p>
+<p>Although Titan may have a higher overhead in some cases, it remains a viable and effective approach for detecting vulnerabilities in real-world software systems.</p>
+<h2>Original Abstract</h2>
+<p>Modern directed fuzzing often faces scalability issues when analyzing multiple targets in a program simultaneously. We observe that the root cause is that directed fuzzers are unaware of the correlations among the targets, thereby could degenerate into a target-undirected method. As a result, directed fuzzing suffers severely from efficiency when reproducing multiple targets.
+This paper presents Titan, which enables fuzzers to distinguish correlations among various targets in the program and, thus, optimizes the input generation to reproduce multiple targets effectively. Leveraging these correlations, Titan differentiates seeds’ potential of reaching each target for the scheduling and identifies bytes that can be changed simultaneously for the mutation. We compare our approach to eight state-of-the-art (directed) fuzzers. The evaluation demonstrates that Titan outperforms existing approaches by efficiently detecting multiple targets, achieving a 21.4x speedup and requiring 95.0% fewer number of executions. In addition, Titan detects nine incomplete fixes, which cannot be detected by other directed fuzzers, in the latest versions of the benchmark programs with two CVE IDs assigned.</p>
+</body>
+</html>

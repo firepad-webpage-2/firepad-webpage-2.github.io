@@ -1,0 +1,170 @@
+
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Firepad</title>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+    <!-- CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.17.0/codemirror.css" />
+
+
+    <!-- Firepad -->
+    <link rel="stylesheet" href="https://firepad-host.web.app/firepad.css" />
+    <script src="https://firepad-host.web.app/firepad.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+    <script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+    <style>
+html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Make the body a flex container in a row */
+    body {
+      display: flex;
+      flex-direction: row; /* side by side horizontally */
+    }
+
+    /* Instructions section */
+    #instructions {
+      width: 45%;        /* or any fixed width or flexible approach you prefer */
+      overflow-y: scroll;
+      background-color: #f9f9f9;
+      border-right: 1px solid #ddd; /* side-by-side border */
+      padding: 20px;
+      box-sizing: border-box;
+      user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    }
+
+    #instructions::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 8px;  /* fixed width for scrollbar track */
+    }
+    #instructions::-webkit-scrollbar-track {
+      background: #f0f0f0; /* track color */
+    }
+    #instructions::-webkit-scrollbar-thumb {
+      background-color: #bbb; /* scroll thumb color */
+      border-radius: 4px;
+    }
+
+    /* Firepad container takes the remaining space */
+    #firepad-container {
+      flex: 1;        /* automatically grow to fill remaining width */
+      overflow: hidden;
+    }
+
+    </style>
+</head>
+
+<body onload="init()">
+    <!-- Instructions Area -->
+    <div id="instructions">
+    </div>
+
+    <!-- Firepad Container -->
+    <div id="firepad-container"></div>
+
+    <script>
+        function init() {
+            const urlParams = new URLSearchParams(window.location.search);
+
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyCqJWZdST2-HsSDMMPev3ssFKThTxqd-Jc",
+                authDomain: "firepad-blog.firebaseapp.com",
+                databaseURL: "https://firepad-blog-default-rtdb.firebaseio.com",
+                projectId: "firepad-blog",
+                storageBucket: "firepad-blog.firebasestorage.app",
+                messagingSenderId: "303450527439",
+                appId: "1:303450527439:web:f1de9818912de33f0d49ba",
+                measurementId: "G-PR1BMSW9QY"
+            };
+            const app = firebase.initializeApp(firebaseConfig);
+
+
+            const firepadRef = app.database()
+    .ref("firepad")
+    .child("markdown-test-room");
+
+  /**************************************************
+   * 3. CodeMirror (Markdown mode)
+   **************************************************/
+  const cm = CodeMirror(document.getElementById("editor"), {
+    lineNumbers: true,
+    lineWrapping: true,
+    mode: "markdown",
+    value: ""
+  });
+
+  /**************************************************
+   * 4. Firepad (NO firepad.init())
+   **************************************************/
+  const firepad = Firepad.fromCodeMirror(firepadRef, cm, {
+    richTextToolbar: false,
+    richTextShortcuts: false
+  });
+
+  /**************************************************
+   * 5. Markdown Preview
+   **************************************************/
+  const previewEl = document.getElementById("preview");
+
+  const mdParser = window.markdownit({
+    html: false,
+    linkify: true,
+    breaks: true
+  });
+
+  function renderPreview() {
+    const md = firepad.getText();   // IMPORTANT: plain text
+    previewEl.innerHTML = mdParser.render(md);
+  }
+
+  /**************************************************
+   * 6. Load test.md ONLY if empty
+   **************************************************/
+  firepad.on("ready", async function() {
+    const existing = firepad.getText();
+
+    if (!existing || !existing.trim()) {
+      const res = await fetch("/test.md", { cache: "no-store" });
+      if (res.ok) {
+        const md = await res.text();
+        firepad.setText(md);   // IMPORTANT: setText, not setHtml
+      }
+    }
+
+    renderPreview();
+  });
+
+  /**************************************************
+   * 7. Live Preview Updates
+   **************************************************/
+  cm.on("change", function() {
+    renderPreview();
+  });
+
+}
+</script>
+
+</body>
+</html>
