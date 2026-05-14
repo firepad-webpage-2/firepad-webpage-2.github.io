@@ -37,7 +37,14 @@
     height: auto;
   }
     .pane:last-child { border-right: none; }
-    .header { padding: 10px; border-bottom: 1px solid #ddd; font-weight: 600; }
+    .header { padding: 10px; border-bottom: 1px solid #ddd; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+    .header select, .header button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
+    .header select { padding: 6px 28px 6px 10px; }
+    .header button { padding: 6px 12px; cursor: pointer; }
+    .header button:hover { background: #f8fafc; border-color: #94a3b8; }
+    .primary-button { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
+    .primary-button:hover { background: #1d4ed8 !important; border-color: #1d4ed8 !important; }
+    .spacer { flex: 1; }
     #editor { height: calc(100vh - 40px); }
     #preview { height: calc(100vh - 40px); overflow: auto; padding: 12px; }
   </style>
@@ -92,7 +99,15 @@
 <body onload="init()">
     <div class="wrap">
   <div class="pane">
-    <div class="header">Editor</div>
+	    <div class="header">
+	      <span>Editor</span>
+	      <span class="spacer"></span>
+	      <select id="image-select" title="Original paper image">
+	        <option value="">Images</option>
+	      </select>
+	      <button id="insert-image" class="primary-button" type="button">Insert image</button>
+	      <button id="renumber-figures" type="button" title="Renumber image alt text and immediate captions by image order">Renumber</button>
+	    </div>
     <div id="editor"></div>
   </div>
   <div class="pane">
@@ -144,7 +159,10 @@ let firepadReady = false;
   /**************************************************
    * 5. Markdown Preview
    **************************************************/
-  const previewEl = document.getElementById("preview");
+	  const previewEl = document.getElementById("preview");
+	  const imageSelect = document.getElementById("image-select");
+	  const insertImageButton = document.getElementById("insert-image");
+	  const renumberFiguresButton = document.getElementById("renumber-figures");
 
   const mdParser = window.markdownit({
     html: false,
@@ -152,13 +170,103 @@ let firepadReady = false;
     breaks: true
   });
 
- function renderPreview() {
-  const md = firepadReady
-    ? firepad.getText()   // safe after ready
-    : cm.getValue();      // safe before ready
+	 function renderPreview() {
+	  const md = firepadReady
+	    ? firepad.getText()   // safe after ready
+	    : cm.getValue();      // safe before ready
 
-  previewEl.innerHTML = mdParser.render(md);
-}
+	  previewEl.innerHTML = mdParser.render(md);
+	  updateImageOptions(md);
+	}
+
+	function getPaperId(md) {
+	  return urlParams.get("paperId")
+	    || urlParams.get("paper")
+	    || (md.match(/paper-assets\.alphaxiv\.org\/figures\/([^/\s)]+)\/x\d+\.png/) || [])[1]
+	    || "";
+	}
+
+	function imageExists(url) {
+	  return new Promise(resolve => {
+	    const img = new Image();
+	    img.onload = () => resolve(true);
+	    img.onerror = () => resolve(false);
+	    img.src = url;
+	  });
+	}
+
+	let activePaperId = "";
+	let probingImages = false;
+	async function updateImageOptions(md) {
+	  const paperId = getPaperId(md);
+	  if (!paperId || paperId === activePaperId || probingImages) return;
+
+	  activePaperId = paperId;
+	  probingImages = true;
+	  imageSelect.innerHTML = '<option value="">Loading images...</option>';
+
+	  const urls = [];
+	  for (let i = 1; i <= 50; i++) {
+	    const url = `https://paper-assets.alphaxiv.org/figures/${paperId}/x${i}.png`;
+	    if (!(await imageExists(url))) break;
+	    urls.push(url);
+	  }
+
+	  imageSelect.innerHTML = '<option value="">Images</option>';
+	  urls.forEach((url, index) => {
+	    const option = document.createElement("option");
+	    option.value = url;
+	    option.textContent = `figure${index + 1}.png`;
+	    imageSelect.appendChild(option);
+	  });
+	  probingImages = false;
+	}
+
+	function getImageName(url) {
+	  const number = (url.match(/\/x(\d+)\.png$/) || [])[1];
+	  return number ? `figure${number}.png` : "figure.png";
+	}
+
+	function renumberFigures(md) {
+	  const lines = md.split("\n");
+	  let figureNumber = 0;
+
+	  for (let i = 0; i < lines.length; i++) {
+	    if (!/!\[[^\]]*\]\([^)]+\)/.test(lines[i])) continue;
+
+	    figureNumber++;
+	    lines[i] = lines[i].replace(/!\[[^\]]*\]\(([^)]+)\)/g, `![figure${figureNumber}.png]($1)`);
+
+	    const captionIndex = i + 1;
+	    if (captionIndex < lines.length && /^\s*\*?Figure\s+\d+\s*:/i.test(lines[captionIndex])) {
+	      lines[captionIndex] = lines[captionIndex].replace(/Figure\s+\d+\s*:/i, `Figure ${figureNumber}:`);
+	    }
+	  }
+
+	  return lines.join("\n");
+	}
+
+	insertImageButton.addEventListener("click", function() {
+	  const url = imageSelect.value;
+	  if (!url) return;
+
+	  const imageName = getImageName(url);
+	  cm.replaceSelection(`![${imageName}](${url})`);
+	  cm.focus();
+	});
+
+	renumberFiguresButton.addEventListener("click", function() {
+	  const md = firepadReady ? firepad.getText() : cm.getValue();
+	  const nextMd = renumberFigures(md);
+
+	  if (nextMd === md) return;
+	  if (firepadReady) {
+	    firepad.setText(nextMd);
+	  } else {
+	    cm.setValue(nextMd);
+	  }
+	  renderPreview();
+	});
 
   /**************************************************
    * 6. Load test.md ONLY if empty
