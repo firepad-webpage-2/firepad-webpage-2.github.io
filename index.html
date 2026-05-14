@@ -134,9 +134,14 @@
             const app = firebase.initializeApp(firebaseConfig);
 
 
-            const firepadRef = app.database()
-    .ref("firepad")
-    .child("markdown-test-room");
+    //         const firepadRef = app.database()
+    // .ref("firepad")
+    // .child("markdown-test-room");
+    const documentId = urlParams.get("documentId") || "markdown-test-room";
+
+    const firepadRef = app.database()
+      .ref("firepad")
+      .child(documentId);
 
   /**************************************************
    * 3. CodeMirror (Markdown mode)
@@ -155,6 +160,32 @@
     richTextToolbar: false,
     richTextShortcuts: false
   });
+  function sendFirepadText(requestId, targetOrigin) {
+  if (!firepadReady) return;
+
+  window.parent.postMessage(
+    {
+      type: "firepad-text",
+      documentId,
+      requestId,
+      text: firepad.getText()
+    },
+    targetOrigin
+  );
+}
+
+window.addEventListener("message", function(event) {
+  const allowedOrigins = new Set([
+    "http://127.0.0.1:3000",
+    "http://localhost:3000"
+  ]);
+
+  if (!allowedOrigins.has(event.origin)) return;
+  if (event.data?.type !== "request-firepad-text") return;
+
+  sendFirepadText(event.data.requestId, event.origin);
+});
+
 let firepadReady = false;
   /**************************************************
    * 5. Markdown Preview
@@ -285,6 +316,8 @@ let firepadReady = false;
 
     renderPreview();
   });
+
+  
 
   /**************************************************
    * 7. Live Preview Updates
