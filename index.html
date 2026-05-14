@@ -106,7 +106,7 @@
 	        <option value="">Images</option>
 	      </select>
 	      <button id="insert-image" class="primary-button" type="button">Insert image</button>
-	      <button id="renumber-figures" type="button" title="Renumber image alt text and immediate captions by image order">Renumber</button>
+	      <button id="renumber-figures" type="button" title="Renumber immediate captions by image order">Renumber</button>
 	    </div>
     <div id="editor"></div>
   </div>
@@ -266,8 +266,6 @@ let firepadReady = false;
 	    if (!/!\[[^\]]*\]\([^)]+\)/.test(lines[i])) continue;
 
 	    figureNumber++;
-	    lines[i] = lines[i].replace(/!\[[^\]]*\]\(([^)]+)\)/g, `![figure${figureNumber}.png]($1)`);
-
 	    const captionIndex = i + 1;
 	    if (captionIndex < lines.length && /^\s*\*?Figure\s+\d+\s*:/i.test(lines[captionIndex])) {
 	      lines[captionIndex] = lines[captionIndex].replace(/Figure\s+\d+\s*:/i, `Figure ${figureNumber}:`);
