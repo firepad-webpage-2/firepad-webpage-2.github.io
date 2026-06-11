@@ -18,6 +18,7 @@
     <!-- Firepad -->
     <link rel="stylesheet" href="https://firepad-host.web.app/firepad.css" />
     <script src="https://firepad-host.web.app/firepad.min.js"></script>
+    <script src="./figure-markdown-normalizer.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 
@@ -37,10 +38,13 @@
     height: auto;
   }
     .pane:last-child { border-right: none; }
-    .header { padding: 10px; border-bottom: 1px solid #ddd; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+    .header { min-height: 64px; box-sizing: border-box; padding: 10px; border-bottom: 1px solid #ddd; font-weight: 600; display: flex; align-items: center; gap: 8px; }
     .header button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
     .header button { padding: 6px 12px; cursor: pointer; }
     .header button:hover { background: #f8fafc; border-color: #94a3b8; }
+    .preview-header { align-items: flex-start; flex-direction: column; gap: 4px; }
+    .original-paper-link { color: #2563eb; font-size: 16px; font-weight: 500; text-decoration: none; }
+    .original-paper-link:hover { text-decoration: underline; }
     .primary-button { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
     .primary-button:hover { background: #1d4ed8 !important; border-color: #1d4ed8 !important; }
     .image-picker { position: relative; display: flex; }
@@ -80,13 +84,13 @@
     .image-menu-item:hover,
     .image-menu-item.active { background: #eff6ff; color: #1d4ed8; }
     .image-menu-item.loading { color: #64748b; cursor: default; }
-    #image-preview-popover {
-      display: none;
-      position: absolute;
-      top: calc(100% + 6px);
-      right: calc(100% + 10px);
-      z-index: 31;
-      width: min(320px, 42vw);
+	    #image-preview-popover {
+	      display: none;
+	      position: absolute;
+	      top: 0;
+	      left: calc(100% + 10px);
+	      z-index: 31;
+	      width: min(320px, 42vw);
       padding: 10px;
       border: 1px solid #cbd5e1;
       border-radius: 8px;
@@ -126,22 +130,45 @@
     .cm-figure-ref-0, .cm-figure-ref-1, .cm-figure-ref-2, .cm-figure-ref-3,
     .cm-figure-ref-4, .cm-figure-ref-5, .cm-figure-ref-6, .cm-figure-ref-7 { font-weight: 600; }
     .cm-figure-orphan { background: rgba(239, 68, 68, 0.22); border-bottom: 2px solid #ef4444; font-weight: 700; }
-    #figure-warning {
-      display: none;
-      max-width: 260px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+	    #figure-warning {
+	      display: none;
+	      max-width: 220px;
+	      overflow: hidden;
+	      text-overflow: ellipsis;
+	      white-space: nowrap;
       padding: 5px 8px;
       border: 1px solid #fecaca;
       border-radius: 6px;
       background: #fef2f2;
       color: #991b1b;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    #figure-warning.active { display: inline-block; }
-  </style>
+	      font-size: 12px;
+	      font-weight: 600;
+	      cursor: help;
+	    }
+	    #figure-warning.active { display: inline-block; }
+	    #figure-warning.active:hover {
+	      max-width: min(520px, 48vw);
+	      white-space: normal;
+	    }
+	    #figure-notification {
+	      display: none;
+	      position: fixed;
+	      top: 16px;
+	      left: 50%;
+	      transform: translateX(-50%);
+	      z-index: 50;
+	      max-width: min(520px, calc(100vw - 32px));
+	      padding: 10px 14px;
+	      border: 1px solid #fecaca;
+	      border-radius: 6px;
+	      background: #fef2f2;
+	      color: #991b1b;
+	      font-size: 14px;
+	      font-weight: 700;
+	      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+	    }
+	    #figure-notification.active { display: block; }
+	  </style>
 <!-- /* html,
     body {
       height: 100%;
@@ -204,16 +231,19 @@
 	          <span id="image-preview-label"></span>
 	        </span>
 	      </span>
-	      <button id="insert-image" class="primary-button" type="button">Insert image</button>
-	      <button id="renumber-figures" type="button" title="Renumber immediate captions by image order">Renumber</button>
 	      <span id="figure-warning" title=""></span>
+	      <button id="insert-image" class="primary-button" type="button">Insert image</button>
 	    </div>
-    <div id="editor"></div>
-  </div>
-  <div class="pane">
-    <div class="header">Preview</div>
-    <div id="preview"></div>
-  </div>
+	    <div id="editor"></div>
+	  </div>
+	  <div id="figure-notification" role="alert"></div>
+	  <div class="pane">
+	    <div class="header preview-header">
+	      <span>Preview</span>
+	      <a id="original-paper-link" class="original-paper-link" href="#" target="_blank" rel="noopener noreferrer">Access Original Paper</a>
+	    </div>
+	    <div id="preview"></div>
+	  </div>
 </div>
 
     <script>
@@ -246,20 +276,20 @@
   /**************************************************
    * 3. CodeMirror (Markdown mode)
    **************************************************/
-  const cm = CodeMirror(document.getElementById("editor"), {
-    lineNumbers: true,
-    lineWrapping: true,
-    mode: "markdown",
-    value: ""
-  });
+		  const cm = CodeMirror(document.getElementById("editor"), {
+		    lineNumbers: true,
+		    lineWrapping: true,
+		    mode: "markdown",
+		    value: ""
+		  });
 
-  /**************************************************
-   * 4. Firepad (NO firepad.init())
-   **************************************************/
-  const firepad = Firepad.fromCodeMirror(firepadRef, cm, {
-    richTextToolbar: false,
-    richTextShortcuts: false
-  });
+		  /**************************************************
+		   * 4. Firepad (NO firepad.init())
+		   **************************************************/
+		  const firepad = Firepad.fromCodeMirror(firepadRef, cm, {
+		    richTextToolbar: false,
+		    richTextShortcuts: false
+		  });
   function sendFirepadText(requestId, targetOrigin) {
   if (!firepadReady) return;
 
@@ -292,19 +322,22 @@ let firepadReady = false;
 	   **************************************************/
 		  const previewEl = document.getElementById("preview");
 		  const imagePicker = document.querySelector(".image-picker");
-		  const imagePickerButton = document.getElementById("image-picker-button");
-		  const imageMenu = document.getElementById("image-menu");
-			  const insertImageButton = document.getElementById("insert-image");
-			  const renumberFiguresButton = document.getElementById("renumber-figures");
-			  const figureWarning = document.getElementById("figure-warning");
-			  const imagePreviewImg = document.getElementById("image-preview-img");
-		  const imagePreviewLabel = document.getElementById("image-preview-label");
+			  const imagePickerButton = document.getElementById("image-picker-button");
+				  const imageMenu = document.getElementById("image-menu");
+					  const insertImageButton = document.getElementById("insert-image");
+					  const figureWarning = document.getElementById("figure-warning");
+						  const figureNotification = document.getElementById("figure-notification");
+						  const imagePreviewImg = document.getElementById("image-preview-img");
+				  const imagePreviewLabel = document.getElementById("image-preview-label");
+				  const originalPaperLink = document.getElementById("original-paper-link");
 		  let imageOptions = [];
 		  let selectedImageUrl = "";
-		  let figureMarks = [];
-		  let previousOrphanLabels = new Set();
-		  let figureWarningReady = false;
-		  let allowImageMarkdownChange = false;
+			  let figureMarks = [];
+				  let previousFigureLabels = new Set();
+			  let figureWarningReady = false;
+			  let figureNotificationTimer = null;
+			  let lastRenderedCursorLine = null;
+			  let allowImageMarkdownChange = false;
 
   const mdParser = window.markdownit({
     html: false,
@@ -316,6 +349,7 @@ let firepadReady = false;
 	  const md = firepadReady
 	    ? firepad.getText()   // safe after ready
 	    : cm.getValue();      // safe before ready
+	  lastRenderedCursorLine = cm.getCursor().line;
 
 	  const figureLabels = getFigureLabels(md);
 	  previewEl.innerHTML = mdParser.render(linkFigureReferences(md, figureLabels));
@@ -323,6 +357,7 @@ let firepadReady = false;
 	  highlightFigureMarkup(md, figureLabels);
 	  updateFigureWarnings(md, figureLabels);
 	  updateImageOptions(md);
+	  updateOriginalPaperLink(md);
 	}
 
 	function getPaperId(md) {
@@ -330,6 +365,16 @@ let firepadReady = false;
 	    || urlParams.get("paper")
 	    || (md.match(/paper-assets\.alphaxiv\.org\/figures\/([^/\s)]+)\/x\d+\.png/) || [])[1]
 	    || "";
+	}
+
+	function updateOriginalPaperLink(md) {
+	  const paperId = getPaperId(md);
+	  if (!paperId) {
+	    originalPaperLink.removeAttribute("href");
+	    return;
+	  }
+
+	  originalPaperLink.href = `https://arxiv.org/pdf/${paperId}`;
 	}
 
 	function imageExists(url) {
@@ -448,32 +493,6 @@ let firepadReady = false;
 	  return labels;
 	}
 
-	function getFigureMetadata(md) {
-	  const labels = [];
-	  const labelsByKey = {};
-	  const counts = {};
-	  const imagePattern = /!\[([^\]]*)\]\(([^)]+)\)/g;
-	  let match;
-
-	  while ((match = imagePattern.exec(md))) {
-	    const afterImage = md.slice(match.index + match[0].length);
-	    const captionMatch = afterImage.match(/^\s*\n\s*\*{0,2}Figure\s+(\d+)\s*:/i);
-	    const key = getImageKey(match[2]);
-
-	    if (!labelsByKey[key]) {
-	      labelsByKey[key] = {
-	        label: makeUniqueLabel(getFigureLabel(match[1], match[2]), counts),
-	        number: Object.keys(labelsByKey).length + 1,
-	        captionNumber: captionMatch ? Number(captionMatch[1]) : Object.keys(labelsByKey).length + 1,
-	        key
-	      };
-	    }
-	    labels.push(labelsByKey[key]);
-	  }
-
-	  return labels;
-	}
-
 	function getLineStarts(text) {
 	  const starts = [0];
 	  for (let i = 0; i < text.length; i++) {
@@ -539,7 +558,7 @@ let firepadReady = false;
 	  if (isWholeImageDeletion(start, end, replacementText, overlappedRanges)) return;
 
 	  change.cancel();
-	  window.alert("Image markdown cannot be edited directly. Delete the whole image markdown or use the top image dropdown.");
+	  showFigureNotification("Image markdown cannot be edited directly. Delete the whole image markdown or use the top image dropdown.");
 	}
 
 	function withImageMarkdownGuardDisabled(fn) {
@@ -585,9 +604,54 @@ let firepadReady = false;
 	  return Array.from(new Map(figureLabels.map(figure => [figure.label, figure])).values());
 	}
 
-	function getOrphanFigureReferences(md, figureLabels) {
+	function getCursorIndex(md) {
+	  const lineStarts = getLineStarts(md);
+	  return posToIndex(cm.getCursor(), lineStarts);
+	}
+
+	function rangesOverlap(a, b) {
+	  return a.start < b.end && b.start < a.end;
+	}
+
+	function getActiveFigureReferenceLineRange(md, cursorIndex) {
+	  const prefixes = ["\\ref{fig:", "{fig:"];
+	  const lineStart = md.lastIndexOf("\n", Math.max(0, cursorIndex - 1)) + 1;
+	  const lineEndIndex = md.indexOf("\n", cursorIndex);
+	  const lineEnd = lineEndIndex === -1 ? md.length : lineEndIndex;
+	  const lineText = md.slice(lineStart, lineEnd);
+	  const hasFigureReference = prefixes.some(prefix => lineText.includes(prefix));
+
+	  return hasFigureReference ? { start: lineStart, end: lineEnd } : null;
+	}
+
+	function isCursorEditingReference(ref, activeReferenceLineRange) {
+	  return activeReferenceLineRange && rangesOverlap(ref, activeReferenceLineRange);
+	}
+
+	function showFigureNotification(message) {
+	  if (figureNotificationTimer) {
+	    clearTimeout(figureNotificationTimer);
+	  }
+
+	  figureNotification.textContent = `Warning: ${message}`;
+	  figureNotification.classList.add("active");
+	  figureNotificationTimer = setTimeout(() => {
+	    figureNotification.classList.remove("active");
+	    figureNotificationTimer = null;
+	  }, 4500);
+	}
+
+	function getOrphanFigureReferences(md, figureLabels, ignoreActiveReference = false) {
 	  const knownLabels = new Set(figureLabels.map(figure => figure.label));
-	  return getFigureReferenceMatches(md).filter(ref => !knownLabels.has(ref.label));
+	  const activeReferenceLineRange = ignoreActiveReference
+	    ? getActiveFigureReferenceLineRange(md, getCursorIndex(md))
+	    : null;
+
+	  return getFigureReferenceMatches(md).filter(ref => {
+	    if (knownLabels.has(ref.label)) return false;
+	    if (ignoreActiveReference && isCursorEditingReference(ref, activeReferenceLineRange)) return false;
+	    return true;
+	  });
 	}
 
 	function highlightFigureMarkup(md, figureLabels) {
@@ -621,21 +685,23 @@ let firepadReady = false;
 	      });
 	    });
 
-	    getOrphanFigureReferences(md, figureLabels).forEach(ref => {
+	    getOrphanFigureReferences(md, figureLabels, true).forEach(ref => {
 	      addFigureMark(md, lineStarts, ref.start, ref.end, "cm-figure-orphan");
 	    });
 	  });
 	}
 
 	function updateFigureWarnings(md, figureLabels) {
-	  const orphanLabels = Array.from(new Set(getOrphanFigureReferences(md, figureLabels).map(ref => ref.label)));
-	  const newOrphanLabels = orphanLabels.filter(label => !previousOrphanLabels.has(label));
+	  const orphanLabels = Array.from(new Set(getOrphanFigureReferences(md, figureLabels, true).map(ref => ref.label)));
+	  const currentFigureLabels = new Set(getUniqueFigures(figureLabels).map(figure => figure.label));
+	  const removedLabels = Array.from(previousFigureLabels).filter(label => !currentFigureLabels.has(label));
+	  const removedLabelsWithRefs = orphanLabels.filter(label => removedLabels.includes(label));
 
-	  if (figureWarningReady && newOrphanLabels.length) {
-	    window.alert(
-	      newOrphanLabels.length === 1
-	        ? `Missing reference for img: ${newOrphanLabels[0]}`
-	        : `Missing reference for imgs: ${newOrphanLabels.join(", ")}`
+	  if (figureWarningReady && removedLabelsWithRefs.length) {
+	    showFigureNotification(
+	      removedLabelsWithRefs.length === 1
+	        ? `Missing reference for img: ${removedLabelsWithRefs[0]}`
+	        : `Missing reference for imgs: ${removedLabelsWithRefs.join(", ")}`
 	    );
 	  }
 
@@ -643,7 +709,7 @@ let firepadReady = false;
 	    figureWarning.classList.remove("active");
 	    figureWarning.textContent = "";
 	    figureWarning.title = "";
-	    previousOrphanLabels = new Set();
+	    previousFigureLabels = currentFigureLabels;
 	    figureWarningReady = true;
 	    return;
 	  }
@@ -653,7 +719,7 @@ let firepadReady = false;
 	    ? `Missing reference for img: ${orphanLabels[0]}`
 	    : `${orphanLabels.length} missing img references`;
 	  figureWarning.title = `Missing reference for imgs: ${orphanLabels.join(", ")}`;
-	  previousOrphanLabels = new Set(orphanLabels);
+	  previousFigureLabels = currentFigureLabels;
 	  figureWarningReady = true;
 	}
 
@@ -713,79 +779,17 @@ let firepadReady = false;
 	  return "";
 	}
 
-	function normalizeFigureAltText(md) {
-	  return md.replace(/!\[([^\]]*)\]\((https:\/\/paper-assets\.alphaxiv\.org\/figures\/[^/\s)]+\/x(\d+)\.png)\)/g, (match, altText, url) => {
-	    const label = getFigureLabel(altText, url);
-	    return label ? `![${label}](${url})` : match;
-	  });
-	}
-
-	function formatFigureReferenceList(numbers, figureLabels) {
-	  const refs = numbers.map(number => {
-	    const figure = figureLabels.find(item => item.captionNumber === number) || figureLabels[number - 1];
-	    return figure?.label ? `{fig:${figure.label}}` : `Figure ${number}`;
-	  });
-
-	  if (refs.length <= 1) return refs[0] || "";
-	  if (refs.length === 2) return `${refs[0]} and ${refs[1]}`;
-	  return `${refs.slice(0, -1).join(", ")}, and ${refs[refs.length - 1]}`;
-	}
-
-	function normalizeFigureTextReferences(md) {
-	  const figureLabels = getFigureMetadata(md);
-
-	  function replaceReferences(text) {
-	    return text.replace(/\b(?:Figures?|Figs?\.?)\s+(\d+(?:\s*,\s*\d+)*(?:\s*,?\s+and\s+\d+)?)/gi, (match, numberText) => {
-	      const numbers = numberText.match(/\d+/g)?.map(Number) || [];
-	      if (!numbers.length) return match;
-	      return formatFigureReferenceList(numbers, figureLabels);
-	    });
+	async function loadInitialMarkdown() {
+	  try {
+	    const res = await fetch("/test.md", { cache: "no-store" });
+	    if (!res.ok) return "";
+	    const md = await res.text();
+	    return window.FigureMarkdownNormalizer
+	      ? window.FigureMarkdownNormalizer.normalizeInitialMarkdown(md)
+	      : md;
+	  } catch (error) {
+	    return "";
 	  }
-
-	  return md.split("\n").map(line => {
-	    if (/!\[[^\]]*\]\([^)]+\)/.test(line)) return line;
-
-	    const captionMatch = line.match(/^(\s*\*{0,2}Figure\s+\d+\s*:)(.*)$/i);
-	    if (captionMatch) {
-	      return `${captionMatch[1]}${replaceReferences(captionMatch[2])}`;
-	    }
-
-	    const labeledCaptionMatch = line.match(/^(\s*\*{0,2}\{fig:[^}]+\}\s*:)(.*)$/i);
-	    if (labeledCaptionMatch) {
-	      return `${labeledCaptionMatch[1]}${replaceReferences(labeledCaptionMatch[2])}`;
-	    }
-
-	    if (line.includes("{fig:") || line.includes("\\ref{fig:")) return line;
-
-	    return replaceReferences(line);
-	  }).join("\n");
-	}
-
-	function normalizeFigureCaptions(md) {
-	  return renumberFigures(md);
-	}
-
-	function normalizeInitialMarkdown(md) {
-	  return normalizeFigureCaptions(normalizeFigureTextReferences(normalizeFigureAltText(md)));
-	}
-
-	function renumberFigures(md) {
-	  const lines = md.split("\n");
-	  const figureLabels = getFigureLabels(md);
-	  let figureNumber = 0;
-
-	  for (let i = 0; i < lines.length; i++) {
-	    if (!/!\[[^\]]*\]\([^)]+\)/.test(lines[i])) continue;
-
-	    figureNumber++;
-	    const label = figureLabels[figureNumber - 1]?.label;
-	    const captionIndex = i + 1;
-	    if (captionIndex < lines.length && label && /^\s*\*{0,2}(?:Figure\s+\d+|\{fig:[^}]+\})\s*:/i.test(lines[captionIndex])) {
-	      lines[captionIndex] = lines[captionIndex].replace(/(\s*\*{0,2})(?:Figure\s+\d+|\{fig:[^}]+\})\s*:/i, `$1{fig:${label}}:`);
-	    }
-	  }
-
-	  return lines.join("\n");
 	}
 
 	insertImageButton.addEventListener("click", function() {
@@ -810,47 +814,22 @@ let firepadReady = false;
 	  imagePicker.classList.remove("open", "previewing");
 	});
 
-	renumberFiguresButton.addEventListener("click", function() {
-	  const md = firepadReady ? firepad.getText() : cm.getValue();
-	  const nextMd = renumberFigures(md);
-
-	  if (nextMd === md) return;
-	  withImageMarkdownGuardDisabled(() => {
-	    if (firepadReady) {
-	      firepad.setText(nextMd);
-	    } else {
-	      cm.setValue(nextMd);
-	    }
-	  });
-	  renderPreview();
-	});
-
-  /**************************************************
-   * 6. Load test.md ONLY if empty
-   **************************************************/
-	  firepad.on("ready", async function() {
-	    firepadReady=true;
-	    const existing = firepad.getText();
-
-	    if (!existing || !existing.trim()) {
-	      const res = await fetch("/test.md", { cache: "no-store" });
-	      if (res.ok) {
-	        const md = normalizeInitialMarkdown(await res.text());
-	        withImageMarkdownGuardDisabled(() => {
-	          firepad.setText(md);   // IMPORTANT: setText, not setHtml
-	        });
-	      }
-	    } else {
-	      const normalized = normalizeInitialMarkdown(existing);
-	      if (normalized !== existing) {
-	        withImageMarkdownGuardDisabled(() => {
-	          firepad.setText(normalized);
-	        });
-	      }
-	    }
-
-	    renderPreview();
-	  });
+	  /**************************************************
+	   * 6. Firepad Ready
+	   **************************************************/
+		  firepad.on("ready", async function() {
+		    firepadReady=true;
+		    const existing = firepad.getText();
+		    if (!existing || !existing.trim()) {
+		      const md = await loadInitialMarkdown();
+		      if (md) {
+		        withImageMarkdownGuardDisabled(() => {
+		          firepad.setText(md);
+		        });
+		      }
+		    }
+		    renderPreview();
+		  });
 
   
 
@@ -861,9 +840,15 @@ let firepadReady = false;
 	    guardImageMarkdownEdit(change);
 	  });
 
-	  cm.on("change", function() {
-	    renderPreview();
-	  });
+		  cm.on("change", function() {
+		    renderPreview();
+		  });
+
+		  cm.on("cursorActivity", function() {
+		    const cursorLine = cm.getCursor().line;
+		    if (cursorLine === lastRenderedCursorLine) return;
+		    renderPreview();
+		  });
 
 }
 </script>
