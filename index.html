@@ -290,18 +290,27 @@
 		    richTextToolbar: false,
 		    richTextShortcuts: false
 		  });
-  function sendFirepadText(requestId, targetOrigin) {
-  if (!firepadReady) return;
 
-  window.parent.postMessage(
-    {
-      type: "firepad-text",
-      documentId,
-      requestId,
-      text: firepad.getText()
-    },
-    targetOrigin
-  );
+	  function getMissingReferenceWarnings() {
+	    return Array.from(document.querySelectorAll("#figure-warning.active"))
+	      .map(el => el.textContent.trim())
+	      .filter(Boolean);
+	  }
+
+	  function sendFirepadText(requestId, targetOrigin) {
+	  if (!firepadReady) return;
+	  const missingReferences = getMissingReferenceWarnings();
+
+	  window.parent.postMessage(
+	    {
+	      type: "firepad-text",
+	      documentId,
+	      requestId,
+	      text: firepad.getText(),
+	      missingReferences
+	    },
+	    targetOrigin
+	  );
 }
 
 window.addEventListener("message", function(event) {
