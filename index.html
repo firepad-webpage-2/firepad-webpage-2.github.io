@@ -230,10 +230,10 @@
 	        <span id="image-preview-popover">
 	          <img id="image-preview-img" alt="" />
 		          <span id="image-preview-label"></span>
-		        </span>
-		      </span>
-		      <button id="insert-image" class="primary-button" type="button">Insert image</button>
-		    </div>
+			        </span>
+			      </span>
+			      <button id="insert-image" class="primary-button" type="button">Insert image</button>
+			    </div>
 	    <div id="editor"></div>
 	  </div>
 	  <div id="figure-notification" role="alert"></div>
@@ -403,15 +403,15 @@ let firepadReady = false;
 		    urls.push(url);
 		  }
 
-		  imageOptions = urls.map((url, index) => ({
-		    url,
-		    label: `figure${index + 1}.png`
-		  }));
-		  selectedImageUrl = imageOptions[0]?.url || "";
-		  renderImageMenu();
-		  probingImages = false;
-		  updateImagePreview(selectedImageUrl);
-		}
+			  imageOptions = urls.map((url, index) => ({
+			    url,
+			    label: `figure${index + 1}.png`
+			  }));
+			  selectedImageUrl = imageOptions[0]?.url || "";
+			  renderImageMenu();
+			  probingImages = false;
+			  updateImagePreview(selectedImageUrl);
+			}
 
 		function renderImageMenu() {
 		  imagePickerButton.textContent = imageOptions.find(option => option.url === selectedImageUrl)?.label || "Images";
@@ -527,21 +527,36 @@ let firepadReady = false;
 	  let match;
 
 	  while ((match = imagePattern.exec(md))) {
+	    const labelStart = match.index + 2;
+	    const labelEnd = labelStart + (match[0].match(/^!\[([^\]]*)\]/) || ["", ""])[1].length;
 	    ranges.push({
 	      start: match.index,
-	      end: match.index + match[0].length
+	      end: match.index + match[0].length,
+	      labelStart,
+	      labelEnd
 	    });
 	  }
 
 	  return ranges;
 	}
 
-	function changeOverlapsRange(start, end, range) {
+	function changeTouchesRange(start, end, range) {
+	  if (start === end) return start > range.start && start < range.end;
 	  return start < range.end && end > range.start;
 	}
 
 	function isWholeImageDeletion(start, end, replacementText, overlappedRanges) {
 	  return replacementText === "" && overlappedRanges.every(range => start <= range.start && end >= range.end);
+	}
+
+	function isImageLabelEdit(start, end, replacementText, overlappedRanges) {
+	  if (replacementText.includes("\n")) return false;
+	  return overlappedRanges.every(range => {
+	    if (start === end) {
+	      return start >= range.labelStart && start <= range.labelEnd;
+	    }
+	    return start >= range.labelStart && end <= range.labelEnd;
+	  });
 	}
 
 	function guardImageMarkdownEdit(change) {
@@ -552,13 +567,14 @@ let firepadReady = false;
 	  const start = posToIndex(change.from, lineStarts);
 	  const end = posToIndex(change.to, lineStarts);
 	  const replacementText = change.text.join("\n");
-	  const overlappedRanges = getImageMarkdownRanges(md).filter(range => changeOverlapsRange(start, end, range));
+	  const overlappedRanges = getImageMarkdownRanges(md).filter(range => changeTouchesRange(start, end, range));
 
 	  if (!overlappedRanges.length) return;
 	  if (isWholeImageDeletion(start, end, replacementText, overlappedRanges)) return;
+	  if (isImageLabelEdit(start, end, replacementText, overlappedRanges)) return;
 
 	  change.cancel();
-	  showFigureNotification("Image markdown cannot be edited directly. Delete the whole image markdown or use the top image dropdown.");
+	  showFigureNotification("Only image labels can be edited directly. Delete the whole image markdown or use the top image dropdown.");
 	}
 
 	function withImageMarkdownGuardDisabled(fn) {
