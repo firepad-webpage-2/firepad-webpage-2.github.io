@@ -54,8 +54,9 @@
     .header button { padding: 6px 12px; cursor: pointer; }
     .header button:hover { background: #f8fafc; border-color: #94a3b8; }
     .preview-header { align-items: flex-start; flex-direction: column; gap: 4px; }
-	    .original-paper-link { color: var(--custom-red); font-size: 16px; font-weight: 500; text-decoration: none; }
-	    .original-paper-link:hover { text-decoration: underline; }
+	    .preview-links { display: flex; gap: 14px; align-items: center; }
+	    .paper-link { color: var(--custom-red); font-size: 16px; font-weight: 500; text-decoration: none; }
+	    .paper-link:hover { text-decoration: underline; }
     .primary-button { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
     .primary-button:hover { background: #1d4ed8 !important; border-color: #1d4ed8 !important; }
     .image-picker { position: relative; display: flex; }
@@ -127,7 +128,12 @@
     }
     .spacer { flex: 1; }
     #editor { height: calc(100vh - 40px); }
-	    #preview { height: calc(100vh - 64px); overflow: auto; padding: 18px; background: var(--surface-alt); color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
+		.CodeMirror {
+			background: #FFF6E6
+
+;
+			}
+	    #preview { height: calc(100vh - 64px); overflow: auto; padding: 18px; background: #FFFFFF; color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
 	    .preview-header { background: var(--bg); color: var(--text); }
 	    .cm-figure-image-0, .cm-figure-ref-0 { color: #2563eb; }
 	    .cm-figure-image-1, .cm-figure-ref-1 { color: #047857; }
@@ -252,7 +258,10 @@
 	  <div class="pane">
 	    <div class="header preview-header">
 	      <span>Preview</span>
-	      <a id="original-paper-link" class="original-paper-link" href="#" target="_blank" rel="noopener noreferrer">Access Original Paper</a>
+	      <span class="preview-links">
+	        <a id="original-paper-link" class="paper-link" href="#" target="_blank" rel="noopener noreferrer">Access Original Paper</a>
+	        <a id="alphaxiv-blog-link" class="paper-link" href="#" target="_blank" rel="noopener noreferrer">AlphaXiv Blog</a>
+	      </span>
 	    </div>
 	    <div id="preview"></div>
 	  </div>
@@ -351,6 +360,7 @@ let firepadReady = false;
 						  const imagePreviewImg = document.getElementById("image-preview-img");
 				  const imagePreviewLabel = document.getElementById("image-preview-label");
 				  const originalPaperLink = document.getElementById("original-paper-link");
+				  const alphaxivBlogLink = document.getElementById("alphaxiv-blog-link");
 		  let imageOptions = [];
 		  let selectedImageUrl = "";
 			  let figureMarks = [];
@@ -392,10 +402,12 @@ let firepadReady = false;
 	  const paperId = getPaperId(md);
 	  if (!paperId) {
 	    originalPaperLink.removeAttribute("href");
+	    alphaxivBlogLink.removeAttribute("href");
 	    return;
 	  }
 
-	  originalPaperLink.href = `https://alphaxiv.org/pdf/${paperId}`;
+	  originalPaperLink.href = `https://arxiv.org/pdf/${paperId}`;
+	  alphaxivBlogLink.href = `https://www.alphaxiv.org/overview/${paperId}`;
 	}
 
 	function imageExists(url) {
