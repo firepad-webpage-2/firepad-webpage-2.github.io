@@ -286,10 +286,12 @@
 
 
     //         const firepadRef = app.database()
-    // .ref("firepad")
-    // .child("markdown-test-room");
-	    const requestedPaperId = urlParams.get("paperId") || urlParams.get("paper") || "";
-	    const documentId = urlParams.get("documentId") || getDefaultDocumentId(requestedPaperId);
+	    // .ref("firepad")
+	    // .child("markdown-test-room");
+	    const requestedPaperId = getPaperIdFromUrl();
+	    const documentId = requestedPaperId
+	      ? getFirebaseKeyForPaperId(requestedPaperId)
+	      : (urlParams.get("documentId") || "markdown-test-room");
 
     const firepadRef = app.database()
       .ref("firepad")
@@ -393,14 +395,23 @@ let firepadReady = false;
 	}
 
 	function getPaperId(md) {
-	  return urlParams.get("paperId")
-	    || urlParams.get("paper")
+	  return getPaperIdFromUrl()
 	    || (md.match(/paper-assets\.alphaxiv\.org\/figures\/([^/\s)]+)\/x\d+\.png/) || [])[1]
 	    || "";
 	}
 
-	function getDefaultDocumentId(paperId) {
-	  return paperId ? `paper-${paperId.replace(/[.#$/[\]]/g, "_")}` : "markdown-test-room";
+	function getPaperIdFromUrl() {
+	  return urlParams.get("paperId")
+	    || urlParams.get("paperid")
+	    || urlParams.get("paper_id")
+	    || urlParams.get("paper")
+	    || urlParams.get("arxivId")
+	    || urlParams.get("arxiv_id")
+	    || "";
+	}
+
+	function getFirebaseKeyForPaperId(paperId) {
+	  return paperId.replace(/[.#$/[\]]/g, "_");
 	}
 
 	function getMarkdownPathForPaperId(paperId) {
