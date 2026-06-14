@@ -288,7 +288,8 @@
     //         const firepadRef = app.database()
     // .ref("firepad")
     // .child("markdown-test-room");
-    const documentId = urlParams.get("documentId") || "markdown-test-room";
+	    const requestedPaperId = urlParams.get("paperId") || urlParams.get("paper") || "";
+	    const documentId = urlParams.get("documentId") || getDefaultDocumentId(requestedPaperId);
 
     const firepadRef = app.database()
       .ref("firepad")
@@ -396,6 +397,14 @@ let firepadReady = false;
 	    || urlParams.get("paper")
 	    || (md.match(/paper-assets\.alphaxiv\.org\/figures\/([^/\s)]+)\/x\d+\.png/) || [])[1]
 	    || "";
+	}
+
+	function getDefaultDocumentId(paperId) {
+	  return paperId ? `paper-${paperId.replace(/[.#$/[\]]/g, "_")}` : "markdown-test-room";
+	}
+
+	function getMarkdownPathForPaperId(paperId) {
+	  return /^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paperId) ? `/${paperId}.md` : "/test.md";
 	}
 
 	function updateOriginalPaperLink(md) {
@@ -830,7 +839,8 @@ let firepadReady = false;
 
 	async function loadInitialMarkdown() {
 	  try {
-	    const res = await fetch("/test.md", { cache: "no-store" });
+	    const paperId = getPaperId("");
+	    const res = await fetch(getMarkdownPathForPaperId(paperId), { cache: "no-store" });
 	    if (!res.ok) return "";
 	    const md = await res.text();
 	    return window.FigureMarkdownNormalizer
