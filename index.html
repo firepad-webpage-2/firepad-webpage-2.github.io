@@ -288,10 +288,10 @@
     //         const firepadRef = app.database()
 	    // .ref("firepad")
 	    // .child("markdown-test-room");
-	    const requestedPaperId = getPaperIdFromUrl();
-	    const documentId = requestedPaperId
-	      ? getFirebaseKeyForPaperId(requestedPaperId)
-	      : (urlParams.get("documentId") || "markdown-test-room");
+	    const paperId = getPaperIdFromUrl();
+	    const documentId = paperId
+	      ? getFirebaseKeyForPaperId(paperId)
+	      : "markdown-test-room";
 
     const firepadRef = app.database()
       .ref("firepad")
@@ -321,21 +321,28 @@
 	      .filter(Boolean);
 	  }
 
-	  function sendFirepadText(requestId, targetOrigin) {
-	  if (!firepadReady) return;
-	  const missingReferences = getMissingReferenceWarnings();
+	  function getCurrentEditorText() {
+	    return firepadReady ? firepad.getText() : cm.getValue();
+	  }
 
-	  window.parent.postMessage(
-	    {
-	      type: "firepad-text",
-	      documentId,
-	      requestId,
-	      text: firepad.getText(),
-	      missingReferences
-	    },
-	    targetOrigin
-	  );
-}
+	  function sendFirepadText(event) {
+	    const requestId = event.data.requestId;
+	    const requestedPaperId = event.data.paperId || event.data.documentId || paperId;
+	    const text = getCurrentEditorText();
+	    const missingReferences = getMissingReferenceWarnings();
+
+	    event.source.postMessage(
+	      {
+	        type: "firepad-text",
+	        requestId,
+	        paperId: requestedPaperId,
+	        documentId: requestedPaperId,
+	        text,
+	        missingReferences
+	      },
+	      event.origin
+	    );
+	  }
 
 window.addEventListener("message", function(event) {
   const allowedOrigins = new Set([
@@ -343,11 +350,11 @@ window.addEventListener("message", function(event) {
     "http://localhost:3000"
   ]);
 
-  if (!allowedOrigins.has(event.origin)) return;
-  if (event.data?.type !== "request-firepad-text") return;
+	  if (!allowedOrigins.has(event.origin)) return;
+	  if (event.data?.type !== "request-firepad-text") return;
 
-  sendFirepadText(event.data.requestId, event.origin);
-});
+	  sendFirepadText(event);
+	});
 
 let firepadReady = false;
 	  /**************************************************
