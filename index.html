@@ -72,21 +72,20 @@
       margin-left: 10px;
       color: #64748b;
     }
-    #image-menu {
-      display: none;
-      position: absolute;
-      top: calc(100% + 6px);
-      right: 0;
-      z-index: 30;
-      min-width: 180px;
-      max-height: 280px;
-      overflow-y: auto;
-      padding: 4px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
-    }
+		#image-menu {
+			display: none;
+			/* Make the menu fixed so it won't be clipped by pane overflow */
+			position: fixed;
+			z-index: 10002;
+			min-width: 180px;
+			max-height: 280px;
+			overflow-y: auto;
+			padding: 4px;
+			border: 1px solid #cbd5e1;
+			border-radius: 8px;
+			background: #fff;
+			box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+		}
     .image-picker.open #image-menu { display: block; }
     .image-menu-item {
       width: 100%;
@@ -101,20 +100,19 @@
     .image-menu-item:hover,
     .image-menu-item.active { background: #eff6ff; color: #1d4ed8; }
     .image-menu-item.loading { color: #64748b; cursor: default; }
-	    #image-preview-popover {
-	      display: none;
-	      position: absolute;
-	      top: 0;
-	      left: calc(100% + 10px);
-	      z-index: 31;
-	      width: min(320px, 42vw);
-      padding: 10px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
-      pointer-events: none;
-    }
+		#image-preview-popover {
+			display: none;
+			/* Use fixed positioning so the popover escapes pane clipping */
+			position: fixed;
+			z-index: 9999;
+			width: min(320px, 42vw);
+			padding: 10px;
+			border: 1px solid #cbd5e1;
+			border-radius: 8px;
+			background: #fff;
+			box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+			pointer-events: auto;
+		}
     .image-picker.open.previewing #image-preview-popover { display: block; }
     #image-preview-popover img {
       display: block;
@@ -492,20 +490,20 @@ let firepadReady = false;
 		    return;
 		  }
 
-		  imageOptions.forEach(option => {
-		    const item = document.createElement("button");
-		    item.type = "button";
-		    item.className = `image-menu-item${option.url === selectedImageUrl ? " active" : ""}`;
-		    item.textContent = option.label;
-		    item.addEventListener("mouseenter", () => updateImagePreview(option.url));
-		    item.addEventListener("focus", () => updateImagePreview(option.url));
-		    item.addEventListener("click", () => {
-		      selectedImageUrl = option.url;
-		      imagePicker.classList.remove("open", "previewing");
-		      renderImageMenu();
-		    });
-		    imageMenu.appendChild(item);
-		  });
+					imageOptions.forEach(option => {
+						const item = document.createElement("button");
+						item.type = "button";
+						item.className = `image-menu-item${option.url === selectedImageUrl ? " active" : ""}`;
+						item.textContent = option.label;
+						item.addEventListener("mouseenter", () => { updateImagePreview(option.url); positionImageMenu(imagePickerButton); positionImagePreviewPopover(imagePickerButton); });
+						item.addEventListener("focus", () => { updateImagePreview(option.url); positionImageMenu(imagePickerButton); positionImagePreviewPopover(imagePickerButton); });
+						item.addEventListener("click", () => {
+							selectedImageUrl = option.url;
+							imagePicker.classList.remove("open", "previewing");
+							renderImageMenu();
+						});
+						imageMenu.appendChild(item);
+					});
 		}
 
 	function getOriginalFigureNumber(url) {
@@ -842,13 +840,70 @@ let firepadReady = false;
 	  });
 	}
 
-	function updateImagePreview(url) {
-	  const option = imageOptions.find(item => item.url === url);
+	function positionImagePreviewPopover(anchorEl) {
+		const pop = document.getElementById("image-preview-popover");
+		if (!anchorEl || !pop) return;
+		const menu = document.getElementById("image-menu");
+		const rect = menu && imagePicker.classList.contains("open")
+			? menu.getBoundingClientRect()
+			: anchorEl.getBoundingClientRect();
+		const popWidth = Math.min(320, Math.floor(window.innerWidth * 0.42));
 
-	  imagePreviewImg.src = option?.url || "";
-	  imagePreviewImg.alt = option?.label || "";
-	  imagePreviewLabel.textContent = option ? option.label : "No image selected";
-	  imagePicker.classList.toggle("previewing", Boolean(option));
+			let left = rect.right + 10;
+			if (left + popWidth > window.innerWidth - 8) {
+				left = rect.left - popWidth - 10;
+			}
+			if (left < 8) left = 8;
+
+			const popHeight = pop.offsetHeight || 220;
+			let top = rect.top;
+			if (top + popHeight > window.innerHeight - 8) {
+				top = Math.max(8, window.innerHeight - popHeight - 8);
+			}
+
+			pop.style.left = `${Math.round(left)}px`;
+			pop.style.top = `${Math.round(top)}px`;
+	}
+
+	function updateImagePreview(url) {
+		const option = imageOptions.find(item => item.url === url);
+
+		imagePreviewImg.src = option?.url || "";
+		imagePreviewImg.alt = option?.label || "";
+		imagePreviewLabel.textContent = option ? option.label : "No image selected";
+		imagePicker.classList.toggle("previewing", Boolean(option));
+
+		// Reposition the fixed popover when visible
+		if (imagePicker.classList.contains("open") && imagePicker.classList.contains("previewing")) {
+			// wait for layout to settle
+			requestAnimationFrame(() => {
+				positionImageMenu(imagePickerButton);
+				positionImagePreviewPopover(imagePickerButton);
+			});
+		}
+	}
+
+	function positionImageMenu(anchorEl) {
+		const menu = document.getElementById("image-menu");
+		if (!anchorEl || !menu) return;
+		const rect = anchorEl.getBoundingClientRect();
+		const menuWidth = Math.max(180, menu.offsetWidth || 180);
+
+		// Align menu so it stays within viewport and below the anchor
+		let left = rect.left;
+		if (left + menuWidth > window.innerWidth - 8) left = window.innerWidth - menuWidth - 8;
+		if (left < 8) left = 8;
+
+		let top = rect.bottom + 6;
+		const menuHeight = Math.min(280, menu.offsetHeight || 220);
+		if (top + menuHeight > window.innerHeight - 8) {
+			const above = rect.top - menuHeight - 6;
+			if (above >= 8) top = above;
+			else top = Math.max(8, window.innerHeight - menuHeight - 8);
+		}
+
+		menu.style.left = `${Math.round(left)}px`;
+		menu.style.top = `${Math.round(top)}px`;
 	}
 
 	function getExistingAltTextForUrl(md, url) {
@@ -892,14 +947,35 @@ let firepadReady = false;
 	});
 
 	imagePickerButton.addEventListener("click", function() {
-	  imagePicker.classList.toggle("open");
-	  updateImagePreview(selectedImageUrl);
+	imagePicker.classList.toggle("open");
+	updateImagePreview(selectedImageUrl);
+	// Position the fixed popover below the insert button when opening
+	if (imagePicker.classList.contains("open")) {
+	    requestAnimationFrame(() => {
+	      positionImageMenu(imagePickerButton);
+	      positionImagePreviewPopover(imagePickerButton);
+	    });
+	}
 	});
 
 	document.addEventListener("click", function(event) {
 	  if (imagePicker.contains(event.target)) return;
 	  imagePicker.classList.remove("open", "previewing");
 	});
+
+	// Reposition on resize/scroll to keep menu/popover aligned
+	window.addEventListener("resize", () => {
+		if (imagePicker.classList.contains("open")) {
+			positionImageMenu(imagePickerButton);
+			positionImagePreviewPopover(imagePickerButton);
+		}
+	});
+	window.addEventListener("scroll", () => {
+		if (imagePicker.classList.contains("open")) {
+			positionImageMenu(imagePickerButton);
+			positionImagePreviewPopover(imagePickerButton);
+		}
+	}, { passive: true });
 
 	  /**************************************************
 	   * 6. Firepad Ready
