@@ -41,9 +41,14 @@
 	      --custom-red: #9a2036;
 	      --custom-red-hover: #6b1626;
 	    }
-	    body { margin: 0; font-family: "Noto Sans", Rubik, Helvetica, Arial, Verdana, sans-serif; background: var(--bg); color: var(--text); }
-	    .wrap { display: grid; grid-template-columns: 1fr 1fr; height: 100vh; }
-	    .pane { border-right: 1px solid var(--border); }
+	    html, body {
+	      height: 100%;
+	      margin: 0;
+	      overflow: hidden;
+	    }
+	    body { font-family: "Noto Sans", Rubik, Helvetica, Arial, Verdana, sans-serif; background: var(--bg); color: var(--text); }
+	    .wrap { display: grid; grid-template-columns: 1fr 1fr; height: 100%; overflow: hidden; }
+	    .pane { display: flex; flex-direction: column; min-height: 0; overflow: hidden; border-right: 1px solid var(--border); }
     #preview img {
     max-width: 100%;
     height: auto;
@@ -127,17 +132,22 @@
       font-weight: 500;
     }
     .spacer { flex: 1; }
-    #editor { height: calc(100vh - 40px); }
+    .pane > #editor,
+    .pane > #preview {
+      flex: 1;
+      min-height: 0;
+    }
+    #editor { display: flex; flex-direction: column; overflow: hidden; }
 			.CodeMirror {
 				background: #FFF6E6;
 				height: 100%;
-				overflow-y: scroll;
+				overflow: hidden;
 			}
 			.CodeMirror-scroll {
-				overflow-y: scroll !important;
+				overflow-y: auto !important;
 			}
 
-		    #preview { height: calc(100vh - 64px); overflow-y: scroll; overflow-x: auto; padding: 18px; background: #FFFFFF; color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
+		    #preview { overflow-y: auto; overflow-x: auto; padding: 18px; background: #FFFFFF; color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
 	    .preview-header { background: var(--bg); color: var(--text); }
 	    .cm-figure-image-0, .cm-figure-ref-0 { color: #2563eb; }
 	    .cm-figure-image-1, .cm-figure-ref-1 { color: #047857; }
