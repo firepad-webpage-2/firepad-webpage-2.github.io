@@ -53,7 +53,7 @@
     .header button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
     .header button { padding: 6px 12px; cursor: pointer; }
     .header button:hover { background: #f8fafc; border-color: #94a3b8; }
-    .preview-header { align-items: flex-start; flex-direction: column; gap: 4px; }
+    .preview-header { align-items: center; flex-direction: row; gap: 4px; }
 	    .preview-links { display: flex; gap: 14px; align-items: center; }
 	    .paper-link { color: var(--custom-red); font-size: 16px; font-weight: 500; text-decoration: none; }
 	    .paper-link:hover { text-decoration: underline; }
@@ -128,12 +128,16 @@
     }
     .spacer { flex: 1; }
     #editor { height: calc(100vh - 40px); }
-		.CodeMirror {
-			background: #FFF6E6
-
-;
+			.CodeMirror {
+				background: #FFF6E6;
+				height: 100%;
+				overflow-y: scroll;
 			}
-	    #preview { height: calc(100vh - 64px); overflow: auto; padding: 18px; background: #FFFFFF; color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
+			.CodeMirror-scroll {
+				overflow-y: scroll !important;
+			}
+
+		    #preview { height: calc(100vh - 64px); overflow-y: scroll; overflow-x: auto; padding: 18px; background: #FFFFFF; color: var(--text); border-left: 2px solid var(--border); box-shadow: inset 10px 0 18px -18px var(--text); }
 	    .preview-header { background: var(--bg); color: var(--text); }
 	    .cm-figure-image-0, .cm-figure-ref-0 { color: #2563eb; }
 	    .cm-figure-image-1, .cm-figure-ref-1 { color: #047857; }
@@ -258,17 +262,13 @@
 	  <div class="pane">
 	    <div class="header preview-header">
 	      <span>Preview</span>
-	      <span class="preview-links">
-	        <a id="original-paper-link" class="paper-link" href="#" target="_blank" rel="noopener noreferrer">Access Original Paper</a>
-	        <a id="alphaxiv-blog-link" class="paper-link" href="#" target="_blank" rel="noopener noreferrer">AlphaXiv Blog</a>
-	      </span>
 	    </div>
 	    <div id="preview"></div>
 	  </div>
 </div>
 
     <script>
-        function init() {
+      function init() {
             const urlParams = new URLSearchParams(window.location.search);
 
 
@@ -369,8 +369,8 @@ let firepadReady = false;
 						  const figureNotification = document.getElementById("figure-notification");
 						  const imagePreviewImg = document.getElementById("image-preview-img");
 				  const imagePreviewLabel = document.getElementById("image-preview-label");
-				  const originalPaperLink = document.getElementById("original-paper-link");
-				  const alphaxivBlogLink = document.getElementById("alphaxiv-blog-link");
+				//   const originalPaperLink = document.getElementById("original-paper-link");
+				//   const alphaxivBlogLink = document.getElementById("alphaxiv-blog-link");
 		  let imageOptions = [];
 		  let selectedImageUrl = "";
 			  let figureMarks = [];
@@ -398,7 +398,7 @@ let firepadReady = false;
 	  highlightFigureMarkup(md, figureLabels);
 	  updateFigureWarnings(md, figureLabels);
 	  updateImageOptions(md);
-	  updateOriginalPaperLink(md);
+	//   updateOriginalPaperLink(md);
 	}
 
 	function getPaperId(md) {
@@ -425,17 +425,17 @@ let firepadReady = false;
 	  return /^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paperId) ? `/${paperId}.md` : "/test.md";
 	}
 
-	function updateOriginalPaperLink(md) {
-	  const paperId = getPaperId(md);
-	  if (!paperId) {
-	    originalPaperLink.removeAttribute("href");
-	    alphaxivBlogLink.removeAttribute("href");
-	    return;
-	  }
+	// function updateOriginalPaperLink(md) {
+	//   const paperId = getPaperId(md);
+	//   if (!paperId) {
+	//     originalPaperLink.removeAttribute("href");
+	//     alphaxivBlogLink.removeAttribute("href");
+	//     return;
+	//   }
 
-	  originalPaperLink.href = `https://arxiv.org/pdf/${paperId}`;
-	  alphaxivBlogLink.href = `https://www.alphaxiv.org/overview/${paperId}`;
-	}
+	//   originalPaperLink.href = `https://arxiv.org/pdf/${paperId}`;
+	//   alphaxivBlogLink.href = `https://www.alphaxiv.org/overview/${paperId}`;
+	// }
 
 	function imageExists(url) {
 	  return new Promise(resolve => {
