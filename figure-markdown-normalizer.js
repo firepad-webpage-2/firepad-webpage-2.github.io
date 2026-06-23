@@ -76,7 +76,7 @@
   }
 
   function normalizeFigureAltText(md) {
-    return md.replace(/!\[([^\]]*)\]\((https:\/\/paper-assets\.alphaxiv\.org\/figures\/[^/\s)]+\/x(\d+)\.png)\)/g, (match, altText, url) => {
+    return md.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, altText, url) => {
       const label = getFigureLabel(altText, url);
       return label ? `![${label}](${url})` : match;
     });

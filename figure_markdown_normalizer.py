@@ -74,9 +74,7 @@ def get_figure_metadata(md):
 
 
 def normalize_figure_alt_text(md):
-    image_pattern = re.compile(
-        r"!\[([^\]]*)\]\((https://paper-assets\.alphaxiv\.org/figures/[^/\s)]+/x(\d+)\.png)\)"
-    )
+    image_pattern = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 
     def replace(match):
         label = get_figure_label(match.group(1), match.group(2))
