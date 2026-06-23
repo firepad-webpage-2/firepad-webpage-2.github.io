@@ -6,7 +6,11 @@ const vm = require("vm");
 const SKIPPED_DIRS = new Set([".git", "node_modules", "dist", "build"]);
 
 function printUsage() {
-  console.error("Usage: node normalize-markdown-files.js --out <output-dir> <file-or-dir> [...more files/dirs]");
+  console.error("Usage:");
+  console.error("  node normalize-markdown-files.js");
+  console.error("  node normalize-markdown-files.js --out <output-dir> <file-or-dir> [...more files/dirs]");
+  console.error("");
+  console.error("Default mode reads markdown_raw and writes normalized files to markdown_norm.");
 }
 
 function loadNormalizer() {
@@ -43,6 +47,13 @@ function collectMarkdownFiles(inputPath) {
 }
 
 function parseArgs(argv) {
+  if (!argv.length) {
+    return {
+      outDir: path.join(__dirname, "markdown_norm"),
+      inputs: [path.join(__dirname, "markdown_raw")]
+    };
+  }
+
   const outIndex = argv.indexOf("--out");
   if (outIndex === -1 || !argv[outIndex + 1]) return null;
 

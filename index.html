@@ -356,7 +356,8 @@ window.addEventListener("message", function(event) {
   const allowedOrigins = new Set([
     "http://127.0.0.1:3000",
     "http://localhost:3000",
-    "https://alphaxiv-blog-editing.azurewebsites.net"
+	"https://alphaxiv-blog-editing.azurewebsites.net",
+  "https://alphaxiv-blog-editing-dvc8fndpfbgrg3ar.centralus-01.azurewebsites.net"
   ]);
 
 	  if (!allowedOrigins.has(event.origin)) return;
@@ -431,7 +432,7 @@ let firepadReady = false;
 	}
 
 	function getMarkdownPathForPaperId(paperId) {
-	  return /^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paperId) ? `/${paperId}.md` : "/test.md";
+	  return /^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paperId) ? `/markdown_norm/${paperId}.md` : "/test.md";
 	}
 
 	// function updateOriginalPaperLink(md) {

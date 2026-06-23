@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "normalize:markdown": "node normalize-markdown-files.js"
+  },
   "dependencies": {
     "papaparse": "^5.5.1"
   }
