@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "normalize:markdown": "node normalize-markdown-files.js"
+    "extract:overview": "python3 markdown_pipeline.py extract",
+    "extract:participants": "python3 extract_participant_codes.py",
+    "normalize:markdown": "python3 markdown_pipeline.py normalize",
+    "build:markdown": "python3 markdown_pipeline.py build"
   },
   "dependencies": {
     "papaparse": "^5.5.1"
