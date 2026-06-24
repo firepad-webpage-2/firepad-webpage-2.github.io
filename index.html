@@ -668,10 +668,10 @@ let firepadReady = false;
 	  return match ? `${match[1]}/x${match[2]}` : url;
 	}
 
-	function getInsertedAltText(url) {
-	  const number = getOriginalFigureNumber(url);
-	  return number ? `original-figure-${number}` : "original-figure";
-	}
+		function getInsertedAltText(url) {
+		  const imageName = slugifyLabel(getImageFileName(url).replace(/\.[^.]+$/, ""));
+		  return imageName ? `original-image-${imageName}` : "original-image";
+		}
 
 	function slugifyLabel(text) {
 	  return text
