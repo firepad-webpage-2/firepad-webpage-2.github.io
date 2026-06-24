@@ -53,6 +53,10 @@
     max-width: 100%;
     height: auto;
   }
+    #preview .math-block {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
     .pane:last-child { border-right: none; }
 	    .header { min-height: 64px; box-sizing: border-box; padding: 10px; border-bottom: 1px solid var(--border); font-weight: 600; display: flex; align-items: center; gap: 8px; }
     .header button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
@@ -386,36 +390,88 @@ let firepadReady = false;
 			  let figureMarks = [];
 				  let previousFigureLabels = new Set();
 			  let figureWarningReady = false;
-			  let figureNotificationTimer = null;
-			  let lastRenderedCursorLine = null;
-			  let allowImageMarkdownChange = false;
+				  let figureNotificationTimer = null;
+				  let lastRenderedCursorLine = null;
+				  let allowImageMarkdownChange = false;
+				  let mathTypesetRetry = null;
 
-  const mdParser = window.markdownit({
-    html: false,
-    linkify: true,
-    breaks: true
-  });
+	  const mdParser = window.markdownit({
+	    html: false,
+	    linkify: true,
+	    breaks: true
+	  });
 
-	 function renderPreview() {
-	  const md = firepadReady
-	    ? firepad.getText()   // safe after ready
-	    : cm.getValue();      // safe before ready
-	  lastRenderedCursorLine = cm.getCursor().line;
+	  function escapeMathHtml(text) {
+	    return text.replace(/[&<>]/g, char => ({
+	      "&": "&amp;",
+	      "<": "&lt;",
+	      ">": "&gt;"
+	    }[char]));
+	  }
 
-	  const figureLabels = getFigureLabels(md);
-	  previewEl.innerHTML = mdParser.render(linkFigureReferences(md, figureLabels));
-	  applyFigureLabels(figureLabels);
-	  highlightFigureMarkup(md, figureLabels);
-	  updateFigureWarnings(md, figureLabels);
-	  updateImageOptions(md);
-	//   updateOriginalPaperLink(md);
-	}
+	  function renderMarkdownWithMath(md, figureLabels) {
+	    const mathBlocks = [];
+	    const inlineMath = [];
+	    const protectedMd = md.replace(/\$\$([\s\S]*?)\$\$/g, (match, tex) => {
+	      const token = `@@MATH_BLOCK_${mathBlocks.length}@@`;
+	      mathBlocks.push(`<div class="math-block">\\[${escapeMathHtml(tex.trim())}\\]</div>`);
+	      return token;
+	    }).replace(/(^|[^\\$])\$([^\n$]+?)\$/g, (match, prefix, tex) => {
+	      const token = `@@INLINE_MATH_${inlineMath.length}@@`;
+	      inlineMath.push(`\\(${escapeMathHtml(tex.trim())}\\)`);
+	      return `${prefix}${token}`;
+	    });
 
-	function getPaperId(md) {
-	  return getPaperIdFromUrl()
-	    || (md.match(/paper-assets\.alphaxiv\.org\/figures\/([^/\s)]+)\/x\d+\.png/) || [])[1]
-	    || "";
-	}
+	    let html = mdParser.render(linkFigureReferences(protectedMd, figureLabels));
+	    mathBlocks.forEach((mathHtml, index) => {
+	      const token = `@@MATH_BLOCK_${index}@@`;
+	      html = html.replace(`<p>${token}</p>`, mathHtml).replace(token, mathHtml);
+	    });
+	    inlineMath.forEach((mathHtml, index) => {
+	      html = html.replaceAll(`@@INLINE_MATH_${index}@@`, mathHtml);
+	    });
+
+	    return html;
+	  }
+
+	  function typesetPreviewMath() {
+	    if (!window.MathJax || !window.MathJax.typesetPromise) {
+	      if (!mathTypesetRetry) {
+	        mathTypesetRetry = setTimeout(() => {
+	          mathTypesetRetry = null;
+	          typesetPreviewMath();
+	        }, 250);
+	      }
+	      return;
+	    }
+
+	    if (window.MathJax.typesetClear) {
+	      window.MathJax.typesetClear([previewEl]);
+	    }
+	    window.MathJax.typesetPromise([previewEl]).catch(() => {});
+	  }
+
+		 function renderPreview() {
+		  const md = firepadReady
+		    ? firepad.getText()   // safe after ready
+		    : cm.getValue();      // safe before ready
+		  lastRenderedCursorLine = cm.getCursor().line;
+
+		  const figureLabels = getFigureLabels(md);
+		  previewEl.innerHTML = renderMarkdownWithMath(md, figureLabels);
+		  applyFigureLabels(figureLabels);
+		  highlightFigureMarkup(md, figureLabels);
+		  updateFigureWarnings(md, figureLabels);
+		  updateImageOptions(md);
+		  typesetPreviewMath();
+		//   updateOriginalPaperLink(md);
+		}
+
+		function getPaperId(md) {
+		  return getPaperIdFromUrl()
+		    || (md.match(/paper-assets\.alphaxiv\.org\/(?:figures-normalized\/)?figures\/([^/\s)]+)/) || [])[1]?.replace(/v\d+$/, "")
+		    || "";
+		}
 
 	function getPaperIdFromUrl() {
 	  return urlParams.get("paperId")
@@ -456,32 +512,126 @@ let firepadReady = false;
 	  });
 	}
 
-		let activePaperId = "";
-		let probingImages = false;
-		async function updateImageOptions(md) {
-		  const paperId = getPaperId(md);
-		  if (!paperId || paperId === activePaperId || probingImages) return;
+			let activeImageSignature = "";
+			let probingImages = false;
+			async function updateImageOptions(md) {
+			  const markdownImages = getMarkdownImages(md);
+			  const imageSignature = markdownImages.map(image => image.url).join("|");
+			  if (!imageSignature) {
+			    activeImageSignature = "";
+			    imageOptions = [];
+			    selectedImageUrl = "";
+			    renderImageMenu();
+			    updateImagePreview("");
+			    return;
+			  }
+			  if (imageSignature === activeImageSignature || probingImages) return;
 
-		  activePaperId = paperId;
-		  probingImages = true;
-		  imageMenu.innerHTML = '<span class="image-menu-item loading">Loading images...</span>';
+			  activeImageSignature = imageSignature;
+			  probingImages = true;
+			  imageMenu.innerHTML = '<span class="image-menu-item loading">Loading images...</span>';
 
-		  const urls = [];
-		  for (let i = 1; i <= 50; i++) {
-		    const url = `https://paper-assets.alphaxiv.org/figures/${paperId}/x${i}.png`;
-		    if (!(await imageExists(url))) break;
-		    urls.push(url);
+			  try {
+				    const discoveredImages = sortDiscoveredImages(await discoverImageOptionsFromMarkdown(markdownImages));
+
+			    imageOptions = discoveredImages.map((image, index) => ({
+			      url: image.url,
+			      label: getImageFileName(image.url) || image.label || `figure${index + 1}`
+			    }));
+			    selectedImageUrl = imageOptions[0]?.url || "";
+			    renderImageMenu();
+			    updateImagePreview(selectedImageUrl);
+			  } finally {
+			    probingImages = false;
+			  }
+				}
+
+		function getMarkdownImages(md) {
+		  const images = [];
+		  const seen = new Set();
+		  const imagePattern = /!\[([^\]]*)\]\(([^)]+)\)/g;
+		  let match;
+
+		  while ((match = imagePattern.exec(md))) {
+		    const url = match[2].trim();
+		    if (!url || seen.has(url)) continue;
+		    seen.add(url);
+		    images.push({
+		      label: match[1].trim() || getImageFileName(url),
+		      url
+		    });
 		  }
 
-			  imageOptions = urls.map((url, index) => ({
-			    url,
-			    label: `figure${index + 1}.png`
-			  }));
-			  selectedImageUrl = imageOptions[0]?.url || "";
-			  renderImageMenu();
-			  probingImages = false;
-			  updateImagePreview(selectedImageUrl);
+		  return images;
+		}
+
+		function getImageFileName(url) {
+		  return decodeURIComponent((url.split(/[?#]/)[0].split("/").pop() || "").trim());
+		}
+
+		function getImageSequenceParts(url) {
+		  const cleanUrl = url.split(/[?#]/)[0];
+		  const match = cleanUrl.match(/^(.*\/)(x|img-)(\d+)(\.[a-z0-9]+)$/i);
+		  if (!match) return null;
+
+			  return {
+			    prefix: `${match[1]}${match[2]}`,
+			    suffix: match[4],
+			    number: Number(match[3]),
+			    startsAtZero: Number(match[3]) === 0
+			  };
 			}
+
+			function sortDiscoveredImages(images) {
+			  return [...images].sort((a, b) => {
+			    const aSequence = getImageSequenceParts(a.url);
+			    const bSequence = getImageSequenceParts(b.url);
+
+			    if (aSequence && bSequence) {
+			      const aGroup = `${aSequence.prefix}|${aSequence.suffix}`;
+			      const bGroup = `${bSequence.prefix}|${bSequence.suffix}`;
+			      if (aGroup !== bGroup) return aGroup.localeCompare(bGroup);
+			      return aSequence.number - bSequence.number;
+			    }
+			    if (aSequence) return -1;
+			    if (bSequence) return 1;
+			    return getImageFileName(a.url).localeCompare(getImageFileName(b.url));
+			  });
+			}
+
+		async function discoverImageOptionsFromMarkdown(markdownImages) {
+		  const imagesByUrl = new Map();
+		  const probedSequences = new Set();
+
+		  markdownImages.forEach(image => {
+		    imagesByUrl.set(image.url, image);
+		  });
+
+		  for (const image of markdownImages) {
+		    const sequence = getImageSequenceParts(image.url);
+		    if (!sequence) continue;
+
+		    const start = sequence.startsAtZero ? 0 : 1;
+		    const sequenceKey = `${sequence.prefix}|${sequence.suffix}|${start}`;
+		    if (probedSequences.has(sequenceKey)) continue;
+		    probedSequences.add(sequenceKey);
+
+		    for (let i = start; i <= 50; i++) {
+		      const url = `${sequence.prefix}${i}${sequence.suffix}`;
+		      if (imagesByUrl.has(url)) continue;
+		      if (!(await imageExists(url))) {
+		        if (i > start) break;
+		        continue;
+		      }
+		      imagesByUrl.set(url, {
+		        label: getImageFileName(url),
+		        url
+		      });
+		    }
+		  }
+
+		  return Array.from(imagesByUrl.values());
+		}
 
 		function renderImageMenu() {
 		  imagePickerButton.textContent = imageOptions.find(option => option.url === selectedImageUrl)?.label || "Images";
