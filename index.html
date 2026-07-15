@@ -123,6 +123,7 @@
 			position: fixed;
 			z-index: 10002;
 			min-width: 180px;
+			width: min(280px, calc(100vw - 24px));
 			max-height: 280px;
 			overflow-y: auto;
 			padding: 4px;
@@ -140,7 +141,9 @@
       border-radius: 5px;
       background: transparent;
       text-align: left;
-      white-space: nowrap;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.3;
     }
     .image-menu-item:hover,
     .image-menu-item.active { background: #eff6ff; color: #1d4ed8; }
@@ -1155,7 +1158,7 @@ let firepadReady = false;
 		const menu = document.getElementById("image-menu");
 		if (!anchorEl || !menu) return;
 		const rect = anchorEl.getBoundingClientRect();
-		const menuWidth = Math.max(180, menu.offsetWidth || 180);
+		const menuWidth = Math.min(280, window.innerWidth - 24);
 
 		// Keep the hierarchy visible by opening the image list beside the first-level menu.
 		let left = rect.right + 8;
