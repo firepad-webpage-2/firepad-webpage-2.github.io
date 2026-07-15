@@ -59,17 +59,58 @@
     }
     .pane:last-child { border-right: none; }
 	    .header { min-height: 64px; box-sizing: border-box; padding: 10px; border-bottom: 1px solid var(--border); font-weight: 600; display: flex; align-items: center; gap: 8px; }
-    .header button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
-    .header button { padding: 6px 12px; cursor: pointer; }
-    .header button:hover { background: #f8fafc; border-color: #94a3b8; }
+    .header button,
+    .header .upload-button { font: inherit; font-weight: 500; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #111827; }
+    .header button,
+    .header .upload-button { padding: 6px 12px; cursor: pointer; }
+    .header button:hover,
+    .header .upload-button:hover { background: #f8fafc; border-color: #94a3b8; }
     .preview-header { align-items: center; flex-direction: row; gap: 4px; }
 	    .preview-links { display: flex; gap: 14px; align-items: center; }
 	    .paper-link { color: var(--custom-red); font-size: 16px; font-weight: 500; text-decoration: none; }
 	    .paper-link:hover { text-decoration: underline; }
     .primary-button { background: #2563eb !important; border-color: #2563eb !important; color: #fff !important; }
     .primary-button:hover { background: #1d4ed8 !important; border-color: #1d4ed8 !important; }
-    .image-picker { position: relative; display: flex; }
-    #image-picker-button { min-width: 118px; text-align: left; }
+    .insert-image-control { position: relative; display: flex; }
+		#insert-image-menu {
+			display: none;
+			position: fixed;
+			z-index: 10001;
+			min-width: 210px;
+			padding: 4px;
+			border: 1px solid #cbd5e1;
+			border-radius: 8px;
+			background: #fff;
+			box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+		}
+    .insert-image-control.open #insert-image-menu { display: block; }
+    .insert-menu-item {
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      padding: 8px 10px;
+      border: 0 !important;
+      border-radius: 5px !important;
+      background: transparent !important;
+      color: #111827 !important;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .insert-menu-item:hover,
+    .insert-menu-item:focus { background: #eff6ff !important; color: #1d4ed8 !important; }
+    .upload-button { position: relative; overflow: hidden; }
+    .upload-button input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .upload-button.uploading {
+      opacity: 0.72;
+      pointer-events: none;
+    }
+    .image-picker { position: relative; display: block; }
+    #image-picker-button { min-width: 100%; text-align: left; }
     #image-picker-button::after {
       content: "v";
       float: right;
@@ -108,7 +149,7 @@
 			display: none;
 			/* Use fixed positioning so the popover escapes pane clipping */
 			position: fixed;
-			z-index: 9999;
+			z-index: 10003;
 			width: min(320px, 42vw);
 			padding: 10px;
 			border: 1px solid #cbd5e1;
@@ -258,15 +299,23 @@
 		      <span>Editor</span>
 		      <span class="spacer"></span>
 		      <span id="figure-warning" title=""></span>
-		      <span class="image-picker">
-		        <button id="image-picker-button" type="button" title="Original paper image">Images</button>
-		        <span id="image-menu"></span>
-	        <span id="image-preview-popover">
-	          <img id="image-preview-img" alt="" />
-		          <span id="image-preview-label"></span>
-			        </span>
-			      </span>
-			      <button id="insert-image" class="primary-button" type="button">Insert image</button>
+		      <span class="insert-image-control">
+		        <button id="insert-image" class="primary-button" type="button">Insert image</button>
+		        <span id="insert-image-menu">
+		          <span class="image-picker">
+		            <button id="image-picker-button" class="insert-menu-item" type="button" title="Original paper image">Insert existing image</button>
+		            <span id="image-menu"></span>
+		            <span id="image-preview-popover">
+		              <img id="image-preview-img" alt="" />
+		              <span id="image-preview-label"></span>
+		            </span>
+		          </span>
+		          <label id="upload-image-label" class="upload-button insert-menu-item">
+		            <span id="upload-image-text">Upload new image</span>
+		            <input id="upload-image-input" type="file" accept="image/*" />
+		          </label>
+		        </span>
+		      </span>
 			    </div>
 	    <div id="editor"></div>
 	  </div>
@@ -282,6 +331,12 @@
     <script>
       function init() {
             const urlParams = new URLSearchParams(window.location.search);
+            const azureUploadConfig = {
+                // Do not put an Azure account key or connection string here.
+                // Use a container SAS URL with only the permissions needed for uploads.
+                containerSasUrl: "https://alphaxivblog.blob.core.windows.net/image-upload?sp=racw&st=2026-07-05T22:38:29Z&se=2026-10-01T06:53:29Z&spr=https&sv=2026-02-06&sr=c&sig=kCvzMUc5n3jSXTkoeuwmVlq6%2BfoIwkqQNT4cs3cRpxE%3D",
+                publicBaseUrl: "https://alphaxivblog.blob.core.windows.net/image-upload"
+            };
 
 
             const firebaseConfig = {
@@ -375,6 +430,8 @@ let firepadReady = false;
 	   * 5. Markdown Preview
 	   **************************************************/
 		  const previewEl = document.getElementById("preview");
+		  const insertImageControl = document.querySelector(".insert-image-control");
+		  const insertImageMenu = document.getElementById("insert-image-menu");
 		  const imagePicker = document.querySelector(".image-picker");
 			  const imagePickerButton = document.getElementById("image-picker-button");
 				  const imageMenu = document.getElementById("image-menu");
@@ -383,10 +440,15 @@ let firepadReady = false;
 						  const figureNotification = document.getElementById("figure-notification");
 						  const imagePreviewImg = document.getElementById("image-preview-img");
 				  const imagePreviewLabel = document.getElementById("image-preview-label");
+				  const uploadImageInput = document.getElementById("upload-image-input");
+				  const uploadImageLabel = document.getElementById("upload-image-label");
+				  const uploadImageText = document.getElementById("upload-image-text");
 				//   const originalPaperLink = document.getElementById("original-paper-link");
 				//   const alphaxivBlogLink = document.getElementById("alphaxiv-blog-link");
-		  let imageOptions = [];
-		  let selectedImageUrl = "";
+			  let imageOptions = [];
+			  let uploadedImageOptions = [];
+			  let selectedImageUrl = "";
+			  let figureManifestPromise = null;
 			  let figureMarks = [];
 				  let previousFigureLabels = new Set();
 			  let figureWarningReady = false;
@@ -394,6 +456,7 @@ let firepadReady = false;
 				  let lastRenderedCursorLine = null;
 				  let allowImageMarkdownChange = false;
 				  let mathTypesetRetry = null;
+				  let closeImagePickerTimer = null;
 
 	  const mdParser = window.markdownit({
 	    html: false,
@@ -491,6 +554,13 @@ let firepadReady = false;
 	  return /^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paperId) ? `/markdown_norm/${paperId}.md` : "/test.md";
 	}
 
+	function getParticipantCodeFromUrl() {
+	  return urlParams.get("participantCode")
+	    || urlParams.get("participant_code")
+	    || urlParams.get("code")
+	    || "";
+	}
+
 	// function updateOriginalPaperLink(md) {
 	//   const paperId = getPaperId(md);
 	//   if (!paperId) {
@@ -512,12 +582,43 @@ let firepadReady = false;
 	  });
 	}
 
+		function loadFigureManifest() {
+		  if (!figureManifestPromise) {
+		    figureManifestPromise = fetch("./figure_manifest.json", { cache: "no-store" })
+		      .then(response => response.ok ? response.json() : {})
+		      .catch(() => ({}));
+		  }
+		  return figureManifestPromise;
+		}
+
+		function getManifestImagesForPaper(manifest, paperId) {
+		  const directImages = manifest[paperId] || [];
+		  if (directImages.length) return directImages;
+
+		  const versionedKey = Object.keys(manifest).find(key => key.replace(/v\d+$/, "") === paperId);
+		  return versionedKey ? manifest[versionedKey] : [];
+		}
+
+		function normalizeManifestImage(image, index) {
+		  return {
+		    url: image.url,
+		    label: image.label || getImageFileName(image.url) || `figure${index + 1}`
+		  };
+		}
+
 			let activeImageSignature = "";
 			let probingImages = false;
 			async function updateImageOptions(md) {
-			  const markdownImages = getMarkdownImages(md);
-			  const imageSignature = markdownImages.map(image => image.url).join("|");
-			  if (!imageSignature) {
+			  const paperId = getPaperId(md);
+			  const manifest = await loadFigureManifest();
+			  const manifestImages = paperId ? getManifestImagesForPaper(manifest, paperId) : [];
+			  const markdownImages = manifestImages.length ? [] : getMarkdownImages(md);
+			  const hasImageSource = manifestImages.length || markdownImages.length || uploadedImageOptions.length;
+			  const imageSignature = manifestImages.length
+			    ? `manifest:${paperId}:${manifestImages.map(image => image.key || image.url).join("|")}`
+			    : `markdown:${markdownImages.map(image => image.url).join("|")}`;
+			  const fullImageSignature = `${imageSignature}|uploaded:${uploadedImageOptions.map(image => image.url).join("|")}`;
+			  if (!hasImageSource) {
 			    activeImageSignature = "";
 			    imageOptions = [];
 			    selectedImageUrl = "";
@@ -525,20 +626,25 @@ let firepadReady = false;
 			    updateImagePreview("");
 			    return;
 			  }
-			  if (imageSignature === activeImageSignature || probingImages) return;
+			  if (fullImageSignature === activeImageSignature || probingImages) return;
 
-			  activeImageSignature = imageSignature;
+			  activeImageSignature = fullImageSignature;
 			  probingImages = true;
 			  imageMenu.innerHTML = '<span class="image-menu-item loading">Loading images...</span>';
 
 			  try {
-				    const discoveredImages = sortDiscoveredImages(await discoverImageOptionsFromMarkdown(markdownImages));
+			    const discoveredImages = manifestImages.length
+			      ? manifestImages.map(normalizeManifestImage)
+			      : sortDiscoveredImages(await discoverImageOptionsFromMarkdown(markdownImages));
 
-			    imageOptions = discoveredImages.map((image, index) => ({
+			    const discoveredOptions = discoveredImages.map((image, index) => ({
 			      url: image.url,
 			      label: getImageFileName(image.url) || image.label || `figure${index + 1}`
 			    }));
-			    selectedImageUrl = imageOptions[0]?.url || "";
+			    imageOptions = mergeImageOptions(discoveredOptions, uploadedImageOptions);
+			    selectedImageUrl = imageOptions.some(option => option.url === selectedImageUrl)
+			      ? selectedImageUrl
+			      : imageOptions[0]?.url || "";
 			    renderImageMenu();
 			    updateImagePreview(selectedImageUrl);
 			  } finally {
@@ -633,8 +739,17 @@ let firepadReady = false;
 		  return Array.from(imagesByUrl.values());
 		}
 
+		function mergeImageOptions(discoveredOptions, uploadedOptions) {
+		  const seen = new Set();
+		  return [...discoveredOptions, ...uploadedOptions].filter(option => {
+		    if (!option.url || seen.has(option.url)) return false;
+		    seen.add(option.url);
+		    return true;
+		  });
+		}
+
 		function renderImageMenu() {
-		  imagePickerButton.textContent = imageOptions.find(option => option.url === selectedImageUrl)?.label || "Images";
+		  imagePickerButton.textContent = "Insert existing image";
 		  imageMenu.innerHTML = "";
 
 		  if (!imageOptions.length) {
@@ -651,7 +766,8 @@ let firepadReady = false;
 						item.addEventListener("focus", () => { updateImagePreview(option.url); positionImageMenu(imagePickerButton); positionImagePreviewPopover(imagePickerButton); });
 						item.addEventListener("click", () => {
 							selectedImageUrl = option.url;
-							imagePicker.classList.remove("open", "previewing");
+							insertSelectedImage(option.url);
+							closeInsertImageMenus();
 							renderImageMenu();
 						});
 						imageMenu.appendChild(item);
@@ -1020,7 +1136,7 @@ let firepadReady = false;
 	function updateImagePreview(url) {
 		const option = imageOptions.find(item => item.url === url);
 
-		imagePreviewImg.src = option?.url || "";
+		imagePreviewImg.src = option?.previewUrl || option?.url || "";
 		imagePreviewImg.alt = option?.label || "";
 		imagePreviewLabel.textContent = option ? option.label : "No image selected";
 		imagePicker.classList.toggle("previewing", Boolean(option));
@@ -1041,21 +1157,75 @@ let firepadReady = false;
 		const rect = anchorEl.getBoundingClientRect();
 		const menuWidth = Math.max(180, menu.offsetWidth || 180);
 
-		// Align menu so it stays within viewport and below the anchor
+		// Keep the hierarchy visible by opening the image list beside the first-level menu.
+		let left = rect.right + 8;
+		if (left + menuWidth > window.innerWidth - 8) {
+			left = rect.left - menuWidth - 8;
+		}
+		if (left < 8) left = 8;
+
+		let top = rect.top;
+		const menuHeight = Math.min(280, menu.offsetHeight || 220);
+		if (top + menuHeight > window.innerHeight - 8) {
+			top = Math.max(8, window.innerHeight - menuHeight - 8);
+		}
+
+		menu.style.left = `${Math.round(left)}px`;
+		menu.style.top = `${Math.round(top)}px`;
+	}
+
+	function positionInsertImageMenu() {
+		if (!insertImageButton || !insertImageMenu) return;
+		const rect = insertImageButton.getBoundingClientRect();
+		const menuWidth = Math.max(210, insertImageMenu.offsetWidth || 210);
+
 		let left = rect.left;
 		if (left + menuWidth > window.innerWidth - 8) left = window.innerWidth - menuWidth - 8;
 		if (left < 8) left = 8;
 
 		let top = rect.bottom + 6;
-		const menuHeight = Math.min(280, menu.offsetHeight || 220);
+		const menuHeight = insertImageMenu.offsetHeight || 92;
 		if (top + menuHeight > window.innerHeight - 8) {
-			const above = rect.top - menuHeight - 6;
-			if (above >= 8) top = above;
-			else top = Math.max(8, window.innerHeight - menuHeight - 8);
+			top = Math.max(8, rect.top - menuHeight - 6);
 		}
 
-		menu.style.left = `${Math.round(left)}px`;
-		menu.style.top = `${Math.round(top)}px`;
+		insertImageMenu.style.left = `${Math.round(left)}px`;
+		insertImageMenu.style.top = `${Math.round(top)}px`;
+	}
+
+	function openImagePickerMenu() {
+		cancelCloseImagePickerMenu();
+		imagePicker.classList.add("open");
+		updateImagePreview(selectedImageUrl);
+		requestAnimationFrame(() => {
+			positionInsertImageMenu();
+			positionImageMenu(imagePickerButton);
+			positionImagePreviewPopover(imagePickerButton);
+		});
+	}
+
+	function closeImagePickerMenu() {
+		cancelCloseImagePickerMenu();
+		imagePicker.classList.remove("open", "previewing");
+	}
+
+	function scheduleCloseImagePickerMenu() {
+		cancelCloseImagePickerMenu();
+		closeImagePickerTimer = setTimeout(() => {
+			closeImagePickerTimer = null;
+			closeImagePickerMenu();
+		}, 300);
+	}
+
+	function cancelCloseImagePickerMenu() {
+		if (!closeImagePickerTimer) return;
+		clearTimeout(closeImagePickerTimer);
+		closeImagePickerTimer = null;
+	}
+
+	function closeInsertImageMenus() {
+		insertImageControl.classList.remove("open");
+		closeImagePickerMenu();
 	}
 
 	function getExistingAltTextForUrl(md, url) {
@@ -1072,6 +1242,122 @@ let firepadReady = false;
 	  return "";
 	}
 
+	function getStaticAzureUploadConfig() {
+	  const containerSasUrl = firstConfiguredUploadValue([
+	    urlParams.get("azureContainerSasUrl"),
+	    urlParams.get("azureUploadContainerUrl"),
+	    urlParams.get("imageUploadContainerUrl"),
+	    azureUploadConfig.containerSasUrl
+	  ]);
+	  const publicBaseUrl = firstConfiguredUploadValue([
+	    urlParams.get("azurePublicBaseUrl"),
+	    urlParams.get("imagePublicBaseUrl"),
+	    azureUploadConfig.publicBaseUrl
+	  ]);
+
+	  return {
+	    containerSasUrl,
+	    publicBaseUrl
+	  };
+	}
+
+	function firstConfiguredUploadValue(values) {
+	  return values.find(value => !isPlaceholderUploadValue(value)) || "";
+	}
+
+	function isPlaceholderUploadValue(value) {
+	  const trimmed = String(value || "").trim();
+	  return !trimmed
+	    || trimmed.startsWith("PASTE_")
+	    || trimmed.startsWith("<")
+	    || trimmed.includes("encoded-container-sas-url")
+	    || trimmed.includes("public-container-url");
+	}
+
+	function sanitizeBlobPathSegment(value, fallback) {
+	  return String(value || fallback)
+	    .trim()
+	    .replace(/[^a-zA-Z0-9._-]+/g, "-")
+	    .replace(/^-+|-+$/g, "")
+	    || fallback;
+	}
+
+	function buildUploadedBlobName(file, md) {
+	  const safePaperId = sanitizeBlobPathSegment(getPaperId(md), "unknown-paper");
+	  const safeFileName = sanitizeBlobPathSegment(file.name, "image");
+	  return `uploaded-images/${safePaperId}/${Date.now()}-${safeFileName}`;
+	}
+
+	function buildAzureBlobUrls(blobName) {
+	  const { containerSasUrl, publicBaseUrl } = getStaticAzureUploadConfig();
+	  if (!containerSasUrl || !publicBaseUrl) return null;
+
+	  const [containerBase, sasQuery = ""] = containerSasUrl.split("?");
+	  const uploadBase = containerBase.replace(/\/+$/, "");
+	  const publicBase = publicBaseUrl.replace(/\/+$/, "");
+	  const encodedBlobName = blobName.split("/").map(encodeURIComponent).join("/");
+
+	  return {
+	    uploadUrl: `${uploadBase}/${encodedBlobName}${sasQuery ? `?${sasQuery}` : ""}`,
+	    publicUrl: `${publicBase}/${encodedBlobName}`
+	  };
+	}
+
+	async function uploadImageFile(file) {
+	  if (!file) return;
+	  if (!file.type || !file.type.startsWith("image/")) {
+	    showFigureNotification("Please choose an image file.");
+	    return;
+	  }
+
+	  uploadImageLabel.classList.add("uploading");
+	  uploadImageText.textContent = "Uploading...";
+
+	  try {
+	    const md = firepadReady ? firepad.getText() : cm.getValue();
+	    const blobName = buildUploadedBlobName(file, md);
+	    const uploadConfig = buildAzureBlobUrls(blobName);
+	    if (!uploadConfig) {
+	      showFigureNotification("Image upload is not configured. Add azureContainerSasUrl and azurePublicBaseUrl to the page URL.");
+	      return;
+	    }
+
+	    const uploadResponse = await fetch(uploadConfig.uploadUrl, {
+	      method: "PUT",
+	      headers: {
+	        "x-ms-blob-type": "BlockBlob",
+	        "Content-Type": file.type
+	      },
+	      body: file
+	    });
+
+	    if (!uploadResponse.ok) {
+	      throw new Error(`Azure upload failed with ${uploadResponse.status}`);
+	    }
+
+	    const label = getImageFileName(uploadConfig.publicUrl) || file.name;
+	    uploadedImageOptions = mergeImageOptions(uploadedImageOptions, [{
+	      url: uploadConfig.publicUrl,
+	      previewUrl: URL.createObjectURL(file),
+	      label: `uploaded-${label}`
+	    }]);
+	    imageOptions = mergeImageOptions(imageOptions, uploadedImageOptions);
+	    selectedImageUrl = uploadConfig.publicUrl;
+	    activeImageSignature = "";
+	    renderImageMenu();
+	    updateImagePreview(selectedImageUrl);
+	    insertSelectedImage(uploadConfig.publicUrl);
+	    closeInsertImageMenus();
+	  } catch (error) {
+	    console.error(error);
+	    showFigureNotification("Image upload failed. Check the Azure SAS URL, public base URL, and Blob Storage CORS.");
+	  } finally {
+	    uploadImageLabel.classList.remove("uploading");
+	    uploadImageText.textContent = "Upload new image";
+	    uploadImageInput.value = "";
+	  }
+	}
+
 	async function loadInitialMarkdown() {
 	  try {
 	    const paperId = getPaperId("");
@@ -1086,8 +1372,7 @@ let firepadReady = false;
 	  }
 	}
 
-	insertImageButton.addEventListener("click", function() {
-	  const url = selectedImageUrl;
+	function insertSelectedImage(url = selectedImageUrl) {
 	  if (!url) return;
 
 	  const md = firepadReady ? firepad.getText() : cm.getValue();
@@ -1096,33 +1381,53 @@ let firepadReady = false;
 	    cm.replaceSelection(`![${imageAltText}](${url})`);
 	  });
 	  cm.focus();
+	}
+
+	insertImageButton.addEventListener("click", function() {
+	  insertImageControl.classList.toggle("open");
+	  imagePicker.classList.remove("open", "previewing");
+	  if (insertImageControl.classList.contains("open")) {
+	    requestAnimationFrame(positionInsertImageMenu);
+	  }
 	});
 
-	imagePickerButton.addEventListener("click", function() {
-	imagePicker.classList.toggle("open");
-	updateImagePreview(selectedImageUrl);
-	// Position the fixed popover below the insert button when opening
-	if (imagePicker.classList.contains("open")) {
-	    requestAnimationFrame(() => {
-	      positionImageMenu(imagePickerButton);
-	      positionImagePreviewPopover(imagePickerButton);
-	    });
-	}
+	uploadImageInput.addEventListener("change", function(event) {
+	  uploadImageFile(event.target.files?.[0]);
+	});
+
+	imagePickerButton.addEventListener("mouseenter", openImagePickerMenu);
+	imagePickerButton.addEventListener("focus", openImagePickerMenu);
+	imagePickerButton.addEventListener("click", function(event) {
+	  event.preventDefault();
+	  openImagePickerMenu();
+	});
+	imageMenu.addEventListener("mouseenter", cancelCloseImagePickerMenu);
+	imageMenu.addEventListener("mouseleave", scheduleCloseImagePickerMenu);
+	uploadImageLabel.addEventListener("mouseenter", scheduleCloseImagePickerMenu);
+	insertImageMenu.addEventListener("mousemove", function(event) {
+	  if (imagePicker.contains(event.target)) return;
+	  scheduleCloseImagePickerMenu();
 	});
 
 	document.addEventListener("click", function(event) {
-	  if (imagePicker.contains(event.target)) return;
-	  imagePicker.classList.remove("open", "previewing");
+	  if (insertImageControl.contains(event.target) || imagePicker.contains(event.target)) return;
+	  closeInsertImageMenus();
 	});
 
 	// Reposition on resize/scroll to keep menu/popover aligned
 	window.addEventListener("resize", () => {
+		if (insertImageControl.classList.contains("open")) {
+			positionInsertImageMenu();
+		}
 		if (imagePicker.classList.contains("open")) {
 			positionImageMenu(imagePickerButton);
 			positionImagePreviewPopover(imagePickerButton);
 		}
 	});
 	window.addEventListener("scroll", () => {
+		if (insertImageControl.classList.contains("open")) {
+			positionInsertImageMenu();
+		}
 		if (imagePicker.classList.contains("open")) {
 			positionImageMenu(imagePickerButton);
 			positionImagePreviewPopover(imagePickerButton);

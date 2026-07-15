@@ -2,6 +2,8 @@
   "scripts": {
     "extract:overview": "python3 markdown_pipeline.py extract",
     "extract:participants": "python3 extract_participant_codes.py",
+    "build:figures": "python3 build_r2_figure_manifest.py",
+    "build:figures:markdown": "python3 build_markdown_norm_figure_manifest.py",
     "normalize:markdown": "python3 markdown_pipeline.py normalize",
     "build:markdown": "python3 markdown_pipeline.py build"
   },

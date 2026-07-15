@@ -52,13 +52,33 @@ def make_participant_code(primary_author, used_codes, digits):
     raise RuntimeError(f"Could not create a unique participant code for {primary_author}")
 
 
+def load_existing_participant_codes(out_path):
+    out_path = Path(out_path)
+    if not out_path.exists():
+        return {}
+
+    with out_path.open("r", encoding="utf-8") as input_file:
+        data = json.load(input_file)
+
+    if not isinstance(data, dict):
+        raise SystemExit(f"Expected {out_path} to contain a JSON object.")
+    return data
+
+
 def extract_participant_codes(inputs, out_path, digits):
     files = sorted({file.resolve() for input_path in inputs for file in collect_json_files(input_path)})
     if not files:
         raise SystemExit("No JSON files found.")
 
-    participant_codes = {}
-    used_codes = set()
+    out_path = Path(out_path)
+    participant_codes = load_existing_participant_codes(out_path)
+    used_codes = set(participant_codes)
+    existing_paper_ids = {
+        entry.get("paperId")
+        for entry in participant_codes.values()
+        if isinstance(entry, dict) and entry.get("paperId")
+    }
+    added_count = 0
 
     for file_path in files:
         with file_path.open("r", encoding="utf-8") as input_file:
@@ -71,19 +91,23 @@ def extract_participant_codes(inputs, out_path, digits):
         if not isinstance(title, str) or not title.strip():
             raise SystemExit(f"Missing string title value in {file_path}")
 
+        if file_path.stem in existing_paper_ids:
+            continue
+
         participant_code = make_participant_code(primary_author, used_codes, digits)
         participant_codes[participant_code] = {
             "paperId": file_path.stem,
             "paperTitle": title,
         }
+        existing_paper_ids.add(file_path.stem)
+        added_count += 1
 
-    out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
         json.dumps(participant_codes, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(f"Wrote {len(participant_codes)} participant codes to {out_path}")
+    print(f"Added {added_count} participant codes; wrote {len(participant_codes)} total to {out_path}")
 
 
 def parse_args():
@@ -98,8 +122,8 @@ def parse_args():
     )
     parser.add_argument(
         "--out",
-        default=str(ROOT / "participant_codes.json"),
-        help="Output JSON path. Defaults to participant_codes.json.",
+        default=str(ROOT / "participantCodees.json"),
+        help="Output JSON path. Defaults to participantCodees.json.",
     )
     parser.add_argument(
         "--digits",
