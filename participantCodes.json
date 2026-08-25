@@ -342,5 +342,2349 @@
   "ElhamSoufiani1736": {
     "paperId": "2606.28312",
     "paperTitle": "Optimal Deployment of Electric Aircraft for Canadian Domestic Flights"
+  },
+  "DanningJiang3435": {
+    "paperId": "2606.12838",
+    "paperTitle": "OCOO-T : A Simple and Scalable Virtual Cell Model for Transcriptional Perturbation Response Prediction"
+  },
+  "TenghanZhong9757": {
+    "paperId": "2606.12872",
+    "paperTitle": "Non-Spanning Identification of Scheduled Event Risk in Option Pricing"
+  },
+  "DavidGenesove8660": {
+    "paperId": "2606.12893",
+    "paperTitle": "Technology Shocks, Relative Performance Measures, and Outcomes: Evidence from Classical Chess"
+  },
+  "DebasisKundu6357": {
+    "paperId": "2606.13242",
+    "paperTitle": "Least Absolute Deviations Estimation for Sinusoidal Models"
+  },
+  "MarcoBorriero9154": {
+    "paperId": "2606.13281",
+    "paperTitle": "Causal invariance in graphical models with latent variables"
+  },
+  "KaibalyapatiMishra1571": {
+    "paperId": "2606.13314",
+    "paperTitle": "The Privilege of Exposure: Caste and Generative AI in India's Graduate Labour Market"
+  },
+  "IlijaIZovko2673": {
+    "paperId": "2606.13419",
+    "paperTitle": "Realtime price impact detection"
+  },
+  "VsevolodIakovlev4876": {
+    "paperId": "2606.13506",
+    "paperTitle": "Skill vs Education Types of Labour Mismatch and Their Association with Earnings"
+  },
+  "SilviaGoncalves8276": {
+    "paperId": "2606.13519",
+    "paperTitle": "Semiparametric Local Projections"
+  },
+  "PranayAnchuri2687": {
+    "paperId": "2606.13555",
+    "paperTitle": "Price Elasticity of Gas Demand on L1 and L2: Evidence from Ethereum and Arbitrum"
+  },
+  "DivitRawal8024": {
+    "paperId": "2606.13614",
+    "paperTitle": "Majority-of-Three is Optimal"
+  },
+  "EkaterinaOparina8553": {
+    "paperId": "2606.13752",
+    "paperTitle": "What is the public's social welfare function?"
+  },
+  "DanielCoombs4039": {
+    "paperId": "2606.13890",
+    "paperTitle": "Mean First Passage Time for Persistent Random Walks in Annular Search Domains"
+  },
+  "JoshuaSnoke7176": {
+    "paperId": "2606.13902",
+    "paperTitle": "How Should We Measure Empirical Risk when Synthesizing Population Data?"
+  },
+  "DariaBystrova1370": {
+    "paperId": "2606.13947",
+    "paperTitle": "Constraint-based difference graph discovery in a linear setting"
+  },
+  "SantiagoGarcia3724": {
+    "paperId": "2606.13992",
+    "paperTitle": "Group Quantization and Mellin Representations of the Heston Model"
+  },
+  "ShijieZhong5808": {
+    "paperId": "2606.14053",
+    "paperTitle": "Hybrid Uncertainty Sensitivity Analysis Based on the HSIC for High-Dimensional Responses with Aleatory--Epistemic Separation"
+  },
+  "JinyongHahn7165": {
+    "paperId": "2606.14057",
+    "paperTitle": "Granular Instrumental Variables: Estimation and Inference"
+  },
+  "TomaszWoźniak4251": {
+    "paperId": "2606.14143",
+    "paperTitle": "Forecasting with Bayesian Panel Vector Autoregressions Using the R Package bpvars"
+  },
+  "HeeyoungKim2818": {
+    "paperId": "2606.14313",
+    "paperTitle": "Nonlocal Bayesian Modeling of Continuous Spatio-Temporal Dynamics"
+  },
+  "GeneveraI.Allen3918": {
+    "paperId": "2606.14592",
+    "paperTitle": "Cluster LOCO: Feature Importance For Interpreting Clusters"
+  },
+  "BinbinXu2975": {
+    "paperId": "2606.14614",
+    "paperTitle": "Decoding Semantic Categories from Picture-Naming EEG"
+  },
+  "FacundoEmina5154": {
+    "paperId": "2606.14649",
+    "paperTitle": "Prospective Coding and Path Integration Emerge as Equilibrium Solutions of Self-Organizing Neural Networks with Firing-Rate Adaptation"
+  },
+  "VictoriaPaterson5651": {
+    "paperId": "2606.14823",
+    "paperTitle": "Human genetic evidence is associated with drug approval across therapeutic areas: an observational analysis of 26,278 target-disease pairs with temporal validation and feature ablation"
+  },
+  "FoadShokrollahi6663": {
+    "paperId": "2606.14830",
+    "paperTitle": "Pricing Excess-of-Loss Reinsurance and CAT Bonds under Climate Uncertainty: A Cox Process Framework with Temperature-Dependent Stochastic Intensity"
+  },
+  "PallaviPal7655": {
+    "paperId": "2606.14836",
+    "paperTitle": "To Combine or Not? Consolidating Horizontal Acquisitions in Multi-sided Market"
+  },
+  "HabenMichael2354": {
+    "paperId": "2606.14837",
+    "paperTitle": "Bartlett adjustment for Gaussian random effects meta-analysis"
+  },
+  "KarlNaumann-Woleske8670": {
+    "paperId": "2606.14887",
+    "paperTitle": "Estimating Sloppy Directions via KDE: The Case of Kirman's Ants"
+  },
+  "RizalFathony2514": {
+    "paperId": "2606.14909",
+    "paperTitle": "Audited Conformal Prediction for Classification under Unknown Distribution Shift"
+  },
+  "MarcioGameiro5456": {
+    "paperId": "2606.14925",
+    "paperTitle": "Boolean models coarsely sample continuous dynamics of regulatory networks"
+  },
+  "RaphaelCoelho5843": {
+    "paperId": "2606.15089",
+    "paperTitle": "A Machine-Checked Itô Calculus for Brownian Motion"
+  },
+  "OlivierBos6689": {
+    "paperId": "2606.15206",
+    "paperTitle": "AI Contagion in Social Networks"
+  },
+  "AnindyaBhadra5717": {
+    "paperId": "2606.15442",
+    "paperTitle": "The Reverse Telescoping Coordinate System for Positive Definite Matrices: Geometry, Computation, and Generative Modeling"
+  },
+  "MarcusW.Feldman4138": {
+    "paperId": "2606.15496",
+    "paperTitle": "How recombination rates affect escape from low-fitness states"
+  },
+  "ThijsvandenBerg4904": {
+    "paperId": "2606.15502",
+    "paperTitle": "Fast, Reliable, and Error-Bounded Option Pricing with Pretrained Neural Networks: A GJR--GARCH Study"
+  },
+  "D.Albert4022": {
+    "paperId": "2606.15545",
+    "paperTitle": "Search Heuristics Under Multiple Objectives: The Case of Corporate Social Responsibility"
+  },
+  "LaurentMassoulié5000": {
+    "paperId": "2606.15581",
+    "paperTitle": "Phase Transition in Convex Relaxations for Graph Alignment"
+  },
+  "PeterKurz4587": {
+    "paperId": "2606.15593",
+    "paperTitle": "Discrete Choice and Competitive Reactions: End-to-End Simulation with the R Package cash"
+  },
+  "SizhongSun1425": {
+    "paperId": "2606.15748",
+    "paperTitle": "Estimating Demand for a New Product"
+  },
+  "MichaMandel7812": {
+    "paperId": "2606.15754",
+    "paperTitle": "Bounding Causal Effects for Ordinal Outcomes Under Positive Dependence"
+  },
+  "IreneEpifanio1810": {
+    "paperId": "2606.15876",
+    "paperTitle": "Archetypal analysis of European 10-year government bond yields with multidimensional scaling of two-mode three-way asymmetric dissimilarities"
+  },
+  "RogerD.Jones5030": {
+    "paperId": "2606.15905",
+    "paperTitle": "What is Life?"
+  },
+  "RuiSun6390": {
+    "paperId": "2606.15947",
+    "paperTitle": "The Privacy Externality of Disclosing Correlated Data"
+  },
+  "JefferyOpoku8751": {
+    "paperId": "2606.15950",
+    "paperTitle": "Spectral Adaptive Conformal Prediction for Structured Non-Exchangeable Data"
+  },
+  "MertDemirer1142": {
+    "paperId": "2606.15960",
+    "paperTitle": "Chaining Tasks, Redefining Work: A Theory of AI Automation"
+  },
+  "HenryD.Smith7393": {
+    "paperId": "2606.16138",
+    "paperTitle": "Closing the Approximation Gap in Simulation-free Latent SDEs"
+  },
+  "ChrisAngstmann8871": {
+    "paperId": "2606.16269",
+    "paperTitle": "Revisiting Trade-sign Long-memory and Square-root Law price impact"
+  },
+  "XuehanJiang2604": {
+    "paperId": "2606.16380",
+    "paperTitle": "Informative Consumption"
+  },
+  "DawidKucharski2774": {
+    "paperId": "2606.16393",
+    "paperTitle": "Calibrating the Brody exponent as a quantitative measure of short-range exclusion in 2D spatial point processes"
+  },
+  "MartaGentiloniSilveri6965": {
+    "paperId": "2606.16610",
+    "paperTitle": "Diffusion Flow Matching: Dimension-Improved KL Bounds and Wasserstein Guarantees"
+  },
+  "PaulP.Hager8784": {
+    "paperId": "2606.16619",
+    "paperTitle": "Expanding the rough Heston model in $H$"
+  },
+  "JonasBeck8273": {
+    "paperId": "2606.16693",
+    "paperTitle": "Learning Hybrid Biophysical Neuron Models with Neural ODEs"
+  },
+  "TobiasAdrian9455": {
+    "paperId": "2606.16708",
+    "paperTitle": "Risks and Uncertainty in Monetary Policy"
+  },
+  "MichaelAgronah8139": {
+    "paperId": "2606.16726",
+    "paperTitle": "Too Few or Too Many? Sample Size Estimation for Differential Abundance Studies"
+  },
+  "MikaMeitz9035": {
+    "paperId": "2606.16773",
+    "paperTitle": "Generative Predictive Distributions for Time Series"
+  },
+  "RamonGrima4409": {
+    "paperId": "2606.16803",
+    "paperTitle": "Cell Division Changes Fate Decisions in a Genetic Toggle Switch"
+  },
+  "RamaSivaSarwariMallela3434": {
+    "paperId": "2606.16840",
+    "paperTitle": "Crashing Together, Rallying Apart: Dynamic Conditional Tail Dependence in Cryptocurrency Markets"
+  },
+  "AndyZane4061": {
+    "paperId": "2606.16985",
+    "paperTitle": "Dynestyx: A Probabilistic Programming Library for Dynamical Systems"
+  },
+  "KyleSung8320": {
+    "paperId": "2606.17032",
+    "paperTitle": "Sharpe Ratio and Return-VaR Ratio Maximization for Option Portfolios with Skew-Elliptical $t$ Underlying Returns"
+  },
+  "ShaowenLuo9695": {
+    "paperId": "2606.17079",
+    "paperTitle": "Partial Identification of Spatial Production Networks"
+  },
+  "R.F.Suárez6410": {
+    "paperId": "2606.17121",
+    "paperTitle": "Regularized Machine Learning for System Identification of Ship Free-Running Manoeuvres from CFD-Based Synthetic Data: A Comparative Study"
+  },
+  "JoelPersson7706": {
+    "paperId": "2606.17165",
+    "paperTitle": "Statistical Foundations of LLM-based A/B Testing: A Surrogacy Framework for Human Causal Inference"
+  },
+  "NicoleAdler5010": {
+    "paperId": "2606.17290",
+    "paperTitle": "Competing firms, competing regulators: The strategic cost of fragmented climate policy"
+  },
+  "AndrazJelincic5886": {
+    "paperId": "2606.17327",
+    "paperTitle": "Energy-efficient codon optimization on thermodynamic hardware"
+  },
+  "KazukiSekiya4555": {
+    "paperId": "2606.17397",
+    "paperTitle": "Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform"
+  },
+  "ZiyaoWang8283": {
+    "paperId": "2606.17423",
+    "paperTitle": "Martingale Doppelgänger-Eval: An Identification Framework for Auditing Candlestick Understanding in Vision-Language Models"
+  },
+  "SpencerFrei8408": {
+    "paperId": "2606.17426",
+    "paperTitle": "Bounded Difference Concentration for Infinitely Exchangeable Sequences with Applications to AI Benchmark Uncertainty"
+  },
+  "EricM.Takyi3684": {
+    "paperId": "2606.17586",
+    "paperTitle": "Aggregation as a Double-Edged Sword: Fear, Allee Effects, and Finite-Time Collapse"
+  },
+  "JanMaciejowski8836": {
+    "paperId": "2606.17723",
+    "paperTitle": "Tail Dependence in EU Carbon Markets: Graphical Models of Extremes for EUA Futures"
+  },
+  "StavrosTherianos9604": {
+    "paperId": "2606.17745",
+    "paperTitle": "Separating wiring-specific from statistical control of dynamics in a complete connectome"
+  },
+  "GiuliaL.Celora1975": {
+    "paperId": "2606.17891",
+    "paperTitle": "A nonlinear theory for chemotactic fronts of mixed populations"
+  },
+  "LucaMartino4987": {
+    "paperId": "2606.17916",
+    "paperTitle": "Nested Sampling: A Critical and Comprehensive Theoretical Guide"
+  },
+  "ZechariasAnteneh6343": {
+    "paperId": "2606.17977",
+    "paperTitle": "Beyond Parallel Trends in Staggered Difference-in-Differences: Identification under Higher-Order Parallelism"
+  },
+  "DuncanLee2131": {
+    "paperId": "2606.18078",
+    "paperTitle": "Spatial prediction of environmental processes using random forests: How best to account for spatial dependence?"
+  },
+  "WalterE.Block1348": {
+    "paperId": "2606.18292",
+    "paperTitle": "A Formalization of Austrian Economics. Praxeological Foundations: The Base System and Its Derived Theorems"
+  },
+  "ChengChen9018": {
+    "paperId": "2606.18295",
+    "paperTitle": "Archetypal Microbiome Profiles as Indicators of Nitrous Oxide Emission States in Activated Sludge"
+  },
+  "MohammadShahidurRahman1381": {
+    "paperId": "2606.18302",
+    "paperTitle": "Protein-Based Fish Species Identification: Dataset, Models, and Insights from Native Bangladeshi Fish"
+  },
+  "DennisShen8663": {
+    "paperId": "2606.18512",
+    "paperTitle": "Causal Forecasting in Panel Data: A Two-Way Synthetic Forecasting Approach"
+  },
+  "HaipengLuo1427": {
+    "paperId": "2606.18527",
+    "paperTitle": "Toward Simultaneously Optimal Regret in U-Calibration"
+  },
+  "JamieEllenPadgett4397": {
+    "paperId": "2606.18567",
+    "paperTitle": "Bridging Data Gaps in Structural Fragility Modeling through Transfer Learning: Methodology and Case Studies"
+  },
+  "HamedKarami3595": {
+    "paperId": "2606.18575",
+    "paperTitle": "Adaptive COVID-19 Trajectory Forecasting Using MAB-Inspired Ensemble Weighting"
+  },
+  "SeungjinHan2472": {
+    "paperId": "2606.18590",
+    "paperTitle": "Ranking Treatment Saturations under Clustered Network Interference"
+  },
+  "Seung-WooSon4716": {
+    "paperId": "2606.18660",
+    "paperTitle": "Effects of spatial environmental noise on evolution of cooperation"
+  },
+  "RaúlMínguez3865": {
+    "paperId": "2606.18719",
+    "paperTitle": "Reassessing the role of intermediaries in exports"
+  },
+  "ErdunGao2388": {
+    "paperId": "2606.18729",
+    "paperTitle": "TimeLAVA: Learning-Agnostic Data Valuation for Time Series"
+  },
+  "TravisRichardson2827": {
+    "paperId": "2606.18805",
+    "paperTitle": "Emotional driving: Reference-dependent emotions and risky driving behavior after sporting events"
+  },
+  "ConnorSimpson6366": {
+    "paperId": "2606.18972",
+    "paperTitle": "FOSC-X: An Extended Framework for Optimal Local Cuts and Non-Horizontal Cluster Selection from Clustering Hierarchies"
+  },
+  "RoySarkis1548": {
+    "paperId": "2606.18994",
+    "paperTitle": "Climate Policy and The Energy Transition"
+  },
+  "AlessandroDoldi4056": {
+    "paperId": "2606.19038",
+    "paperTitle": "Collective completeness and pricing-hedging duality II"
+  },
+  "ArnoBotha9850": {
+    "paperId": "2606.19052",
+    "paperTitle": "An extendable, integrated, and dynamic approach to forecasting and stress-testing credit risk"
+  },
+  "R.A.Serota5836": {
+    "paperId": "2606.19318",
+    "paperTitle": "Fitting Accumulated Stock Returns with Tempered Skew t-Distribution"
+  },
+  "HengshuZhu4256": {
+    "paperId": "2606.19396",
+    "paperTitle": "BioHarness: Substrate-Aware Evidence Assembly for Biomedical Question Answering across Literature, Knowledge Bases, and Biological Atlases"
+  },
+  "AugustineOkolie4000": {
+    "paperId": "2606.19405",
+    "paperTitle": "Multi-type branching inference on contact trees with application to COVID-19"
+  },
+  "LorenzoMauri3926": {
+    "paperId": "2606.19540",
+    "paperTitle": "Overfitted high-dimensional matrix factorizations via adaptive spectral shrinkage"
+  },
+  "HanZhang5070": {
+    "paperId": "2606.19739",
+    "paperTitle": "Robust probabilistic measurement of structural-functional module consistency in infant brain development"
+  },
+  "ManuelEduardoHernández-García1969": {
+    "paperId": "2606.19762",
+    "paperTitle": "Oscillations and Spatial Patterns in Large-Scale Stochastic Gene Regulatory Networks"
+  },
+  "LeilaHedhili7281": {
+    "paperId": "2606.19972",
+    "paperTitle": "Biodiversity Media Narratives and Stock Market Performance: Evidence from Europe"
+  },
+  "MasahiroKato6402": {
+    "paperId": "2606.20041",
+    "paperTitle": "AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models"
+  },
+  "PinzhangCheng8640": {
+    "paperId": "2606.20141",
+    "paperTitle": "DASH: A Dimensionality Reduction Method for Large-scale Convex MIQP with Applications in Subset Portfolio Selection"
+  },
+  "IliasGeorgakopoulos-Soares5905": {
+    "paperId": "2606.20315",
+    "paperTitle": "bioETH-Beacon: A Confidential On-Chain Genomic Beacon with Encrypted Counts, Filters, and Bounded Noise over a Fully Homomorphic EVM"
+  },
+  "PhilippMahler5619": {
+    "paperId": "2606.20420",
+    "paperTitle": "Advanced Calibration Analysis and Tools: Identifying Influential Observations in Stochastic Interest Rate Model Calibration"
+  },
+  "YechanPark7433": {
+    "paperId": "2606.20435",
+    "paperTitle": "Choosing A Headline Estimand from Matching, DID, and Hybrid Designs: A Minimax-Regret Approach"
+  },
+  "YueyaoWang7340": {
+    "paperId": "2606.20451",
+    "paperTitle": "SSH-Net: A Deep Neural Network for Predicting Failure Time Distribution Functions under Competing Risks with Application to GPU Data"
+  },
+  "JohanHallbergSzabadváry1812": {
+    "paperId": "2606.20859",
+    "paperTitle": "Betting on Moments: Legendre Jumper Martingales for Online Exchangeability Testing"
+  },
+  "MoLi5373": {
+    "paperId": "2606.21000",
+    "paperTitle": "MBRarefy: data-adaptive multi-bin rarefying for alpha diversity association analysis"
+  },
+  "JackRuder5241": {
+    "paperId": "2606.21036",
+    "paperTitle": "Diffusion-Driven State Space Models"
+  },
+  "KosukeImai8349": {
+    "paperId": "2606.21050",
+    "paperTitle": "Triage Score: A Counterfactual Risk Assessment Instrument"
+  },
+  "PenghuanYan8795": {
+    "paperId": "2606.21120",
+    "paperTitle": "Coordinating Treatment Allocation and Recommendation"
+  },
+  "SwapnilManna9384": {
+    "paperId": "2606.21199",
+    "paperTitle": "Orthogonal Discrepancy Kernels for Learning with Partial Physics"
+  },
+  "ShunsukeImai4007": {
+    "paperId": "2606.21224",
+    "paperTitle": "Uniform Confidence Bands for Infinite-Dimensional Partially Identified Parameters"
+  },
+  "MartinLopez-Garcia4785": {
+    "paperId": "2606.21481",
+    "paperTitle": "Mechanistic mathematical model of the in vitro infection dynamics of Bunyamwera and Batai viruses including MOI-dependent shortening of the eclipse phase"
+  },
+  "StephenCoombes7833": {
+    "paperId": "2606.21508",
+    "paperTitle": "Adaptive conduction delays and phase locking in spiking Haken Lighthouse networks"
+  },
+  "XuanMei5357": {
+    "paperId": "2606.21539",
+    "paperTitle": "Attributing Forecast Gaps to Component Models in Complex Model Suites"
+  },
+  "BrunoR.R.Boaretto1710": {
+    "paperId": "2606.21703",
+    "paperTitle": "Delay coordinates synchronization and induces abrupt transition in excitable networks"
+  },
+  "FarbodGhasemlu9316": {
+    "paperId": "2606.21769",
+    "paperTitle": "Optimal Dynamic Fees for Automated Market Makers: A Stochastic Control Approach to Loss-Versus-Rebalancing"
+  },
+  "NiushanGao4855": {
+    "paperId": "2606.21871",
+    "paperTitle": "On Prudence of Risk Measures"
+  },
+  "AuyonSiddiq3772": {
+    "paperId": "2606.21880",
+    "paperTitle": "Human Capital, AI, and Labor Commoditization"
+  },
+  "JorgeBuescu2349": {
+    "paperId": "2606.22001",
+    "paperTitle": "Evolutionary Entropy Shapes Reproductive Lifespan in Age-Structured Populations"
+  },
+  "JiaxinZhang4546": {
+    "paperId": "2606.22016",
+    "paperTitle": "On the use of auxiliary variables in multiple imputation when estimating the average causal effect with missing data"
+  },
+  "KazumasaIkeda2890": {
+    "paperId": "2606.22021",
+    "paperTitle": "Worst-case Strategy-proofness"
+  },
+  "MikihitoNishi8703": {
+    "paperId": "2606.22035",
+    "paperTitle": "Inference methods for unit-specific coefficients in panel data models with latent group structure"
+  },
+  "VittorioAstarita9261": {
+    "paperId": "2606.22118",
+    "paperTitle": "A Unified General Formula for Arbitrary Liquidity Operations in Weighted AMMs: Potential Applications to Intelligent Transportation Systems"
+  },
+  "ShintaroMori2581": {
+    "paperId": "2606.22162",
+    "paperTitle": "Temporal Coarse-Graining of Multi-Sector Default Count Data Generates Posterior-Implied Copulas"
+  },
+  "KatarzynaMaciejowska4306": {
+    "paperId": "2606.22185",
+    "paperTitle": "Impact of distribution fees on BESS scheduling and profitability"
+  },
+  "BruceMizrach1307": {
+    "paperId": "2606.22206",
+    "paperTitle": "Transaction Costs and Speed in the Ethereum Ecosystem: Scalability of the Mainnet and Layer 2s"
+  },
+  "AyushJha7517": {
+    "paperId": "2606.22230",
+    "paperTitle": "Distributional Granger Causality: Identification, Sequential Inference, and Adaptive Testing"
+  },
+  "FedericoZincenko5139": {
+    "paperId": "2606.22255",
+    "paperTitle": "Sensitivity Analysis for the Average Treatment Effect under Discrete Unobserved Confounders"
+  },
+  "JagdishGnawali2897": {
+    "paperId": "2606.22293",
+    "paperTitle": "Innovative Extensions to Option Pricing: Asymmetric Brownian Motion and Random Walk Approaches"
+  },
+  "MoranKoren2260": {
+    "paperId": "2606.22337",
+    "paperTitle": "Theorist Toolbox: Tools for Agent Based LLM-assisted economic theory Research"
+  },
+  "YaozhongShi3182": {
+    "paperId": "2606.22346",
+    "paperTitle": "Flow Annealing Posterior Sampling for Function-Space Regression and Inverse Problems"
+  },
+  "SebastianJensen7302": {
+    "paperId": "2606.22483",
+    "paperTitle": "Neural networks for nonlinear regression with serially correlated disturbances: Evidence from cloud cover"
+  },
+  "PrasenjitGhosh8225": {
+    "paperId": "2606.22490",
+    "paperTitle": "Bayesian Model Pursuit and Near-Oracle Sparse Signal Discovery Under Dependence"
+  },
+  "JavierD.Donna5003": {
+    "paperId": "2606.22564",
+    "paperTitle": "Opening Hours and Consumer Behavior: Evidence from GPS Data and Deregulation"
+  },
+  "VikashKumarDubey1389": {
+    "paperId": "2606.22582",
+    "paperTitle": "Upstream reciprocity versus downstream reciprocity: Catalyzing cooperation"
+  },
+  "BabakHeydari7467": {
+    "paperId": "2606.22599",
+    "paperTitle": "Networked risk perception and behavioral bubbles: the case of a pandemic"
+  },
+  "KaibalyapatiMishra8117": {
+    "paperId": "2606.22620",
+    "paperTitle": "Degrees of Devaluation: College Expansion and the Credential Trap in India"
+  },
+  "AydinGhojogh2046": {
+    "paperId": "2606.22674",
+    "paperTitle": "Data Evolution by Wittgenstein's Rule Following"
+  },
+  "YisiS.Zhang4123": {
+    "paperId": "2606.22695",
+    "paperTitle": "SPIDER -- Stitched Power-spectra for Inferring Directed information flow from incomplete and asynchronous Experimental Recordings"
+  },
+  "MaoGuan9247": {
+    "paperId": "2606.22719",
+    "paperTitle": "Leakage-Aware Benchmarking of LLM Forecasting: Real-Time Nowcasts as the Decision-Time Input for Macro Factor Ranking"
+  },
+  "Yu-TingHo4592": {
+    "paperId": "2606.22720",
+    "paperTitle": "Screening Under Competition"
+  },
+  "RaziehNabi6570": {
+    "paperId": "2606.22784",
+    "paperTitle": "Semiparametric Efficiency Theory as Differential Calculus on a Space of Probability Distributions"
+  },
+  "ShantanuAwasthi9222": {
+    "paperId": "2606.22796",
+    "paperTitle": "Enhancing the Black-Scholes Model for Option Valuation via Lévy Processes and Malliavin Calculus"
+  },
+  "YuyuChen3710": {
+    "paperId": "2606.22884",
+    "paperTitle": "Universal Value-at-Risk superadditivity"
+  },
+  "DeboraDanielaEscobar9795": {
+    "paperId": "2606.22956",
+    "paperTitle": "Pareto Optimal Centralized Risk Sharing with Multiple Agents: Inclusivity and Fairness"
+  },
+  "ArwenNugteren2086": {
+    "paperId": "2606.23009",
+    "paperTitle": "Hierarchical Bayes meets hierarchical forecasting: A flexible framework for level-focused forecasts"
+  },
+  "IllyyneSaffar1300": {
+    "paperId": "2606.23047",
+    "paperTitle": "Domain Adaptation Under Wireless Network Constraints: When Does It Become Green?"
+  },
+  "DanieleMariaDiNosse1196": {
+    "paperId": "2606.23070",
+    "paperTitle": "Mitigating Adverse Selection in Concentrated Liquidity AMMs with Dynamic Fees: An Agent-Based Model Approach"
+  },
+  "HiroshiIto3217": {
+    "paperId": "2606.23114",
+    "paperTitle": "Circadian output network can buffer period variability"
+  },
+  "BertilleTierny5087": {
+    "paperId": "2606.23116",
+    "paperTitle": "Direct and Indirect Discrimination in Generalized Linear Models"
+  },
+  "StefanWidgren7713": {
+    "paperId": "2606.23148",
+    "paperTitle": "Bayesian modelling of herd-level infection dynamics in cattle: Local spread as the primary driver of Salmonella Dublin persistence on Öland"
+  },
+  "AnnaBindler8351": {
+    "paperId": "2606.23150",
+    "paperTitle": "A missed opportunity? Labor demand and workforce diversity"
+  },
+  "KaiwenLiu8388": {
+    "paperId": "2606.23174",
+    "paperTitle": "Principal Covariate Regression with Nuclear Norm Penalty"
+  },
+  "KatsushiKagaya3380": {
+    "paperId": "2606.23245",
+    "paperTitle": "Predator-associated cues promote host riding, and coupling to mobile hosts improves survival in an epizoic limpet"
+  },
+  "ZhiCao3541": {
+    "paperId": "2606.23275",
+    "paperTitle": "A Bayesian Phase I/II basket design with robust information borrowing to identify subtrial-specific optimal biological doses"
+  },
+  "HanXiao5963": {
+    "paperId": "2606.23288",
+    "paperTitle": "Flow Games with Public Arcs: the Least Core and the Nucleolus"
+  },
+  "AndreaAlbertazzi9633": {
+    "paperId": "2606.23347",
+    "paperTitle": "Beyond the Margin: Targeted Conservation and Household Water Demand"
+  },
+  "DebdootGhosh6246": {
+    "paperId": "2606.23367",
+    "paperTitle": "Asymmetry PRISM: A CPU/GPU Portfolio Optimization Engine for Deadline-Bounded Institutional Rebalancing"
+  },
+  "RamSewakDubey3291": {
+    "paperId": "2606.23428",
+    "paperTitle": "On the construction and representation of social welfare orders satisfying consequentialist equity axioms"
+  },
+  "P.Jean-JacquesHerings3461": {
+    "paperId": "2606.23440",
+    "paperTitle": "The Expected Number of Pairwise Stable Networks"
+  },
+  "SimonScheidegger9777": {
+    "paperId": "2606.23463",
+    "paperTitle": "Equilibrium World Models"
+  },
+  "WayneYuanGao7368": {
+    "paperId": "2606.23509",
+    "paperTitle": "Variance or Standard Deviation? Shell Geometry and Global-Scale Priors in High-Dimensional Shrinkage"
+  },
+  "EmilianoPapa5171": {
+    "paperId": "2606.23510",
+    "paperTitle": "Analytic Pricing of Bermudan Swaptions with Few Exercise Dates"
+  },
+  "UseongShin2871": {
+    "paperId": "2606.23596",
+    "paperTitle": "Anatomy of the Market: A Body-Tail Test of Factor Models"
+  },
+  "KevinP.Josey2061": {
+    "paperId": "2606.23656",
+    "paperTitle": "Causal Inference with Multiple Misclassified Exposures: A Control Variate-Adjusted Calibration Weighting Approach"
+  },
+  "TomRossa9424": {
+    "paperId": "2606.23662",
+    "paperTitle": "Action-BED: Task-Driven Bayesian Experimental Design with Singly Intractable Objectives"
+  },
+  "CuongLeVan8990": {
+    "paperId": "2606.23861",
+    "paperTitle": "Globalization, economic growth, and innovation: A two-country two-period model"
+  },
+  "SandhyaDevi6390": {
+    "paperId": "2606.23873",
+    "paperTitle": "Relaxation Times for Nonextensive Systems Using Gradient Flow for the Maximization of Tsallis Entropy: An Application to Financial Market Dynamics"
+  },
+  "JianSun9192": {
+    "paperId": "2606.23883",
+    "paperTitle": "Monotonicity of Normalized Implied-Volatility Coordinates under No-Arbitrage"
+  },
+  "NataliaL.Komarova3269": {
+    "paperId": "2606.23946",
+    "paperTitle": "Mutant Fixation for a Stochastic Evolutionary Model in Fragmented Populations"
+  },
+  "MinaRezaei7956": {
+    "paperId": "2606.24171",
+    "paperTitle": "Predicting the 2026 FIFA World Cup with Sufficient Dimension Reduction of Elo Rating Histories"
+  },
+  "HannesWallimann4454": {
+    "paperId": "2606.24181",
+    "paperTitle": "Visible or Covert? The Causal Effect of Inspector Visibility on Fare Evasion Detection: A Causal Machine Learning and Policy Learning Approach"
+  },
+  "ChristianDohDinga8168": {
+    "paperId": "2606.24183",
+    "paperTitle": "Generating EUPHEMIA-compatible bids for flexible demand under imperfect information"
+  },
+  "J.Unterberger1593": {
+    "paperId": "2606.24246",
+    "paperTitle": "Hierarchical models for large chemical reaction networks"
+  },
+  "AbhimanyuGupta7332": {
+    "paperId": "2606.24266",
+    "paperTitle": "Semi-nonparametric estimation of spatial dynamic panel data models with nonparametric spatial weights"
+  },
+  "PawełSakowski2111": {
+    "paperId": "2606.24309",
+    "paperTitle": "Randomized Neural Networks for estimation of exposure profiles and Credit Valuation Adjustment (CVA) for American Equity Options"
+  },
+  "AurélieHanin7560": {
+    "paperId": "2606.24351",
+    "paperTitle": "Graph-based analysis of inflammatory profiles in New Onset Refractory Status Epilepticus (NORSE)"
+  },
+  "DeeptiNavaratna7787": {
+    "paperId": "2606.24406",
+    "paperTitle": "EEG Interpretation Across Chant Listening: A Single-Subject Pilot Investigation Using Spectral and Functional Connectivity Analysis"
+  },
+  "JaeyongLee5880": {
+    "paperId": "2606.24652",
+    "paperTitle": "Bayesian Estimation of the Eigenstructure in High-Dimensional Approximate Factor Models"
+  },
+  "CallumMarsh1194": {
+    "paperId": "2606.24660",
+    "paperTitle": "Extended pseudo-spectral physics-informed neural networks for phase-field models"
+  },
+  "DuongTrinh8952": {
+    "paperId": "2606.24850",
+    "paperTitle": "Heterogeneous Peer Effects with Endogenous Network Formation"
+  },
+  "JooyoungCha9845": {
+    "paperId": "2606.24867",
+    "paperTitle": "Bounds for Standard Errors in Combined Data"
+  },
+  "AxelFaes9104": {
+    "paperId": "2606.24938",
+    "paperTitle": "Privacy-preserving federated tensor decomposition of single-cell immune data: recovering multicellular programs across institutions"
+  },
+  "SajibAcharjeeDip8856": {
+    "paperId": "2606.24940",
+    "paperTitle": "Stable-Shift: Biologically Structured Prediction of Transcriptional Responses to Unseen Gene Perturbations"
+  },
+  "AxelFinke6963": {
+    "paperId": "2606.25603",
+    "paperTitle": "Resampling in conditional SMC algorithms"
+  },
+  "RiccardoDeSantis7531": {
+    "paperId": "2606.25670",
+    "paperTitle": "Dealing with partial missing correlations in multivariate and surrogate meta-analyses"
+  },
+  "UshaAnanthakumar8562": {
+    "paperId": "2606.25902",
+    "paperTitle": "Count data modeling and forecasting of malaria incidence using generalized time series regression"
+  },
+  "IslaGlobus-Harris8252": {
+    "paperId": "2606.25909",
+    "paperTitle": "General Equilibrium Effects of Carbon Offsets"
+  },
+  "LuyangFang8342": {
+    "paperId": "2606.25927",
+    "paperTitle": "Knowledge Cascade: Reverse Knowledge Distillation on Nonparametric Multivariate Functional Estimation"
+  },
+  "EfthymiosCosta6155": {
+    "paperId": "2606.26324",
+    "paperTitle": "A unified approach to outlier identification for mixed-type data"
+  },
+  "ChristopherEsposito8487": {
+    "paperId": "2606.26470",
+    "paperTitle": "The Growing Self-Reliance of Chinese Innovation"
+  },
+  "AnthonyChristidis4526": {
+    "paperId": "2606.26611",
+    "paperTitle": "Fast Robust Regression via Orthogonal Block Updates"
+  },
+  "AndrewJ.Grant7883": {
+    "paperId": "2606.26638",
+    "paperTitle": "Multivariable Mendelian randomization with weak instruments: a comparison of Bayesian and frequentist methods"
+  },
+  "LorenzoZambon4109": {
+    "paperId": "2606.26774",
+    "paperTitle": "End-to-end probabilistic hierarchical forecasting of large hierarchies via probabilistic top-down"
+  },
+  "DrewJohnston3747": {
+    "paperId": "2606.26959",
+    "paperTitle": "The Shift to Agentic AI: Evidence from Codex"
+  },
+  "StefanSommer5665": {
+    "paperId": "2606.26974",
+    "paperTitle": "Hyperiax and Phylogenetic Inference from Shape Data"
+  },
+  "KenrickSo2697": {
+    "paperId": "2606.26980",
+    "paperTitle": "Climate-Driven Mortality Forecasting Using Deep Learning"
+  },
+  "RasoulShafipour7445": {
+    "paperId": "2606.27455",
+    "paperTitle": "Directed Graph Topology Inference via Graph Filter Identification"
+  },
+  "JingeLi7149": {
+    "paperId": "2606.27924",
+    "paperTitle": "Heterogeneous Diffusion of Electric Vehicles in China: Demand, Learning, Product Entry, and the Incidence of Industrial Policy"
+  },
+  "ZechuanLin9245": {
+    "paperId": "2608.10754",
+    "paperTitle": "Control of hybrid wind-wave energy systems using reinforcement learning"
+  },
+  "GermánFonseca7279": {
+    "paperId": "2608.10767",
+    "paperTitle": "Decay and regularity properties for the dispersion generalized Benjamin-Ono equation"
+  },
+  "AntonFrançois1859": {
+    "paperId": "2608.10769",
+    "paperTitle": "A Framework for Joint Affine and Diffeomorphic Image Registration"
+  },
+  "HancheolCho1262": {
+    "paperId": "2608.10770",
+    "paperTitle": "Variable Step Time Delay Control"
+  },
+  "ValentinBonzom8712": {
+    "paperId": "2608.10772",
+    "paperTitle": "Differential equations for bipartite maps with bounded face degrees"
+  },
+  "EdenA.McEwen5340": {
+    "paperId": "2608.10786",
+    "paperTitle": "Wavefront Profiling via correlation of GLAO open loop telemetry"
+  },
+  "MarcoBallin1369": {
+    "paperId": "2608.10787",
+    "paperTitle": "Optimal Stratification of a Sampling Frame: A Comparative Study of Classical, Quantum, and Quantum-Inspired Approaches"
+  },
+  "MarcoOrnigotti2439": {
+    "paperId": "2608.10794",
+    "paperTitle": "Quantum Theory of Third-harmonic Generation in Epsilon-Near-Zero Materials"
+  },
+  "ShaunDavidBrocusFell9860": {
+    "paperId": "2608.10800",
+    "paperTitle": "Radiative Signatures from Warp Drives Traveling Through the Earth's Atmosphere"
+  },
+  "KrishnaraajanSundararajan5029": {
+    "paperId": "2608.10802",
+    "paperTitle": "Anisotropic magnon spin transport in CrPS$_4$"
+  },
+  "NicolasMascot4920": {
+    "paperId": "2608.10815",
+    "paperTitle": "Poincaré à la Makdisi"
+  },
+  "ZhouzheWang9494": {
+    "paperId": "2608.10828",
+    "paperTitle": "Measures on General Codimensional Surfaces in Infinite Dimensions and Stokes-Type Theorems"
+  },
+  "AmirKargaran5165": {
+    "paperId": "2608.10844",
+    "paperTitle": "Impact of Higher-Order Interactions on Collective Motion"
+  },
+  "NingHao4231": {
+    "paperId": "2608.10845",
+    "paperTitle": "Spectral Embeddings of Degree-$α$ Laplacians in Random Dot Product Graphs"
+  },
+  "MeteAbbot4167": {
+    "paperId": "2608.10851",
+    "paperTitle": "Inelastic spreading of viscoelastic drops"
+  },
+  "DmitriBykov3466": {
+    "paperId": "2608.10861",
+    "paperTitle": "Anomalous symmetries in Kähler geometry"
+  },
+  "MuhamadRausyanFikri8120": {
+    "paperId": "2608.10872",
+    "paperTitle": "Robust Safety Filtering for Input-Constrained Underactuated Linear Systems"
+  },
+  "SimonGeirnaert3236": {
+    "paperId": "2608.10887",
+    "paperTitle": "Modeling and Interpreting Correlations, Null Distributions and Significance Levels in Neural Tracking of Natural Stimuli"
+  },
+  "ChaoZhang3214": {
+    "paperId": "2608.10892",
+    "paperTitle": "Sharp constants in the one-sided John-Nirenberg inequality for functions of bounded lower oscillation"
+  },
+  "FilipMajstorovic6745": {
+    "paperId": "2608.10895",
+    "paperTitle": "Boosting self hybridized exciton polaritons with metal clad WS2 waveguides"
+  },
+  "MinZeng5663": {
+    "paperId": "2608.10896",
+    "paperTitle": "Self-Normalized Inference for Constant-Stepsize Temporal-Difference Learning under Markovian Sampling"
+  },
+  "HaotianWang6177": {
+    "paperId": "2608.10898",
+    "paperTitle": "Adaptive Source-Channel Coding for Bi-static Integrated Sensing and Semantic Communications"
+  },
+  "AliFuatSahin4610": {
+    "paperId": "2608.10901",
+    "paperTitle": "CII: Novel CSI-RS Metric for Joint Precoder and RIS Reporting in Multi-User NextG Networks"
+  },
+  "R.Smolec7681": {
+    "paperId": "2608.10909",
+    "paperTitle": "Pulsation periods reveal tension between theoretical and empirical radii for classical Cepheids in eclipsing binary systems"
+  },
+  "KaiKang2585": {
+    "paperId": "2608.10913",
+    "paperTitle": "Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments"
+  },
+  "MohammadAliAbooshahab1744": {
+    "paperId": "2608.10921",
+    "paperTitle": "Multi-Rate Distributed Unscented Kalman Filtering Under Collective Detectability"
+  },
+  "RebeccaMCrossley3223": {
+    "paperId": "2608.10931",
+    "paperTitle": "The role of estrogen receptor alpha on calcium transport during smooth muscle contractions"
+  },
+  "SergioCelani7978": {
+    "paperId": "2608.10937",
+    "paperTitle": "A Modal Expansion of Kleene Algebras via Twist Structures"
+  },
+  "PrasadSubramanian1418": {
+    "paperId": "2608.10945",
+    "paperTitle": "Fitting trends in quasar emission and absorption line redshifts"
+  },
+  "JiasenJin1225": {
+    "paperId": "2608.10948",
+    "paperTitle": "Steady-state phase transition in one-dimensional hybrid contact process"
+  },
+  "MaurícioCorrêa9592": {
+    "paperId": "2608.10973",
+    "paperTitle": "Invisible singularities in complex algebraic geometry"
+  },
+  "W.Zhang8278": {
+    "paperId": "2608.10988",
+    "paperTitle": "High-energy electron-positron beam collisions with large-angle disruptions"
+  },
+  "HonglinLi8517": {
+    "paperId": "2608.10999",
+    "paperTitle": "Techno-Economic Boundary Analysis of Small Modular Reactor Cogeneration for Hyperscale Data Center IT and Cooling Loads"
+  },
+  "WeixiZhai5589": {
+    "paperId": "2608.11026",
+    "paperTitle": "MAJEPPA: Morphing and Assessing in a Unified Piano Performance Space"
+  },
+  "LuizSilva-Resende1550": {
+    "paperId": "2608.11029",
+    "paperTitle": "A parametric framework for assessing and estimating sufficient follow-up time in cure models"
+  },
+  "JingboLiu8500": {
+    "paperId": "2608.11031",
+    "paperTitle": "A Bayesian Proof of the Bernoulli Theorem"
+  },
+  "DanielaLaMattina9314": {
+    "paperId": "2608.11032",
+    "paperTitle": "Differential varieties of upper triangular matrices"
+  },
+  "LajosGyőrffy4871": {
+    "paperId": "2608.11035",
+    "paperTitle": "Chooser-Picker Degree Games for Regular Graphs"
+  },
+  "GaetanoNapoli2063": {
+    "paperId": "2608.11039",
+    "paperTitle": "Boundary-layer analysis of the partial engulfment of a small particle by a lipid membrane"
+  },
+  "VatsalSanjay9374": {
+    "paperId": "2608.11060",
+    "paperTitle": "Singularities in Soft Matter Systems"
+  },
+  "IdoRegev2592": {
+    "paperId": "2608.11073",
+    "paperTitle": "A Dynamical Mechanism for Irreversibility in Cyclically Driven Amorphous Solids"
+  },
+  "FrancescoIacovelli6129": {
+    "paperId": "2608.11119",
+    "paperTitle": "All You Need is not $Ω_\\mathrm{gw}$: Beyond the Mean of the Cross-Correlation Estimator when Searching for an Astrophysical Gravitational-Wave Background"
+  },
+  "StanislavNagy1579": {
+    "paperId": "2608.11131",
+    "paperTitle": "Resampling simplicial depth"
+  },
+  "YvesAchdou1673": {
+    "paperId": "2608.11134",
+    "paperTitle": "Mastering Stochastic OLG Models in Continuous Time"
+  },
+  "EbrahimKhaledEbrahim6421": {
+    "paperId": "2608.11140",
+    "paperTitle": "Goodness-of-Fit Tests and Calibration Machine-Learning Algorithms for Logistic Regression with Sparse Data"
+  },
+  "PavelAverin9660": {
+    "paperId": "2608.11156",
+    "paperTitle": "Conditional Independence Tests for Constraint-Based Causal Discovery: A Survey"
+  },
+  "ChristopherL.Smallwood8875": {
+    "paperId": "2608.11168",
+    "paperTitle": "Impact of strain and dark states on spectroscopic measurements of silicon-vacancy centers in diamond"
+  },
+  "PhilippBartmann6593": {
+    "paperId": "2608.11170",
+    "paperTitle": "Eigenvalue growth of the discrete Hodge Laplacian across dimensions"
+  },
+  "RomanCherniha6656": {
+    "paperId": "2608.11172",
+    "paperTitle": "A reaction-diffusion system with nonconstant diffusion coefficients: exact and numerical solutions"
+  },
+  "EricA.F.Reinhardt5949": {
+    "paperId": "2608.11173",
+    "paperTitle": "A Quantum Roadmap for Softmax Attention: Exact Born-Rule Analogs for Softmax Attention on the Probability Simplex"
+  },
+  "AlainDestexhe5227": {
+    "paperId": "2608.11185",
+    "paperTitle": "A class of mean-field models to bridge molecular to brain scales"
+  },
+  "LilatulFerdouse7792": {
+    "paperId": "2608.11280",
+    "paperTitle": "Uncertainty-Aware and Explainable Ensemble Deep Learning Framework for Multi-Class Skin Lesion Classification"
+  },
+  "CianMScannell9295": {
+    "paperId": "2608.11282",
+    "paperTitle": "Physics-Informed Implicit Neural Representations for Improved Myocardial Perfusion MRI Quantification"
+  },
+  "HarshilLodhiya6778": {
+    "paperId": "2608.11288",
+    "paperTitle": "Uncertainty-Aware Compositional Localization and Placement Assessment of Catheters and Tubes in Chest X-Rays"
+  },
+  "LinhaoMa6403": {
+    "paperId": "2608.11311",
+    "paperTitle": "A Diverse Distribution of Black Hole Spins from Stable Mass Transfer"
+  },
+  "HirokiIshizaka9082": {
+    "paperId": "2608.11353",
+    "paperTitle": "Exact characterisation of maximum-angle conditions for spherical finite element meshes"
+  },
+  "BalázsNagyfalusi7457": {
+    "paperId": "2608.11356",
+    "paperTitle": "Strain-controlled magnetism and magnetoelasticity in monolayer NiPS$_3$ and CrPS$_4$"
+  },
+  "ManuelKeppler2332": {
+    "paperId": "2608.11360",
+    "paperTitle": "Time-Optimal Control of One-Mode Flexible Structures: Analytical Solution and the Cost of Flexibility"
+  },
+  "IzaDanielewska7234": {
+    "paperId": "2608.11366",
+    "paperTitle": "Graphical Models for Multivariate Count Data"
+  },
+  "JeongbinKim7974": {
+    "paperId": "2608.11371",
+    "paperTitle": "Do People Follow AI Advice? Evidence from a Pension Portfolio Choice Experiment"
+  },
+  "DavidChan5992": {
+    "paperId": "2608.11376",
+    "paperTitle": "Computations in Equivariant Topological Hochschild Homology"
+  },
+  "BenjaminRBaer3428": {
+    "paperId": "2608.11399",
+    "paperTitle": "Semiparametric efficient estimation of the Cox regression coefficient when there can be ties"
+  },
+  "RugwedLokhande6737": {
+    "paperId": "2608.11421",
+    "paperTitle": "Second-Derivative-Corrected FANPT for Robust Continuation of Nonlinear Wavefunction Equations"
+  },
+  "PietervanDokkum2328": {
+    "paperId": "2608.11443",
+    "paperTitle": "Numerous bow shocks in the outer Helix Nebula"
+  },
+  "IlayHoshen4779": {
+    "paperId": "2608.11457",
+    "paperTitle": "Optimal lower bounds for epsilon-nets for lines in the plane"
+  },
+  "RuiYao8268": {
+    "paperId": "2608.11464",
+    "paperTitle": "Estimating the perturbed utility route choice model with trip-level data"
+  },
+  "PiotrJedryszek8730": {
+    "paperId": "2608.11475",
+    "paperTitle": "Probing and steering biology across Boltz-1s trunk-diffusion boundary"
+  },
+  "GiovanniIacovelli2722": {
+    "paperId": "2608.11476",
+    "paperTitle": "Extremely Large Beyond-Diagonal RIS: Low-Rank Modal Optimization for Near-Field Communications"
+  },
+  "GannaFagerberg2391": {
+    "paperId": "2608.11481",
+    "paperTitle": "Time-Varying Multi-Seasonal ARMA Models"
+  },
+  "SayanMondal2213": {
+    "paperId": "2608.11488",
+    "paperTitle": "Exchange Fluctuation Theorems for Non-Markovian Baths in Quantum Collisional Model"
+  },
+  "TeddyMekonnen1259": {
+    "paperId": "2608.11497",
+    "paperTitle": "Diversity as Majorization"
+  },
+  "YannikPitcan1201": {
+    "paperId": "2608.11505",
+    "paperTitle": "Does a Structural Model Add Anything to the Closing Price? Calibrated forecasting, incremental information, and match leverage in the Italian Serie A"
+  },
+  "GhulamNabiAhmadHassanYar8424": {
+    "paperId": "2608.11514",
+    "paperTitle": "SinoDiff: Physics-Consistent Self-Supervised Diffusion for Unified Low-Dose to Standard-Dose PET Sinogram Recovery"
+  },
+  "PaulA.Jewsbury4799": {
+    "paperId": "2608.11542",
+    "paperTitle": "Analytically Corrected Bayesian Modularization for Local Item Calibration"
+  },
+  "ThejaniGamage5943": {
+    "paperId": "2608.11544",
+    "paperTitle": "Fine-Tuning Generative Models for Extreme Events via CVaR-Penalized Wasserstein Gradient Flows"
+  },
+  "NaokiSato1494": {
+    "paperId": "2608.11547",
+    "paperTitle": "Admissible Invariant-Torus Foliations for Steady Euler Flows"
+  },
+  "Ming-ZheDai7935": {
+    "paperId": "2608.11549",
+    "paperTitle": "Poisson Tangent Limits and Critical Policy Switching for Sampled Bellman Operators"
+  },
+  "YumaKinoshita2474": {
+    "paperId": "2608.11565",
+    "paperTitle": "Alignment of Similarity-Transformed Images Based on Fourier--Mellin Transform Using Auxiliary Function Method"
+  },
+  "JimingMa8985": {
+    "paperId": "2608.11571",
+    "paperTitle": "Spherical CR uniformizations of a sequence of hyperbolic 3-manifolds"
+  },
+  "QuocHungNguyen3758": {
+    "paperId": "2608.11586",
+    "paperTitle": "Higher Regularity of Homogeneous Gradient Compositions for $p$-Laplace-Type Equations"
+  },
+  "JialuLi7731": {
+    "paperId": "2608.11587",
+    "paperTitle": "Robust Multi-Tier Infant-Centered Audio Understanding with Whisper via Structured Speaker Conditioning"
+  },
+  "KshitizUpadhyay6950": {
+    "paperId": "2608.11594",
+    "paperTitle": "Process-fracture mapping of a DLP-printed photopolymer using Bayesian active learning and surrogate-based sensitivity analysis"
+  },
+  "AronW.Cummings3500": {
+    "paperId": "2608.11615",
+    "paperTitle": "Spin lifetime anisotropy in graphene induced by the SiO2 interface"
+  },
+  "GregorSchubert2202": {
+    "paperId": "2608.11626",
+    "paperTitle": "Organizational Technology Ladders: Remote Work and Generative AI Adoption"
+  },
+  "WageeshaN.Manamperi6566": {
+    "paperId": "2608.11627",
+    "paperTitle": "Deep Learning Based Relative Transfer Matrix Estimation for Multiple Sources and Multiple Microphones"
+  },
+  "HaoWu7189": {
+    "paperId": "2608.11637",
+    "paperTitle": "Uniform Local Asymptotics for Lévy Processes with Subexponential Jumps"
+  },
+  "YanggangSheng6055": {
+    "paperId": "2608.11641",
+    "paperTitle": "Energy-Aware Wind-Resilient Routing for Truck-Assisted Multi-UAV Delivery under Wind Uncertainty"
+  },
+  "AvinabaMukherjee8456": {
+    "paperId": "2608.11642",
+    "paperTitle": "Fluctuation Spectra and Response Function of Coupled Atomic and Molecular BECs"
+  },
+  "AnnaJ.G.O'Grady1431": {
+    "paperId": "2608.11672",
+    "paperTitle": "Disco in the Dust: Reflected light at the bow shock around Betelgeuse's companion explains its observed luminosity"
+  },
+  "MeinaTakahashi9276": {
+    "paperId": "2608.11682",
+    "paperTitle": "A Solution to the Roommate Problem"
+  },
+  "WeijunXu8552": {
+    "paperId": "2608.11695",
+    "paperTitle": "Generalised stochastic curvature flow in $d \\geq 2$, and sharp interface limit for the stochastic Allen-Cahn equation with nonlinear diffusion"
+  },
+  "ItaiAshlagi8340": {
+    "paperId": "2608.11710",
+    "paperTitle": "How to Beat FCFS"
+  },
+  "IndrajitGhosh7604": {
+    "paperId": "2608.11711",
+    "paperTitle": "A Complete Characterization of Cartan Inclusions of Finite Dimensional $C^*$-algebras"
+  },
+  "TsuyoshiMiezaki3204": {
+    "paperId": "2608.11734",
+    "paperTitle": "Average hitting times and recurrence structures II: Cartesian products of powers of cycles and regular graphs"
+  },
+  "PieterM.Gunnink6536": {
+    "paperId": "2608.11740",
+    "paperTitle": "Magnetic noise of a dark exciton Bose-Einstein condensate"
+  },
+  "MingxiangLiu8787": {
+    "paperId": "2608.11750",
+    "paperTitle": "Reinforcement Learning-Based Output Feedback LQR for Continuous-Time MIMO Systems"
+  },
+  "SebastianFragaFernández1192": {
+    "paperId": "2608.11754",
+    "paperTitle": "Characterizing Nonlinearities in IM-DD Links via the Best Linear Approximation: Distortion Analysis and Modulation Optimization"
+  },
+  "ZhicongLin2990": {
+    "paperId": "2608.11771",
+    "paperTitle": "Bijective proofs of several conjectures on Jacobi permutations"
+  },
+  "MarcellT.Kurbucz6778": {
+    "paperId": "2608.11784",
+    "paperTitle": "Coarsening Latent-Class Probabilities: Directional Distortion and Coverage Loss"
+  },
+  "SmritiKumar7526": {
+    "paperId": "2608.11798",
+    "paperTitle": "TRACE: A Modular Framework for RIS-Assisted Channel Estimation and Differential Channel-Aware Reconfiguration"
+  },
+  "RainisHaller5696": {
+    "paperId": "2608.11827",
+    "paperTitle": "Weak stability and binary convex combinations of slices"
+  },
+  "JiazhenDong8422": {
+    "paperId": "2608.11828",
+    "paperTitle": "A Universal Random Precoding Framework for MIMO Systems"
+  },
+  "LeYang2994": {
+    "paperId": "2608.11845",
+    "paperTitle": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks"
+  },
+  "YaoWan1960": {
+    "paperId": "2608.11849",
+    "paperTitle": "Weinstock inequality in hyperbolic space II"
+  },
+  "JuhoMäättä3829": {
+    "paperId": "2608.11857",
+    "paperTitle": "Disturbance-Observer-Based Grid-Forming Control for Unbalanced Grids"
+  },
+  "WaleedWaseer4162": {
+    "paperId": "2608.11860",
+    "paperTitle": "Two-Stage Deformable-Convolutional Inverse Design of Nanophotonic Absorbers from Optical Spectra"
+  },
+  "ShuiyuanWang2184": {
+    "paperId": "2608.11898",
+    "paperTitle": "On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin"
+  },
+  "RickM.Butler7852": {
+    "paperId": "2608.11903",
+    "paperTitle": "End-to-End Modelling of Earthquake-Induced Polarisation Perturbations in Submarine Optical Fibres"
+  },
+  "TimothyHeightman6306": {
+    "paperId": "2608.11911",
+    "paperTitle": "Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians"
+  },
+  "AndreaRinaldo5777": {
+    "paperId": "2608.11918",
+    "paperTitle": "A multiscale theory based on metabolic scaling connects forest dynamics to tree-size distributions"
+  },
+  "DavideBianchi5485": {
+    "paperId": "2608.11931",
+    "paperTitle": "Nonlinear parabolic characterizations of stochastic completeness at infinity on weighted graphs"
+  },
+  "AyonMukherjee8226": {
+    "paperId": "2608.11953",
+    "paperTitle": "Efficient Response-Adaptive Randomization for Multi-arm Trials with Prioritized Composite Endpoints"
+  },
+  "UsefFaghihi4665": {
+    "paperId": "2608.11954",
+    "paperTitle": "Causal inference for group-contaminated structured outcomes: observable quotients, lossless reduction and exact randomization inference"
+  },
+  "XingLiang9036": {
+    "paperId": "2608.11986",
+    "paperTitle": "Variational Principles and Rearrangement Inequalities for asymmetric Operators on Periodic Lattices"
+  },
+  "ZhidanYan6474": {
+    "paperId": "2608.11990",
+    "paperTitle": "On spanning trees whose degrees are congruent to one modulo $\\ell$"
+  },
+  "IndrianaHidayah8650": {
+    "paperId": "2608.12000",
+    "paperTitle": "Beyond Local Power: Functional Connectivity Analysis for Subject-Independent Learning Style Recognition"
+  },
+  "FelixSachse2319": {
+    "paperId": "2608.12016",
+    "paperTitle": "Term structure shapes in the Hull-White model with Svensson-parameterized initial yield curves"
+  },
+  "JohnCullinan8846": {
+    "paperId": "2608.12019",
+    "paperTitle": "Hasse-Witt invariants for trace forms of Jacobi polynomials"
+  },
+  "ZihaoRen1543": {
+    "paperId": "2608.12022",
+    "paperTitle": "Distributed Nash Equilibrium Seeking with Logarithmic Bit Rates over Digital Channels"
+  },
+  "NourZidi3557": {
+    "paperId": "2608.12029",
+    "paperTitle": "Lightweight Single-Antenna Direction-of-Arrival Estimation for Curvilinear Trajectories in Mobile Embedded Systems"
+  },
+  "S.J.Hale4050": {
+    "paperId": "2608.12033",
+    "paperTitle": "Automation and Modernisation of Legacy BiSON Solar Observatories with the BiSON:NG Platform"
+  },
+  "StefanMeier3429": {
+    "paperId": "2608.12040",
+    "paperTitle": "Spatial and energetic correlations of ultrashort two electron pulses"
+  },
+  "SwarnaChatterjee1532": {
+    "paperId": "2608.12042",
+    "paperTitle": "MeerKAT Reveals Evidence of a Radio Megahalo at GHz Frequency"
+  },
+  "BaselMorsy6096": {
+    "paperId": "2608.12047",
+    "paperTitle": "Network Topology Reconfiguration: Optimal Transition Planning"
+  },
+  "ArturWidera8605": {
+    "paperId": "2608.12055",
+    "paperTitle": "Enhancing the power of a quantum heat engine via control of the system--reservoir coupling"
+  },
+  "AlexandrosSopasakis4619": {
+    "paperId": "2608.12072",
+    "paperTitle": "Testing the limits of past-adapted explanations by post-endpoint randomisation: anticipatory EEG as a worked case"
+  },
+  "AleksandraBorówka2800": {
+    "paperId": "2608.12074",
+    "paperTitle": "Contact variation of almost contact pseudo-metric structures"
+  },
+  "ArijitMukherjee5162": {
+    "paperId": "2608.12076",
+    "paperTitle": "Classification of products of Fano varieties with Picard number one"
+  },
+  "MarioKlisse5790": {
+    "paperId": "2608.12080",
+    "paperTitle": "Word-Length Spectral Triples of $(\\mathbb{Z}/2\\mathbb{Z})\\wr\\mathbb{F}_{d}$ Are Not Metric"
+  },
+  "MohammadaliMohammadi1582": {
+    "paperId": "2608.12085",
+    "paperTitle": "Hybrid STAR-RIS Architecture for Joint Localization, Communication, and Power Transfer"
+  },
+  "KeramatHasani5649": {
+    "paperId": "2608.12087",
+    "paperTitle": "Parallel Machine Scheduling with a Singler Server and Loading-Unloading Operations"
+  },
+  "SebastianFähler8978": {
+    "paperId": "2608.12092",
+    "paperTitle": "Thermoelastic Harvesting Outperforming Thermoelectric Generators Below 100 °C"
+  },
+  "YutongZhang6904": {
+    "paperId": "2608.12094",
+    "paperTitle": "The 196560 auxiliary-function conjecture for the Leech lattice"
+  },
+  "LarsDiening9749": {
+    "paperId": "2608.12095",
+    "paperTitle": "Variable Exponent Regularity via Muckenhoupt Condition"
+  },
+  "YuzhenFan3383": {
+    "paperId": "2608.12109",
+    "paperTitle": "On the Convergence Rate Lower Bound of Biochemical Computational Modules"
+  },
+  "GengLi3138": {
+    "paperId": "2608.12154",
+    "paperTitle": "Shortcuts to Parameter Sweeps"
+  },
+  "Hua-ChenZhang7490": {
+    "paperId": "2608.12157",
+    "paperTitle": "Connecting the tensor-categorical formulation of anyon condensation with operator algebras and entropic order parameters"
+  },
+  "JamesChryssanthacopoulos8012": {
+    "paperId": "2608.12160",
+    "paperTitle": "Fortuity and fragility in supersymmetric SYK"
+  },
+  "AlexanderMüller2942": {
+    "paperId": "2608.12163",
+    "paperTitle": "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2"
+  },
+  "MaximilianoEscayola2690": {
+    "paperId": "2608.12168",
+    "paperTitle": "Hyperbolicity and obstructions to PL actions of the circle"
+  },
+  "KristinaGiesel7545": {
+    "paperId": "2608.12181",
+    "paperTitle": "Robustness of the primordial power spectrum in hybrid loop quantum cosmology to approximations near the bounce"
+  },
+  "XiaoguangLiu3398": {
+    "paperId": "2608.12197",
+    "paperTitle": "NetlistBench: Evaluating LLM Reliability in SPICE Netlist Recognition and Manipulation"
+  },
+  "JacobEmilMencke1483": {
+    "paperId": "2608.12205",
+    "paperTitle": "Derivation and application of sheath boundary conditions for drift-kinetic simulations in a linear plasma device based on a gyromoment approach"
+  },
+  "MauroMobilia4863": {
+    "paperId": "2608.12208",
+    "paperTitle": "Dynamics of fluctuating populations in multi-state switching environments"
+  },
+  "Wei-ChengLong4715": {
+    "paperId": "2608.12217",
+    "paperTitle": "High-energy neutrino signatures of embedded GRB jets in AGN disks: a dynamic jet-propagation framework"
+  },
+  "KangYang8194": {
+    "paperId": "2608.12221",
+    "paperTitle": "Second-Chern Bounds in Non-Abelian Quantum Geometry"
+  },
+  "KaziNabiulAlam3458": {
+    "paperId": "2608.12227",
+    "paperTitle": "Domain-Aware Lightweight Spectral-Grouped Convolutions for Hyperspectral Fish Freshness Classification"
+  },
+  "MantasRinkevičius8228": {
+    "paperId": "2608.12229",
+    "paperTitle": "Apnea Burden-Guided Framework: Enhancing Out-of-Distribution Generalization in PPG-Based Sleep Apnea Characterization"
+  },
+  "KennethDesmond2270": {
+    "paperId": "2608.12235",
+    "paperTitle": "Random close packing at extreme size ratios with an Adam-based inflation protocol"
+  },
+  "DavidHoltz4442": {
+    "paperId": "2608.12236",
+    "paperTitle": "How Organizations Use AI: Evidence from ChatGPT"
+  },
+  "MarkoPejić2910": {
+    "paperId": "2608.12237",
+    "paperTitle": "On the Turán Density of $C_{10}$ in the Hypercube"
+  },
+  "GargiVijayBorde3666": {
+    "paperId": "2608.12251",
+    "paperTitle": "Regime-Gated Residual Mixture-of-Experts for Cross-Sectional Volatility Forecasting"
+  },
+  "ChaopengTan7908": {
+    "paperId": "2608.12256",
+    "paperTitle": "SelectLight: Learning to Select Signal Plans Generated by Distributed Model Predictive Control for Urban Traffic Networks"
+  },
+  "YuanLiao1864": {
+    "paperId": "2608.12281",
+    "paperTitle": "Oil price shocks reveal unequal capacities for mobility adaptation"
+  },
+  "ZidongGao3870": {
+    "paperId": "2608.12284",
+    "paperTitle": "The finite basis problem for the flat semirings $S(W)$"
+  },
+  "MateoCárdenesWuttig8804": {
+    "paperId": "2608.12317",
+    "paperTitle": "Probing Impurity Quantum Criticality with Entanglement Witnesses"
+  },
+  "AlexanderVanWerde5198": {
+    "paperId": "2608.12410",
+    "paperTitle": "Finding all cospectral mates over a number field"
+  },
+  "RichieSater8375": {
+    "paperId": "2608.12432",
+    "paperTitle": "Generation of finite groups from subgroups of coprime index"
+  },
+  "YuanyuLi2162": {
+    "paperId": "2608.12443",
+    "paperTitle": "SSPO: Structure-Aware Similarity-Weighted Preference Optimization for Neural Combinatorial Optimization"
+  },
+  "B.AndreiBernevig8981": {
+    "paperId": "2608.12452",
+    "paperTitle": "The \"Moiré Capacitor Effect\" and Stabilization of Fractional Chern Insulators in Rhombohedral Graphene Superlattices"
+  },
+  "AbayZhakenov5667": {
+    "paperId": "2608.12453",
+    "paperTitle": "Boundary phases and thermodynamics of the Kondo spin-$s$ chain: from overscreened Kondo to boundary-bound states"
+  },
+  "RiccardoRende3679": {
+    "paperId": "2608.12465",
+    "paperTitle": "Superconductivity in the $t$-$t'$ Hubbard Model from Symmetry-Preserving Neural-Network Quantum States"
+  },
+  "MinamiNakane4558": {
+    "paperId": "2608.12466",
+    "paperTitle": "Why is GN-z11 Bright, Compact, and Nitrogen Enhanced? Insights from UV Absorption and Emission Diagnostics"
+  },
+  "TobiasHelbig5606": {
+    "paperId": "2608.12485",
+    "paperTitle": "Dual Gauge Theory for Two Dimensional Superfluid Turbulence"
+  },
+  "CharlieChe4954": {
+    "paperId": "2608.12493",
+    "paperTitle": "Beyond the Skew-Stickiness Ratio: Transport Geometry of Spot-Driven Variance Surface Dynamics"
+  },
+  "MarisaPetrusky7709": {
+    "paperId": "2608.12498",
+    "paperTitle": "Evaluation of the Ambipolar Diffusion Approximation in Partially Ionized Rarefied Hypersonic Flows"
+  },
+  "ChristopherHassett3358": {
+    "paperId": "2608.12510",
+    "paperTitle": "Bayesian Modeling of Gibbs Point Processes via Basis Function Expansions"
+  },
+  "HanaShamata5733": {
+    "paperId": "2608.12517",
+    "paperTitle": "RSMA-Enabled ISAC Networks with Fluid Antenna Systems: Stochastic Geometry Analysis and Low-Complexity Resource Allocation"
+  },
+  "HadiHajieghrary8840": {
+    "paperId": "2608.12520",
+    "paperTitle": "Weight Certificates for Convex Multi-Objective MPC: Geometric Characterization, $\\ell^1$ Construction, and $\\ell^2$ Foreclosure"
+  },
+  "MartinSollich2719": {
+    "paperId": "2608.12525",
+    "paperTitle": "Optimal Heat Storage Sizing for District Heating Networks to Maximize Electricity Revenue from Combined Heat and Power Units"
+  },
+  "A.Lauwers1390": {
+    "paperId": "2608.12527",
+    "paperTitle": "3D Radiative Transfer of Lyman-series Lines with SKIRT"
+  },
+  "YashBagla8188": {
+    "paperId": "2608.12528",
+    "paperTitle": "Excitation-Supervised Closed-Loop Self-Calibration and Target Seeking for an Unknown-Pose Range-Bearing Relay"
+  },
+  "VarunRai9728": {
+    "paperId": "2608.12536",
+    "paperTitle": "Evaluating Pre-trained Speech Encoders for Spontaneous Speech Detection and Out of Domain Synthetic Speech Generalisation in Indic Languages"
+  },
+  "ThomasJungbauer8122": {
+    "paperId": "2608.12558",
+    "paperTitle": "Algorithm Transparency and Search Manipulation: Steering vs. Persuasion"
+  },
+  "JustinJacobs2874": {
+    "paperId": "2608.12560",
+    "paperTitle": "Hierarchical Spline-Based Bayesian Beta-Binomial Regression for Estimating Time-Varying Risk in Power Outages"
+  },
+  "ZhuohanWang4360": {
+    "paperId": "2608.12583",
+    "paperTitle": "Diffusion Models in Finance: A Survey"
+  },
+  "HansBuehler3718": {
+    "paperId": "2608.12587",
+    "paperTitle": "DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces"
+  },
+  "WeiChen6183": {
+    "paperId": "2608.12591",
+    "paperTitle": "The $θ$-Symmetric SRG with Applications to Stability of Cactus Dynamic Networks"
+  },
+  "SebastianFrank2422": {
+    "paperId": "2608.12594",
+    "paperTitle": "What Makes a Peer? Valuation-Anchored Similarity in Private Markets"
+  },
+  "WilliamKhalili9922": {
+    "paperId": "2608.12602",
+    "paperTitle": "Feasibility and Convex Design of Probe-Position Matching in a Scanning X-Band Radar Array"
+  },
+  "BuxinShe2359": {
+    "paperId": "2608.12609",
+    "paperTitle": "Security-Constrained Operation of IBR-Dominated Power Systems: Static and Dynamic Security Across Preventive and Corrective Decisions"
+  },
+  "AbdulrahmanQadi4249": {
+    "paperId": "2608.12634",
+    "paperTitle": "The Price of Permission: Classification Uncertainty in Constrained Capital Markets"
+  },
+  "FaysalAhamed5568": {
+    "paperId": "2608.12638",
+    "paperTitle": "Improving Fast Charging Safety With Core Temperature Estimation Via Kolmogorov-Arnold Network"
+  },
+  "FeiHuang8924": {
+    "paperId": "2608.12663",
+    "paperTitle": "Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping"
+  },
+  "WuqiushiYao6815": {
+    "paperId": "2608.12666",
+    "paperTitle": "Modulation of the tropical meridional circulation by the Madden-Julian Oscillation"
+  },
+  "MarkBudden7495": {
+    "paperId": "2608.12673",
+    "paperTitle": "Weakened Gallai-Ramsey Numbers for Books"
+  },
+  "MarkE.Tuckerman9840": {
+    "paperId": "2608.12691",
+    "paperTitle": "Integrated Alchemical and Conformational Enhanced Sampling for Solvation Free Energy Calculations"
+  },
+  "HengzhiHe7294": {
+    "paperId": "2608.12701",
+    "paperTitle": "Sharp proper estimation of fixed-component Gaussian location mixtures in polynomial time"
+  },
+  "YayuYang6018": {
+    "paperId": "2608.12730",
+    "paperTitle": "Time Distribution Principle Using Measured Traveling Waves in Power Grid"
+  },
+  "FlorianeMefoKue5095": {
+    "paperId": "2608.12769",
+    "paperTitle": "A penalty-type method for relaxed inverse optimal control problems"
+  },
+  "SouravMajumdar9072": {
+    "paperId": "2608.12777",
+    "paperTitle": "Physical Extinction and Long-Run Pricing under Time-Varying Beliefs"
+  },
+  "RenataKallosh3825": {
+    "paperId": "2608.12819",
+    "paperTitle": "Waterfall-modulated $α$-attractors"
+  },
+  "WenyuDong9139": {
+    "paperId": "2608.12823",
+    "paperTitle": "BTF-PINN: Enforcing Dirichlet Boundary Conditions Without Boundary Training"
+  },
+  "DmytroMarushkevych4737": {
+    "paperId": "2608.12838",
+    "paperTitle": "Weighted Nuclear Elastic Net Estimation of (Near-) Low-Rank Drift Matrices in Ornstein-Uhlenbeck Processes"
+  },
+  "RuopengXu7114": {
+    "paperId": "2608.12849",
+    "paperTitle": "Energy Efficiency Maximization for FAS-Assisted Downlink Communication in Mobile Embodied AI Networks (MEAN) over Interference Channels"
+  },
+  "XiaofanZou8722": {
+    "paperId": "2608.12872",
+    "paperTitle": "Efficient and Accurate Surrogate-Assisted Electromagnetic Parameter Calibration for 6G Digital Twin Channels"
+  },
+  "YifeiCai8600": {
+    "paperId": "2608.12887",
+    "paperTitle": "On the minimal diameter of finite covers"
+  },
+  "ZhiwenQiao7202": {
+    "paperId": "2608.12901",
+    "paperTitle": "Relative Periodic Orbits in the Gutzwiller-type Anisotropic Kepler Problem and $n$-body Problem"
+  },
+  "GerhardStock2760": {
+    "paperId": "2608.12914",
+    "paperTitle": "Local molecular motions encode time-resolved infrared spectra of proteins"
+  },
+  "RikuLuostari8499": {
+    "paperId": "2608.12918",
+    "paperTitle": "Input-Correlated Supervision Noise Limits the Benefits of OTA Training for Learned Receivers"
+  },
+  "Quoc-BaoNguyen6646": {
+    "paperId": "2608.12922",
+    "paperTitle": "A Revisit to Point Estimation Through the Empirical Bayes Method: The Case of Binomial Distribution with Beta Prior and Extension to Poisson Distribution"
+  },
+  "ShuaiLu1525": {
+    "paperId": "2608.12933",
+    "paperTitle": "Gal3D: Superellipsoid Modeling of Radial 3D Galaxy Structure in IllustrisTNG and EAGLE Simulations"
+  },
+  "EyalFattal6967": {
+    "paperId": "2608.12941",
+    "paperTitle": "Second-order stochastic modeling of particle resuspension: macroscopic degeneracy and anomalous pre-detachment transport"
+  },
+  "StéphaneBessy4056": {
+    "paperId": "2608.12948",
+    "paperTitle": "A relaxation of the Bermond-Thomassen conjecture"
+  },
+  "MårtenSchultzberg5343": {
+    "paperId": "2608.12949",
+    "paperTitle": "Bayesian Inference Procedures for A/B Testing: An Overview"
+  },
+  "HammedO.Fatoyinbo9905": {
+    "paperId": "2608.12956",
+    "paperTitle": "Stochastic Spatial Metapopulation Modelling of HPAI Control and Poultry Restocking on Jolly Island"
+  },
+  "YangPeng3006": {
+    "paperId": "2608.12973",
+    "paperTitle": "Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
+  },
+  "GiancarloVercellino8999": {
+    "paperId": "2608.12998",
+    "paperTitle": "WIRED: Weighted Adaptive Prediction with Structured Dependence for Probabilistic Multiseries Forecasting"
+  },
+  "ShirlyGeffen7821": {
+    "paperId": "2608.13000",
+    "paperTitle": "Dynamical comparison for local homeomorphisms"
+  },
+  "ZiyuZhou2182": {
+    "paperId": "2608.13005",
+    "paperTitle": "Wideband Large-Array Processing and Sparse Design for Angle Imaging"
+  },
+  "SumitChandraMishra2593": {
+    "paperId": "2608.13013",
+    "paperTitle": "On the isotropy group of monomial derivations"
+  },
+  "GuipingWang3140": {
+    "paperId": "2608.13015",
+    "paperTitle": "On the Restricted Edge-Cuts of Optimal 1-Planar Graphs"
+  },
+  "YeonsangPark7640": {
+    "paperId": "2608.13019",
+    "paperTitle": "Imaging-System-Aware Inverse Design of Information-Optimal Color Routers"
+  },
+  "MichaelEden5267": {
+    "paperId": "2608.13051",
+    "paperTitle": "A Two-Component Poro-viscoelastic System for Fibre-Reinforced Hydrogels: Analysis and Homogenization"
+  },
+  "MantuGupta5337": {
+    "paperId": "2608.13056",
+    "paperTitle": "Simulating Stress Laws under Extremal Dependence: Characterizing What Generative Models Must Preserve"
+  },
+  "Kyoung-MinKim6758": {
+    "paperId": "2608.13062",
+    "paperTitle": "Emergence of moiré magnetic chaos in twisted bilayer CrI3"
+  },
+  "AndreeaBacalum4318": {
+    "paperId": "2608.13082",
+    "paperTitle": "LOB-ID: Evaluating Synthetic Market Data by Inception Distances"
+  },
+  "MilicaCaković5301": {
+    "paperId": "2608.13124",
+    "paperTitle": "Limits of mapping packages and Preiss's phenomenon"
+  },
+  "MarcinWachowiak3924": {
+    "paperId": "2608.13125",
+    "paperTitle": "Analysis and Approximation of a Spatially Wideband Antenna Array Factor"
+  },
+  "XiaojieMao4091": {
+    "paperId": "2608.13133",
+    "paperTitle": "Statistical Properties of Robust Learning under Distributional Shifts"
+  },
+  "KevinCoulembier3909": {
+    "paperId": "2608.13137",
+    "paperTitle": "Absolutely flat algebras in tensor categories"
+  },
+  "BastianSchindler2390": {
+    "paperId": "2608.13146",
+    "paperTitle": "Accelerating a Strong-Coupling Non-Equilibrium Steady-State Impurity Solver using (Quantics) Tensor Trains"
+  },
+  "JanaJurečková1395": {
+    "paperId": "2608.13150",
+    "paperTitle": "R-estimation in a Linear Model with Autoregressive Errors"
+  },
+  "ChadBrown7142": {
+    "paperId": "2608.13152",
+    "paperTitle": "Estimation of distribution functions, their jumps and interval probabilities under measurement error"
+  },
+  "LourensWaldorp3704": {
+    "paperId": "2608.13171",
+    "paperTitle": "High-dimensional networks and mean squared error for possibly misspecified models"
+  },
+  "YongqiangGong4910": {
+    "paperId": "2608.13201",
+    "paperTitle": "Sinkhorn Linearization and the Spectral Proxy: Unifying the Statistical and Algorithmic Theory of Feature-Parameterized Inverse Optimal Transport via a Single Spectral Sandwich"
+  },
+  "AssafShapira4139": {
+    "paperId": "2608.13208",
+    "paperTitle": "Universality in dimension 1 of kinetically constrained lattice gases"
+  },
+  "BeakcheolJang9420": {
+    "paperId": "2608.13209",
+    "paperTitle": "Chance-constrained selection of sequential intervention strategies from counterfactual estimates"
+  },
+  "GerganaGyuleva7708": {
+    "paperId": "2608.13219",
+    "paperTitle": "Statistical Noise and Missing Forcing Limit Estimates of Earth's Feedback from Prescribed Sea-Surface Temperature Simulations"
+  },
+  "MarkoMlikota8246": {
+    "paperId": "2608.13224",
+    "paperTitle": "Parameter Identification in Autoregressions under Discrete Sampling or Temporal Aggregation"
+  },
+  "RongqingZhang8124": {
+    "paperId": "2608.13245",
+    "paperTitle": "SoM-MTM: Synesthesia of Machines (SoM)-Driven Masked Token Model for Cooperative Perception over Packet Loss Channel"
+  },
+  "KrishnarjunKrishnamoorthy3727": {
+    "paperId": "2608.13266",
+    "paperTitle": "On a conjecture of Corradi and Katai"
+  },
+  "ChaoZu3478": {
+    "paperId": "2608.13275",
+    "paperTitle": "Block Repetition of Numerical Invariants for the Submodules $[z^k-w^k]$ in $H^2(\\mathbb D^2)$"
+  },
+  "OluwatosinTemitopeMewomo9519": {
+    "paperId": "2608.13286",
+    "paperTitle": "Fixed Point Theorems for Hardy--Rogers Type Multivalued Mappings in b-Metric Spaces"
+  },
+  "K.É.Gabányi7409": {
+    "paperId": "2608.13303",
+    "paperTitle": "Radio Properties of Narrow-Line and Broad-Line Seyfert 1 Galaxies"
+  },
+  "ŽanGorenc8656": {
+    "paperId": "2608.13305",
+    "paperTitle": "Physics-informed distribution of relaxation times estimation and latent-space condition monitoring of solid oxide fuel and electrolysis cells from electrochemical impedance spectroscopy"
+  },
+  "XiaohuiYuan1725": {
+    "paperId": "2608.13311",
+    "paperTitle": "Distributed Selective Inference for Quantile Regression"
+  },
+  "AlexanderBräuer2110": {
+    "paperId": "2608.13316",
+    "paperTitle": "Foundation models for movement data: Are they ready for prime-time?"
+  },
+  "ConstantineSorokin3352": {
+    "paperId": "2608.13327",
+    "paperTitle": "Breaking the Chain: Division Norms and Criminal Deterrence"
+  },
+  "AmyOumaymaKhaldoun2333": {
+    "paperId": "2608.13340",
+    "paperTitle": "Fee Implied Volatility on Uniswap v3: A DEX Native Proxy and Its Limits"
+  },
+  "PranNath2966": {
+    "paperId": "2608.13346",
+    "paperTitle": "Automatic detection of fast oscillations of dark matter scalar field and updated cosmological constraints on QCDM"
+  },
+  "GeorgSchwan5112": {
+    "paperId": "2608.13350",
+    "paperTitle": "A Physically Consistent Assessment of Nearfield Beamfocusing into Occluded Regions"
+  },
+  "ZhouZhou8667": {
+    "paperId": "2608.13352",
+    "paperTitle": "Recursive Multiple Change Point Detection of Nonstationary Time Series: Instability Tests, Estimation and Confidence Intervals"
+  },
+  "ZhidaChang9396": {
+    "paperId": "2608.13356",
+    "paperTitle": "Global Stability and Energy Growth in the Sheared Vlasov--Poisson--Boltzmann System"
+  },
+  "MátéKiss1177": {
+    "paperId": "2608.13360",
+    "paperTitle": "Robust Space-Filling Input Design via Stochastic Optimization"
+  },
+  "BighneswarSahoo9979": {
+    "paperId": "2608.13363",
+    "paperTitle": "Weighted cumulative past inaccuracy and Kullback-Leibler divergence based on extropy: properties, estimation, and applications"
+  },
+  "AparnaGupta4853": {
+    "paperId": "2608.13366",
+    "paperTitle": "Dilation and Functional Models for Pure $\\mathbfΘ_n$-Contractions and the von Neumann Inequality on Distinguished Varieties in $\\mathbfΘ_n$"
+  },
+  "QuentinThommen1570": {
+    "paperId": "2608.13370",
+    "paperTitle": "Shared environmental risk selects asymmetric inheritance of a protective reserve"
+  },
+  "ElaheDelavari7215": {
+    "paperId": "2608.13372",
+    "paperTitle": "Process-Aware Cross-Layer Adaptation for O-RAN-Enabled Industrial Systems"
+  },
+  "SanjayAmrutiya2331": {
+    "paperId": "2608.13375",
+    "paperTitle": "Moduli of super-representations of quivers"
+  },
+  "RocíoAyala6063": {
+    "paperId": "2608.13377",
+    "paperTitle": "Mixed Weak type inequalities for pairs of weights related to the Hardy-Littlewood maximal funcion, Calderón-Zygmund operators and their commutators"
+  },
+  "MuhammadHannanAkram8458": {
+    "paperId": "2608.13394",
+    "paperTitle": "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
+  },
+  "RamyTannous6902": {
+    "paperId": "2608.13399",
+    "paperTitle": "Field-Widened Multimode Interferometer with Long Time-Bin Delay Using a Multi-Pass Herriott Cell"
+  },
+  "AnnaCalissano1995": {
+    "paperId": "2608.13406",
+    "paperTitle": "A Metric Space of Spatial Graphs: Two-Sample Testing, Data Depth, and Application to Cardiac Fibrosis"
+  },
+  "DmitryNerukh1343": {
+    "paperId": "2608.13413",
+    "paperTitle": "The principle of stationary action and Lagrangian for dissipative dynamics with velocity-proportional frictional force"
+  },
+  "YikaiXu8508": {
+    "paperId": "2608.13418",
+    "paperTitle": "Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning"
+  },
+  "LukeHagar8976": {
+    "paperId": "2608.13423",
+    "paperTitle": "COBRA-DOSE: Copula-based Bayesian Model Averaging for Dose Selection"
+  },
+  "Fazal-EAsim5987": {
+    "paperId": "2608.13436",
+    "paperTitle": "Low-Complexity Channel Parameter Estimation for Coprime HRIS-Assisted MIMO Systems"
+  },
+  "FedorBukreev6197": {
+    "paperId": "2608.13437",
+    "paperTitle": "Lattice Boltzmann Method for Compressible Navier-Stokes-Fourier Equations"
+  },
+  "JanHaskovec9292": {
+    "paperId": "2608.13440",
+    "paperTitle": "Memory Stabilizes Spontaneous Particle Aggregation: A Linearized Vlasov--Fokker--Planck Analysis"
+  },
+  "KarlD.Gordon5815": {
+    "paperId": "2608.13464",
+    "paperTitle": "JWST MIRI Medium Resolution Spectrometer Point Fixed Pattern Corrections: Cleaner and Higher Signal-to-Noise Spectra of Point Sources"
+  },
+  "ShengbinWei7652": {
+    "paperId": "2608.13466",
+    "paperTitle": "Learning about Treatment Effects in Panels under Unknown Interference"
+  },
+  "MichaelRadica6087": {
+    "paperId": "2608.13470",
+    "paperTitle": "Strict Limits on Helium Absorption from LHS 1140 b from Four JWST NIRISS Transits"
+  },
+  "MohammedAymanHabib4945": {
+    "paperId": "2608.13472",
+    "paperTitle": "AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models"
+  },
+  "ErnestoLupercio6704": {
+    "paperId": "2608.13500",
+    "paperTitle": "Symmetry Emergence in Self-Organized Criticality"
+  },
+  "OmayraYagoNieto9516": {
+    "paperId": "2608.13507",
+    "paperTitle": "Safety-Critical Control for Quadrotor UAVs via Decentralized Navigation Functions"
+  },
+  "OmarMontasser1635": {
+    "paperId": "2608.13514",
+    "paperTitle": "Bagging Robustly Learns VC Classes with Linear Sample Complexity"
+  },
+  "PeterBanáš6689": {
+    "paperId": "2608.13523",
+    "paperTitle": "Comeager hereditary families of compact sets are big"
+  },
+  "Sang-JunPark2404": {
+    "paperId": "2608.13551",
+    "paperTitle": "Every PPT channel has finite entanglement-breaking index"
+  },
+  "PengchengLuo9716": {
+    "paperId": "2608.13610",
+    "paperTitle": "LoopVSR: A Loop Engineering Framework for Automated Repair of Visual Speech Recognition Inference Pipelines"
+  },
+  "ValérieDeplano9181": {
+    "paperId": "2608.13629",
+    "paperTitle": "Learning Unsteady Aneurysm Hemodynamics with Physics-Informed DeepONets"
+  },
+  "PaoloMaranzano3867": {
+    "paperId": "2608.13638",
+    "paperTitle": "Small Area Estimation under Spatial Regimes: Spatially Clustered Fay-Herriot Models for Agricultural Indicators"
+  },
+  "DimitarHo2236": {
+    "paperId": "2608.13651",
+    "paperTitle": "Consistent Model Chasing Is Minimax Optimal: The Exact Value of Scalar Adversarial Adaptive Control under Large Parametric Uncertainty"
+  },
+  "RyanHazlett4807": {
+    "paperId": "2608.13656",
+    "paperTitle": "Abundant Heavy Black Hole Seeds from Moderate Lyman-Werner Radiation"
+  },
+  "SebastianDiehl4390": {
+    "paperId": "2608.13658",
+    "paperTitle": "Far-from-equilibrium topological phase transition in one dimension"
+  },
+  "NavnathDaundkar7471": {
+    "paperId": "2608.13663",
+    "paperTitle": "Equivariant Relative Sectional Category and Induced Invariants"
+  },
+  "DanielVedensky2091": {
+    "paperId": "2608.13673",
+    "paperTitle": "Nonprobability Samples for Small Area Estimation: A Review and Comparative Simulation Study"
+  },
+  "KarenL.Kavanagh3090": {
+    "paperId": "2608.13688",
+    "paperTitle": "Thickness-dependent secondary-electron emission from suspended MoS$_2$ membranes in the helium ion microscope"
+  },
+  "GeorgeA.Elliott7934": {
+    "paperId": "2608.13707",
+    "paperTitle": "A simple separable C*-algebra which is not singly generated"
+  },
+  "XiangFang7198": {
+    "paperId": "2608.13709",
+    "paperTitle": "Two Regularity Problems on Analytic Tent Spaces"
+  },
+  "SebastianDoerrich6968": {
+    "paperId": "2608.13711",
+    "paperTitle": "TRUE-Colon: Exposing a Consistent Transfer Asymmetry in Real-Time Polyp Detection"
+  },
+  "VanshikaJain1838": {
+    "paperId": "2608.13727",
+    "paperTitle": "Hitting-time mixing for the star transposition shuffle"
+  },
+  "GinaM.Quan3913": {
+    "paperId": "2608.13740",
+    "paperTitle": "Development of the RIOT 2 for use in LA-supported classrooms"
+  },
+  "ParamahansaPramanik3561": {
+    "paperId": "2608.13745",
+    "paperTitle": "Dynamic Physical Hedging amid Jump Losses, Reconstruction-Price Uncertainty, Population Interactions"
+  },
+  "MarcinMarciniak3742": {
+    "paperId": "2608.13750",
+    "paperTitle": "Choi--Jamiołkowski-type isomorphisms for von Neumann algebras"
+  },
+  "QingguangXie3302": {
+    "paperId": "2608.13761",
+    "paperTitle": "From suspensions to porous multilayers: microstructure formation and particle packing in drying colloidal films"
+  },
+  "ChandanKumarSheemar6211": {
+    "paperId": "2608.13765",
+    "paperTitle": "Energy Efficient Multi-User Beamforming and 3D Position Optimization for SIM-Assisted UAVs"
+  },
+  "EnriqueSeira3320": {
+    "paperId": "2608.13775",
+    "paperTitle": "Structured Payment in Pawnshop Borrowing: Mandates vs. Choice"
+  },
+  "MatthiasWollenhaupt4163": {
+    "paperId": "2608.13778",
+    "paperTitle": "Shaper-based dispersion scan for the characterization of polarization-shaped laser fields"
+  },
+  "MdRashidulIslam4768": {
+    "paperId": "2608.13788",
+    "paperTitle": "Cross-frequency amplification of perturbations in a laminar separation bubble using resolvent analysis"
+  },
+  "RaminBostanabad1313": {
+    "paperId": "2608.13793",
+    "paperTitle": "On the Brittleness of Maximum Likelihood Estimation for Gaussian Process Hyperparameter Optimization"
+  },
+  "ShadanGhassemiTabrizi6166": {
+    "paperId": "2608.13795",
+    "paperTitle": "Systematic extinctions in inelastic neutron scattering from molecular spin clusters"
+  },
+  "RongguangLiang4747": {
+    "paperId": "2608.13807",
+    "paperTitle": "Label-Free Deep-Tissue Peripheral Nerve Detection with a Handheld Multimodal OCT Probe and NerveDetNet"
+  },
+  "AsimK.Dey1959": {
+    "paperId": "2608.13808",
+    "paperTitle": "Joint Temperature-Precipitation Patterns in the U.S. South Central Region: Multivariate Functional Inference and Gaussian Mixture Modeling"
+  },
+  "LiliYang5723": {
+    "paperId": "2608.13814",
+    "paperTitle": "Time-dependent multi-energy neutrino emission from symbiotic recurrent novae: the role of accretion disks"
+  },
+  "JailsonSalesAraújo7945": {
+    "paperId": "2608.13816",
+    "paperTitle": "Internal Temperature and Center-of-Mass Dynamics of a Levitated Nanoparticle: A Simulator"
+  },
+  "MoChen7649": {
+    "paperId": "2608.13819",
+    "paperTitle": "Control Barrier--Value Functions under Partial Observability: Safety Guarantees via Conformal Prediction"
+  },
+  "ZehangZhu9441": {
+    "paperId": "2608.13841",
+    "paperTitle": "Real-Time In-Domain Congestion Control for the LWR Traffic Model via Control Barrier Functions"
+  },
+  "DrewLazar8445": {
+    "paperId": "2608.13847",
+    "paperTitle": "Separating Spatial and Clinical Risk with Node-Splitting SVM Survival Trees"
+  },
+  "DidierNibbering3886": {
+    "paperId": "2608.13851",
+    "paperTitle": "Scalable likelihood-based inference for limited dependent variable models"
+  },
+  "MohammadrezaNarimani8374": {
+    "paperId": "2608.13856",
+    "paperTitle": "From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California"
+  },
+  "DavidDelepine4794": {
+    "paperId": "2608.13857",
+    "paperTitle": "Structural Divergence of the Inca Imperial Network, 1400--1572~CE: Persistent Homology, Substitution Topology, and the Topological Signature of Decapitation Collapse"
+  },
+  "GuoqingDiao5080": {
+    "paperId": "2608.13859",
+    "paperTitle": "A semiparametric approach for the estimation of covariate-adjusted area under the receiver operating characteristic curve"
+  },
+  "CarlosBurga4755": {
+    "paperId": "2608.13871",
+    "paperTitle": "Financial Technologies, Labor Markets, and Wage Inequality: Evidence from Instant Payment Systems"
+  },
+  "ShunXu3051": {
+    "paperId": "2608.13872",
+    "paperTitle": "$C_2$-Cofiniteness and Rationality of the Icosahedral Orbifold $V_{L_2}^{A_5}$"
+  },
+  "ZhixinHuo5908": {
+    "paperId": "2608.13875",
+    "paperTitle": "PDE Realization and Structure-Aware Solvers for a Compact Two-Stage Fourth-Order IMEX Method"
+  },
+  "ZhendongLi2956": {
+    "paperId": "2608.13885",
+    "paperTitle": "Dual-Layer Over-the-Air Federated Learning in LEO Satellite Networks: Architecture, Key Technologies and Applications"
+  },
+  "XixiLi3761": {
+    "paperId": "2608.13886",
+    "paperTitle": "A Forecast Combination Framework for Hierarchical and Grouped Time Series Reconciliatio"
+  },
+  "YuanchaoBai2415": {
+    "paperId": "2608.13897",
+    "paperTitle": "Practical Lossless Volumetric Medical Image Compression via Tri-plane Context Tree Learning"
+  },
+  "SimonJ.Haward7889": {
+    "paperId": "2608.13908",
+    "paperTitle": "Elastic wakes mediate collective viscoelastic fluid-structure interactions in side-by-side cantilever arrays"
+  },
+  "SulingTan2772": {
+    "paperId": "2608.13927",
+    "paperTitle": "Transversal Hölder Criteria and Dini--Zygmund Endpoint Regularity for Hyperbolic Harmonic Mappings"
+  },
+  "YichengKang6659": {
+    "paperId": "2608.13937",
+    "paperTitle": "Deep Vision in Smart Manufacturing: MODERN Framework for Intelligent Quality Monitoring and Diagnosis"
+  },
+  "ShiyongChen6390": {
+    "paperId": "2608.13941",
+    "paperTitle": "Conjugate Equivariant Neural Network for Precoder Learning"
+  },
+  "LauraLiu6948": {
+    "paperId": "2608.13953",
+    "paperTitle": "Limited-Information Estimation of Heterogeneous Agent Models"
+  },
+  "HyP.G.Lam7450": {
+    "paperId": "2608.13965",
+    "paperTitle": "Intertwining the line bundle and Grauert-tube Hardy quantizations of the round 2-sphere"
+  },
+  "XiaoleiWu4663": {
+    "paperId": "2608.13978",
+    "paperTitle": "Pure braid groups are RFRS"
+  },
+  "JiechenChen6183": {
+    "paperId": "2608.13985",
+    "paperTitle": "Standard-Compliant Neuromorphic Integrated Sensing and Communications Aided by an Intelligent Reflecting Surface"
+  },
+  "DavidJ.T.Sumpter3199": {
+    "paperId": "2608.13986",
+    "paperTitle": "Coherence, charity and triangulation in statistical modelling"
+  },
+  "DarrenRamsook6356": {
+    "paperId": "2608.13989",
+    "paperTitle": "A Subjective Study on a New Sharpness Informed Class of Metrics"
+  },
+  "ChurchilDwivedi5257": {
+    "paperId": "2608.13991",
+    "paperTitle": "On the Acceleration of Pulsar Timing computations using Normalising Flows and Parallelisation"
+  },
+  "NirGavish9315": {
+    "paperId": "2608.13995",
+    "paperTitle": "An Analytically Tractable Framework for Multi-Strain Epidemics: Resolving Algebraic Complexity to Map Oscillatory Dynamics"
+  },
+  "SatadeepBhattacharjee7160": {
+    "paperId": "2608.14002",
+    "paperTitle": "Circuit Depth Compression via Spectral Gap Amplification in Quantum Phase Estimation"
+  },
+  "AndreyOsipov9465": {
+    "paperId": "2608.14005",
+    "paperTitle": "Huygens' principle and field equivalence relations for cylindrical enclosing surfaces"
+  },
+  "XuanMao5426": {
+    "paperId": "2608.14009",
+    "paperTitle": "X-ray Activity of the RS CVn-type Star σ Gem with the First-Year Observations of Einstein Probe"
+  },
+  "YifanZhang3032": {
+    "paperId": "2608.14025",
+    "paperTitle": "Handling covariate shift by model averaging"
+  },
+  "KyunghwanSong7300": {
+    "paperId": "2608.14053",
+    "paperTitle": "$p$-numerical semigroup of the sequence of consecutive odd integers"
+  },
+  "LuBai1210": {
+    "paperId": "2608.14061",
+    "paperTitle": "Feedback-Guided DNN-Based Controller Fusion for Robust Fixed-Parameter Active Noise Control"
+  },
+  "TarmoJüristo5317": {
+    "paperId": "2608.14062",
+    "paperTitle": "A Unified Bayesian Model for Voter Turnout Estimation: Combining Surveys, Aggregate Data, and Selection Correction"
+  },
+  "LukasBengel6751": {
+    "paperId": "2608.14077",
+    "paperTitle": "Dissipative bright and dark pulses under periodic forcing"
+  },
+  "PengLiu4254": {
+    "paperId": "2608.14086",
+    "paperTitle": "Integrated Sensing, Communication, and Computing in Multi-Tier Systems: Joint Hybrid Beamforming Design and Computation Resource Allocation"
+  },
+  "NeelaNataraj6031": {
+    "paperId": "2608.14087",
+    "paperTitle": "Unconditionally stable and energy conserving discretization of the dynamic von Kármán equations"
+  },
+  "JohanLyrvall4835": {
+    "paperId": "2608.14091",
+    "paperTitle": "An integration of decision trees into latent class modeling with covariates"
+  },
+  "YuriLima8499": {
+    "paperId": "2608.14095",
+    "paperTitle": "Symbolic dynamics for non-uniformly hyperbolic flows"
+  },
+  "ManikaGupta3146": {
+    "paperId": "2608.14098",
+    "paperTitle": "Kostant--Kumar modules: presentation and multiplicities"
+  },
+  "LucaTasin8526": {
+    "paperId": "2608.14099",
+    "paperTitle": "The Hassett-Keel program via $Θ$-stability"
+  },
+  "R.V.Cherbunin6179": {
+    "paperId": "2608.14100",
+    "paperTitle": "Sharp Coherence Crossover and Multimode Phase Control in Coupled Exciton-Polariton Condensates"
+  },
+  "DavidC.Flynn5530": {
+    "paperId": "2608.14101",
+    "paperTitle": "A Reproducible Two-Boundary Kinematic Correction for Baryonic Rotation-Curve Reconstruction in an 84-Galaxy SPARC Benchmark"
+  },
+  "AhmetEmirŞener9878": {
+    "paperId": "2608.14105",
+    "paperTitle": "Benders Decomposition with Partial Non-Anticipativity Relaxation for Multi-Stage Stochastic Clean Energy Transition Planning"
+  },
+  "JörgStiller9215": {
+    "paperId": "2608.14123",
+    "paperTitle": "Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme"
+  },
+  "XinpingCui5320": {
+    "paperId": "2608.14127",
+    "paperTitle": "FastJM: An R Package for Efficient Implementation of Semiparametric Joint Models for Longitudinal and Survival Data"
+  },
+  "UlrichMatter1027": {
+    "paperId": "2608.14141",
+    "paperTitle": "Who Owns the Online Media?"
+  },
+  "ChristophThäle2233": {
+    "paperId": "2608.14143",
+    "paperTitle": "Mod-phi convergence for random variables with cyclotomic generating functions"
+  },
+  "HaiYangHarryQian6326": {
+    "paperId": "2608.14151",
+    "paperTitle": "Physics of Circular Polarized Ion-Scale Waves in Hybrid Simulations of Alfvénic Fluctuations"
+  },
+  "PeterKern9715": {
+    "paperId": "2608.14155",
+    "paperTitle": "Max-semistable extremal behavior of AR(1)-processes connected with Bernoulli convolutions"
+  },
+  "ShamikGhosh5900": {
+    "paperId": "2608.14159",
+    "paperTitle": "Counting degrees of vertices in near Goldbach graphs"
+  },
+  "GuyFoghem4287": {
+    "paperId": "2608.14163",
+    "paperTitle": "Optimal stability of Dirichlet problem for the regional fractional $p$-Laplacian"
+  },
+  "DominicRohner2890": {
+    "paperId": "2608.14164",
+    "paperTitle": "Science under Threat? A Natural Experiment in Economics"
+  },
+  "OdyloCosta6064": {
+    "paperId": "2608.14166",
+    "paperTitle": "Low emergence in one-dimensional dynamics"
+  },
+  "MehwishBibi4630": {
+    "paperId": "2608.14168",
+    "paperTitle": "An HFM-Inspired Random Access Preamble Design for NTN under High Doppler"
+  },
+  "NehaGupta9570": {
+    "paperId": "2608.14171",
+    "paperTitle": "Spillover-Informed Network Architecture for Global Volatility Forecasting"
+  },
+  "WataruKitano4600": {
+    "paperId": "2608.14173",
+    "paperTitle": "Acquiring irrelevant information as a commitment"
+  },
+  "RaimundoBriceño1410": {
+    "paperId": "2608.14175",
+    "paperTitle": "Continuous pointwise ergodicity for semigroup actions on locally compact spaces"
+  },
+  "JiaweiChen9351": {
+    "paperId": "2608.14182",
+    "paperTitle": "Budget-Aware Federated Dual-Side Channel Estimation for Hybrid mmWave Massive MIMO"
+  },
+  "G.Antonopoulos3082": {
+    "paperId": "2608.14183",
+    "paperTitle": "Cosmographic Reconstruction of the Quintessence Potential in Scalar-Tensor Gravity"
+  },
+  "AnandaroopRay3847": {
+    "paperId": "2608.14225",
+    "paperTitle": "Extending Occam's inversion with lasso fusion, overcomplete dictionaries, and isotropic total variation regularisation"
+  },
+  "AlanaMoscardi4391": {
+    "paperId": "2608.14245",
+    "paperTitle": "Body size predicts how long ant workers live - but not how they age or how they die from heat"
+  },
+  "EmanGhareebRezk6207": {
+    "paperId": "2608.14248",
+    "paperTitle": "Lyra Almost Ricci-Bourguignon Solitons on Twisted Warped Product Manifolds"
+  },
+  "NicolasHeintz7651": {
+    "paperId": "2608.14250",
+    "paperTitle": "Why Performance Metrics Overpromise in Auditory Attention Decoding: an Information-Theoretic Reappraisal"
+  },
+  "NanLi1100": {
+    "paperId": "2608.14260",
+    "paperTitle": "Personalized Digital Semantic Communication for Image Transmission with Vision-Language Models"
+  },
+  "AlexanderM.Maier1017": {
+    "paperId": "2608.14276",
+    "paperTitle": "Generalizing the multidimensional thermodynamic uncertainty relation to combinations of arbitrary counting variables"
+  },
+  "SojeongPark7672": {
+    "paperId": "2608.14280",
+    "paperTitle": "LLM-Assisted LDPC Decoding via Syndrome-Verified Semantic Priors"
+  },
+  "MaozaiTian5331": {
+    "paperId": "2608.14294",
+    "paperTitle": "Scale-dependent contraction of spatial wet-bulb temperature contrasts in eastern China"
+  },
+  "AmarKasibovic7554": {
+    "paperId": "2608.14301",
+    "paperTitle": "Lightweight Beam Index Map Using Coupled Gaussian Mixture Models"
+  },
+  "VikrantChaudhary1813": {
+    "paperId": "2608.14302",
+    "paperTitle": "Pressure-driven structural phase transition unlocks multifunctionality in KMgX (X = P, As, Sb, and Bi) compounds: A first-principles study"
+  },
+  "KatalinVarga4857": {
+    "paperId": "2608.14307",
+    "paperTitle": "Macroprudential Policy and Downside Risk: Regime-Dependent Effects of Capital Regulation"
+  },
+  "EhudLehrer9954": {
+    "paperId": "2608.14326",
+    "paperTitle": "Bayesian Sequential Search with Censored Observations"
+  },
+  "GiovanniFantuzzi9866": {
+    "paperId": "2608.14334",
+    "paperTitle": "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
+  },
+  "YassineAfif3121": {
+    "paperId": "2608.14335",
+    "paperTitle": "Multi-Agent Reinforcement Learning for Joint Handover Management and Power Allocation in Multi-Orbit Satellite Networks"
+  },
+  "SimoneColombo6928": {
+    "paperId": "2608.14343",
+    "paperTitle": "Analytical Theory of Higher-Order Collective Spin Interactions in Cavity Quantum Electrodynamics"
+  },
+  "PatrickBastian7060": {
+    "paperId": "2608.14344",
+    "paperTitle": "Change Point Detection and Localization in High-Dimensional Time Series"
+  },
+  "IgorTsukerman1082": {
+    "paperId": "2608.14348",
+    "paperTitle": "Full-field and Bloch-periodic-factor discretizations: Accuracy and phantom modes"
+  },
+  "PiotrNowakowski4677": {
+    "paperId": "2608.14395",
+    "paperTitle": "A characterization of uniqueness of purely atomic finite measures with central Cantor set range"
+  },
+  "AlexeiVazquez3871": {
+    "paperId": "2608.14398",
+    "paperTitle": "Absorbing phase transition in a queueing model of coupled adaptive agents"
+  },
+  "XiaohongChen4012": {
+    "paperId": "2608.14401",
+    "paperTitle": "Offline Deep Q* Estimation with Diffusion Models"
+  },
+  "KennethQ.Zhou3329": {
+    "paperId": "2608.14402",
+    "paperTitle": "A Tale of Two Pathways to Gompertz Mortality: Reliability and Vitality from an Actuarial Perspective"
+  },
+  "KarinaLilleborge1129": {
+    "paperId": "2608.14404",
+    "paperTitle": "Flexible covariance structures on metric graphs"
+  },
+  "CassidyMetzger8583": {
+    "paperId": "2608.14412",
+    "paperTitle": "Optical Spectroscopy of TeV-emitting BL Lac Candidates"
+  },
+  "MollyGriston1827": {
+    "paperId": "2608.14459",
+    "paperTitle": "Measuring student understanding in quantum computing: Development and validation of the Quantum Computing Conceptual Survey"
+  },
+  "YuGe8595": {
+    "paperId": "2608.14479",
+    "paperTitle": "Sensing-Aided Ordered Reliability Bits Guessing Random Additive Noise Decoding"
+  },
+  "BoGyuJang4695": {
+    "paperId": "2608.14480",
+    "paperTitle": "Universal Signature of Hundness and Its Quantification"
+  },
+  "HongYao4549": {
+    "paperId": "2608.14503",
+    "paperTitle": "Chiral spin liquid and chiral antiferromagnetism in half-filled moiré Hubbard model: possible applications to twisted bilayer TMDs"
+  },
+  "JesseCHan6617": {
+    "paperId": "2608.14506",
+    "paperTitle": "Nodal discontinuous Galerkin methods for non-ideal equations of state: pressure equilibrium preservation and entropy correction"
+  },
+  "JackMorganDavies1738": {
+    "paperId": "2608.14510",
+    "paperTitle": "On Galois extensions of geometric fixed point spectra"
+  },
+  "EdwardD.Young9684": {
+    "paperId": "2608.14518",
+    "paperTitle": "Hydrogen Engulfment into Sub-Neptune Cores through Magma Ocean Convective Surface Renewal"
+  },
+  "FelipePereira5117": {
+    "paperId": "2608.14520",
+    "paperTitle": "Comment on arXiv:2106.08363v3 [math.NA], E. Abreu, A. Espirito Santo, W. Lambert, and J. Perez, Convergence of a Lagrangian--Eulerian scheme by a weak asymptotic analysis for one-dimensional hyperbolic problems"
+  },
+  "YoungseokSong4113": {
+    "paperId": "2608.14536",
+    "paperTitle": "Joint Estimation of Sparse Multilayer Networks via Graph Limits"
+  },
+  "KıvançErsoy5291": {
+    "paperId": "2608.14537",
+    "paperTitle": "Mixed identities for simple locally finite groups"
+  },
+  "AlbertoM.Gago4096": {
+    "paperId": "2608.14549",
+    "paperTitle": "Blazar Boosted Dark Matter in IceCube"
   }
 }

@@ -77,12 +77,12 @@ def main():
         cmd.extend(["--prefix", prefix])
 
     print(f"Building figure manifest for {len(paper_ids)} papers:")
-    for paper_id in paper_ids:
-        print(f"  {paper_id}")
-    if prefixes:
-        print(f"Using {len(prefixes)} existing figure prefixes from markdown:")
-        for prefix in prefixes:
-            print(f"  {prefix}")
+    # for paper_id in paper_ids:
+        # print(f"  {paper_id}")
+    # if prefixes:
+    #     print(f"Using {len(prefixes)} existing figure prefixes from markdown:")
+    #     for prefix in prefixes:
+    #         print(f"  {prefix}")
 
     subprocess.run(cmd, check=True)
 

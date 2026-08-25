@@ -1,81 +1,587 @@
 email,name,first name,last name,paperId,participantCode,paperTitle
-abhijit@labs.iisertirupati.ac.in,Abhijit Chakraborty,Abhijit,Chakraborty,2606.25466,AbhijitChakraborty4627,Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns
-huaiyue.peng@yale.edu,Huaiyue Peng,Huaiyue,Peng,2606.25479,HuaiyuePeng2054,Automatic-differentiation-enabled dynamic parameter retrieval with sub-pulse-width resolution
-huanchen@nus.edu.sg,Huanchen Bao,Huanchen,Bao,2606.25516,HuanchenBao7942,Total positivity and symmetric spaces
-aditya.kumar@cispa.de,Aditya Kumar,Aditya,Kumar,2606.25548,AdityaKumar6317,Concept Removal for Frontier Image Generative Models
-q.u.luo@surrey.ac.uk,Qu Luo,Qu,Luo,2606.25572,QuLuo2787,MCRB and MSE Analysis for Parameter Estimation in AFDM-ISAC Systems
-rupesh.k@nyu.edu,Rupesh Raj Karn,Rupesh,Karn,2606.25589,RupeshRajKarn2141,Leaking Circuit Secrets: Gradient Leakage Attacks on Graph Neural Networks
-shirunwu@ra.sc.e.titech.ac.jp,Runwu Shi,Runwu,Shi,2606.25672,RunwuShi1290,Joint Residual Reweighting for Classifier Free Guidance in Flow-Matching Zero-Shot TTS
-yangjiangdy@126.com,Jiang Yang,Jiang,Yang,2606.25676,JiangYang9680,Quotient homomorphisms of Topological MV-Algebras and Applications
-steinita@gmail.com,Itamar Stein,Itamar,Stein,2606.25677,ItamarStein7520,The representation theory of the wreath product of a finite group with the monoid of all partial functions on a finite set as an EI-category algebra
-joan.alegre.canton@gmail.com,Joan Alegre Canton,Joan,Canton,2606.25688,JoanAlegreCanton5059,Choosing What to Calibrate and What to Estimate in Structural Models
-aradhana.nayak@huawei.com,Aradhana Nayak,Aradhana,Nayak,2606.25705,AradhanaNayak8134,GUI agent: Guided Exploration of User-Sensitive Screens
-rowan.iskandar@gmail.com,Rowan Iskandar,Rowan,Iskandar,2606.25716,RowanIskandar2992,Imprecise Transition Matrices for Markov Cohort Models: Lower and Upper Expectations with a Practical Health Economic Application
-snakada@rs.tus.ac.jp,Satoshi Nakada,Satoshi,Nakada,2606.25798,SatoshiNakada8364,Peak-Robust Voting Rules
-yoonsikhong2028@u.northwestern.edu,Yoonsik Hong,Yoonsik,Hong,2606.25811,YoonsikHong1239,Hierarchical Graph Learning for Calendar Spread Strategies in Commodity Futures Markets
-hjeong@cs.umass.edu,Hyejun Jeong,Hyejun,Jeong,2606.25836,HyejunJeong4392,AI Snitches Get Glitches: Towards Evading Agentic Surveillance
-amatsuki@ictp.it,Akari Matsuki,Akari,Matsuki,2606.25892,AkariMatsuki9026,An Isochron-Free Framework for Phase Reduction and Coupling Inference
-johnmori@uchicago.edu,John Mori,John,Mori,2606.25904,JohnMori8430,Individual Sovereignty and Other-Regarding Preferences
-lmoss@iu.edu,Lawrence S. Moss,Lawrence,Moss,2606.25954,LawrenceS.Moss1889,Measurable Majorities Are Not Finitely Axiomatizable
-giulian.biolo@studenti.unitn.it,Giulian Biolo,Giulian,Biolo,2606.25973,GiulianBiolo5815,Helpful or Harmful? Evaluating LLM-Assisted Vulnerability Patching via a Human Study
-jia-le.tan@warwick.ac.uk,Jia Le Tan,Jia,Tan,2606.25983,JiaLeTan7591,Exploring Pareto smoothing in sequential Monte Carlo
-cpike@girdsystems.com,Cameron M. Pike,Cameron,Pike,2606.26020,CameronM.Pike3668,A Simple Numerical Method for Non-Gaussian Signal Ensembles in Nonlinear Power Amplifiers
-christian.laudage@rptu.de,Christian Laudagé,Christian,Laudagé,2606.26031,ChristianLaudagé6897,Geometrically convex return risk measures on AM-algebras
-feng.liu1@unimelb.edu.au,Feng Liu,Feng,Liu,2606.26037,FengLiu4666,FedReLa: Imbalanced Federated Learning via Re-Labeling
-kaustabh.mondal@students.iiserpune.ac.in,Kaustabh Mondal,Kaustabh,Mondal,2606.26043,KaustabhMondal1272,Potential semistability of Finite height Galois representations: Relative case
-mark.whitmeyer@gmail.com,Mark Whitmeyer,Mark,Whitmeyer,2606.26064,MarkWhitmeyer9227,Labels
-henrique.m.oliveira@tecnico.ulisboa.pt,Henrqiue M. Oliveira,Henrqiue,Oliveira,2606.26170,HenrqiueM.Oliveira2683,Sensitivity of evolutionary entropy in Lefkovitch matrices
-mohammad.cheraghinia@ugent.be,Mohammad Cheraghinia,Mohammad,Cheraghinia,2606.26187,MohammadCheraghinia3084,Tracking the Turn: Mamba-Powered Human Orientation Detection using UWB
-randall.dannen@unlv.edu,Randall C. Dannen,Randall,Dannen,2606.26305,RandallC.Dannen5796,Wind Acceleration as a Driver of Detached Blueshifted Absorption in Quasar Disk Winds
-khaled.fouda@hec.ca,Khaled Fouda,Khaled,Fouda,2606.26325,KhaledFouda1340,Incomplete Matrix Regression
-uverma@iastate.edu,Urvashi Verma,Urvashi,Verma,2606.26340,UrvashiVerma5554,An Investigation of Additional Food Models with Generalised Functional Response
-akshaykjagadish@gmail.com,Akshay K. Jagadish,Akshay,Jagadish,2606.26448,AkshayK.Jagadish2000,Closing the Loop to Discover Psychological Theories with an Automated Cognitive Scientist
-mlatif@isrt.ac.bd,Mahbub A. H. M. Latif,Mahbub,Latif,2606.26543,MahbubA.H.M.Latif5872,A Unified Three-Stage Weighting Framework for Causal Inference and Mediation Analysis under Case-Control Sampling
-kenny@latch.bio,Kenny Workman,Kenny,Workman,2606.26563,KennyWorkman4123,scBench-Long: Verifiable Benchmarking of Long-Horizon Single-Cell Biology
-daixinyu03520@163.com,Xinyu Dai,Xinyu,Dai,2606.26594,XinyuDai5001,Bricks in which every vertex is incident with a forcing edge
-niappiah@ttu.edu,Nicholas Appiah,Nicholas,Appiah,2606.26625,NicholasAppiah4945,Portfolio Optimization for Commodity ETFs under Heavy-Tailed Returns
-ambrogiomaria.bernardelli@unipv.it,Ambrogio Maria Bernardelli,Ambrogio,Bernardelli,2606.26648,AmbrogioMariaBernardelli7632,Comparative Analysis of Linear Battery Models for Carbon Emission Optimization in Solar Energy Systems
-cstzhangwei@zju.edu.cn,Wei Zhang,Wei,Zhang,2606.26712,WeiZhang2319,MLFFM-SegDiff: A Multi-Level Feature Fusion Diffusion Model for Skin Lesion Segmentation
-hfsong@stu.ecnu.edu.cn,Haofei Song,Haofei,Song,2606.26716,HaofeiSong1644,Dual-Prior Guided Null-Space Learning with Mixture-of-Splines for Arbitrary Medical Slice Super-Resolution
-yangdu@ucas.ac.cn,Yang Du,Yang,Du,2606.26722,YangDu3912,Socratic agents for autonomous scientific discovery in high-dimensional physical systems
-tsakuma@soka.ac.jp,Takayuki Sakuma,Takayuki,Sakuma,2606.26731,TakayukiSakuma3859,Robust Hedging Valuation Adjustment under Liquidity--Demand Stress
-arpitdawar.m@gmail.com,Arpit Dawar,Arpit,Dawar,2606.26747,ArpitDawar8398,Dimension Spectrum of Continued fraction Expansions with Coefficients restricted to the Fibonacci Sequence
-j.krause@rug.nl,Joshua Krause,Joshua,Krause,2606.26804,JoshuaKrause6565,Structured Secant Methods to Select Smoothing Parameters For General Smooth Models
-tobias.lausser@tum.de,Tobias Lausser,Tobias,Lausser,2606.26815,TobiasLausser8706,Data-Driven Duration Management -- Term Structure Forecasting Using Machine Learning
-johannes.wuethrich@physik.uzh.ch,Johannes Wüthrich,Johannes,Wüthrich,2606.26821,JohannesWüthrich6436,Characterizing robotic positioners under the influence of changing gravity vectors for future spectroscopic surveys
-a.ahmad@leeds.ac.uk,Aneesa Ahmad,Aneesa,Ahmad,2606.26833,AneesaAhmad3624,Theoretical determination of the binding energies of methanol and related species onto amorphous solid water ice
-seo@snu.ac.kr,Seung-Woo Seo,Seung-Woo,Seo,2606.26839,Seung-WooSeo4647,Ordinal Neural Collapse as a Representation Prior for Visual Navigation
-mbauer2@fsu.edu,Martin Bauer,Martin,Bauer,2606.26843,MartinBauer5791,On Periodic Geodesics of Half-Lie Groups
-haeun@dgist.ac.kr,Haeun Yun,Haeun,Yun,2606.26955,HaeunYun2872,RobOralScan: Learning Active Intraoral Scanning for Robotic Dental Reconstruction
-renxy@umd.edu,Xingyu Ren,Xingyu,Ren,2606.27046,XingyuRen5613,Conditional Leibniz Derivative Estimation with an Application to American Call Min-Options
-sara-rinaldi-1@unitn.it,Sara Rinaldi,Sara,Rinaldi,2606.27113,SaraRinaldi7400,An Arbitrary-Lagrangian-Eulerian solver for relativistic detonation waves
-bkong@ucsb.edu,Byungdoo Kong,Byungdoo,Kong,2606.27150,ByungdooKong5421,Endogenous Reinsurance Pricing in Large Competitive Insurance Markets: Finite-Player and Mean Field Analysis
-jose.beltran@usal.es,Jose Beltrán Jiménez,Jose,Jiménez,2606.27290,JoseBeltránJiménez4292,A solid unification of the dark sector
-leif.andersen@bofa.com,Leif Andersen,Leif,Andersen,2606.27335,LeifAndersen2316,Valuing American options and Flexible Forwards contracts in time-dependent models
-tanguy.lions@ens-lyon.fr,Tanguy Lions,Tanguy,Lions,2606.27357,TanguyLions7473,Typical distances in high-genus triangulations
-vjindal@uark.edu,Vanshika Jindal,Vanshika,Jindal,2606.27413,VanshikaJindal3491,GRAFT: Biological Graph and Hypergraph Benchmarks for Linked Gene Expression and Phenotypic Trait Prediction in Arabidopsis thaliana
-s.bunk@herts.ac.uk,Severin Bunk,Severin,Bunk,2606.27432,SeverinBunk9672,The Hidden Geometry of Astrophysical Spectra: Path-Signatures of Line Profiles
-chaitanya.bashyam@vanderbilt.edu,Chaitanya Bashyam,Chaitanya,Bashyam,2606.27441,ChaitanyaBashyam8607,Collider Probes of Dark Energy Microphysics
-xavier.fonseca.phd@gmail.com,Xavier Fonseca,Xavier,Fonseca,2606.27462,XavierFonseca5491,The Decision Geometry of Covariance Estimation for the Global Minimum-Variance Portfolio under Heavy Tails
-advaymranade@gmail.com,Advay Ranade,Advay,Ranade,2606.27525,AdvayRanade7463,Measuring Racial Disparities in Rent Growth Under Algorithmic Landlord Concentration in U.S. Metros
-mauricio.a-diaz@lir-mainz.de,Mauricio A Diaz,Mauricio,Diaz,2606.27529,MauricioADiaz1164,Modelling chronic stress as an excitatory-inhibitory perturbation in recurrent working-memory networks
-msuchard@ucla.edu,Marc A. Suchard,Marc,Suchard,2606.27607,MarcA.Suchard6110,BEAGLE 4.1: A high-performance library for computation on phylogenetic trees across diverse parallel architectures
-martin.huang@sydney.edu.au,Martin Huang,Martin,Huang,2606.27638,MartinHuang2651,Fast Approximate MM-Estimation for Outlier Robust Model Selection
-zwliu@chd.edu.cn,Zhanwen Liu,Zhanwen,Liu,2606.27660,ZhanwenLiu1793,MVPruner: Dynamic Token Pruning for Accelerating Multi-view Vision-Language Models in Autonomous Driving
-yifan.wang18@mail.mcgill.ca,Yifan Wang,Yifan,Wang,2606.27781,YifanWang3820,Repair-before-veto control for safe lithium-ion fast charging under unknown ambient and cooling-fault conditions
-siwu@pku.edu.cn,Si Wu,Si,Wu,2606.27783,SiWu9387,CANNs: A Toolkit for Research on Continuous Attractor Neural Networks
-andrea.bastianin@unimi.it,Andrea Bastianin,Andrea,Bastianin,2606.27842,AndreaBastianin5979,Quantifying Demand Shocks in the Green and Digital Transition
-daniele.angelini@uniroma1.it,Daniele Angelini,Daniele,Angelini,2606.27932,DanieleAngelini4281,(In)Efficient Market States and Rough Volatility Detected via Grunwald-Letnikov Fractional Derivative
-saverio.rossi@uniroma1.it,Saverio Rossi,Saverio,Rossi,2606.27942,SaverioRossi3324,Towards coevolution-aware ancestral sequence reconstruction
-n.n.maltzahn@medisin.uio.no,Niklas Nyboe Maltzahn,Niklas,Maltzahn,2606.27952,NiklasNyboeMaltzahn4088,Robust estimation of occupation probabilities for coarsened multistate processes
-martin.weigt@gmail.com,Martin Weigt,Martin,Weigt,2606.27983,MartinWeigt9552,Reconstructability of evolutionary intermediates in generative epistatic landscapes
-paolo.verme@unibo.it,Paolo Verme,Paolo,Verme,2606.28017,PaoloVerme1907,A Toolkit for the Study of Treatment-Effect Discontinuities
-ardiloot@microsoft.com,Ardi Loot,Ardi,Loot,2606.28027,ArdiLoot7782,MLVC: Multi-platform Learned Video Codec for Real-World Deployment
-antonio.nicolo@manchester.ac.uk,Antonio Nicolò,Antonio,Nicolò,2606.28028,AntonioNicolò3347,Rationalizable Behavior in Matching with Externalities
-sambaranb@adobe.com,Sambaran Bandyopadhyay,Sambaran,Bandyopadhyay,2606.28050,SambaranBandyopadhyay9228,"Can LLMs Judge Better Than They Generate? Evaluating Task Asymmetry, Mechanistic Interpretability and Transferability for In-Context QA"
-lindabin@gxu.edu.cn,Da-Bin Lin,Da-Bin,Lin,2606.28115,Da-BinLin8641,"A Unified Model for the Emission of Supernova-Associated Fast X-ray Transients: Case Studies of EP240414a, EP250108a, and GRB~171205A"
-youssef.aitsi@um6p.ma,Youssef Ait Si,Youssef,Si,2606.28143,YoussefAitSi6003,Specification-aware Robustness Margins for Symbolic Controllers
-mike.nilsson@bt.com,Mike Nilsson,Mike,Nilsson,2606.28163,MikeNilsson3338,Enhanced Neural Video Representation Compression across Extreme Complexity and Quality Scales
-brede@ph2.uni-koeln.de,Jens Brede,Jens,Brede,2606.28189,JensBrede9422,Imaging geometry- and phase-controlled spectra in a surface-state Andreev cavity
-avishekb@iitbbs.ac.in,Avishek Bhandari,Avishek,Bhandari,2606.28295,AvishekBhandari9280,"Equilibrium as a Limit: The Competitive Canon Nested in an Adaptive, Information-Theoretic Economy"
-elham.soufiani@uwaterloo.ca,Elham Soufiani,Elham,Soufiani,2606.28312,ElhamSoufiani1736,Optimal Deployment of Electric Aircraft for Canadian Domestic Flights
+danning.jiang@infevo.ai,Danning Jiang,Danning,Jiang,2606.12838,DanningJiang3435,OCOO-T : A Simple and Scalable Virtual Cell Model for Transcriptional Perturbation Response Prediction
+tenghanz@usc.edu,Tenghan Zhong,Tenghan,Zhong,2606.12872,TenghanZhong9757,Non-Spanning Identification of Scheduled Event Risk in Option Pricing
+david.genesove@mail.huji.ac.il,David Genesove,David,Genesove,2606.12893,DavidGenesove8660,"Technology Shocks, Relative Performance Measures, and Outcomes: Evidence from Classical Chess"
+kundu@iitk.ac.in,Debasis Kundu,Debasis,Kundu,2606.13242,DebasisKundu6357,Least Absolute Deviations Estimation for Sinusoidal Models
+marco.borriero@unifi.it,Marco Borriero,Marco,Borriero,2606.13281,MarcoBorriero9154,Causal invariance in graphical models with latent variables
+kpmishra1998@gmail.com,Kaibalyapati Mishra,Kaibalyapati,Mishra,2606.13314,KaibalyapatiMishra1571,The Privilege of Exposure: Caste and Generative AI in India's Graduate Labour Market
+ilija.zovko@algoquants.co.uk,Ilija I Zovko,Ilija,Zovko,2606.13419,IlijaIZovko2673,Realtime price impact detection
+v.iakovlev@hw.ac.uk,Vsevolod Iakovlev,Vsevolod,Iakovlev,2606.13506,VsevolodIakovlev4876,Skill vs Education Types of Labour Mismatch and Their Association with Earnings
+silvia.goncalves@mcgill.ca,Silvia Goncalves,Silvia,Goncalves,2606.13519,SilviaGoncalves8276,Semiparametric Local Projections
+panchuri@offchainlabs.com,Pranay Anchuri,Pranay,Anchuri,2606.13555,PranayAnchuri2687,Price Elasticity of Gas Demand on L1 and L2: Evidence from Ethereum and Arbitrum
+divit.rawal@berkeley.edu,Divit Rawal,Divit,Rawal,2606.13614,DivitRawal8024,Majority-of-Three is Optimal
+e.oparina@lse.ac.uk,Ekaterina Oparina,Ekaterina,Oparina,2606.13752,EkaterinaOparina8553,What is the public's social welfare function?
+coombs@math.ubc.ca,Daniel Coombs,Daniel,Coombs,2606.13890,DanielCoombs4039,Mean First Passage Time for Persistent Random Walks in Annular Search Domains
+joshua.snoke@georgetown.edu,Joshua Snoke,Joshua,Snoke,2606.13902,JoshuaSnoke7176,How Should We Measure Empirical Risk when Synthesizing Population Data?
+daria.bystrova@univ-grenoble-alpes.fr,Daria Bystrova,Daria,Bystrova,2606.13947,DariaBystrova1370,Constraint-based difference graph discovery in a linear setting
+santiago.garcia22@gmail.com,Santiago Garcia,Santiago,Garcia,2606.13992,SantiagoGarcia3724,Group Quantization and Mellin Representations of the Heston Model
+zhongsj@mail.nwpu.edu.cn,Shijie Zhong,Shijie,Zhong,2606.14053,ShijieZhong5808,Hybrid Uncertainty Sensitivity Analysis Based on the HSIC for High-Dimensional Responses with Aleatory--Epistemic Separation
+hahn@econ.ucla.edu,Jinyong Hahn,Jinyong,Hahn,2606.14057,JinyongHahn7165,Granular Instrumental Variables: Estimation and Inference
+tomasz.wozniak@unimelb.edu.au,Tomasz Woźniak,Tomasz,Woźniak,2606.14143,TomaszWoźniak4251,Forecasting with Bayesian Panel Vector Autoregressions Using the R Package bpvars
+heeyoungkim@kaist.ac.kr,Heeyoung Kim,Heeyoung,Kim,2606.14313,HeeyoungKim2818,Nonlocal Bayesian Modeling of Continuous Spatio-Temporal Dynamics
+genevera.allen@columbia.edu,Genevera I. Allen,Genevera,Allen,2606.14592,GeneveraI.Allen3918,Cluster LOCO: Feature Importance For Interpreting Clusters
+binbin.xu@mines-ales.fr,Binbin Xu,Binbin,Xu,2606.14614,BinbinXu2975,Decoding Semantic Categories from Picture-Naming EEG
+femina@leloir.org.ar,Facundo Emina,Facundo,Emina,2606.14649,FacundoEmina5154,Prospective Coding and Path Integration Emerge as Equilibrium Solutions of Self-Organizing Neural Networks with Firing-Rate Adaptation
+v.paterson@sms.ed.ac.uk,Victoria Paterson,Victoria,Paterson,2606.14823,VictoriaPaterson5651,"Human genetic evidence is associated with drug approval across therapeutic areas: an observational analysis of 26,278 target-disease pairs with temporal validation and feature ablation"
+foad.shokrollahi@uwasa.fi,Foad Shokrollahi,Foad,Shokrollahi,2606.14830,FoadShokrollahi6663,Pricing Excess-of-Loss Reinsurance and CAT Bonds under Climate Uncertainty: A Cox Process Framework with Temperature-Dependent Stochastic Intensity
+ppal2@stevens.edu,Pallavi Pal,Pallavi,Pal,2606.14836,PallaviPal7655,To Combine or Not? Consolidating Horizontal Acquisitions in Multi-sided Market
+hmichael@math.umass.edu,Haben Michael,Haben,Michael,2606.14837,HabenMichael2354,Bartlett adjustment for Gaussian random effects meta-analysis
+karl.naumann-woleske@wu.ac.at,Karl Naumann-Woleske,Karl,Naumann-Woleske,2606.14887,KarlNaumann-Woleske8670,Estimating Sloppy Directions via KDE: The Case of Kirman's Ants
+rizal.fathony@capitalone.com,Rizal Fathony,Rizal,Fathony,2606.14909,RizalFathony2514,Audited Conformal Prediction for Classification under Unknown Distribution Shift
+gameiro@math.rutgers.edu,Marcio Gameiro,Marcio,Gameiro,2606.14925,MarcioGameiro5456,Boolean models coarsely sample continuous dynamics of regulatory networks
+raphaelrrcoelho@gmail.com,Raphael Coelho,Raphael,Coelho,2606.15089,RaphaelCoelho5843,A Machine-Checked Itô Calculus for Brownian Motion
+olivier.bos@ens-paris-saclay.fr,Olivier Bos,Olivier,Bos,2606.15206,OlivierBos6689,AI Contagion in Social Networks
+bhadra@purdue.edu,Anindya Bhadra,Anindya,Bhadra,2606.15442,AnindyaBhadra5717,"The Reverse Telescoping Coordinate System for Positive Definite Matrices: Geometry, Computation, and Generative Modeling"
+mfeldman@stanford.edu,Marcus W. Feldman,Marcus,Feldman,2606.15496,MarcusW.Feldman4138,How recombination rates affect escape from low-fitness states
+thijs@simu.ai,Thijs van den Berg,Thijs,Berg,2606.15502,ThijsvandenBerg4904,"Fast, Reliable, and Error-Bounded Option Pricing with Pretrained Neural Networks: A GJR--GARCH Study"
+daniel.albert@drexel.edu,D. Albert,D.,Albert,2606.15545,D.Albert4022,Search Heuristics Under Multiple Objectives: The Case of Corporate Social Responsibility
+laurent.massoulie@inria.fr,Laurent Massoulié,Laurent,Massoulié,2606.15581,LaurentMassoulié5000,Phase Transition in Convex Relaxations for Graph Alignment
+p.kurz@bms-net.de,Peter Kurz,Peter,Kurz,2606.15593,PeterKurz4587,Discrete Choice and Competitive Reactions: End-to-End Simulation with the R Package cash
+sizhong.sun@jcu.edu.au,Sizhong Sun,Sizhong,Sun,2606.15748,SizhongSun1425,Estimating Demand for a New Product
+micha.mandel@mail.huji.ac.il,Micha Mandel,Micha,Mandel,2606.15754,MichaMandel7812,Bounding Causal Effects for Ordinal Outcomes Under Positive Dependence
+epifanio@uji.es,Irene Epifanio,Irene,Epifanio,2606.15876,IreneEpifanio1810,Archetypal analysis of European 10-year government bond yields with multidimensional scaling of two-mode three-way asymmetric dissimilarities
+rogerdjonesphd@gmail.com,Roger D. Jones,Roger,Jones,2606.15905,RogerD.Jones5030,What is Life?
+ruisun233@berkeley.edu,Rui Sun,Rui,Sun,2606.15947,RuiSun6390,The Privacy Externality of Disclosing Correlated Data
+jeffery.opoku01@utrgv.com,Jeffery Opoku,Jeffery,Opoku,2606.15950,JefferyOpoku8751,Spectral Adaptive Conformal Prediction for Structured Non-Exchangeable Data
+mdemirer@mit.edu,Mert Demirer,Mert,Demirer,2606.15960,MertDemirer1142,"Chaining Tasks, Redefining Work: A Theory of AI Automation"
+smithhd@stanford.edu,Henry D. Smith,Henry,Smith,2606.16138,HenryD.Smith7393,Closing the Approximation Gap in Simulation-free Latent SDEs
+c.angstmann@unsw.edu.au,Chris Angstmann,Chris,Angstmann,2606.16269,ChrisAngstmann8871,Revisiting Trade-sign Long-memory and Square-root Law price impact
+xuehan.jiang@mail.utoronto.ca,Xuehan Jiang,Xuehan,Jiang,2606.16380,XuehanJiang2604,Informative Consumption
+dawid.kucharski@put.poznan.pl,Dawid Kucharski,Dawid,Kucharski,2606.16393,DawidKucharski2774,Calibrating the Brody exponent as a quantitative measure of short-range exclusion in 2D spatial point processes
+marta.gentiloni-silveri@polytechnique.edu,Marta Gentiloni Silveri,Marta,Silveri,2606.16610,MartaGentiloniSilveri6965,Diffusion Flow Matching: Dimension-Improved KL Bounds and Wasserstein Guarantees
+paul.peter.hager@univie.ac.at,Paul P. Hager,Paul,Hager,2606.16619,PaulP.Hager8784,Expanding the rough Heston model in $H$
+jonas.beck@uni-tuebingen.de,Jonas Beck,Jonas,Beck,2606.16693,JonasBeck8273,Learning Hybrid Biophysical Neuron Models with Neural ODEs
+tadrian@imf.org,Tobias Adrian,Tobias,Adrian,2606.16708,TobiasAdrian9455,Risks and Uncertainty in Monetary Policy
+agronah@ualberta.ca,Michael Agronah,Michael,Agronah,2606.16726,MichaelAgronah8139,Too Few or Too Many? Sample Size Estimation for Differential Abundance Studies
+mika.meitz@helsinki.fi,Mika Meitz,Mika,Meitz,2606.16773,MikaMeitz9035,Generative Predictive Distributions for Time Series
+ramon.grima@ed.ac.uk,Ramon Grima,Ramon,Grima,2606.16803,RamonGrima4409,Cell Division Changes Fate Decisions in a Genetic Toggle Switch
+rmallela.ieu2021@student.ie.edu,Rama Siva Sarwari Mallela,Rama,Mallela,2606.16840,RamaSivaSarwariMallela3434,"Crashing Together, Rallying Apart: Dynamic Conditional Tail Dependence in Cryptocurrency Markets"
+andy@basis.ai,Andy Zane,Andy,Zane,2606.16985,AndyZane4061,Dynestyx: A Probabilistic Programming Library for Dynamical Systems
+sungk5@mcmaster.ca,Kyle Sung,Kyle,Sung,2606.17032,KyleSung8320,Sharpe Ratio and Return-VaR Ratio Maximization for Option Portfolios with Skew-Elliptical $t$ Underlying Returns
+sluo@vt.edu,Shaowen Luo,Shaowen,Luo,2606.17079,ShaowenLuo9695,Partial Identification of Spatial Production Networks
+ricardo.suarez.fernandez@tuhh.de,R. F. Suárez,R.,Suárez,2606.17121,R.F.Suárez6410,Regularized Machine Learning for System Identification of Ship Free-Running Manoeuvres from CFD-Based Synthetic Data: A Comparative Study
+joelpersson@spotify.com,Joel Persson,Joel,Persson,2606.17165,JoelPersson7706,Statistical Foundations of LLM-based A/B Testing: A Surrogacy Framework for Human Causal Inference
+nicole.adler@mail.huji.ac.il,Nicole Adler,Nicole,Adler,2606.17290,NicoleAdler5010,"Competing firms, competing regulators: The strategic cost of fragmented climate policy"
+andraz@extropic.ai,Andraz Jelincic,Andraz,Jelincic,2606.17327,AndrazJelincic5886,Energy-efficient codon optimization on thermodynamic hardware
+kazuki-sekiya@g.ecc.u-tokyo.ac.jp,Kazuki Sekiya,Kazuki,Sekiya,2606.17397,KazukiSekiya4555,Designing Recommendation Exposure and Favorite Lists: A Field Experiment in a Spot-Work Platform
+ziywang@ttu.edu,Ziyao Wang,Ziyao,Wang,2606.17423,ZiyaoWang8283,Martingale Doppelgänger-Eval: An Identification Framework for Auditing Candlestick Understanding in Vision-Language Models
+sfrei@google.com,Spencer Frei,Spencer,Frei,2606.17426,SpencerFrei8408,Bounded Difference Concentration for Infinitely Exchangeable Sequences with Applications to AI Benchmark Uncertainty
+etakyi@ursinus.edu,Eric M. Takyi,Eric,Takyi,2606.17586,EricM.Takyi3684,"Aggregation as a Double-Edged Sword: Fear, Allee Effects, and Finite-Time Collapse"
+j.maciejowski@student.ie.edu,Jan Maciejowski,Jan,Maciejowski,2606.17723,JanMaciejowski8836,Tail Dependence in EU Carbon Markets: Graphical Models of Extremes for EUA Futures
+stherianos63@gmail.com,Stavros Therianos,Stavros,Therianos,2606.17745,StavrosTherianos9604,Separating wiring-specific from statistical control of dynamics in a complete connectome
+giulia.celora@maths.ox.ac.uk,Giulia L. Celora,Giulia,Celora,2606.17891,GiuliaL.Celora1975,A nonlinear theory for chemotactic fronts of mixed populations
+luca@tsc.uc3m.es,Luca Martino,Luca,Martino,2606.17916,LucaMartino4987,Nested Sampling: A Critical and Comprehensive Theoretical Guide
+zecharias.anteneh@york.ac.uk,Zecharias Anteneh,Zecharias,Anteneh,2606.17977,ZechariasAnteneh6343,Beyond Parallel Trends in Staggered Difference-in-Differences: Identification under Higher-Order Parallelism
+duncan.lee@glasgow.ac.uk,Duncan Lee,Duncan,Lee,2606.18078,DuncanLee2131,Spatial prediction of environmental processes using random forests: How best to account for spatial dependence?
+wblock@loyno.edu,Walter E. Block,Walter,Block,2606.18292,WalterE.Block1348,A Formalization of Austrian Economics. Praxeological Foundations: The Base System and Its Derived Theorems
+cheng.chen@eawag.ch,Cheng Chen,Cheng,Chen,2606.18295,ChengChen9018,Archetypal Microbiome Profiles as Indicators of Nitrous Oxide Emission States in Activated Sludge
+rahmanms@sust.edu,Mohammad Shahidur Rahman,Mohammad,Rahman,2606.18302,MohammadShahidurRahman1381,"Protein-Based Fish Species Identification: Dataset, Models, and Insights from Native Bangladeshi Fish"
+dennis.shen@marshall.usc.edu,Dennis Shen,Dennis,Shen,2606.18512,DennisShen8663,Causal Forecasting in Panel Data: A Two-Way Synthetic Forecasting Approach
+haipengl@usc.edu,Haipeng Luo,Haipeng,Luo,2606.18527,HaipengLuo1427,Toward Simultaneously Optimal Regret in U-Calibration
+jamie.padgett@rice.edu,Jamie Ellen Padgett,Jamie,Padgett,2606.18567,JamieEllenPadgett4397,Bridging Data Gaps in Structural Fragility Modeling through Transfer Learning: Methodology and Case Studies
+hkarami1@student.gsu.edu,Hamed Karami,Hamed,Karami,2606.18575,HamedKarami3595,Adaptive COVID-19 Trajectory Forecasting Using MAB-Inspired Ensemble Weighting
+hansj@mcmaster.ca,Seungjin Han,Seungjin,Han,2606.18590,SeungjinHan2472,Ranking Treatment Saturations under Clustered Network Interference
+sonswoo@hanyang.ac.kr,Seung-Woo Son,Seung-Woo,Son,2606.18660,Seung-WooSon4716,Effects of spatial environmental noise on evolution of cooperation
+rminguez@nebrija.es,Raúl Mínguez,Raúl,Mínguez,2606.18719,RaúlMínguez3865,Reassessing the role of intermediaries in exports
+erdun.gao@adelaide.edu.au,Erdun Gao,Erdun,Gao,2606.18729,ErdunGao2388,TimeLAVA: Learning-Agnostic Data Valuation for Time Series
+travis-william.richardson@uni-tuebingen.de,Travis Richardson,Travis,Richardson,2606.18805,TravisRichardson2827,Emotional driving: Reference-dependent emotions and risky driving behavior after sporting events
+simpson@imada.sdu.dk,Connor Simpson,Connor,Simpson,2606.18972,ConnorSimpson6366,FOSC-X: An Extended Framework for Optimal Local Cuts and Non-Horizontal Cluster Selection from Clustering Hierarchies
+roy.sarkis@epfl.ch,Roy Sarkis,Roy,Sarkis,2606.18994,RoySarkis1548,Climate Policy and The Energy Transition
+alessandro.doldi@unimi.it,Alessandro Doldi,Alessandro,Doldi,2606.19038,AlessandroDoldi4056,Collective completeness and pricing-hedging duality II
+arno.spasie.botha@gmail.com,Arno Botha,Arno,Botha,2606.19052,ArnoBotha9850,"An extendable, integrated, and dynamic approach to forecasting and stress-testing credit risk"
+serota@ucmail.uc.edu,R. A. Serota,R.,Serota,2606.19318,R.A.Serota5836,Fitting Accumulated Stock Returns with Tempered Skew t-Distribution
+hszhu@cnic.cn,Hengshu Zhu,Hengshu,Zhu,2606.19396,HengshuZhu4256,"BioHarness: Substrate-Aware Evidence Assembly for Biomedical Question Answering across Literature, Knowledge Bases, and Biological Atlases"
+augustine.okolie@tum.de,Augustine Okolie,Augustine,Okolie,2606.19405,AugustineOkolie4000,Multi-type branching inference on contact trees with application to COVID-19
+lorenzo.mauri@duke.edu,Lorenzo Mauri,Lorenzo,Mauri,2606.19540,LorenzoMauri3926,Overfitted high-dimensional matrix factorizations via adaptive spectral shrinkage
+zhanghan2@shanghaitech.edu.cn,Han Zhang,Han,Zhang,2606.19739,HanZhang5070,Robust probabilistic measurement of structural-functional module consistency in infant brain development
+manuel.hernandezgarcia@viep.com.mx,Manuel Eduardo Hernández-García,Manuel,Hernández-García,2606.19762,ManuelEduardoHernández-García1969,Oscillations and Spatial Patterns in Large-Scale Stochastic Gene Regulatory Networks
+leila.hedhili@isg.u-tunis.tn,Leila Hedhili,Leila,Hedhili,2606.19972,LeilaHedhili7281,Biodiversity Media Narratives and Stock Market Performance: Evidence from Europe
+mkato-csecon@g.ecc.u-tokyo.ac.jp,Masahiro Kato,Masahiro,Kato,2606.20041,MasahiroKato6402,"AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models"
+pinzhang.cheng@gmail.com,Pinzhang Cheng,Pinzhang,Cheng,2606.20141,PinzhangCheng8640,DASH: A Dimensionality Reduction Method for Large-scale Convex MIQP with Applications in Subset Portfolio Selection
+ilias@austin.utexas.edu,Ilias Georgakopoulos-Soares,Ilias,Georgakopoulos-Soares,2606.20315,IliasGeorgakopoulos-Soares5905,"bioETH-Beacon: A Confidential On-Chain Genomic Beacon with Encrypted Counts, Filters, and Bounded Noise over a Fully Homomorphic EVM"
+philipp.mahler@itwm.fraunhofer.de,Philipp Mahler,Philipp,Mahler,2606.20420,PhilippMahler5619,Advanced Calibration Analysis and Tools: Identifying Influential Observations in Stochastic Interest Rate Model Calibration
+yechanpark@fas.harvard.edu,Yechan Park,Yechan,Park,2606.20435,YechanPark7433,"Choosing A Headline Estimand from Matching, DID, and Hybrid Designs: A Minimax-Regret Approach"
+yueyaowang@mail.zjgsu.edu.cn,Yueyao Wang,Yueyao,Wang,2606.20451,YueyaoWang7340,SSH-Net: A Deep Neural Network for Predicting Failure Time Distribution Functions under Competing Risks with Application to GPU Data
+johan.hallberg.szabadvary@math.su.se,Johan Hallberg Szabadváry,Johan,Szabadváry,2606.20859,JohanHallbergSzabadváry1812,Betting on Moments: Legendre Jumper Martingales for Online Exchangeability Testing
+mo.li@louisiana.edu,Mo Li,Mo,Li,2606.21000,MoLi5373,MBRarefy: data-adaptive multi-bin rarefying for alpha diversity association analysis
+jackruder@montana.edu,Jack Ruder,Jack,Ruder,2606.21036,JackRuder5241,Diffusion-Driven State Space Models
+imai@harvard.edu,Kosuke Imai,Kosuke,Imai,2606.21050,KosukeImai8349,Triage Score: A Counterfactual Risk Assessment Instrument
+yanph@sas.upenn.edu,Penghuan Yan,Penghuan,Yan,2606.21120,PenghuanYan8795,Coordinating Treatment Allocation and Recommendation
+swapnil.manna@students.iiserpune.ac.in,Swapnil Manna,Swapnil,Manna,2606.21199,SwapnilManna9384,Orthogonal Discrepancy Kernels for Learning with Partial Physics
+imai.shunsuke.57n@st.kyoto-u.ac.jp,Shunsuke Imai,Shunsuke,Imai,2606.21224,ShunsukeImai4007,Uniform Confidence Bands for Infinite-Dimensional Partially Identified Parameters
+m.lopezgarcia@leeds.ac.uk,Martin Lopez-Garcia,Martin,Lopez-Garcia,2606.21481,MartinLopez-Garcia4785,Mechanistic mathematical model of the in vitro infection dynamics of Bunyamwera and Batai viruses including MOI-dependent shortening of the eclipse phase
+stephen.coombes@nottingham.ac.uk,Stephen Coombes,Stephen,Coombes,2606.21508,StephenCoombes7833,Adaptive conduction delays and phase locking in spiking Haken Lighthouse networks
+xuan.mei@chase.com,Xuan Mei,Xuan,Mei,2606.21539,XuanMei5357,Attributing Forecast Gaps to Component Models in Complex Model Suites
+bruno.boaretto@unifesp.br,Bruno R. R. Boaretto,Bruno,Boaretto,2606.21703,BrunoR.R.Boaretto1710,Delay coordinates synchronization and induces abrupt transition in excitable networks
+farbodghasemlu@outlook.com,Farbod Ghasemlu,Farbod,Ghasemlu,2606.21769,FarbodGhasemlu9316,Optimal Dynamic Fees for Automated Market Makers: A Stochastic Control Approach to Loss-Versus-Rebalancing
+niushan@torontomu.ca,Niushan Gao,Niushan,Gao,2606.21871,NiushanGao4855,On Prudence of Risk Measures
+auyon.siddiq@anderson.ucla.edu,Auyon Siddiq,Auyon,Siddiq,2606.21880,AuyonSiddiq3772,"Human Capital, AI, and Labor Commoditization"
+jsbuescu@ciencias.ulisboa.pt,Jorge Buescu,Jorge,Buescu,2606.22001,JorgeBuescu2349,Evolutionary Entropy Shapes Reproductive Lifespan in Age-Structured Populations
+jiaxin.zhang@mcri.edu.au,Jiaxin Zhang,Jiaxin,Zhang,2606.22016,JiaxinZhang4546,On the use of auxiliary variables in multiple imputation when estimating the average causal effect with missing data
+ikeda-k25@keio.jp,Kazumasa Ikeda,Kazumasa,Ikeda,2606.22021,KazumasaIkeda2890,Worst-case Strategy-proofness
+mnishi@g.ecc.u-tokyo.ac.jpfaculty,Mikihito Nishi,Mikihito,Nishi,2606.22035,MikihitoNishi8703,Inference methods for unit-specific coefficients in panel data models with latent group structure
+vittorio.astarita@unical.it,Vittorio Astarita,Vittorio,Astarita,2606.22118,VittorioAstarita9261,A Unified General Formula for Arbitrary Liquidity Operations in Weighted AMMs: Potential Applications to Intelligent Transportation Systems
+shintaro.mori@gmail.com,Shintaro Mori,Shintaro,Mori,2606.22162,ShintaroMori2581,Temporal Coarse-Graining of Multi-Sector Default Count Data Generates Posterior-Implied Copulas
+katarzyna.maciejowska@pwr.edu.pl,Katarzyna Maciejowska,Katarzyna,Maciejowska,2606.22185,KatarzynaMaciejowska4306,Impact of distribution fees on BESS scheduling and profitability
+mizrach@econ.rutgers.edu,Bruce Mizrach,Bruce,Mizrach,2606.22206,BruceMizrach1307,Transaction Costs and Speed in the Ethereum Ecosystem: Scalability of the Mainnet and Layer 2s
+ayush.jha@ttu.edu,Ayush Jha,Ayush,Jha,2606.22230,AyushJha7517,"Distributional Granger Causality: Identification, Sequential Inference, and Adaptive Testing"
+fzincenko2@unl.edu,Federico Zincenko,Federico,Zincenko,2606.22255,FedericoZincenko5139,Sensitivity Analysis for the Average Treatment Effect under Discrete Unobserved Confounders
+jgnawali@ttu.edu,Jagdish Gnawali,Jagdish,Gnawali,2606.22293,JagdishGnawali2897,Innovative Extensions to Option Pricing: Asymmetric Brownian Motion and Random Walk Approaches
+korenmor@bgu.ac.il,Moran Koren,Moran,Koren,2606.22337,MoranKoren2260,Theorist Toolbox: Tools for Agent Based LLM-assisted economic theory Research
+yshi5@caltech.edu,Yaozhong Shi,Yaozhong,Shi,2606.22346,YaozhongShi3182,Flow Annealing Posterior Sampling for Function-Space Regression and Inverse Problems
+smjensen@econ.au.dk,Sebastian Jensen,Sebastian,Jensen,2606.22483,SebastianJensen7302,Neural networks for nonlinear regression with serially correlated disturbances: Evidence from cloud cover
+prasenjit@stat.tamu.edu,Prasenjit Ghosh,Prasenjit,Ghosh,2606.22490,PrasenjitGhosh8225,Bayesian Model Pursuit and Near-Oracle Sparse Signal Discovery Under Dependence
+jdonna@miami.edu,Javier D. Donna,Javier,Donna,2606.22564,JavierD.Donna5003,Opening Hours and Consumer Behavior: Evidence from GPS Data and Deregulation
+vdubey9818@gmail.com,Vikash Kumar Dubey,Vikash,Dubey,2606.22582,VikashKumarDubey1389,Upstream reciprocity versus downstream reciprocity: Catalyzing cooperation
+b.heydari@northeastern.edu,Babak Heydari,Babak,Heydari,2606.22599,BabakHeydari7467,Networked risk perception and behavioral bubbles: the case of a pandemic
+kaibalyapati@isec.ac.in,Kaibalyapati Mishra,Kaibalyapati,Mishra,2606.22620,KaibalyapatiMishra8117,Degrees of Devaluation: College Expansion and the Credential Trap in India
+aghojogh@lakeheadu.ca,Aydin Ghojogh,Aydin,Ghojogh,2606.22674,AydinGhojogh2046,Data Evolution by Wittgenstein's Rule Following
+zhangyisi@tsinghua.edu.cn,Yisi S. Zhang,Yisi,Zhang,2606.22695,YisiS.Zhang4123,SPIDER -- Stitched Power-spectra for Inferring Directed information flow from incomplete and asynchronous Experimental Recordings
+guanmao771@gmail.com,Mao Guan,Mao,Guan,2606.22719,MaoGuan9247,Leakage-Aware Benchmarking of LLM Forecasting: Real-Time Nowcasts as the Decision-Time Input for Macro Factor Ranking
+hoyuting@berkeley.edu,Yu-Ting Ho,Yu-Ting,Ho,2606.22720,Yu-TingHo4592,Screening Under Competition
+razieh.nabi@emory.edu,Razieh Nabi,Razieh,Nabi,2606.22784,RaziehNabi6570,Semiparametric Efficiency Theory as Differential Calculus on a Space of Probability Distributions
+awasthi.shantanu@gmail.com,Shantanu Awasthi,Shantanu,Awasthi,2606.22796,ShantanuAwasthi9222,Enhancing the Black-Scholes Model for Option Valuation via Lévy Processes and Malliavin Calculus
+yuyu.chen@unimelb.edu.au,Yuyu Chen,Yuyu,Chen,2606.22884,YuyuChen3710,Universal Value-at-Risk superadditivity
+d.escobar@hw.ac.uk,Debora Daniela Escobar,Debora,Escobar,2606.22956,DeboraDanielaEscobar9795,Pareto Optimal Centralized Risk Sharing with Multiple Agents: Inclusivity and Fairness
+a.nugteren@qut.edu.au,Arwen Nugteren,Arwen,Nugteren,2606.23009,ArwenNugteren2086,Hierarchical Bayes meets hierarchical forecasting: A flexible framework for level-focused forecasts
+illyyne.saffar@ericsson.com,Illyyne Saffar,Illyyne,Saffar,2606.23047,IllyyneSaffar1300,Domain Adaptation Under Wireless Network Constraints: When Does It Become Green?
+daniele.dinosse@sns.it,Daniele Maria Di Nosse,Daniele,Nosse,2606.23070,DanieleMariaDiNosse1196,Mitigating Adverse Selection in Concentrated Liquidity AMMs with Dynamic Fees: An Agent-Based Model Approach
+hito@design.kyushu-u.ac.jp,Hiroshi Ito,Hiroshi,Ito,2606.23114,HiroshiIto3217,Circadian output network can buffer period variability
+bertille.tierny@milliman.com,Bertille Tierny,Bertille,Tierny,2606.23116,BertilleTierny5087,Direct and Indirect Discrimination in Generalized Linear Models
+stefan.widgren@sva.se,Stefan Widgren,Stefan,Widgren,2606.23148,StefanWidgren7713,Bayesian modelling of herd-level infection dynamics in cattle: Local spread as the primary driver of Salmonella Dublin persistence on Öland
+abindler@diw.de,Anna Bindler,Anna,Bindler,2606.23150,AnnaBindler8351,A missed opportunity? Labor demand and workforce diversity
+k.liu.10@fsw.leidenuniv.nl,Kaiwen Liu,Kaiwen,Liu,2606.23174,KaiwenLiu8388,Principal Covariate Regression with Nuclear Norm Penalty
+kkagaya@mail.kitami-it.ac.jp,Katsushi Kagaya,Katsushi,Kagaya,2606.23245,KatsushiKagaya3380,"Predator-associated cues promote host riding, and coupling to mobile hosts improves survival in an epizoic limpet"
+zhi.cao@mrc-bsu.cam.ac.uk,Zhi Cao,Zhi,Cao,2606.23275,ZhiCao3541,A Bayesian Phase I/II basket design with robust information borrowing to identify subtrial-specific optimal biological doses
+hxiao@ouc.edu.cn,Han Xiao,Han,Xiao,2606.23288,HanXiao5963,Flow Games with Public Arcs: the Least Core and the Nucleolus
+andrea.albertazzi@imtlucca.it,Andrea Albertazzi,Andrea,Albertazzi,2606.23347,AndreaAlbertazzi9633,Beyond the Margin: Targeted Conservation and Household Water Demand
+debdoot.ghosh23@alumni.imperial.ac.uk,Debdoot Ghosh,Debdoot,Ghosh,2606.23367,DebdootGhosh6246,Asymmetry PRISM: A CPU/GPU Portfolio Optimization Engine for Deadline-Bounded Institutional Rebalancing
+dubeyr@montclair.edu,Ram Sewak Dubey,Ram,Dubey,2606.23428,RamSewakDubey3291,On the construction and representation of social welfare orders satisfying consequentialist equity axioms
+p.j.j.herings@tilburguniversity.edu,P. Jean-Jacques Herings,P.,Herings,2606.23440,P.Jean-JacquesHerings3461,The Expected Number of Pairwise Stable Networks
+simon.scheidegger@unil.ch,Simon Scheidegger,Simon,Scheidegger,2606.23463,SimonScheidegger9777,Equilibrium World Models
+waynegao@upenn.edu.department,Wayne Yuan Gao,Wayne,Gao,2606.23509,WayneYuanGao7368,Variance or Standard Deviation? Shell Geometry and Global-Scale Priors in High-Dimensional Shrinkage
+e.papa1@yahoo.com,Emiliano Papa,Emiliano,Papa,2606.23510,EmilianoPapa5171,Analytic Pricing of Bermudan Swaptions with Few Exercise Dates
+useong@sogang.ac.kr,Useong Shin,Useong,Shin,2606.23596,UseongShin2871,Anatomy of the Market: A Body-Tail Test of Factor Models
+kevin.josey@cuanschutz.edu,Kevin P. Josey,Kevin,Josey,2606.23656,KevinP.Josey2061,Causal Inference with Multiple Misclassified Exposures: A Control Variate-Adjusted Calibration Weighting Approach
+tom.rossa@stats.ox.ac.uk,Tom Rossa,Tom,Rossa,2606.23662,TomRossa9424,Action-BED: Task-Driven Bayesian Experimental Design with Singly Intractable Objectives
+cuong.le-van@univ-paris1.fr,Cuong Le Van,Cuong,Van,2606.23861,CuongLeVan8990,"Globalization, economic growth, and innovation: A two-country two-period model"
+sdevi@entropicdynamics.com,Sandhya Devi,Sandhya,Devi,2606.23873,SandhyaDevi6390,Relaxation Times for Nonextensive Systems Using Gradient Flow for the Maximization of Tsallis Entropy: An Application to Financial Market Dynamics
+jiansun@uchicago.edu,Jian Sun,Jian,Sun,2606.23883,JianSun9192,Monotonicity of Normalized Implied-Volatility Coordinates under No-Arbitrage
+nkomarova@ucsd.edu,Natalia L. Komarova,Natalia,Komarova,2606.23946,NataliaL.Komarova3269,Mutant Fixation for a Stochastic Evolutionary Model in Fragmented Populations
+mina.rezaei@siu.edu,Mina Rezaei,Mina,Rezaei,2606.24171,MinaRezaei7956,Predicting the 2026 FIFA World Cup with Sufficient Dimension Reduction of Elo Rating Histories
+hannes.wallimann@hslu.ch,Hannes Wallimann,Hannes,Wallimann,2606.24181,HannesWallimann4454,Visible or Covert? The Causal Effect of Inspector Visibility on Fare Evasion Detection: A Causal Machine Learning and Policy Learning Approach
+c.dohdinga@tudelft.nl,Christian Doh Dinga,Christian,Dinga,2606.24183,ChristianDohDinga8168,Generating EUPHEMIA-compatible bids for flexible demand under imperfect information
+jeremie.unterberger@univ-lorraine.fr,J. Unterberger,J.,Unterberger,2606.24246,J.Unterberger1593,Hierarchical models for large chemical reaction networks
+abhimanyu.g@queensu.ca,Abhimanyu Gupta,Abhimanyu,Gupta,2606.24266,AbhimanyuGupta7332,Semi-nonparametric estimation of spatial dynamic panel data models with nonparametric spatial weights
+p.sakowski@uw.edu.pl,Paweł Sakowski,Paweł,Sakowski,2606.24309,PawełSakowski2111,Randomized Neural Networks for estimation of exposure profiles and Credit Valuation Adjustment (CVA) for American Equity Options
+aurelie.hanin@icm-institute.org,Aurélie Hanin,Aurélie,Hanin,2606.24351,AurélieHanin7560,Graph-based analysis of inflammatory profiles in New Onset Refractory Status Epilepticus (NORSE)
+deepti.navaratna@nias.res.in,Deepti Navaratna,Deepti,Navaratna,2606.24406,DeeptiNavaratna7787,EEG Interpretation Across Chant Listening: A Single-Subject Pilot Investigation Using Spectral and Functional Connectivity Analysis
+leejyc@gmail.com,Jaeyong Lee,Jaeyong,Lee,2606.24652,JaeyongLee5880,Bayesian Estimation of the Eigenstructure in High-Dimensional Approximate Factor Models
+callum.marsh@maths.ox.ac.uk,Callum Marsh,Callum,Marsh,2606.24660,CallumMarsh1194,Extended pseudo-spectral physics-informed neural networks for phase-field models
+duong.trinh@uni-graz.at,Duong Trinh,Duong,Trinh,2606.24850,DuongTrinh8952,Heterogeneous Peer Effects with Endogenous Network Formation
+jcha23@nd.edu,Jooyoung Cha,Jooyoung,Cha,2606.24867,JooyoungCha9845,Bounds for Standard Errors in Combined Data
+axel.faes@utwente.nl,Axel Faes,Axel,Faes,2606.24938,AxelFaes9104,Privacy-preserving federated tensor decomposition of single-cell immune data: recovering multicellular programs across institutions
+sajibacharjeedip@vt.edu,Sajib Acharjee Dip,Sajib,Dip,2606.24940,SajibAcharjeeDip8856,Stable-Shift: Biologically Structured Prediction of Transcriptional Responses to Unseen Gene Perturbations
+axel.finke@ncl.ac.uk,Axel Finke,Axel,Finke,2606.25603,AxelFinke6963,Resampling in conditional SMC algorithms
+riccardo.desantis@unipd.it,Riccardo De Santis,Riccardo,Santis,2606.25670,RiccardoDeSantis7531,Dealing with partial missing correlations in multivariate and surrogate meta-analyses
+usha@iitb.ac.in,Usha Ananthakumar,Usha,Ananthakumar,2606.25902,UshaAnanthakumar8562,Count data modeling and forecasting of malaria incidence using generalized time series regression
+iglobusharris@colgate.edu,Isla Globus-Harris,Isla,Globus-Harris,2606.25909,IslaGlobus-Harris8252,General Equilibrium Effects of Carbon Offsets
+luyang.fang@uga.edu,Luyang Fang,Luyang,Fang,2606.25927,LuyangFang8342,Knowledge Cascade: Reverse Knowledge Distillation on Nonparametric Multivariate Functional Estimation
+efthymios.costa17@imperial.ac.uk,Efthymios Costa,Efthymios,Costa,2606.26324,EfthymiosCosta6155,A unified approach to outlier identification for mixed-type data
+christopher.esposito@anderson.ucla.edu,Christopher Esposito,Christopher,Esposito,2606.26470,ChristopherEsposito8487,The Growing Self-Reliance of Chinese Innovation
+anthony-alexander_christidis@hms.harvard.edu,Anthony Christidis,Anthony,Christidis,2606.26611,AnthonyChristidis4526,Fast Robust Regression via Orthogonal Block Updates
+andrew.grant1@sydney.edu.au,Andrew J. Grant,Andrew,Grant,2606.26638,AndrewJ.Grant7883,Multivariable Mendelian randomization with weak instruments: a comparison of Bayesian and frequentist methods
+lorenzo.zambon@supsi.ch,Lorenzo Zambon,Lorenzo,Zambon,2606.26774,LorenzoZambon4109,End-to-end probabilistic hierarchical forecasting of large hierarchies via probabilistic top-down
+drewjohnston@openai.com,Drew Johnston,Drew,Johnston,2606.26959,DrewJohnston3747,The Shift to Agentic AI: Evidence from Codex
+sommer@di.ku.dk,Stefan Sommer,Stefan,Sommer,2606.26974,StefanSommer5665,Hyperiax and Phylogenetic Inference from Shape Data
+kenrick.so@uclouvain.be,Kenrick So,Kenrick,So,2606.26980,KenrickSo2697,Climate-Driven Mortality Forecasting Using Deep Learning
+rashafipour@gmail.com,Rasoul Shafipour,Rasoul,Shafipour,2606.27455,RasoulShafipour7445,Directed Graph Topology Inference via Graph Filter Identification
+jingeli@uchicago.edu,Jinge Li,Jinge,Li,2606.27924,JingeLi7149,"Heterogeneous Diffusion of Electric Vehicles in China: Demand, Learning, Product Entry, and the Incidence of Industrial Policy"
+zechuan.lin@mu.ie,Zechuan Lin,Zechuan,Lin,2608.10754,ZechuanLin9245,Control of hybrid wind-wave energy systems using reinforcement learning
+gefonsecab@unal.edu.co,Germán Fonseca,Germán,Fonseca,2608.10767,GermánFonseca7279,Decay and regularity properties for the dispersion generalized Benjamin-Ono equation
+anton.francois@ens-paris-saclay.fr,Anton François,Anton,François,2608.10769,AntonFrançois1859,A Framework for Joint Affine and Diffeomorphic Image Registration
+hancho37@yonsei.ac.kr,Hancheol Cho,Hancheol,Cho,2608.10770,HancheolCho1262,Variable Step Time Delay Control
+valentin.bonzom@univ-eiffel.fr,Valentin Bonzom,Valentin,Bonzom,2608.10772,ValentinBonzom8712,Differential equations for bipartite maps with bounded face degrees
+emcewen@berkeley.edu,Eden A. McEwen,Eden,McEwen,2608.10786,EdenA.McEwen5340,Wavefront Profiling via correlation of GLAO open loop telemetry
+marco.ballin@istat.it,Marco Ballin,Marco,Ballin,2608.10787,MarcoBallin1369,"Optimal Stratification of a Sampling Frame: A Comparative Study of Classical, Quantum, and Quantum-Inspired Approaches"
+marco.ornigotti@tuni.fi,Marco Ornigotti,Marco,Ornigotti,2608.10794,MarcoOrnigotti2439,Quantum Theory of Third-harmonic Generation in Epsilon-Near-Zero Materials
+shaun@appliedphysics.org,Shaun David Brocus Fell,Shaun,Fell,2608.10800,ShaunDavidBrocusFell9860,Radiative Signatures from Warp Drives Traveling Through the Earth's Atmosphere
+k.sundararajan@rug.nl,Krishnaraajan Sundararajan,Krishnaraajan,Sundararajan,2608.10802,KrishnaraajanSundararajan5029,Anisotropic magnon spin transport in CrPS$_4$
+mascotn@tcd.ie,Nicolas Mascot,Nicolas,Mascot,2608.10815,NicolasMascot4920,Poincaré à la Makdisi
+wangzhouzhe@stu.scu.edu.cn,Zhouzhe Wang,Zhouzhe,Wang,2608.10828,ZhouzheWang9494,Measures on General Codimensional Surfaces in Infinite Dimensions and Stokes-Type Theorems
+amir.kargaran@ipm.ir,Amir Kargaran,Amir,Kargaran,2608.10844,AmirKargaran5165,Impact of Higher-Order Interactions on Collective Motion
+nhao@arizona.edu,Ning Hao,Ning,Hao,2608.10845,NingHao4231,Spectral Embeddings of Degree-$α$ Laplacians in Random Dot Product Graphs
+mete.abbot@gmail.com,Mete Abbot,Mete,Abbot,2608.10851,MeteAbbot4167,Inelastic spreading of viscoelastic drops
+bykov@mi-ras.ru,Dmitri Bykov,Dmitri,Bykov,2608.10861,DmitriBykov3466,Anomalous symmetries in Kähler geometry
+muhamad.fikri@tuni.fi,Muhamad Rausyan Fikri,Muhamad,Fikri,2608.10872,MuhamadRausyanFikri8120,Robust Safety Filtering for Input-Constrained Underactuated Linear Systems
+simon.geirnaert@kuleuven.be,Simon Geirnaert,Simon,Geirnaert,2608.10887,SimonGeirnaert3236,"Modeling and Interpreting Correlations, Null Distributions and Significance Levels in Neural Tracking of Natural Stimuli"
+zaoyangzhangchao@163.com,Chao Zhang,Chao,Zhang,2608.10892,ChaoZhang3214,Sharp constants in the one-sided John-Nirenberg inequality for functions of bounded lower oscillation
+majstorovic@physik.uni-kiel.de,Filip Majstorovic,Filip,Majstorovic,2608.10895,FilipMajstorovic6745,Boosting self hybridized exciton polaritons with metal clad WS2 waveguides
+zeng.min@my.cityu.edu.hk,Min Zeng,Min,Zeng,2608.10896,MinZeng5663,Self-Normalized Inference for Constant-Stepsize Temporal-Difference Learning under Markovian Sampling
+wanght@bupt.edu.cn,Haotian Wang,Haotian,Wang,2608.10898,HaotianWang6177,Adaptive Source-Channel Coding for Bi-static Integrated Sensing and Semantic Communications
+ali.sahin@tubitak.gov.tr,Ali Fuat Sahin,Ali,Sahin,2608.10901,AliFuatSahin4610,CII: Novel CSI-RS Metric for Joint Precoder and RIS Reporting in Multi-User NextG Networks
+smolec@camk.edu.pl,R. Smolec,R.,Smolec,2608.10909,R.Smolec7681,Pulsation periods reveal tension between theoretical and empirical radii for classical Cepheids in eclipsing binary systems
+kangk5@mail.sysu.edu.cn,Kai Kang,Kai,Kang,2608.10913,KaiKang2585,Endogeneity-Aware Cognitive Diagnostic Model for Multidomain Ordinal Assessments
+mohammad.abooshahab@bouvet.no,Mohammad Ali Abooshahab,Mohammad,Abooshahab,2608.10921,MohammadAliAbooshahab1744,Multi-Rate Distributed Unscented Kalman Filtering Under Collective Detectability
+crossley@maths.ox.ac.uk,Rebecca M Crossley,Rebecca,Crossley,2608.10931,RebeccaMCrossley3223,The role of estrogen receptor alpha on calcium transport during smooth muscle contractions
+scelani@exa.unicen.edu.ar,Sergio Celani,Sergio,Celani,2608.10937,SergioCelani7978,A Modal Expansion of Kleene Algebras via Twist Structures
+p.subramanian@iiserpune.ac.in,Prasad Subramanian,Prasad,Subramanian,2608.10945,PrasadSubramanian1418,Fitting trends in quasar emission and absorption line redshifts
+jsjin@dlut.edu.cn,Jiasen Jin,Jiasen,Jin,2608.10948,JiasenJin1225,Steady-state phase transition in one-dimensional hybrid contact process
+mauricio.barros@uniba.it,Maurício Corrêa,Maurício,Corrêa,2608.10973,MaurícioCorrêa9592,Invisible singularities in complex algebraic geometry
+wenlong.zhang@ecut.edu.cn,W. Zhang,W.,Zhang,2608.10988,W.Zhang8278,High-energy electron-positron beam collisions with large-angle disruptions
+honglin.li@utdallas.edu,Honglin Li,Honglin,Li,2608.10999,HonglinLi8517,Techno-Economic Boundary Analysis of Small Modular Reactor Cogeneration for Hyperscale Data Center IT and Cooling Loads
+wishzhai@gmail.com,Weixi Zhai,Weixi,Zhai,2608.11026,WeixiZhai5589,MAJEPPA: Morphing and Assessing in a Unified Piano Performance Space
+luizfsr@ufscar.br,Luiz Silva-Resende,Luiz,Silva-Resende,2608.11029,LuizSilva-Resende1550,A parametric framework for assessing and estimating sufficient follow-up time in cure models
+jingbol@illinois.edu,Jingbo Liu,Jingbo,Liu,2608.11031,JingboLiu8500,A Bayesian Proof of the Bernoulli Theorem
+daniela.lamattina@unipa.it,Daniela La Mattina,Daniela,Mattina,2608.11032,DanielaLaMattina9314,Differential varieties of upper triangular matrices
+lgyorffy@math.u-szeged.hu,Lajos Győrffy,Lajos,Győrffy,2608.11035,LajosGyőrffy4871,Chooser-Picker Degree Games for Regular Graphs
+gaetano.napoli@unina.it,Gaetano Napoli,Gaetano,Napoli,2608.11039,GaetanoNapoli2063,Boundary-layer analysis of the partial engulfment of a small particle by a lipid membrane
+vatsal.sanjay@comphy-lab.org,Vatsal Sanjay,Vatsal,Sanjay,2608.11060,VatsalSanjay9374,Singularities in Soft Matter Systems
+regevid@bgu.ac.il,Ido Regev,Ido,Regev,2608.11073,IdoRegev2592,A Dynamical Mechanism for Irreversibility in Cyclically Driven Amorphous Solids
+fiacovelli@jhu.edu,Francesco Iacovelli,Francesco,Iacovelli,2608.11119,FrancescoIacovelli6129,All You Need is not $Ω_\mathrm{gw}$: Beyond the Mean of the Cross-Correlation Estimator when Searching for an Astrophysical Gravitational-Wave Background
+nagy@karlin.mff.cuni.cz,Stanislav Nagy,Stanislav,Nagy,2608.11131,StanislavNagy1579,Resampling simplicial depth
+achdou@ljll.univ-paris-diderot.fr,Yves Achdou,Yves,Achdou,2608.11134,YvesAchdou1673,Mastering Stochastic OLG Models in Continuous Time
+ebrahimkhaled@alexu.edu.eg,Ebrahim Khaled Ebrahim,Ebrahim,Ebrahim,2608.11140,EbrahimKhaledEbrahim6421,Goodness-of-Fit Tests and Calibration Machine-Learning Algorithms for Logistic Regression with Sparse Data
+averin.p1@live.unic.ac.cy,Pavel Averin,Pavel,Averin,2608.11156,PavelAverin9660,Conditional Independence Tests for Constraint-Based Causal Discovery: A Survey
+christopher.smallwood@sjsu.edu,Christopher L. Smallwood,Christopher,Smallwood,2608.11168,ChristopherL.Smallwood8875,Impact of strain and dark states on spectroscopic measurements of silicon-vacancy centers in diamond
+philipp.bartmann@uni-potsdam.de,Philipp Bartmann,Philipp,Bartmann,2608.11170,PhilippBartmann6593,Eigenvalue growth of the discrete Hodge Laplacian across dimensions
+r.m.cherniha@gmail.com,Roman Cherniha,Roman,Cherniha,2608.11172,RomanCherniha6656,A reaction-diffusion system with nonconstant diffusion coefficients: exact and numerical solutions
+eareinhardt@crimson.ua.edu,Eric A. F. Reinhardt,Eric,Reinhardt,2608.11173,EricA.F.Reinhardt5949,A Quantum Roadmap for Softmax Attention: Exact Born-Rule Analogs for Softmax Attention on the Probability Simplex
+alain.destexhe@cnrs.fr,Alain Destexhe,Alain,Destexhe,2608.11185,AlainDestexhe5227,A class of mean-field models to bridge molecular to brain scales
+lferdouse@wlu.ca,Lilatul Ferdouse,Lilatul,Ferdouse,2608.11280,LilatulFerdouse7792,Uncertainty-Aware and Explainable Ensemble Deep Learning Framework for Multi-Class Skin Lesion Classification
+c.m.scannell@tue.nl,Cian M Scannell,Cian,Scannell,2608.11282,CianMScannell9295,Physics-Informed Implicit Neural Representations for Improved Myocardial Perfusion MRI Quantification
+hlodhiya@slicedhealth.com,Harshil Lodhiya,Harshil,Lodhiya,2608.11288,HarshilLodhiya6778,Uncertainty-Aware Compositional Localization and Placement Assessment of Catheters and Tubes in Chest X-Rays
+linhaoma@princeton.edu,Linhao Ma,Linhao,Ma,2608.11311,LinhaoMa6403,A Diverse Distribution of Black Hole Spins from Stable Mass Transfer
+h.ishizaka005@gmail.com,Hiroki Ishizaka,Hiroki,Ishizaka,2608.11353,HirokiIshizaka9082,Exact characterisation of maximum-angle conditions for spherical finite element meshes
+nagyfalusibalazs@uniovi.es,Balázs Nagyfalusi,Balázs,Nagyfalusi,2608.11356,BalázsNagyfalusi7457,Strain-controlled magnetism and magnetoelasticity in monolayer NiPS$_3$ and CrPS$_4$
+manuel.keppler@dlr.de,Manuel Keppler,Manuel,Keppler,2608.11360,ManuelKeppler2332,Time-Optimal Control of One-Mode Flexible Structures: Analytical Solution and the Cost of Flexibility
+iza.danielewska.dokt@pw.edu.pl,Iza Danielewska,Iza,Danielewska,2608.11366,IzaDanielewska7234,Graphical Models for Multivariate Count Data
+jkim33@fsu.edu,Jeongbin Kim,Jeongbin,Kim,2608.11371,JeongbinKim7974,Do People Follow AI Advice? Evidence from a Pension Portfolio Choice Experiment
+chandav2@msu.edu,David Chan,David,Chan,2608.11376,DavidChan5992,Computations in Equivariant Topological Hochschild Homology
+b.baer@bowdoin.edu,Benjamin R Baer,Benjamin,Baer,2608.11399,BenjaminRBaer3428,Semiparametric efficient estimation of the Cox regression coefficient when there can be ties
+rugwed.lokhande@ufl.edu,Rugwed Lokhande,Rugwed,Lokhande,2608.11421,RugwedLokhande6737,Second-Derivative-Corrected FANPT for Robust Continuation of Nonlinear Wavefunction Equations
+pieter.vandokkum@dragonfly1000.com,Pieter van Dokkum,Pieter,Dokkum,2608.11443,PietervanDokkum2328,Numerous bow shocks in the outer Helix Nebula
+ilayhoshen@gmail.com,Ilay Hoshen,Ilay,Hoshen,2608.11457,IlayHoshen4779,Optimal lower bounds for epsilon-nets for lines in the plane
+rui.yao@technion.ac.il,Rui Yao,Rui,Yao,2608.11464,RuiYao8268,Estimating the perturbed utility route choice model with trip-level data
+piotrjedryszek@evolverebiosciences.com,Piotr Jedryszek,Piotr,Jedryszek,2608.11475,PiotrJedryszek8730,Probing and steering biology across Boltz-1s trunk-diffusion boundary
+giovanni.iacovelli@uni.lu,Giovanni Iacovelli,Giovanni,Iacovelli,2608.11476,GiovanniIacovelli2722,Extremely Large Beyond-Diagonal RIS: Low-Rank Modal Optimization for Near-Field Communications
+ganna.fagerberg@stat.su.se,Ganna Fagerberg,Ganna,Fagerberg,2608.11481,GannaFagerberg2391,Time-Varying Multi-Seasonal ARMA Models
+sayanmondal96sbs@gmail.com,Sayan Mondal,Sayan,Mondal,2608.11488,SayanMondal2213,Exchange Fluctuation Theorems for Non-Markovian Baths in Quantum Collisional Model
+mekonnen@brown.edu,Teddy Mekonnen,Teddy,Mekonnen,2608.11497,TeddyMekonnen1259,Diversity as Majorization
+pitcany@gmail.com,Yannik Pitcan,Yannik,Pitcan,2608.11505,YannikPitcan1201,"Does a Structural Model Add Anything to the Closing Price? Calibrated forecasting, incremental information, and match leverage in the Italian Serie A"
+ghulam.yar@monash.edu,Ghulam Nabi Ahmad Hassan Yar,Ghulam,Yar,2608.11514,GhulamNabiAhmadHassanYar8424,SinoDiff: Physics-Consistent Self-Supervised Diffusion for Unified Low-Dose to Standard-Dose PET Sinogram Recovery
+paul.jewsbury@duolingo.com,Paul A. Jewsbury,Paul,Jewsbury,2608.11542,PaulA.Jewsbury4799,Analytically Corrected Bayesian Modularization for Local Item Calibration
+tgamage@umass.edu,Thejani Gamage,Thejani,Gamage,2608.11544,ThejaniGamage5943,Fine-Tuning Generative Models for Extreme Events via CVaR-Penalized Wasserstein Gradient Flows
+sato.naoki@nifs.ac.jp,Naoki Sato,Naoki,Sato,2608.11547,NaokiSato1494,Admissible Invariant-Torus Foliations for Steady Euler Flows
+mingzhe_dai@csu.edu.cn,Ming-Zhe Dai,Ming-Zhe,Dai,2608.11549,Ming-ZheDai7935,Poisson Tangent Limits and Critical Policy Switching for Sampled Bellman Operators
+ykinoshita@tokai.ac.jp,Yuma Kinoshita,Yuma,Kinoshita,2608.11565,YumaKinoshita2474,Alignment of Similarity-Transformed Images Based on Fourier--Mellin Transform Using Auxiliary Function Method
+majiming@fudan.edu.cn,Jiming Ma,Jiming,Ma,2608.11571,JimingMa8985,Spherical CR uniformizations of a sequence of hyperbolic 3-manifolds
+qhnguyen@amss.ac.cn,Quoc Hung Nguyen,Quoc,Nguyen,2608.11586,QuocHungNguyen3758,Higher Regularity of Homogeneous Gradient Compositions for $p$-Laplace-Type Equations
+jialuli@arizona.edu,Jialu Li,Jialu,Li,2608.11587,JialuLi7731,Robust Multi-Tier Infant-Centered Audio Understanding with Whisper via Structured Speaker Conditioning
+kshitizu@umn.edu,Kshitiz Upadhyay,Kshitiz,Upadhyay,2608.11594,KshitizUpadhyay6950,Process-fracture mapping of a DLP-printed photopolymer using Bayesian active learning and surrogate-based sensitivity analysis
+aron.cummings@icn2.cat,Aron W. Cummings,Aron,Cummings,2608.11615,AronW.Cummings3500,Spin lifetime anisotropy in graphene induced by the SiO2 interface
+gregor.schubert@anderson.ucla.edu,Gregor Schubert,Gregor,Schubert,2608.11626,GregorSchubert2202,Organizational Technology Ladders: Remote Work and Generative AI Adoption
+wageesham@uom.lk,Wageesha N. Manamperi,Wageesha,Manamperi,2608.11627,WageeshaN.Manamperi6566,Deep Learning Based Relative Transfer Matrix Estimation for Multiple Sources and Multiple Microphones
+wuhao.math@outlook.com,Hao Wu,Hao,Wu,2608.11637,HaoWu7189,Uniform Local Asymptotics for Lévy Processes with Subexponential Jumps
+yanggangs@hkust-gz.edu.cn,Yanggang Sheng,Yanggang,Sheng,2608.11641,YanggangSheng6055,Energy-Aware Wind-Resilient Routing for Truck-Assisted Multi-UAV Delivery under Wind Uncertainty
+avinaba.mukherjee@rediffmail.com,Avinaba Mukherjee,Avinaba,Mukherjee,2608.11642,AvinabaMukherjee8456,Fluctuation Spectra and Response Function of Coupled Atomic and Molecular BECs
+aogrady@andrew.cmu.edu,Anna J. G. O'Grady,Anna,O'Grady,2608.11672,AnnaJ.G.O'Grady1431,Disco in the Dust: Reflected light at the bow shock around Betelgeuse's companion explains its observed luminosity
+takahashi.meina460@g.ecc.u-tokyo.ac.jp,Meina Takahashi,Meina,Takahashi,2608.11682,MeinaTakahashi9276,A Solution to the Roommate Problem
+xuweijun@westlake.edu.cn,Weijun Xu,Weijun,Xu,2608.11695,WeijunXu8552,"Generalised stochastic curvature flow in $d \geq 2$, and sharp interface limit for the stochastic Allen-Cahn equation with nonlinear diffusion"
+iashlagi@stanford.edu,Itai Ashlagi,Itai,Ashlagi,2608.11710,ItaiAshlagi8340,How to Beat FCFS
+indrajitghosh912@gmail.com,Indrajit Ghosh,Indrajit,Ghosh,2608.11711,IndrajitGhosh7604,A Complete Characterization of Cartan Inclusions of Finite Dimensional $C^*$-algebras
+miezaki@waseda.jp,Tsuyoshi Miezaki,Tsuyoshi,Miezaki,2608.11734,TsuyoshiMiezaki3204,Average hitting times and recurrence structures II: Cartesian products of powers of cycles and regular graphs
+pgunnink@uni-mainz.de,Pieter M. Gunnink,Pieter,Gunnink,2608.11740,PieterM.Gunnink6536,Magnetic noise of a dark exciton Bose-Einstein condensate
+liumx@ieee.org,Mingxiang Liu,Mingxiang,Liu,2608.11750,MingxiangLiu8787,Reinforcement Learning-Based Output Feedback LQR for Continuous-Time MIMO Systems
+s.fraga.fernandez@tue.nl,Sebastian Fraga Fernández,Sebastian,Fernández,2608.11754,SebastianFragaFernández1192,Characterizing Nonlinearities in IM-DD Links via the Best Linear Approximation: Distortion Analysis and Modulation Optimization
+linz@sdu.edu.cn,Zhicong Lin,Zhicong,Lin,2608.11771,ZhicongLin2990,Bijective proofs of several conjectures on Jacobi permutations
+m.kurbucz@ucl.ac.uk,Marcell T. Kurbucz,Marcell,Kurbucz,2608.11784,MarcellT.Kurbucz6778,Coarsening Latent-Class Probabilities: Directional Distortion and Coverage Loss
+smritik@iitbhilai.ac.in,Smriti Kumar,Smriti,Kumar,2608.11798,SmritiKumar7526,TRACE: A Modular Framework for RIS-Assisted Channel Estimation and Differential Channel-Aware Reconfiguration
+rainis.haller@ut.ee,Rainis Haller,Rainis,Haller,2608.11827,RainisHaller5696,Weak stability and binary convex combinations of slices
+dongjiazhen@zju.edu.cn,Jiazhen Dong,Jiazhen,Dong,2608.11828,JiazhenDong8422,A Universal Random Precoding Framework for MIMO Systems
+le.yang@canterbury.ac.nz,Le Yang,Le,Yang,2608.11845,LeYang2994,ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks
+yaowan@cuhk.edu.hk,Yao Wan,Yao,Wan,2608.11849,YaoWan1960,Weinstock inequality in hyperbolic space II
+juho.k.maatta@aalto.fi,Juho Määttä,Juho,Määttä,2608.11857,JuhoMäättä3829,Disturbance-Observer-Based Grid-Forming Control for Unbalanced Grids
+waleedwaseer@gmail.com,Waleed Waseer,Waleed,Waseer,2608.11860,WaleedWaseer4162,Two-Stage Deformable-Convolutional Inverse Design of Nanophotonic Absorbers from Optical Spectra
+wangshuiyuan@mail.nwpu.edu.cn,Shuiyuan Wang,Shuiyuan,Wang,2608.11898,ShuiyuanWang2184,"On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin"
+rick.butler@chalmers.se,Rick M. Butler,Rick,Butler,2608.11903,RickM.Butler7852,End-to-End Modelling of Earthquake-Induced Polarisation Perturbations in Submarine Optical Fibres
+timothyheightman@simulacra-ai.com,Timothy Heightman,Timothy,Heightman,2608.11911,TimothyHeightman6306,Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians
+andrea.rinaldo@unipd.it,Andrea Rinaldo,Andrea,Rinaldo,2608.11918,AndreaRinaldo5777,A multiscale theory based on metabolic scaling connects forest dynamics to tree-size distributions
+bianchid@mail.sysu.edu.cn,Davide Bianchi,Davide,Bianchi,2608.11931,DavideBianchi5485,Nonlinear parabolic characterizations of stochastic completeness at infinity on weighted graphs
+ayon.mukherjee@newcastle.ac.uk,Ayon Mukherjee,Ayon,Mukherjee,2608.11953,AyonMukherjee8226,Efficient Response-Adaptive Randomization for Multi-arm Trials with Prioritized Composite Endpoints
+usef.faghihi@uqtr.ca,Usef Faghihi,Usef,Faghihi,2608.11954,UsefFaghihi4665,"Causal inference for group-contaminated structured outcomes: observable quotients, lossless reduction and exact randomization inference"
+xliang@ustc.edu.cn,Xing Liang,Xing,Liang,2608.11986,XingLiang9036,Variational Principles and Rearrangement Inequalities for asymmetric Operators on Periodic Lattices
+yanzhidan.math@gmail.com,Zhidan Yan,Zhidan,Yan,2608.11990,ZhidanYan6474,On spanning trees whose degrees are congruent to one modulo $\ell$
+indriana.h@ugm.ac.id,Indriana Hidayah,Indriana,Hidayah,2608.12000,IndrianaHidayah8650,Beyond Local Power: Functional Connectivity Analysis for Subject-Independent Learning Style Recognition
+sachse@math.uni-sb.de,Felix Sachse,Felix,Sachse,2608.12016,FelixSachse2319,Term structure shapes in the Hull-White model with Svensson-parameterized initial yield curves
+cullinan@bard.edu,John Cullinan,John,Cullinan,2608.12019,JohnCullinan8846,Hasse-Witt invariants for trace forms of Jacobi polynomials
+zhren2000@zju.edu.cn,Zihao Ren,Zihao,Ren,2608.12022,ZihaoRen1543,Distributed Nash Equilibrium Seeking with Logarithmic Bit Rates over Digital Channels
+nour.zidi.1@ens.etsmtl.ca,Nour Zidi,Nour,Zidi,2608.12029,NourZidi3557,Lightweight Single-Antenna Direction-of-Arrival Estimation for Curvilinear Trajectories in Mobile Embedded Systems
+s.j.hale@bham.ac.uk,S. J. Hale,S.,Hale,2608.12033,S.J.Hale4050,Automation and Modernisation of Legacy BiSON Solar Observatories with the BiSON:NG Platform
+stefan.m.meier@fau.de,Stefan Meier,Stefan,Meier,2608.12040,StefanMeier3429,Spatial and energetic correlations of ultrashort two electron pulses
+swarna.chatterjee@ru.ac.za,Swarna Chatterjee,Swarna,Chatterjee,2608.12042,SwarnaChatterjee1532,MeerKAT Reveals Evidence of a Radio Megahalo at GHz Frequency
+b.morsy@tudelft.nl,Basel Morsy,Basel,Morsy,2608.12047,BaselMorsy6096,Network Topology Reconfiguration: Optimal Transition Planning
+widera@rptu.de,Artur Widera,Artur,Widera,2608.12055,ArturWidera8605,Enhancing the power of a quantum heat engine via control of the system--reservoir coupling
+alexandros.sopasakis@math.lth.se,Alexandros Sopasakis,Alexandros,Sopasakis,2608.12072,AlexandrosSopasakis4619,Testing the limits of past-adapted explanations by post-endpoint randomisation: anticipatory EEG as a worked case
+aleksandra.borowka@uj.edu.pl,Aleksandra Borówka,Aleksandra,Borówka,2608.12074,AleksandraBorówka2800,Contact variation of almost contact pseudo-metric structures
+mukherjee7.arijit@gmail.com,Arijit Mukherjee,Arijit,Mukherjee,2608.12076,ArijitMukherjee5162,Classification of products of Fano varieties with Picard number one
+klisse@math.uni-kiel.de,Mario Klisse,Mario,Klisse,2608.12080,MarioKlisse5790,Word-Length Spectral Triples of $(\mathbb{Z}/2\mathbb{Z})\wr\mathbb{F}_{d}$ Are Not Metric
+m.mohammadi@qub.ac.uk,Mohammadali Mohammadi,Mohammadali,Mohammadi,2608.12085,MohammadaliMohammadi1582,"Hybrid STAR-RIS Architecture for Joint Localization, Communication, and Power Transfer"
+hasani@nus.edu.sg,Keramat Hasani,Keramat,Hasani,2608.12087,KeramatHasani5649,Parallel Machine Scheduling with a Singler Server and Loading-Unloading Operations
+s.faehler@hzdr.de,Sebastian Fähler,Sebastian,Fähler,2608.12092,SebastianFähler8978,Thermoelastic Harvesting Outperforming Thermoelectric Generators Below 100 °C
+yutongzhang@stu.scu.edu.cn,Yutong Zhang,Yutong,Zhang,2608.12094,YutongZhang6904,The 196560 auxiliary-function conjecture for the Leech lattice
+lars.diening@uni-bielefeld.de,Lars Diening,Lars,Diening,2608.12095,LarsDiening9749,Variable Exponent Regularity via Muckenhoupt Condition
+yzfan@zju.edu.cn,Yuzhen Fan,Yuzhen,Fan,2608.12109,YuzhenFan3383,On the Convergence Rate Lower Bound of Biochemical Computational Modules
+gengli@bnu.edu.cn,Geng Li,Geng,Li,2608.12154,GengLi3138,Shortcuts to Parameter Sweeps
+huachen.zhang@apctp.org,Hua-Chen Zhang,Hua-Chen,Zhang,2608.12157,Hua-ChenZhang7490,Connecting the tensor-categorical formulation of anyon condensation with operator algebras and entropic order parameters
+j.chryssanthacopoulos@qmul.ac.uk,James Chryssanthacopoulos,James,Chryssanthacopoulos,2608.12160,JamesChryssanthacopoulos8012,Fortuity and fragility in supersymmetric SYK
+alexander.mueller@mv.rptu.de,Alexander Müller,Alexander,Müller,2608.12163,AlexanderMüller2942,Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2
+maxiescayola@kias.re.kr,Maximiliano Escayola,Maximiliano,Escayola,2608.12168,MaximilianoEscayola2690,Hyperbolicity and obstructions to PL actions of the circle
+kristina.giesel@fau.de,Kristina Giesel,Kristina,Giesel,2608.12181,KristinaGiesel7545,Robustness of the primordial power spectrum in hybrid loop quantum cosmology to approximations near the bounce
+liuxg@sustech.edu.cn,Xiaoguang Liu,Xiaoguang,Liu,2608.12197,XiaoguangLiu3398,NetlistBench: Evaluating LLM Reliability in SPICE Netlist Recognition and Manipulation
+jacob.mencke@epfl.ch,Jacob Emil Mencke,Jacob,Mencke,2608.12205,JacobEmilMencke1483,Derivation and application of sheath boundary conditions for drift-kinetic simulations in a linear plasma device based on a gyromoment approach
+m.mobilia@leeds.ac.uk,Mauro Mobilia,Mauro,Mobilia,2608.12208,MauroMobilia4863,Dynamics of fluctuating populations in multi-state switching environments
+wclong@mails.ccnu.edu.cn,Wei-Cheng Long,Wei-Cheng,Long,2608.12217,Wei-ChengLong4715,High-energy neutrino signatures of embedded GRB jets in AGN disks: a dynamic jet-propagation framework
+yangkang@westlake.edu.cn,Kang Yang,Kang,Yang,2608.12221,KangYang8194,Second-Chern Bounds in Non-Abelian Quantum Geometry
+k.alam3742@student.leedsbeckett.ac.uk,Kazi Nabiul Alam,Kazi,Alam,2608.12227,KaziNabiulAlam3458,Domain-Aware Lightweight Spectral-Grouped Convolutions for Hyperspectral Fish Freshness Classification
+mantas.rinkevicius@ktu.lt,Mantas Rinkevičius,Mantas,Rinkevičius,2608.12229,MantasRinkevičius8228,Apnea Burden-Guided Framework: Enhancing Out-of-Distribution Generalization in PPG-Based Sleep Apnea Characterization
+kdesmond.physics@gmail.com,Kenneth Desmond,Kenneth,Desmond,2608.12235,KennethDesmond2270,Random close packing at extreme size ratios with an Adam-based inflation protocol
+david.holtz@columbia.edu,David Holtz,David,Holtz,2608.12236,DavidHoltz4442,How Organizations Use AI: Evidence from ChatGPT
+marko.pejic@student.kit.edu,Marko Pejić,Marko,Pejić,2608.12237,MarkoPejić2910,On the Turán Density of $C_{10}$ in the Hypercube
+bordeg1@montclair.edu,Gargi Vijay Borde,Gargi,Borde,2608.12251,GargiVijayBorde3666,Regime-Gated Residual Mixture-of-Experts for Cross-Sectional Volatility Forecasting
+chaopeng.tan@tu-dresden.de,Chaopeng Tan,Chaopeng,Tan,2608.12256,ChaopengTan7908,SelectLight: Learning to Select Signal Plans Generated by Distributed Model Predictive Control for Urban Traffic Networks
+yuan.liao@keg.lu.se,Yuan Liao,Yuan,Liao,2608.12281,YuanLiao1864,Oil price shocks reveal unequal capacities for mobility adaptation
+zidonggao@yeah.net,Zidong Gao,Zidong,Gao,2608.12284,ZidongGao3870,The finite basis problem for the flat semirings $S(W)$
+mateo.cardeneswuttig@yale.edu,Mateo Cárdenes Wuttig,Mateo,Wuttig,2608.12317,MateoCárdenesWuttig8804,Probing Impurity Quantum Criticality with Entanglement Witnesses
+a.van.werde@uni-muenster.de,Alexander Van Werde,Alexander,Werde,2608.12410,AlexanderVanWerde5198,Finding all cospectral mates over a number field
+richiesater@gmail.com,Richie Sater,Richie,Sater,2608.12432,RichieSater8375,Generation of finite groups from subgroups of coprime index
+liyuanyu6@jd.com,Yuanyu Li,Yuanyu,Li,2608.12443,YuanyuLi2162,SSPO: Structure-Aware Similarity-Weighted Preference Optimization for Neural Combinatorial Optimization
+bernevig@princeton.edu,B. Andrei Bernevig,B.,Bernevig,2608.12452,B.AndreiBernevig8981,"The ""Moiré Capacitor Effect"" and Stabilization of Fractional Chern Insulators in Rhombohedral Graphene Superlattices"
+abay.zhakenov@rutgers.edu,Abay Zhakenov,Abay,Zhakenov,2608.12453,AbayZhakenov5667,Boundary phases and thermodynamics of the Kondo spin-$s$ chain: from overscreened Kondo to boundary-bound states
+rrende@flatironinstitute.org,Riccardo Rende,Riccardo,Rende,2608.12465,RiccardoRende3679,Superconductivity in the $t$-$t'$ Hubbard Model from Symmetry-Preserving Neural-Network Quantum States
+nakanem@icrr.u-tokyo.ac.jp,Minami Nakane,Minami,Nakane,2608.12466,MinamiNakane4558,"Why is GN-z11 Bright, Compact, and Nitrogen Enhanced? Insights from UV Absorption and Emission Diagnostics"
+helbig@stanford.edu,Tobias Helbig,Tobias,Helbig,2608.12485,TobiasHelbig5606,Dual Gauge Theory for Two Dimensional Superfluid Turbulence
+charlie.che@jpmchase.com,Charlie Che,Charlie,Che,2608.12493,CharlieChe4954,Beyond the Skew-Stickiness Ratio: Transport Geometry of Spot-Driven Variance Surface Dynamics
+marisa.petrusky@colorado.edu,Marisa Petrusky,Marisa,Petrusky,2608.12498,MarisaPetrusky7709,Evaluation of the Ambipolar Diffusion Approximation in Partially Ionized Rarefied Hypersonic Flows
+hassett.chris.m@gmail.com,Christopher Hassett,Christopher,Hassett,2608.12510,ChristopherHassett3358,Bayesian Modeling of Gibbs Point Processes via Basis Function Expansions
+hana.shamata@uob.edu.ly,Hana Shamata,Hana,Shamata,2608.12517,HanaShamata5733,RSMA-Enabled ISAC Networks with Fluid Antenna Systems: Stochastic Geometry Analysis and Low-Complexity Resource Allocation
+hadi.hajieghrary@torc.ai,Hadi Hajieghrary,Hadi,Hajieghrary,2608.12520,HadiHajieghrary8840,"Weight Certificates for Convex Multi-Objective MPC: Geometric Characterization, $\ell^1$ Construction, and $\ell^2$ Foreclosure"
+martin.sollich@kuleuven.be,Martin Sollich,Martin,Sollich,2608.12525,MartinSollich2719,Optimal Heat Storage Sizing for District Heating Networks to Maximize Electricity Revenue from Combined Heat and Power Units
+arno.lauwers@ugent.be,A. Lauwers,A.,Lauwers,2608.12527,A.Lauwers1390,3D Radiative Transfer of Lyman-series Lines with SKIRT
+yashbagla321@gmail.com,Yash Bagla,Yash,Bagla,2608.12528,YashBagla8188,Excitation-Supervised Closed-Loop Self-Calibration and Target Seeking for an Unknown-Pose Range-Bearing Relay
+varun.rai@op.iitg.ac.in,Varun Rai,Varun,Rai,2608.12536,VarunRai9728,Evaluating Pre-trained Speech Encoders for Spontaneous Speech Detection and Out of Domain Synthetic Speech Generalisation in Indic Languages
+jungbauer@cornell.edu,Thomas Jungbauer,Thomas,Jungbauer,2608.12558,ThomasJungbauer8122,Algorithm Transparency and Search Manipulation: Steering vs. Persuasion
+jacobsjw@ornl.gov,Justin Jacobs,Justin,Jacobs,2608.12560,JustinJacobs2874,Hierarchical Spline-Based Bayesian Beta-Binomial Regression for Estimating Time-Varying Risk in Power Outages
+zhuohan.wang@kcl.ac.uk,Zhuohan Wang,Zhuohan,Wang,2608.12583,ZhuohanWang4360,Diffusion Models in Finance: A Survey
+hans.buehler@maths.ox.ac.uk,Hans Buehler,Hans,Buehler,2608.12587,HansBuehler3718,DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces
+w.chen@pku.edu.cn,Wei Chen,Wei,Chen,2608.12591,WeiChen6183,The $θ$-Symmetric SRG with Applications to Stability of Cactus Dynamic Networks
+sebastian.frank@blackrock.com,Sebastian Frank,Sebastian,Frank,2608.12594,SebastianFrank2422,What Makes a Peer? Valuation-Anchored Similarity in Private Markets
+william.khalilijr@gmail.com,William Khalili,William,Khalili,2608.12602,WilliamKhalili9922,Feasibility and Convex Design of Probe-Position Matching in a Scanning X-Band Radar Array
+buxin.she@ieee.org,Buxin She,Buxin,She,2608.12609,BuxinShe2359,Security-Constrained Operation of IBR-Dominated Power Systems: Static and Dynamic Security Across Preventive and Corrective Decisions
+abdulrahman.qadi.24@ucl.ac.uk,Abdulrahman Qadi,Abdulrahman,Qadi,2608.12634,AbdulrahmanQadi4249,The Price of Permission: Classification Uncertainty in Constrained Capital Markets
+fahamed@ttu.edu,Faysal Ahamed,Faysal,Ahamed,2608.12638,FaysalAhamed5568,Improving Fast Charging Safety With Core Temperature Estimation Via Kolmogorov-Arnold Network
+feihuang@unsw.edu.au,Fei Huang,Fei,Huang,2608.12663,FeiHuang8924,Evaluating AlphaEarth Foundations Embeddings for Wildfire Susceptibility Mapping
+wuqiushi.yao@weizmann.ac.il,Wuqiushi Yao,Wuqiushi,Yao,2608.12666,WuqiushiYao6815,Modulation of the tropical meridional circulation by the Madden-Julian Oscillation
+mrbudden@email.wcu.edu,Mark Budden,Mark,Budden,2608.12673,MarkBudden7495,Weakened Gallai-Ramsey Numbers for Books
+mark.tuckerman@nyu.edu,Mark E. Tuckerman,Mark,Tuckerman,2608.12691,MarkE.Tuckerman9840,Integrated Alchemical and Conformational Enhanced Sampling for Solvation Free Energy Calculations
+hengzhihe@g.ucla.edu,Hengzhi He,Hengzhi,He,2608.12701,HengzhiHe7294,Sharp proper estimation of fixed-component Gaussian location mixtures in polynomial time
+yyang117@utk.edu,Yayu Yang,Yayu,Yang,2608.12730,YayuYang6018,Time Distribution Principle Using Measured Traveling Waves in Power Grid
+floriane.kue@aims-cameroon.org,Floriane Mefo Kue,Floriane,Kue,2608.12769,FlorianeMefoKue5095,A penalty-type method for relaxed inverse optimal control problems
+souravm@iitk.ac.in,Sourav Majumdar,Sourav,Majumdar,2608.12777,SouravMajumdar9072,Physical Extinction and Long-Run Pricing under Time-Varying Beliefs
+kallosh@stanford.edu,Renata Kallosh,Renata,Kallosh,2608.12819,RenataKallosh3825,Waterfall-modulated $α$-attractors
+dongwenyu@lsec.cc.ac.cn,Wenyu Dong,Wenyu,Dong,2608.12823,WenyuDong9139,BTF-PINN: Enforcing Dirichlet Boundary Conditions Without Boundary Training
+d.marushkevych@unsw.edu.au,Dmytro Marushkevych,Dmytro,Marushkevych,2608.12838,DmytroMarushkevych4737,Weighted Nuclear Elastic Net Estimation of (Near-) Low-Rank Drift Matrices in Ornstein-Uhlenbeck Processes
+ruopengxu@zju.edu.cn,Ruopeng Xu,Ruopeng,Xu,2608.12849,RuopengXu7114,Energy Efficiency Maximization for FAS-Assisted Downlink Communication in Mobile Embodied AI Networks (MEAN) over Interference Channels
+zouxf@bupt.edu.cn,Xiaofan Zou,Xiaofan,Zou,2608.12872,XiaofanZou8722,Efficient and Accurate Surrogate-Assisted Electromagnetic Parameter Calibration for 6G Digital Twin Channels
+caiyf23@mails.tsinghua.edu.cn,Yifei Cai,Yifei,Cai,2608.12887,YifeiCai8600,On the minimal diameter of finite covers
+qiaozw@mail.sdu.edu.cn,Zhiwen Qiao,Zhiwen,Qiao,2608.12901,ZhiwenQiao7202,Relative Periodic Orbits in the Gutzwiller-type Anisotropic Kepler Problem and $n$-body Problem
+stock@physik.uni-freiburg.de,Gerhard Stock,Gerhard,Stock,2608.12914,GerhardStock2760,Local molecular motions encode time-resolved infrared spectra of proteins
+riku.luostari@nokia.com,Riku Luostari,Riku,Luostari,2608.12918,RikuLuostari8499,Input-Correlated Supervision Noise Limits the Benefits of OTA Training for Learned Receivers
+nguyenquocbao1@tdtu.edu.vn,Quoc-Bao Nguyen,Quoc-Bao,Nguyen,2608.12922,Quoc-BaoNguyen6646,A Revisit to Point Estimation Through the Empirical Bayes Method: The Case of Binomial Distribution with Beta Prior and Extension to Poisson Distribution
+lushuai@stu.xmu.edu.cn,Shuai Lu,Shuai,Lu,2608.12933,ShuaiLu1525,Gal3D: Superellipsoid Modeling of Radial 3D Galaxy Structure in IllustrisTNG and EAGLE Simulations
+eyalfattal@yahoo.com,Eyal Fattal,Eyal,Fattal,2608.12941,EyalFattal6967,Second-order stochastic modeling of particle resuspension: macroscopic degeneracy and anomalous pre-detachment transport
+stephane.bessy@lirmm.fr,Stéphane Bessy,Stéphane,Bessy,2608.12948,StéphaneBessy4056,A relaxation of the Bermond-Thomassen conjecture
+mschultzberg@spotify.com,Mårten Schultzberg,Mårten,Schultzberg,2608.12949,MårtenSchultzberg5343,Bayesian Inference Procedures for A/B Testing: An Overview
+hammed.fatoyinbo@aut.ac.nz,Hammed O. Fatoyinbo,Hammed,Fatoyinbo,2608.12956,HammedO.Fatoyinbo9905,Stochastic Spatial Metapopulation Modelling of HPAI Control and Poultry Restocking on Jolly Island
+yang-peng@mail.tsinghua.edu.cn,Yang Peng,Yang,Peng,2608.12973,YangPeng3006,Online Inference for Quantile Temporal Difference Learning in Distributional Reinforcement Learning
+giancarlo.vercellino@gmail.com,Giancarlo Vercellino,Giancarlo,Vercellino,2608.12998,GiancarloVercellino8999,WIRED: Weighted Adaptive Prediction with Structured Dependence for Probabilistic Multiseries Forecasting
+sgeffen@uni-muenster.de,Shirly Geffen,Shirly,Geffen,2608.13000,ShirlyGeffen7821,Dynamical comparison for local homeomorphisms
+ziyu.zhou20@imperial.ac.uk,Ziyu Zhou,Ziyu,Zhou,2608.13005,ZiyuZhou2182,Wideband Large-Array Processing and Sparse Design for Angle Imaging
+sumitcmishra@gmail.com,Sumit Chandra Mishra,Sumit,Mishra,2608.13013,SumitChandraMishra2593,On the isotropy group of monomial derivations
+wanggpmath@163.com,Guiping Wang,Guiping,Wang,2608.13015,GuipingWang3140,On the Restricted Edge-Cuts of Optimal 1-Planar Graphs
+yeonsang.park@cnu.ac.kr,Yeonsang Park,Yeonsang,Park,2608.13019,YeonsangPark7640,Imaging-System-Aware Inverse Design of Information-Optimal Color Routers
+eden.michael@uni-bremen.de,Michael Eden,Michael,Eden,2608.13051,MichaelEden5267,A Two-Component Poro-viscoelastic System for Fibre-Reinforced Hydrogels: Analysis and Homogenization
+mantu.gupta@iimb.ac.in,Mantu Gupta,Mantu,Gupta,2608.13056,MantuGupta5337,Simulating Stress Laws under Extremal Dependence: Characterizing What Generative Models Must Preserve
+kyoungmin.kim@apctp.org,Kyoung-Min Kim,Kyoung-Min,Kim,2608.13062,Kyoung-MinKim6758,Emergence of moiré magnetic chaos in twisted bilayer CrI3
+andreea@simudyne.com,Andreea Bacalum,Andreea,Bacalum,2608.13082,AndreeaBacalum4318,LOB-ID: Evaluating Synthetic Market Data by Inception Distances
+milica.m.cakovic@jyu.fi,Milica Caković,Milica,Caković,2608.13124,MilicaCaković5301,Limits of mapping packages and Preiss's phenomenon
+marcin.wachowiak@imec.be,Marcin Wachowiak,Marcin,Wachowiak,2608.13125,MarcinWachowiak3924,Analysis and Approximation of a Spatially Wideband Antenna Array Factor
+maoxj@sem.tsinghua.edu.cn,Xiaojie Mao,Xiaojie,Mao,2608.13133,XiaojieMao4091,Statistical Properties of Robust Learning under Distributional Shifts
+kevin.coulembier@sydney.edu.au,Kevin Coulembier,Kevin,Coulembier,2608.13137,KevinCoulembier3909,Absolutely flat algebras in tensor categories
+bastian.schindler@uni-hamburg.de,Bastian Schindler,Bastian,Schindler,2608.13146,BastianSchindler2390,Accelerating a Strong-Coupling Non-Equilibrium Steady-State Impurity Solver using (Quantics) Tensor Trains
+jureckova@utia.cas.cz,Jana Jurečková,Jana,Jurečková,2608.13150,JanaJurečková1395,R-estimation in a Linear Model with Autoregressive Errors
+chad.brown@manchester.ac.uk,Chad Brown,Chad,Brown,2608.13152,ChadBrown7142,"Estimation of distribution functions, their jumps and interval probabilities under measurement error"
+waldorp@uva.nl,Lourens Waldorp,Lourens,Waldorp,2608.13171,LourensWaldorp3704,High-dimensional networks and mean squared error for possibly misspecified models
+gongyq@mail.nankai.edu.cn,Yongqiang Gong,Yongqiang,Gong,2608.13201,YongqiangGong4910,Sinkhorn Linearization and the Spectral Proxy: Unifying the Statistical and Algorithmic Theory of Feature-Parameterized Inverse Optimal Transport via a Single Spectral Sandwich
+assaf.shapira@math.cnrs.fr,Assaf Shapira,Assaf,Shapira,2608.13208,AssafShapira4139,Universality in dimension 1 of kinetically constrained lattice gases
+bjang@yonsei.ac.kr,Beakcheol Jang,Beakcheol,Jang,2608.13209,BeakcheolJang9420,Chance-constrained selection of sequential intervention strategies from counterfactual estimates
+gergana.gyuleva@env.ethz.ch,Gergana Gyuleva,Gergana,Gyuleva,2608.13219,GerganaGyuleva7708,Statistical Noise and Missing Forcing Limit Estimates of Earth's Feedback from Prescribed Sea-Surface Temperature Simulations
+marko.mlikota@graduateinstitute.ch,Marko Mlikota,Marko,Mlikota,2608.13224,MarkoMlikota8246,Parameter Identification in Autoregressions under Discrete Sampling or Temporal Aggregation
+rongqingz@hkust-gz.edu.cn,Rongqing Zhang,Rongqing,Zhang,2608.13245,RongqingZhang8124,SoM-MTM: Synesthesia of Machines (SoM)-Driven Masked Token Model for Cooperative Perception over Packet Loss Channel
+krishnarjun@nitt.edu,Krishnarjun Krishnamoorthy,Krishnarjun,Krishnamoorthy,2608.13266,KrishnarjunKrishnamoorthy3727,On a conjecture of Corradi and Katai
+zuchao@mail.dlut.edu.cn,Chao Zu,Chao,Zu,2608.13275,ChaoZu3478,Block Repetition of Numerical Invariants for the Submodules $[z^k-w^k]$ in $H^2(\mathbb D^2)$
+omewomo@tarleton.edu,Oluwatosin Temitope Mewomo,Oluwatosin,Mewomo,2608.13286,OluwatosinTemitopeMewomo9519,Fixed Point Theorems for Hardy--Rogers Type Multivalued Mappings in b-Metric Spaces
+k.gabanyi@astro.elte.hu,K. É. Gabányi,K.,Gabányi,2608.13303,K.É.Gabányi7409,Radio Properties of Narrow-Line and Broad-Line Seyfert 1 Galaxies
+zan.gorenc@ijs.si,Žan Gorenc,Žan,Gorenc,2608.13305,ŽanGorenc8656,Physics-informed distribution of relaxation times estimation and latent-space condition monitoring of solid oxide fuel and electrolysis cells from electrochemical impedance spectroscopy
+yuanxh@ccut.edu.cn,Xiaohui Yuan,Xiaohui,Yuan,2608.13311,XiaohuiYuan1725,Distributed Selective Inference for Quantile Regression
+alexander.braeuer@uol.de,Alexander Bräuer,Alexander,Bräuer,2608.13316,AlexanderBräuer2110,Foundation models for movement data: Are they ready for prime-time?
+constantine.sorokin@glasgow.ac.uk,Constantine Sorokin,Constantine,Sorokin,2608.13327,ConstantineSorokin3352,Breaking the Chain: Division Norms and Criminal Deterrence
+amy.khaldoun@protonmail.com,Amy Oumayma Khaldoun,Amy,Khaldoun,2608.13340,AmyOumaymaKhaldoun2333,Fee Implied Volatility on Uniswap v3: A DEX Native Proxy and Its Limits
+p.nath@northeastern.edu,Pran Nath,Pran,Nath,2608.13346,PranNath2966,Automatic detection of fast oscillations of dark matter scalar field and updated cosmological constraints on QCDM
+gschwan@ethz.ch,Georg Schwan,Georg,Schwan,2608.13350,GeorgSchwan5112,A Physically Consistent Assessment of Nearfield Beamfocusing into Occluded Regions
+zhou.zhou@utoronto.ca,Zhou Zhou,Zhou,Zhou,2608.13352,ZhouZhou8667,"Recursive Multiple Change Point Detection of Nonstationary Time Series: Instability Tests, Estimation and Confidence Intervals"
+czdzhidachang@163.com,Zhida Chang,Zhida,Chang,2608.13356,ZhidaChang9396,Global Stability and Energy Growth in the Sheared Vlasov--Poisson--Boltzmann System
+m.kiss@tue.nl,Máté Kiss,Máté,Kiss,2608.13360,MátéKiss1177,Robust Space-Filling Input Design via Stochastic Optimization
+bsahoo7500@gmail.com,Bighneswar Sahoo,Bighneswar,Sahoo,2608.13363,BighneswarSahoo9979,"Weighted cumulative past inaccuracy and Kullback-Leibler divergence based on extropy: properties, estimation, and applications"
+aparnagupta@iitbhilai.ac.in,Aparna Gupta,Aparna,Gupta,2608.13366,AparnaGupta4853,Dilation and Functional Models for Pure $\mathbfΘ_n$-Contractions and the von Neumann Inequality on Distinguished Varieties in $\mathbfΘ_n$
+quentin.thommen@univ-lille.fr,Quentin Thommen,Quentin,Thommen,2608.13370,QuentinThommen1570,Shared environmental risk selects asymmetric inheritance of a protective reserve
+elahed@umich.edu,Elahe Delavari,Elahe,Delavari,2608.13372,ElaheDelavari7215,Process-Aware Cross-Layer Adaptation for O-RAN-Enabled Industrial Systems
+samrutiya@iitgn.ac.in,Sanjay Amrutiya,Sanjay,Amrutiya,2608.13375,SanjayAmrutiya2331,Moduli of super-representations of quivers
+rocioayalazara@gmail.com,Rocío Ayala,Rocío,Ayala,2608.13377,RocíoAyala6063,"Mixed Weak type inequalities for pairs of weights related to the Hardy-Littlewood maximal funcion, Calderón-Zygmund operators and their commutators"
+makram.bsds23seecs@seecs.edu.pk,Muhammad Hannan Akram,Muhammad,Akram,2608.13394,MuhammadHannanAkram8458,Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks
+ramy.tannous@nrc.ca,Ramy Tannous,Ramy,Tannous,2608.13399,RamyTannous6902,Field-Widened Multimode Interferometer with Long Time-Bin Delay Using a Multi-Pass Herriott Cell
+a.calissano@ucl.ac.uk,Anna Calissano,Anna,Calissano,2608.13406,AnnaCalissano1995,"A Metric Space of Spatial Graphs: Two-Sample Testing, Data Depth, and Application to Cardiac Fibrosis"
+d.nerukh@aston.ac.uk,Dmitry Nerukh,Dmitry,Nerukh,2608.13413,DmitryNerukh1343,The principle of stationary action and Lagrangian for dissipative dynamics with velocity-proportional frictional force
+yikai.xu@polyu.edu.hk,Yikai Xu,Yikai,Xu,2608.13418,YikaiXu8508,Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning
+l.hagar@uq.edu.au,Luke Hagar,Luke,Hagar,2608.13423,LukeHagar8976,COBRA-DOSE: Copula-based Bayesian Model Averaging for Dose Selection
+fazalasim@ufc.br,Fazal-E Asim,Fazal-E,Asim,2608.13436,Fazal-EAsim5987,Low-Complexity Channel Parameter Estimation for Coprime HRIS-Assisted MIMO Systems
+fedor.bukreev@kit.edu,Fedor Bukreev,Fedor,Bukreev,2608.13437,FedorBukreev6197,Lattice Boltzmann Method for Compressible Navier-Stokes-Fourier Equations
+jan.haskovec@kaust.edu.sa,Jan Haskovec,Jan,Haskovec,2608.13440,JanHaskovec9292,Memory Stabilizes Spontaneous Particle Aggregation: A Linearized Vlasov--Fokker--Planck Analysis
+kgordon@stsci.edu,Karl D. Gordon,Karl,Gordon,2608.13464,KarlD.Gordon5815,JWST MIRI Medium Resolution Spectrometer Point Fixed Pattern Corrections: Cleaner and Higher Signal-to-Noise Spectra of Point Sources
+shengbin.wei@bc.edu,Shengbin Wei,Shengbin,Wei,2608.13466,ShengbinWei7652,Learning about Treatment Effects in Panels under Unknown Interference
+radicamc@uchicago.edu,Michael Radica,Michael,Radica,2608.13470,MichaelRadica6087,Strict Limits on Helium Absorption from LHS 1140 b from Four JWST NIRISS Transits
+m.habib@utah.edu,Mohammed Ayman Habib,Mohammed,Habib,2608.13472,MohammedAymanHabib4945,AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models
+elupercio@gmail.com,Ernesto Lupercio,Ernesto,Lupercio,2608.13500,ErnestoLupercio6704,Symmetry Emergence in Self-Organized Criticality
+omayra.yago.nieto@alumnos.upm.es,Omayra Yago Nieto,Omayra,Nieto,2608.13507,OmayraYagoNieto9516,Safety-Critical Control for Quadrotor UAVs via Decentralized Navigation Functions
+omar.montasser@yale.edu,Omar Montasser,Omar,Montasser,2608.13514,OmarMontasser1635,Bagging Robustly Learns VC Classes with Linear Sample Complexity
+peter.banas149@student.cuni.cz,Peter Banáš,Peter,Banáš,2608.13523,PeterBanáš6689,Comeager hereditary families of compact sets are big
+sjpark@whu.edu.cn,Sang-Jun Park,Sang-Jun,Park,2608.13551,Sang-JunPark2404,Every PPT channel has finite entanglement-breaking index
+luopeng69131@sjtu.edu.cn,Pengcheng Luo,Pengcheng,Luo,2608.13610,PengchengLuo9716,LoopVSR: A Loop Engineering Framework for Automated Repair of Visual Speech Recognition Inference Pipelines
+valerie.deplano@univ-amu.fr,Valérie Deplano,Valérie,Deplano,2608.13629,ValérieDeplano9181,Learning Unsteady Aneurysm Hemodynamics with Physics-Informed DeepONets
+paolo.maranzano@unimib.it,Paolo Maranzano,Paolo,Maranzano,2608.13638,PaoloMaranzano3867,Small Area Estimation under Spatial Regimes: Spatially Clustered Fay-Herriot Models for Agricultural Indicators
+dimitarho@gmail.com,Dimitar Ho,Dimitar,Ho,2608.13651,DimitarHo2236,Consistent Model Chasing Is Minimax Optimal: The Exact Value of Scalar Adversarial Adaptive Control under Large Parametric Uncertainty
+ryan.hazlett@rockets.utoledo.edu,Ryan Hazlett,Ryan,Hazlett,2608.13656,RyanHazlett4807,Abundant Heavy Black Hole Seeds from Moderate Lyman-Werner Radiation
+diehl@thp.uni-koeln.de,Sebastian Diehl,Sebastian,Diehl,2608.13658,SebastianDiehl4390,Far-from-equilibrium topological phase transition in one dimension
+navnath@iitm.ac.in,Navnath Daundkar,Navnath,Daundkar,2608.13663,NavnathDaundkar7471,Equivariant Relative Sectional Category and Induced Invariants
+daniel_vedensky@sfu.ca,Daniel Vedensky,Daniel,Vedensky,2608.13673,DanielVedensky2091,Nonprobability Samples for Small Area Estimation: A Review and Comparative Simulation Study
+kavanagh@sfu.ca,Karen L. Kavanagh,Karen,Kavanagh,2608.13688,KarenL.Kavanagh3090,Thickness-dependent secondary-electron emission from suspended MoS$_2$ membranes in the helium ion microscope
+elliott@math.toronto.edu,George A. Elliott,George,Elliott,2608.13707,GeorgeA.Elliott7934,A simple separable C*-algebra which is not singly generated
+xfang@nycu.edu.tw,Xiang Fang,Xiang,Fang,2608.13709,XiangFang7198,Two Regularity Problems on Analytic Tent Spaces
+sebastian.doerrich@uni-bamberg.de,Sebastian Doerrich,Sebastian,Doerrich,2608.13711,SebastianDoerrich6968,TRUE-Colon: Exposing a Consistent Transfer Asymmetry in Real-Time Polyp Detection
+vanshika@princeton.edu,Vanshika Jain,Vanshika,Jain,2608.13727,VanshikaJain1838,Hitting-time mixing for the star transposition shuffle
+gina.quan@sjsu.edu,Gina M. Quan,Gina,Quan,2608.13740,GinaM.Quan3913,Development of the RIOT 2 for use in LA-supported classrooms
+ppramanik@southalabama.edu,Paramahansa Pramanik,Paramahansa,Pramanik,2608.13745,ParamahansaPramanik3561,"Dynamic Physical Hedging amid Jump Losses, Reconstruction-Price Uncertainty, Population Interactions"
+marcin.marciniak@ug.edu.pl,Marcin Marciniak,Marcin,Marciniak,2608.13750,MarcinMarciniak3742,Choi--Jamiołkowski-type isomorphisms for von Neumann algebras
+q.xie@fz-juelich.de,Qingguang Xie,Qingguang,Xie,2608.13761,QingguangXie3302,From suspensions to porous multilayers: microstructure formation and particle packing in drying colloidal films
+chandankumar.sheemar@uni.lu,Chandan Kumar Sheemar,Chandan,Sheemar,2608.13765,ChandanKumarSheemar6211,Energy Efficient Multi-User Beamforming and 3D Position Optimization for SIM-Assisted UAVs
+enrique.seira@gmail.com,Enrique Seira,Enrique,Seira,2608.13775,EnriqueSeira3320,Structured Payment in Pawnshop Borrowing: Mandates vs. Choice
+matthias.wollenhaupt@uol.de,Matthias Wollenhaupt,Matthias,Wollenhaupt,2608.13778,MatthiasWollenhaupt4163,Shaper-based dispersion scan for the characterization of polarization-shaped laser fields
+mislam11@syr.edu,Md Rashidul Islam,Md,Islam,2608.13788,MdRashidulIslam4768,Cross-frequency amplification of perturbations in a laminar separation bubble using resolvent analysis
+raminb@uci.edu,Ramin Bostanabad,Ramin,Bostanabad,2608.13793,RaminBostanabad1313,On the Brittleness of Maximum Likelihood Estimation for Gaussian Process Hyperparameter Optimization
+s.ghassemi-tabrizi@hzdr.de,Shadan Ghassemi Tabrizi,Shadan,Tabrizi,2608.13795,ShadanGhassemiTabrizi6166,Systematic extinctions in inelastic neutron scattering from molecular spin clusters
+rliang@optics.arizona.edu,Rongguang Liang,Rongguang,Liang,2608.13807,RongguangLiang4747,Label-Free Deep-Tissue Peripheral Nerve Detection with a Handheld Multimodal OCT Probe and NerveDetNet
+a.dey@ttu.edu,Asim K. Dey,Asim,Dey,2608.13808,AsimK.Dey1959,Joint Temperature-Precipitation Patterns in the U.S. South Central Region: Multivariate Functional Inference and Gaussian Mixture Modeling
+yanglli5@mail.sysu.edu.cn,Lili Yang,Lili,Yang,2608.13814,LiliYang5723,Time-dependent multi-energy neutrino emission from symbiotic recurrent novae: the role of accretion disks
+jailson.araujo52.js@gmail.com,Jailson Sales Araújo,Jailson,Araújo,2608.13816,JailsonSalesAraújo7945,Internal Temperature and Center-of-Mass Dynamics of a Levitated Nanoparticle: A Simulator
+mochen@cs.sfu.ca,Mo Chen,Mo,Chen,2608.13819,MoChen7649,Control Barrier--Value Functions under Partial Observability: Safety Guarantees via Conformal Prediction
+zhu.4178@osu.edu,Zehang Zhu,Zehang,Zhu,2608.13841,ZehangZhu9441,Real-Time In-Domain Congestion Control for the LWR Traffic Model via Control Barrier Functions
+dmlazar@bsu.edu,Drew Lazar,Drew,Lazar,2608.13847,DrewLazar8445,Separating Spatial and Clinical Risk with Node-Splitting SVM Survival Trees
+didier.nibbering@monash.edu,Didier Nibbering,Didier,Nibbering,2608.13851,DidierNibbering3886,Scalable likelihood-based inference for limited dependent variable models
+mnarimani@ucdavis.edu,Mohammadreza Narimani,Mohammadreza,Narimani,2608.13856,MohammadrezaNarimani8374,"From crown candidates to neighborhood screening: integrating optical GeoAI and spatial modeling for urban-canopy assessment in Davis, California"
+delepine@ugto.mx,David Delepine,David,Delepine,2608.13857,DavidDelepine4794,"Structural Divergence of the Inca Imperial Network, 1400--1572~CE: Persistent Homology, Substitution Topology, and the Topological Signature of Decapitation Collapse"
+gdiao@gwu.edu,Guoqing Diao,Guoqing,Diao,2608.13859,GuoqingDiao5080,A semiparametric approach for the estimation of covariate-adjusted area under the receiver operating characteristic curve
+carlos.burga@uc.cl,Carlos Burga,Carlos,Burga,2608.13871,CarlosBurga4755,"Financial Technologies, Labor Markets, and Wage Inequality: Evidence from Instant Payment Systems"
+shunxu@ahu.edu.cn,Shun Xu,Shun,Xu,2608.13872,ShunXu3051,$C_2$-Cofiniteness and Rationality of the Icosahedral Orbifold $V_{L_2}^{A_5}$
+zhixinhuo@hpu.edu.cn,Zhixin Huo,Zhixin,Huo,2608.13875,ZhixinHuo5908,PDE Realization and Structure-Aware Solvers for a Compact Two-Stage Fourth-Order IMEX Method
+lizhendong@xjtu.edu.cn,Zhendong Li,Zhendong,Li,2608.13885,ZhendongLi2956,"Dual-Layer Over-the-Air Federated Learning in LEO Satellite Networks: Architecture, Key Technologies and Applications"
+xixili0720@gmail.com,Xixi Li,Xixi,Li,2608.13886,XixiLi3761,A Forecast Combination Framework for Hierarchical and Grouped Time Series Reconciliatio
+yuanchao.bai@hit.edu.cn,Yuanchao Bai,Yuanchao,Bai,2608.13897,YuanchaoBai2415,Practical Lossless Volumetric Medical Image Compression via Tri-plane Context Tree Learning
+simon.haward@oist.jp,Simon J. Haward,Simon,Haward,2608.13908,SimonJ.Haward7889,Elastic wakes mediate collective viscoelastic fluid-structure interactions in side-by-side cantilever arrays
+sltan@hqu.edu.cn,Suling Tan,Suling,Tan,2608.13927,SulingTan2772,Transversal Hölder Criteria and Dini--Zygmund Endpoint Regularity for Hyperbolic Harmonic Mappings
+kangy10@miamioh.edu,Yicheng Kang,Yicheng,Kang,2608.13937,YichengKang6659,Deep Vision in Smart Manufacturing: MODERN Framework for Intelligent Quality Monitoring and Diagnosis
+shiyongchen@buaa.edu.cn,Shiyong Chen,Shiyong,Chen,2608.13941,ShiyongChen6390,Conjugate Equivariant Neural Network for Precoder Learning
+laura.liu@pitt.edu,Laura Liu,Laura,Liu,2608.13953,LauraLiu6948,Limited-Information Estimation of Heterogeneous Agent Models
+hlam@wpi.edu,Hy P. G. Lam,Hy,Lam,2608.13965,HyP.G.Lam7450,Intertwining the line bundle and Grauert-tube Hardy quantizations of the round 2-sphere
+xiaoleiwu@fudan.edu.cn,Xiaolei Wu,Xiaolei,Wu,2608.13978,XiaoleiWu4663,Pure braid groups are RFRS
+jiechen.chen@kcl.ac.uk,Jiechen Chen,Jiechen,Chen,2608.13985,JiechenChen6183,Standard-Compliant Neuromorphic Integrated Sensing and Communications Aided by an Intelligent Reflecting Surface
+david.sumpter@it.uu.se,David J. T. Sumpter,David,Sumpter,2608.13986,DavidJ.T.Sumpter3199,"Coherence, charity and triangulation in statistical modelling"
+dramsook@tcd.ie,Darren Ramsook,Darren,Ramsook,2608.13989,DarrenRamsook6356,A Subjective Study on a New Sharpness Informed Class of Metrics
+churchil@prl.res.in,Churchil Dwivedi,Churchil,Dwivedi,2608.13991,ChurchilDwivedi5257,On the Acceleration of Pulsar Timing computations using Normalising Flows and Parallelisation
+ngavish@technion.ac.il,Nir Gavish,Nir,Gavish,2608.13995,NirGavish9315,An Analytically Tractable Framework for Multi-Strain Epidemics: Resolving Algebraic Complexity to Map Oscillatory Dynamics
+s.bhattacharjee@ikst.res.in,Satadeep Bhattacharjee,Satadeep,Bhattacharjee,2608.14002,SatadeepBhattacharjee7160,Circuit Depth Compression via Spectral Gap Amplification in Quantum Phase Estimation
+andrey.osipov@dlr.de,Andrey Osipov,Andrey,Osipov,2608.14005,AndreyOsipov9465,Huygens' principle and field equivalence relations for cylindrical enclosing surfaces
+maoxuan@bao.ac.cn,Xuan Mao,Xuan,Mao,2608.14009,XuanMao5426,X-ray Activity of the RS CVn-type Star σ Gem with the First-Year Observations of Einstein Probe
+yfzhang@188.comxietf,Yifan Zhang,Yifan,Zhang,2608.14025,YifanZhang3032,Handling covariate shift by model averaging
+khsong@jejunu.ac.kr,Kyunghwan Song,Kyunghwan,Song,2608.14053,KyunghwanSong7300,$p$-numerical semigroup of the sequence of consecutive odd integers
+lubai@smail.nju.edu.cn,Lu Bai,Lu,Bai,2608.14061,LuBai1210,Feedback-Guided DNN-Based Controller Fusion for Robust Fixed-Parameter Active Noise Control
+tarmo@salk.ee,Tarmo Jüristo,Tarmo,Jüristo,2608.14062,TarmoJüristo5317,"A Unified Bayesian Model for Voter Turnout Estimation: Combining Surveys, Aggregate Data, and Selection Correction"
+lukas.bengel@kit.edu,Lukas Bengel,Lukas,Bengel,2608.14077,LukasBengel6751,Dissipative bright and dark pulses under periodic forcing
+bit_peng_liu@163.com,Peng Liu,Peng,Liu,2608.14086,PengLiu4254,"Integrated Sensing, Communication, and Computing in Multi-Tier Systems: Joint Hybrid Beamforming Design and Computation Resource Allocation"
+neela@math.iitb.ac.in,Neela Nataraj,Neela,Nataraj,2608.14087,NeelaNataraj6031,Unconditionally stable and energy conserving discretization of the dynamic von Kármán equations
+johan.lyrvall@outlook.com,Johan Lyrvall,Johan,Lyrvall,2608.14091,JohanLyrvall4835,An integration of decision trees into latent class modeling with covariates
+yurilima@gmail.com,Yuri Lima,Yuri,Lima,2608.14095,YuriLima8499,Symbolic dynamics for non-uniformly hyperbolic flows
+manikag@imsc.res.in,Manika Gupta,Manika,Gupta,2608.14098,ManikaGupta3146,Kostant--Kumar modules: presentation and multiplicities
+luca.tasin@unimi.it,Luca Tasin,Luca,Tasin,2608.14099,LucaTasin8526,The Hassett-Keel program via $Θ$-stability
+r.cherbunin@rqc.ru,R. V. Cherbunin,R.,Cherbunin,2608.14100,R.V.Cherbunin6179,Sharp Coherence Crossover and Multimode Phase Control in Coupled Exciton-Polariton Condensates
+davidflynn@eps-research.com,David C. Flynn,David,Flynn,2608.14101,DavidC.Flynn5530,A Reproducible Two-Boundary Kinematic Correction for Baryonic Rotation-Curve Reconstruction in an 84-Galaxy SPARC Benchmark
+ahmet.sener@std.bogazici.edu.tr,Ahmet Emir Şener,Ahmet,Şener,2608.14105,AhmetEmirŞener9878,Benders Decomposition with Partial Non-Anticipativity Relaxation for Multi-Stage Stochastic Clean Energy Transition Planning
+joerg.stiller@tu-dresden.de,Jörg Stiller,Jörg,Stiller,2608.14123,JörgStiller9215,Adaptive multigrid for high-order discontinuous Galerkin methods based on the full approximation scheme
+xpcui@ucr.edu,Xinping Cui,Xinping,Cui,2608.14127,XinpingCui5320,FastJM: An R Package for Efficient Implementation of Semiparametric Joint Models for Longitudinal and Survival Data
+ulrich.matter@unisg.ch,Ulrich Matter,Ulrich,Matter,2608.14141,UlrichMatter1027,Who Owns the Online Media?
+christoph.thaele@rub.de,Christoph Thäle,Christoph,Thäle,2608.14143,ChristophThäle2233,Mod-phi convergence for random variables with cyclotomic generating functions
+harry.qian26@berkeley.edu,Hai Yang Harry Qian,Hai,Qian,2608.14151,HaiYangHarryQian6326,Physics of Circular Polarized Ion-Scale Waves in Hybrid Simulations of Alfvénic Fluctuations
+kern@hhu.de,Peter Kern,Peter,Kern,2608.14155,PeterKern9715,Max-semistable extremal behavior of AR(1)-processes connected with Bernoulli convolutions
+ghoshshamik@yahoo.com,Shamik Ghosh,Shamik,Ghosh,2608.14159,ShamikGhosh5900,Counting degrees of vertices in near Goldbach graphs
+guy.foghem@b-tu.de,Guy Foghem,Guy,Foghem,2608.14163,GuyFoghem4287,Optimal stability of Dirichlet problem for the regional fractional $p$-Laplacian
+dominic.rohner@unil.ch,Dominic Rohner,Dominic,Rohner,2608.14164,DominicRohner2890,Science under Threat? A Natural Experiment in Economics
+odylo.costa@mat.ufc.br,Odylo Costa,Odylo,Costa,2608.14166,OdyloCosta6064,Low emergence in one-dimensional dynamics
+mehwish.bibi@std.medipol.edu.tr,Mehwish Bibi,Mehwish,Bibi,2608.14168,MehwishBibi4630,An HFM-Inspired Random Access Preamble Design for NTN under High Doppler
+neha.gupta@dituniversity.edu.in,Neha Gupta,Neha,Gupta,2608.14171,NehaGupta9570,Spillover-Informed Network Architecture for Global Volatility Forecasting
+wataru.kitano9998@gmail.com,Wataru Kitano,Wataru,Kitano,2608.14173,WataruKitano4600,Acquiring irrelevant information as a commitment
+raimundo.briceno@uc.cl,Raimundo Briceño,Raimundo,Briceño,2608.14175,RaimundoBriceño1410,Continuous pointwise ergodicity for semigroup actions on locally compact spaces
+jiawei.chen@ucdconnect.ie,Jiawei Chen,Jiawei,Chen,2608.14182,JiaweiChen9351,Budget-Aware Federated Dual-Side Channel Estimation for Hybrid mmWave Massive MIMO
+gio.antonopoulos12@gmail.com,G. Antonopoulos,G.,Antonopoulos,2608.14183,G.Antonopoulos3082,Cosmographic Reconstruction of the Quintessence Potential in Scalar-Tensor Gravity
+anandaroop.ray@ga.gov.au,Anandaroop Ray,Anandaroop,Ray,2608.14225,AnandaroopRay3847,"Extending Occam's inversion with lasso fusion, overcomplete dictionaries, and isotropic total variation regularisation"
+alanamoscardi1@gmail.com,Alana Moscardi,Alana,Moscardi,2608.14245,AlanaMoscardi4391,Body size predicts how long ant workers live - but not how they age or how they die from heat
+egrezk@pnu.edu.sa,Eman Ghareeb Rezk,Eman,Rezk,2608.14248,EmanGhareebRezk6207,Lyra Almost Ricci-Bourguignon Solitons on Twisted Warped Product Manifolds
+nicolas.heintz@esat.kuleuven.be,Nicolas Heintz,Nicolas,Heintz,2608.14250,NicolasHeintz7651,Why Performance Metrics Overpromise in Auditory Attention Decoding: an Information-Theoretic Reappraisal
+li.nan@nudt.edu.cn,Nan Li,Nan,Li,2608.14260,NanLi1100,Personalized Digital Semantic Communication for Image Transmission with Vision-Language Models
+amaier@theo2.physik.uni-stuttgart.de,Alexander M. Maier,Alexander,Maier,2608.14276,AlexanderM.Maier1017,Generalizing the multidimensional thermodynamic uncertainty relation to combinations of arbitrary counting variables
+sojeong@postech.ac.kr,Sojeong Park,Sojeong,Park,2608.14280,SojeongPark7672,LLM-Assisted LDPC Decoding via Syndrome-Verified Semantic Priors
+mztian@ruc.edu.cn,Maozai Tian,Maozai,Tian,2608.14294,MaozaiTian5331,Scale-dependent contraction of spatial wet-bulb temperature contrasts in eastern China
+amar.kasibovic@tum.de,Amar Kasibovic,Amar,Kasibovic,2608.14301,AmarKasibovic7554,Lightweight Beam Index Map Using Coupled Gaussian Mixture Models
+chaudhary@tmm.tu-darmstadt.de,Vikrant Chaudhary,Vikrant,Chaudhary,2608.14302,VikrantChaudhary1813,"Pressure-driven structural phase transition unlocks multifunctionality in KMgX (X = P, As, Sb, and Bi) compounds: A first-principles study"
+vargaka@mnb.hu,Katalin Varga,Katalin,Varga,2608.14307,KatalinVarga4857,Macroprudential Policy and Downside Risk: Regime-Dependent Effects of Capital Regulation
+ehud.m.lehrer@durham.ac.uk,Ehud Lehrer,Ehud,Lehrer,2608.14326,EhudLehrer9954,Bayesian Sequential Search with Censored Observations
+giovanni.fantuzzi@fau.de,Giovanni Fantuzzi,Giovanni,Fantuzzi,2608.14334,GiovanniFantuzzi9866,Optimizing bounds for energy-constrained optimal cooling problems in two dimensions
+yassine.afif@polymtl.ca,Yassine Afif,Yassine,Afif,2608.14335,YassineAfif3121,Multi-Agent Reinforcement Learning for Joint Handover Management and Power Allocation in Multi-Orbit Satellite Networks
+simone.colombo@uconn.edu,Simone Colombo,Simone,Colombo,2608.14343,SimoneColombo6928,Analytical Theory of Higher-Order Collective Spin Interactions in Cavity Quantum Electrodynamics
+patrick.bastian@math.au.dk,Patrick Bastian,Patrick,Bastian,2608.14344,PatrickBastian7060,Change Point Detection and Localization in High-Dimensional Time Series
+igor@uakron.edu,Igor Tsukerman,Igor,Tsukerman,2608.14348,IgorTsukerman1082,Full-field and Bloch-periodic-factor discretizations: Accuracy and phantom modes
+piotr.nowakowski@wmii.uni.lodz.pl,Piotr Nowakowski,Piotr,Nowakowski,2608.14395,PiotrNowakowski4677,A characterization of uniqueness of purely atomic finite measures with central Cantor set range
+alexei@nodeslinks.com,Alexei Vazquez,Alexei,Vazquez,2608.14398,AlexeiVazquez3871,Absorbing phase transition in a queueing model of coupled adaptive agents
+xiaohong.chen@yale.edu,Xiaohong Chen,Xiaohong,Chen,2608.14401,XiaohongChen4012,Offline Deep Q* Estimation with Diffusion Models
+kenneth.zhou@uwaterloo.ca,Kenneth Q. Zhou,Kenneth,Zhou,2608.14402,KennethQ.Zhou3329,A Tale of Two Pathways to Gompertz Mortality: Reliability and Vitality from an Actuarial Perspective
+karina.lilleborge@ntnu.no,Karina Lilleborge,Karina,Lilleborge,2608.14404,KarinaLilleborge1129,Flexible covariance structures on metric graphs
+cassidy.m.metzger.gr@dartmouth.edu,Cassidy Metzger,Cassidy,Metzger,2608.14412,CassidyMetzger8583,Optical Spectroscopy of TeV-emitting BL Lac Candidates
+molly.griston@colorado.edu,Molly Griston,Molly,Griston,2608.14459,MollyGriston1827,Measuring student understanding in quantum computing: Development and validation of the Quantum Computing Conceptual Survey
+yuge@mit.edu,Yu Ge,Yu,Ge,2608.14479,YuGe8595,Sensing-Aided Ordered Reliability Bits Guessing Random Additive Noise Decoding
+bgjang@khu.ac.kr,Bo Gyu Jang,Bo,Jang,2608.14480,BoGyuJang4695,Universal Signature of Hundness and Its Quantification
+yaohong@tsinghua.edu.cn,Hong Yao,Hong,Yao,2608.14503,HongYao4549,Chiral spin liquid and chiral antiferromagnetism in half-filled moiré Hubbard model: possible applications to twisted bilayer TMDs
+jesse.chan@oden.utexas.edu,Jesse CHan,Jesse,CHan,2608.14506,JesseCHan6617,Nodal discontinuous Galerkin methods for non-ideal equations of state: pressure equilibrium preservation and entropy correction
+davies@uni-wuppertal.de,Jack Morgan Davies,Jack,Davies,2608.14510,JackMorganDavies1738,On Galois extensions of geometric fixed point spectra
+eyoung@epss.ucla.edu,Edward D. Young,Edward,Young,2608.14518,EdwardD.Young9684,Hydrogen Engulfment into Sub-Neptune Cores through Magma Ocean Convective Surface Renewal
+luisfelipe.pereira@utdallas.edu,Felipe Pereira,Felipe,Pereira,2608.14520,FelipePereira5117,"Comment on arXiv:2106.08363v3 [math.NA], E. Abreu, A. Espirito Santo, W. Lambert, and J. Perez, Convergence of a Lagrangian--Eulerian scheme by a weak asymptotic analysis for one-dimensional hyperbolic problems"
+youngseok.song@mail.wvu.edu,Youngseok Song,Youngseok,Song,2608.14536,YoungseokSong4113,Joint Estimation of Sparse Multilayer Networks via Graph Limits
+ersoy@zedat.fu-berlin.de,Kıvanç Ersoy,Kıvanç,Ersoy,2608.14537,KıvançErsoy5291,Mixed identities for simple locally finite groups
+agago@pucp.edu.pe,Alberto M. Gago,Alberto,Gago,2608.14549,AlbertoM.Gago4096,Blazar Boosted Dark Matter in IceCube

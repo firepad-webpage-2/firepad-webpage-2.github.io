@@ -122,8 +122,8 @@ def parse_args():
     )
     parser.add_argument(
         "--out",
-        default=str(ROOT / "participantCodees.json"),
-        help="Output JSON path. Defaults to participantCodees.json.",
+        default=str(ROOT / "participantCodes.json"),
+        help="Output JSON path. Defaults to participantCodes.json.",
     )
     parser.add_argument(
         "--digits",

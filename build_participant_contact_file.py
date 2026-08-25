@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_CSV = ROOT / "2026-07-13_10_per_field.csv"
+DEFAULT_CSV = ROOT / "2026-08-18_100_per_field.csv"
 DEFAULT_JSON = ROOT / "participantCodes.json"
 DEFAULT_OUT = ROOT / "participant_paper_contacts.csv"
 
