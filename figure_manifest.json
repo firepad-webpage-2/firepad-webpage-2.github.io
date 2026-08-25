@@ -80302,5 +80302,241 @@
       "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2608.14549v1/img-10.jpeg",
       "size": 5675
     }
+  ],
+  "2509.17998": [
+    {
+      "key": "figures/2509.17998v2/img-0.jpeg",
+      "label": "img-0.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-0.jpeg",
+      "size": 72175
+    },
+    {
+      "key": "figures/2509.17998v2/img-1.jpeg",
+      "label": "img-1.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-1.jpeg",
+      "size": 89467
+    },
+    {
+      "key": "figures/2509.17998v2/img-2.jpeg",
+      "label": "img-2.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-2.jpeg",
+      "size": 64030
+    },
+    {
+      "key": "figures/2509.17998v2/img-3.jpeg",
+      "label": "img-3.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-3.jpeg",
+      "size": 51463
+    },
+    {
+      "key": "figures/2509.17998v2/img-4.jpeg",
+      "label": "img-4.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-4.jpeg",
+      "size": 36727
+    },
+    {
+      "key": "figures/2509.17998v2/img-5.jpeg",
+      "label": "img-5.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-5.jpeg",
+      "size": 67049
+    },
+    {
+      "key": "figures/2509.17998v2/img-6.jpeg",
+      "label": "img-6.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-6.jpeg",
+      "size": 13054
+    },
+    {
+      "key": "figures/2509.17998v2/img-7.jpeg",
+      "label": "img-7.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-7.jpeg",
+      "size": 49886
+    },
+    {
+      "key": "figures/2509.17998v2/img-8.jpeg",
+      "label": "img-8.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-8.jpeg",
+      "size": 28995
+    }
+  ],
+  "2509.17998v2": [
+    {
+      "key": "figures/2509.17998v2/img-0.jpeg",
+      "label": "img-0.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-0.jpeg",
+      "size": 72175
+    },
+    {
+      "key": "figures/2509.17998v2/img-1.jpeg",
+      "label": "img-1.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-1.jpeg",
+      "size": 89467
+    },
+    {
+      "key": "figures/2509.17998v2/img-2.jpeg",
+      "label": "img-2.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-2.jpeg",
+      "size": 64030
+    },
+    {
+      "key": "figures/2509.17998v2/img-3.jpeg",
+      "label": "img-3.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-3.jpeg",
+      "size": 51463
+    },
+    {
+      "key": "figures/2509.17998v2/img-4.jpeg",
+      "label": "img-4.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-4.jpeg",
+      "size": 36727
+    },
+    {
+      "key": "figures/2509.17998v2/img-5.jpeg",
+      "label": "img-5.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-5.jpeg",
+      "size": 67049
+    },
+    {
+      "key": "figures/2509.17998v2/img-6.jpeg",
+      "label": "img-6.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-6.jpeg",
+      "size": 13054
+    },
+    {
+      "key": "figures/2509.17998v2/img-7.jpeg",
+      "label": "img-7.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-7.jpeg",
+      "size": 49886
+    },
+    {
+      "key": "figures/2509.17998v2/img-8.jpeg",
+      "label": "img-8.jpeg",
+      "url": "https://paper-assets.alphaxiv.org/figures/2509.17998v2/img-8.jpeg",
+      "size": 28995
+    }
+  ],
+  "2607.02512": [
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x1.png",
+      "label": "x1.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x1.png",
+      "size": 105587
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x2.png",
+      "label": "x2.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x2.png",
+      "size": 58154
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x3.png",
+      "label": "x3.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x3.png",
+      "size": 52334
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x4.png",
+      "label": "x4.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x4.png",
+      "size": 44322
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/alien_taboo_frame.png",
+      "label": "alien_taboo_frame.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/alien_taboo_frame.png",
+      "size": 30637
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/architecture_lora.png",
+      "label": "architecture_lora.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/architecture_lora.png",
+      "size": 276514
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/paw_program_library.png",
+      "label": "paw_program_library.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/paw_program_library.png",
+      "size": 367835
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_1.png",
+      "label": "web_ui_1.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_1.png",
+      "size": 197187
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_2.png",
+      "label": "web_ui_2.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_2.png",
+      "size": 296990
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_3.png",
+      "label": "web_ui_3.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_3.png",
+      "size": 257147
+    }
+  ],
+  "2607.02512v1": [
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x1.png",
+      "label": "x1.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x1.png",
+      "size": 105587
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x2.png",
+      "label": "x2.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x2.png",
+      "size": 58154
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x3.png",
+      "label": "x3.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x3.png",
+      "size": 52334
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/x4.png",
+      "label": "x4.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/x4.png",
+      "size": 44322
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/alien_taboo_frame.png",
+      "label": "alien_taboo_frame.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/alien_taboo_frame.png",
+      "size": 30637
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/architecture_lora.png",
+      "label": "architecture_lora.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/architecture_lora.png",
+      "size": 276514
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/paw_program_library.png",
+      "label": "paw_program_library.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/paw_program_library.png",
+      "size": 367835
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_1.png",
+      "label": "web_ui_1.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_1.png",
+      "size": 197187
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_2.png",
+      "label": "web_ui_2.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_2.png",
+      "size": 296990
+    },
+    {
+      "key": "figures-normalized/figures/2607.02512v1/web_ui_3.png",
+      "label": "web_ui_3.png",
+      "url": "https://paper-assets.alphaxiv.org/figures-normalized/figures/2607.02512v1/web_ui_3.png",
+      "size": 257147
+    }
   ]
 }

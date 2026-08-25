@@ -2686,5 +2686,13 @@
   "AlbertoM.Gago4096": {
     "paperId": "2608.14549",
     "paperTitle": "Blazar Boosted Dark Matter in IceCube"
+  },
+  "RichardCorneliusSuwandi5044": {
+    "paperId": "2509.17998",
+    "paperTitle": "Adaptive Kernel Design for Bayesian Optimization Is a Piece of CAKE with LLMs"
+  },
+  "YuntianDeng7099": {
+    "paperId": "2607.02512",
+    "paperTitle": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
   }
 }
